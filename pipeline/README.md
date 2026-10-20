@@ -18,26 +18,40 @@ Python e JS/TS usam o mesmo código: a família muda só a lista de arquivos con
 Parâmetros em `correcao/config.py` e expressões em `correcao/padroes.py`; tudo vai para `out/manifesto.json`.
 
 ## Como rodar (macOS ou Linux)
-A lista de repositórios vem de `../dados/amostra.csv` (status `incluido` e `incluir_confirmar_hl`).
 
+### 1. Obter as chaves (uma vez)
+| Chave | Para quê | Como obter |
+|---|---|---|
+| **Hugging Face** (`hf_…`) | Baixar o AIDev | 1) Entre em [huggingface.co/datasets/hao-li/AIDev](https://huggingface.co/datasets/hao-li/AIDev) logado e, se aparecer, aceite os termos de acesso. 2) Em [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) → *Create new token* → tipo **Read** → copie |
+| **Anthropic** (`sk-ant-…`) | Classificador de correção (LLM) | 1) Crie a conta em [console.anthropic.com](https://console.anthropic.com). 2) Em *Billing*, adicione créditos (a API é paga por uso; o volume esperado é pequeno). 3) Em *API Keys* → *Create Key* → copie |
+| **GitHub** (`github_pat_…`, opcional) | Recuperar PRs integradas por rebase | [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new) → *Repository access: Public repositories (read-only)* → sem permissões extras → *Generate* → copie |
+
+**Não cole as chaves no chat, em issues nem em arquivos do repositório.** O script abaixo pergunta cada uma sem mostrar na tela e grava só em `pipeline/.env`, que está no `.gitignore`.
+
+### 2. Configurar e testar as chaves
 ```bash
 cd pipeline
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+bash configurar.sh      # cria o .venv, instala as dependências, pede e testa cada chave
+```
+Cada chave aparece com ✓ (funcionou) ou ✗ (com o motivo). Pode rodar de novo quantas vezes quiser; Enter vazio mantém a chave já gravada.
 
-huggingface-cli login                                   # 1x; aceite os termos do dataset hao-li/AIDev no site
+### 3. Rodar
+```bash
+bash rodar.sh           # baixa o AIDev (1x), roda Python e JS/TS, classifica, analisa e gera a planilha de validação
+bash rodar.sh python    # só Python (mais rápido, bom para a primeira vez)
+```
+Saídas: `out/resultados/relatorio.md`, `out/validacao_amostra.csv` e o log em `out/execucao_*.log`.
+
+### Comandos individuais
+```bash
+source .venv/bin/activate && source .env
 python -m correcao baixar                               # 1x: repository, pull_request, pr_commits
-
-export GITHUB_TOKEN=...        # recupera PRs integradas por rebase; sem ele, esses commits viram "direto"
-export ANTHROPIC_API_KEY=...   # classificador por LLM; sem ele, use a heurística (sem --llm)
-
 python -m correcao tudo --familia python --llm -w 3     # P1 → P2 → classificação → análise
-python -m correcao tudo --familia jsts   --llm -w 3     # mesma coisa para JS/TS (saídas no mesmo out/)
 python -m correcao analisar                             # refaz só a análise (segundos)
 ```
+- A lista de repositórios vem de `../dados/amostra.csv` (status `incluido` e `incluir_confirmar_hl`).
 - Os clones ficam em `data/clones/` (vários GB com a amostra inteira). Repositórios gigantes (ex.: `microsoft/vscode`) demoram; dá para rodar uma lista explícita com `--repos dono/nome …`.
 - As respostas do LLM ficam em `data/llm_cache/`: rodar de novo não muda os rótulos nem custa nada.
-- Nunca grave as chaves em arquivos do projeto.
 
 ## Validação do classificador
 ```bash
