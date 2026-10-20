@@ -1,0 +1,8 @@
+pandas>=2.0
+pyarrow>=14.0
+huggingface_hub>=0.23
+lizard>=1.17
+statsmodels>=0.14
+scipy>=1.11
+anthropic>=0.40
+pytest>=8

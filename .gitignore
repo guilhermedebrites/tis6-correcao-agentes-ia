@@ -1,0 +1,10 @@
+# dados baixados, clones e saídas da pipeline (grandes e regeneráveis)
+pipeline/data/
+pipeline/out/
+pipeline/docs/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.env
