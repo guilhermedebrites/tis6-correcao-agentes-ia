@@ -24,14 +24,21 @@ def _pasta(out: Path, repo: str) -> Path:
 def processar_repo(repo: str, familia: str, agent_prs: pd.DataFrame, dir_clones: Path, out: Path,
                    fonte_fa: str = "aidev") -> dict:
     pasta = _pasta(out, repo)
+
+    def log(msg: str) -> None:
+        print(f"  [{repo}] {msg}", flush=True)
+
     try:
+        log("clonando…")
         repo_dir = clonar(repo, dir_clones / repo.replace("/", "__"))
+        log("lendo o histórico")
         snapshot = git(repo_dir, "rev-parse", "HEAD").strip()
         gh = GitHub(out.parent / "data" / "github_cache")
         unidades, frac_sem_marcacao = identificar_unidades(repo_dir, repo, gh)
         unidades, inicio = classificar(unidades, agent_prs[agent_prs["repo"] == repo], fonte_fa)
         tab = para_tabela(unidades)
 
+        log(f"medindo {sum(u.fluxo in ('FA', 'HL') for u in unidades)} PRs FA/HL")
         # Medidas e filtros (E3) só para as PRs FA/HL do período
         medidas = {}
         for u in unidades:
@@ -65,6 +72,8 @@ def processar_repo(repo: str, familia: str, agent_prs: pd.DataFrame, dir_clones:
 
         validas = {r.unit_id: {"data": r.data, "arquivos": medidas[r.unit_id].arquivos}
                    for r in tab[tab["valida"]].itertuples()} if incluido else {}
+        if incluido:
+            log(f"rastreando correções (blame) de {n_fa} FA e {n_hl} HL")
         arq_texto = pasta / "eventos_texto.jsonl"
         arq_texto.unlink(missing_ok=True)
         arq_texto.touch()
