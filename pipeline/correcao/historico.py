@@ -61,8 +61,13 @@ def _agente_por_texto(*textos: str) -> str:
     return "desconhecido"
 
 
-def identificar_unidades(repo_dir: Path, repo: str, gh: GitHub | None = None) -> tuple[list[Unidade], float]:
-    """Retorna as unidades (PRs e commits diretos) na ordem do histórico e a fração de eventos sem marcação."""
+def identificar_unidades(repo_dir: Path, repo: str, gh: GitHub | None = None,
+                         desde: datetime | None = None) -> tuple[list[Unidade], float]:
+    """Retorna as unidades (PRs e commits diretos) na ordem do histórico e a fração de eventos sem marcação.
+
+    `desde`: só os commits a partir dessa data contam para a fração e são consultados na API; os anteriores
+    só servem como origem de linhas e não precisam saber a PR.
+    """
     hist = primeiro_pai(repo_dir)
     unidades: list[Unidade] = []
     for c in hist:
@@ -91,10 +96,11 @@ def identificar_unidades(repo_dir: Path, repo: str, gh: GitHub | None = None) ->
         unidades.append(Unidade(f"{repo}@{c.sha[:12]}", repo, None, "direto", c.pais[0], c.sha, c.data,
                                 c.assunto, c.corpo, [f"{c.autor} <{c.email}>"], commits=[c.sha],
                                 mensagens=[c.assunto + "\n" + c.corpo]))
-    n_direto = sum(u.modo == "direto" for u in unidades)
-    frac = n_direto / len(unidades) if unidades else 0.0
+    janela = [u for u in unidades if desde is None or u.data >= desde]
+    n_direto = sum(u.modo == "direto" for u in janela)
+    frac = n_direto / len(janela) if janela else 0.0
     if gh is not None and gh.ativo and frac > CFG.limiar_sem_marcacao:
-        unidades = _recuperar_rebase_api(unidades, repo, gh)
+        unidades = _recuperar_rebase_api(unidades, repo, gh, desde)
     # PR que aparece mais de uma vez no histórico: ambígua, sai da análise
     vistos: dict[int, int] = {}
     for u in unidades:
@@ -106,13 +112,19 @@ def identificar_unidades(repo_dir: Path, repo: str, gh: GitHub | None = None) ->
     return unidades, frac
 
 
-def _recuperar_rebase_api(unidades: list[Unidade], repo: str, gh: GitHub) -> list[Unidade]:
+def _recuperar_rebase_api(unidades: list[Unidade], repo: str, gh: GitHub,
+                          desde: datetime | None = None) -> list[Unidade]:
     """Liga commits sem marcação à PR de origem pela API e agrupa blocos contíguos da mesma PR (R-P3)."""
     novas: list[Unidade] = []
+    total = sum(u.modo == "direto" and (desde is None or u.data >= desde) for u in unidades)
+    feitos = 0
     for u in unidades:
-        if u.modo != "direto":
+        if u.modo != "direto" or (desde is not None and u.data < desde) or not gh.ativo:
             novas.append(u)
             continue
+        feitos += 1
+        if feitos % 250 == 0:
+            print(f"  [{repo}] API do GitHub: {feitos}/{total} commits sem marcação", flush=True)
         prs = [p for p in gh.prs_do_commit(repo, u.sha_a) if p.get("merged_at")]
         if not prs:
             novas.append(u)

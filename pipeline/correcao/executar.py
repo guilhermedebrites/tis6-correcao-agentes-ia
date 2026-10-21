@@ -34,7 +34,11 @@ def processar_repo(repo: str, familia: str, agent_prs: pd.DataFrame, dir_clones:
         log("lendo o histórico")
         snapshot = git(repo_dir, "rev-parse", "HEAD").strip()
         gh = GitHub(out.parent / "data" / "github_cache")
-        unidades, frac_sem_marcacao = identificar_unidades(repo_dir, repo, gh)
+        # a API só é consultada a partir do 1º merge de agente do repositório (menos uma margem):
+        # antes disso os commits só servem como origem de linhas
+        datas = pd.to_datetime(agent_prs.loc[agent_prs["repo"] == repo, "merged_at"], utc=True).dropna()
+        desde = (datas.min() - pd.Timedelta(days=7)).to_pydatetime() if len(datas) else CFG.inicio_api
+        unidades, frac_sem_marcacao = identificar_unidades(repo_dir, repo, gh, desde)
         unidades, inicio = classificar(unidades, agent_prs[agent_prs["repo"] == repo], fonte_fa)
         tab = para_tabela(unidades)
 

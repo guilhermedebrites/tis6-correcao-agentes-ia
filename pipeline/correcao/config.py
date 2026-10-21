@@ -14,6 +14,8 @@ class Config:
 
     # Janela de observação da correção (dias depois do merge da PR de origem)
     janela_dias: int = 90
+    # sem datas do AIDev (modo --fonte-fa git), a API do GitHub só é consultada a partir daqui
+    inicio_api: datetime = datetime(2024, 10, 1, tzinfo=timezone.utc)
 
     # Mínimos por repositório (D17, D17-bis)
     min_fa_validas: int = 5

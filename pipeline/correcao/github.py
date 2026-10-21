@@ -35,6 +35,7 @@ class GitHub:
                 with urllib.request.urlopen(req, timeout=20) as r:
                     dados = json.load(r)
                     restante = int(r.headers.get("X-RateLimit-Remaining", "100"))
+                    reset = int(r.headers.get("X-RateLimit-Reset", time.time() + 60))
                 break
             except urllib.error.HTTPError as e:
                 if e.code == 404:
@@ -45,7 +46,9 @@ class GitHub:
                     continue
                 if e.code in (403, 429):
                     reset = int(e.headers.get("X-RateLimit-Reset", time.time() + 60))
-                    time.sleep(max(5, reset - time.time() + 1))
+                    espera = max(5, reset - time.time() + 1)
+                    print(f"  aviso: cota da API do GitHub no fim; esperando {espera / 60:.0f} min", flush=True)
+                    time.sleep(espera)
                     continue
                 dados, restante = None, 100  # outro erro HTTP: segue sem a informação
                 break
@@ -61,7 +64,10 @@ class GitHub:
         self.falhas_seguidas = 0
         self.consultas += 1
         if restante < 20:
-            time.sleep(60)
+            # cota quase no fim: espera ela renovar de uma vez, em vez de uma consulta por minuto
+            espera = max(5, reset - time.time() + 1)
+            print(f"  aviso: cota da API do GitHub no fim; esperando {espera / 60:.0f} min", flush=True)
+            time.sleep(espera)
         arq.parent.mkdir(parents=True, exist_ok=True)
         arq.write_text(json.dumps(dados), encoding="utf-8")
         return dados
