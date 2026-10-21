@@ -128,7 +128,7 @@ def diff(repo: Path, b: str, a: str) -> list[ArquivoDiff]:
             hunk = (ib, nb, ia, na, [])
             atual.hunks.append(hunk)
             lb, la = ib, ia
-        elif hunk is not None and linha[:1] in "+-" and not linha.startswith(("+++", "---")):
+        elif hunk is not None and linha[:1] in ("+", "-") and not linha.startswith(("+++", "---")):
             hunk[4].append(linha)
             if linha[0] == "-":
                 atual.removidas.append(lb)
