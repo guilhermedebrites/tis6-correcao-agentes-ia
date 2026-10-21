@@ -13,8 +13,8 @@ ARQUIVO_EXCLUIDO = re.compile(
     r"|(?:^|/)test_[^/]*\.py$|_test\.py$|(?:^|/)conftest\.py$"
     r"|\.(?:test|spec)\.[cm]?[jt]sx?$"
     r"|(?:^|/)(?:migrations|alembic/versions)/"
-    r"|(?:^|/)(?:vendor|vendored|third_party|externals|node_modules|site-packages|\.venv|build|dist|generated)/"
-    r"|_pb2\.py$|_generated\.py$|\.min\.js$|\.d\.ts$"
+    r"|(?:^|/)(?:vendor|vendored|third_party|externals|node_modules|site-packages|\.venv|build|dist|_?generated|_?autogen)/"
+    r"|_pb2\.py$|_pb2_grpc\.py$|_generated\.py$|_models_py3\.py$|\.min\.js$|\.d\.ts$"
     r"|(?:^|/)(?:setup\.py|noxfile\.py|conf\.py)$"
     r"|(?:^|/)[^/]*\.config\.[cm]?[jt]s$"
 )
