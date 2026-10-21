@@ -40,11 +40,15 @@ class GitHub:
                 if e.code == 404:
                     dados, restante = None, 100
                     break
+                if e.code >= 500:          # erro temporário do GitHub: tenta de novo
+                    time.sleep(2 ** tentativa)
+                    continue
                 if e.code in (403, 429):
                     reset = int(e.headers.get("X-RateLimit-Reset", time.time() + 60))
                     time.sleep(max(5, reset - time.time() + 1))
                     continue
-                raise
+                dados, restante = None, 100  # outro erro HTTP: segue sem a informação
+                break
             except (urllib.error.URLError, TimeoutError, ConnectionError):
                 time.sleep(2 ** tentativa)
         else:

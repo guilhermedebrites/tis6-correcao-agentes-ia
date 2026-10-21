@@ -19,6 +19,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 from .config import CFG
@@ -139,8 +140,8 @@ def _recuperar_rebase_fa(unidades: list[Unidade], agent_prs: pd.DataFrame) -> li
     faltando = agent_prs[(agent_prs["grupo"] == "FA_principal") & agent_prs["merged_at"].notna()
                          & ~agent_prs["pr_number"].isin(encontrados)]
     for _, pr in faltando.iterrows():
-        assuntos = set(pr["commit_assuntos"] if isinstance(pr["commit_assuntos"], (list, tuple)) else
-                       list(pr["commit_assuntos"] or []))
+        bruto = pr["commit_assuntos"]
+        assuntos = set(bruto) if isinstance(bruto, (list, tuple, np.ndarray)) else set()
         if not assuntos:
             continue
         idx = [i for i, u in enumerate(unidades)
