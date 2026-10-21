@@ -40,17 +40,17 @@ PY
 then ok "token válido e acesso ao AIDev na revisão fixada"
 else falha "sem acesso ao AIDev: confira o token e se aceitou os termos em huggingface.co/datasets/hao-li/AIDev"; fi
 
-echo "3/5 Anthropic (classificador de correção)"
-perguntar ANTHROPIC_API_KEY "Cole a chave da API da Anthropic (sk-ant-...)"
-if python -I - <<PY
-import sys, anthropic
-try:
-    anthropic.Anthropic(api_key="${ANTHROPIC_API_KEY:-}").models.list(limit=1)
-except Exception as e:
-    print("   ", type(e).__name__, str(e)[:200]); sys.exit(1)
-PY
-then ok "chave válida"
-else falha "chave recusada: confira a chave e se a conta tem créditos (console.anthropic.com → Billing)"; fi
+echo "3/5 Claude Code (classificador de correção, usa o seu plano)"
+if ! command -v claude >/dev/null; then
+  falha "Claude Code não encontrado: instale com  npm install -g @anthropic-ai/claude-code  e rode  claude  uma vez para fazer login"
+else
+  resp=$(echo "Responda só: ok" | env -u ANTHROPIC_API_KEY claude -p --model claude-haiku-5-5 --tools "" --strict-mcp-config --no-session-persistence --output-format json 2>/dev/null || true)
+  if echo "$resp" | python -c "import sys,json; d=json.load(sys.stdin); sys.exit(1 if d.get('is_error') else 0)" 2>/dev/null; then
+    ok "Claude Code logado e respondendo (modelo claude-haiku-5-5)"
+  else
+    falha "Claude Code não respondeu: abra  claude  no terminal, faça login com a conta do plano e rode este script de novo"
+  fi
+fi
 
 echo "4/5 GitHub (opcional, recupera PRs integradas por rebase)"
 perguntar GITHUB_TOKEN "Cole o token do GitHub (github_pat_...) ou Enter para pular"
@@ -65,7 +65,6 @@ echo "5/5 Gravando pipeline/.env"
 umask 077
 {
   echo "export HF_TOKEN='${HF_TOKEN:-}'"
-  echo "export ANTHROPIC_API_KEY='${ANTHROPIC_API_KEY:-}'"
   echo "export GITHUB_TOKEN='${GITHUB_TOKEN:-}'"
 } > .env
 ok ".env gravado (só neste computador; está no .gitignore)"

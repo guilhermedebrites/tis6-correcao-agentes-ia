@@ -85,7 +85,7 @@ def cmd_classificar(a):
     with todos.open("w", encoding="utf-8") as f:
         for p in sorted((out / "repos").glob("*/eventos_texto.jsonl")):
             f.write(p.read_text(encoding="utf-8"))
-    df = classificar_eventos(todos, Path(a.cache), a.llm)
+    df = classificar_eventos(todos, Path(a.cache), a.llm, a.meio, a.paralelo)
     df.to_csv(out / "rotulos.csv", index=False)
     print(f"{len(df)} eventos rotulados ({'llm' if a.llm else 'heurística'}) → {out / 'rotulos.csv'}")
     if len(df) and a.llm:
@@ -148,12 +148,18 @@ def main():
     sub.add_parser("baixar").set_defaults(func=cmd_baixar)
     p = sub.add_parser("p1"); comum(p); p.set_defaults(func=cmd_p1)
     p = sub.add_parser("p2"); comum(p); p.set_defaults(func=cmd_p2)
-    p = sub.add_parser("classificar"); p.add_argument("--llm", action="store_true"); p.set_defaults(func=cmd_classificar)
+    def llm_opts(p):
+        p.add_argument("--llm", action="store_true")
+        p.add_argument("--meio", default="claude_code", choices=["claude_code", "api"],
+                       help="claude_code = Claude Code logado no plano do usuário; api = ANTHROPIC_API_KEY")
+        p.add_argument("--paralelo", type=int, default=4, help="chamadas simultâneas ao modelo")
+
+    p = sub.add_parser("classificar"); llm_opts(p); p.set_defaults(func=cmd_classificar)
     sub.add_parser("analisar").set_defaults(func=cmd_analisar)
     p = sub.add_parser("validacao-amostra"); p.add_argument("-n", type=int, default=80)
     p.set_defaults(func=cmd_validacao_amostra)
     p = sub.add_parser("validacao-medir"); p.add_argument("arquivo"); p.set_defaults(func=cmd_validacao_medir)
-    p = sub.add_parser("tudo"); comum(p); p.add_argument("--llm", action="store_true"); p.set_defaults(func=cmd_tudo)
+    p = sub.add_parser("tudo"); comum(p); llm_opts(p); p.set_defaults(func=cmd_tudo)
     a = ap.parse_args()
     a.func(a)
 

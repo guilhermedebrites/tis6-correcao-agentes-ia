@@ -61,11 +61,12 @@ Responda só com JSON: {"categoria": ..., "confianca": "alta|media|baixa", "just
 ---
 
 ## 4. Reprodutibilidade
-- **Modelo com versão fixa** (ID completo registrado no manifesto), temperatura 0.
+- **Modelo com versão fixa** (`claude-haiku-5-5`, registrado em cada resposta do cache).
+- **Meio de chamada:** por padrão, o Claude Code logado no plano do usuário (`claude -p`, sem ferramentas, sem MCP, sem sessão salva); opcionalmente a API (`--meio api`, temperatura 0). O Claude Code não permite fixar a temperatura, então a reprodutibilidade vem do **cache**: cada evento é classificado uma única vez e o rótulo fica guardado; quem rodar de novo com o mesmo cache obtém exatamente os mesmos rótulos. O cache deve ser versionado junto com os resultados.
 - Prompt versionado no repositório (`prompts/classificador_v1.txt`); mudar o prompt = nova versão e reclassificação completa.
 - **Cache** de todas as respostas em disco (`data/llm_cache/<hash da entrada>.json`): rodar de novo não muda rótulos nem custa nada.
 - Respostas inválidas (JSON quebrado) → nova tentativa uma vez; depois, `outro` com `confianca = baixa` e registro no funil.
-- Chave de API só por variável de ambiente, nunca em arquivo do projeto.
+- Chaves e logins só no computador de quem roda, nunca em arquivo do projeto.
 
 ---
 

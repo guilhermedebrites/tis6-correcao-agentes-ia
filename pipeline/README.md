@@ -23,10 +23,10 @@ Parâmetros em `correcao/config.py` e expressões em `correcao/padroes.py`; tudo
 | Chave | Para quê | Como obter |
 |---|---|---|
 | **Hugging Face** (`hf_…`) | Baixar o AIDev | 1) Entre em [huggingface.co/datasets/hao-li/AIDev](https://huggingface.co/datasets/hao-li/AIDev) logado e, se aparecer, aceite os termos de acesso. 2) Em [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) → *Create new token* → tipo **Read** → copie |
-| **Anthropic** (`sk-ant-…`) | Classificador de correção (LLM) | 1) Crie a conta em [console.anthropic.com](https://console.anthropic.com). 2) Em *Billing*, adicione créditos (a API é paga por uso; o volume esperado é pequeno). 3) Em *API Keys* → *Create Key* → copie |
+| **Claude Code** (login do plano) | Classificador de correção (LLM) | Instale com `npm install -g @anthropic-ai/claude-code`, rode `claude` uma vez no terminal e faça login com a conta do plano. A pipeline chama `claude -p` sem ferramentas e consome o limite do plano, sem chave paga. Alternativa: `--meio api` com `ANTHROPIC_API_KEY` |
 | **GitHub** (`github_pat_…`, opcional) | Recuperar PRs integradas por rebase | [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new) → *Repository access: Public repositories (read-only)* → sem permissões extras → *Generate* → copie |
 
-**Não cole as chaves no chat, em issues nem em arquivos do repositório.** O script abaixo pergunta cada uma sem mostrar na tela e grava só em `pipeline/.env`, que está no `.gitignore`.
+**Não cole as chaves no chat, em issues nem em arquivos do repositório.** O script abaixo pergunta os tokens sem mostrar na tela e grava só em `pipeline/.env`, que está no `.gitignore`.
 
 ### 2. Configurar e testar as chaves
 ```bash
