@@ -21,12 +21,12 @@ Guilherme Gomes de Brites · Jonathan Sena da Silva · Matheus Ferreira Titton �
 
 **Método:** unidade = PR integrada; `git blame -w -M -C` liga cada mudança posterior à PR de origem; um modelo de linguagem cego ao fluxo classifica a mudança (correção, evolução, refatoração, outro), validado à mão em 80 eventos; modelos com o repositório como agrupamento, Holm nas três hipóteses.
 
-Detalhes em [`docs/01-proposta.md`](docs/01-proposta.md).
+Detalhes em [`docs/01-proposta.md`](docs/01-proposta.md). Visão consolidada (problema, GQM, métricas, pipeline e resultados da rodada Python) em [`docs/03-consolidacao-gqm-resultados.md`](docs/03-consolidacao-gqm-resultados.md).
 
 ## Estrutura
 | Pasta | Conteúdo |
 |---|---|
-| [`docs/`](docs) | Proposta atual e desenho do classificador |
+| [`docs/`](docs) | Proposta atual, desenho do classificador e consolidação GQM + resultados |
 | [`docs/material-anterior/`](docs/material-anterior) | Primeira versão do trabalho (metodologia v7.1, sabatina, spike, piloto, resultados Python) e o diagnóstico que levou à nova proposta. Serve de base; não é mais a referência |
 | [`pipeline/`](pipeline) | Pipeline de extração e análise (Python + JS/TS); instruções no [README](pipeline/README.md) |
 | [`dados/`](dados) | Amostra de repositórios (`amostra.csv`: 24 Python + 56 JS/TS) |
