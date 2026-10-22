@@ -93,7 +93,9 @@ class ClassificadorLLM:
     def classificar(self, entrada: str) -> dict:
         arq = self.dir_cache / f"{self._chave(entrada)}.json"
         if arq.exists():
-            return json.loads(arq.read_text(encoding="utf-8"))
+            salvo = json.loads(arq.read_text(encoding="utf-8"))
+            if not salvo.get("invalida"):
+                return salvo  # respostas inválidas (tempo esgotado, saída vazia) são tentadas de novo
         res = None
         for _ in range(2):
             texto = self._chamar_cli(entrada) if self.meio == "claude_code" else self._chamar_api(entrada)
@@ -106,7 +108,8 @@ class ClassificadorLLM:
                 break
             res = None
         if res is None:
-            res = {"categoria": "outro", "confianca": "baixa", "justificativa": "resposta inválida", "invalida": True}
+            # não vai para o cache: a próxima execução tenta de novo
+            return {"categoria": "outro", "confianca": "baixa", "justificativa": "resposta inválida", "invalida": True}
         res["modelo"] = self.modelo
         res["prompt"] = CFG.prompt_versao
         arq.write_text(json.dumps(res, ensure_ascii=False), encoding="utf-8")
@@ -128,7 +131,7 @@ def classificar_eventos(arq_textos: Path, dir_cache: Path, usar_llm: bool, meio:
         if llm is not None:
             r = llm.classificar(montar_entrada(ev))
             reg.update({"categoria_llm": r["categoria"], "confianca": r.get("confianca"),
-                        "justificativa": r.get("justificativa")})
+                        "justificativa": r.get("justificativa"), "invalida": bool(r.get("invalida"))})
         return reg
 
     linhas = []
@@ -142,4 +145,7 @@ def classificar_eventos(arq_textos: Path, dir_cache: Path, usar_llm: bool, meio:
         df["correcao"] = (df["categoria_llm"] == "corrige_defeito") if usar_llm else \
             (df["heuristica"] == "corrige_defeito")
         df["fonte_rotulo"] = f"llm:{meio}" if usar_llm else "heuristica"
+        if usar_llm and df["invalida"].any():
+            print(f"  aviso: {int(df['invalida'].sum())} eventos sem resposta válida do modelo; "
+                  "rode `classificar --llm` de novo para tentar só esses", flush=True)
     return df
