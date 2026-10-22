@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte a seleção de pontos com binning no Altair (resolve issue #6829), e a mudança de assinatura adiciona o parâmetro binned_fields, o que amplia o comportamento da função.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

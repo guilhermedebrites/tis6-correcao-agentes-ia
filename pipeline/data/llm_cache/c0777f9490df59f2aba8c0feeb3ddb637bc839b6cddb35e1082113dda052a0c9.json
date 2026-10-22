@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara o propósito de aumentar o timeout do teste de stress de reboot, o que ajusta um parâmetro de comportamento desejado do teste (tempo máximo permitido), sem corrigir um defeito explícito nem alterar a estrutura do código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

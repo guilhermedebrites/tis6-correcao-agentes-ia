@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara explicitamente o propósito de refatorar os adaptadores de juiz para usar uma interface base, e o diff mostra remoção de lógica de roteamento e renomeação de docstrings sem indicar mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

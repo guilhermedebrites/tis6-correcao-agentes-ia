@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram que o objetivo é alterar o limite aceito de ClientAliveInterval para 235 conforme a nova exigência de certificação do Azure, o que muda o requisito de validação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

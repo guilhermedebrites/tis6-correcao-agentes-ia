@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram 'fixing linting issues' e o diff apenas remove o else desnecessário, troca datetime.timezone.utc por datetime.UTC, remove Optional não usado e ajusta docstring, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

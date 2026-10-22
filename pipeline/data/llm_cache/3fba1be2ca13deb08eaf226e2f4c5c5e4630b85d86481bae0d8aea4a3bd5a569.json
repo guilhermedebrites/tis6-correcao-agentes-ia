@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram um objetivo de lint (especificar encoding utf-8 em operações de arquivo de texto), e as alterações apenas adicionam o parâmetro encoding sem mudar o comportamento esperado do código para o usuário.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

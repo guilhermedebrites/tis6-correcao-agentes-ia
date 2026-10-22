@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas atualiza a string de versão (__version__) de 1.2.0 para 1.2.1 nos pacotes, um bump de release sem alteração de comportamento, o que não se encaixa em defeito, evolução ou refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

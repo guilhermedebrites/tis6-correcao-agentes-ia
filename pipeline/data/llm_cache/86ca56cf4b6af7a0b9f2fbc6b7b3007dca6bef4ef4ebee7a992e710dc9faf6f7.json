@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram um renomeio (inject_trigger_input para allow_crewai_trigger_context), e o diff só troca nomes de método, atributo e parâmetro sem alterar a lógica.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

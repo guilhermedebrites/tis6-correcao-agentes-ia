@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix' e o diff remove a atribuição de um parâmetro (data['litellm_model_saturation']), o que sugere a retirada de um parâmetro indevido; a descrição está vazia, então a confiança é média.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

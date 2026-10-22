@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título diz 'fix', mas a descrição e o diff mudam o comportamento desejado: LSP deixa de iniciar e não aloca portas no modo run, o que é uma mudança de requisito/escopo de funcionalidade e não a correção de um defeito explícito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

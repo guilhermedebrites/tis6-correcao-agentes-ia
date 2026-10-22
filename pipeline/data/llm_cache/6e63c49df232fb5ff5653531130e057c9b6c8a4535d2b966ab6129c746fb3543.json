@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara a correção de `download_artifacts` ignorando o parâmetro `tracking_uri`, e o diff propaga `tracking_uri` às chamadas que antes o omitiam, corrigindo esse comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

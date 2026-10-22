@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e os commits declaram que a mudança corrige os issues #3654 e #3653 e um bug ao exportar no mesmo diretório, e o diff ajusta o caminho de saída (public_dir/target_dir) para esse fim.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

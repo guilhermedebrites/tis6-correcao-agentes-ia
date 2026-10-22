@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram implementar a funcionalidade de passthrough, e o diff adiciona um novo valor de ação 'passthrough' com a inclusão de detecções na resposta, comportamento novo e desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

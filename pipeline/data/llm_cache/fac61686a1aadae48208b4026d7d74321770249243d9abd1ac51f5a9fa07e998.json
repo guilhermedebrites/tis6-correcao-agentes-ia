@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título declara rebaixar um aviso de assinatura para info, e o diff só troca a chamada de log (de warning para info) e a constante usada, sem alterar lógica; é mudança de nível de log, classificada como outro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

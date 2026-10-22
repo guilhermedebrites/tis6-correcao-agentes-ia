@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de um valor de pagamento na moeda do lojista à fatura de payout, e o diff substitui os formatadores antigos por uma lista de itens de cabeçalho e formata um novo valor, indicando mudança de comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

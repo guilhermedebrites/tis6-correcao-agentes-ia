@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara registro de timestamps de execução, mas as linhas alteradas são apenas reformatação de strings de exceção e quebras de linha (estilo black), sem mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

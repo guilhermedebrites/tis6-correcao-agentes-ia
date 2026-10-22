@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "A descrição declara que a PR corrige o issue #2307, ajusta a verificação do objeto crew de volta ao comportamento anterior e faz a reinicialização de memória lançar o RuntimeError de memória não inicializada em vez de falhar com atributos ausentes.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

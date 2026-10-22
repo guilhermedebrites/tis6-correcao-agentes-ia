@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e o commit dizem apenas \"logs\" e a mudança só acrescenta uma quebra de linha antes de \"Status: \" na saída do console, o que é alteração de exibição de log, não de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

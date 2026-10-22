@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram a extensão do `clint` para aceitar diretórios, uma nova funcionalidade, e a linha alterada passa a usar `f` diretamente porque a lista de arquivos agora vem da expansão de diretórios.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

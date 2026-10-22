@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e o commit declaram explicitamente a correção de um UnicodeEncodeError no Windows (issue #6434), e o diff adiciona encoding=\"utf-8\" à escrita do TOML para evitar o erro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

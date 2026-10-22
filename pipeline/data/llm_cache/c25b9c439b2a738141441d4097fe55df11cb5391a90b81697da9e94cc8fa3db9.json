@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma feature de cache de prompts i18n, mas as linhas mostradas só alteram anotações de tipo, removem um import e um cast, sem mudar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

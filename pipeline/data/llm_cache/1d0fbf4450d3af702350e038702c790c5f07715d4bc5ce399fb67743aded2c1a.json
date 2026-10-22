@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título é 'fix:' e a descrição/commit dizem que o filtro evita adicionar pacotes já tentados, prevenindo um loop infinito, o que corrige um defeito de comportamento no runtime.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

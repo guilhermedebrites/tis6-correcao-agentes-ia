@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix ('re-add scheduled rotations'), mas o trecho mostra apenas a remoção de imports de uuid, sem relação aparente com rotações agendadas; a classificação segue o propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

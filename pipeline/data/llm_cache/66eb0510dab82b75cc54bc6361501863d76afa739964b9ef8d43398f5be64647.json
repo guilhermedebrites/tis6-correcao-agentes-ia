@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O PR declara no título e na descrição que adiciona suporte à substituição dinâmica do atributo queryserviceuri para Eventhouse, um comportamento novo e não um conserto de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

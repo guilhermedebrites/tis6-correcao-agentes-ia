@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de um endpoint de busca de jobs, mas as linhas mostradas só alteram a tipagem de `status` de `str` para `JobStatus`, o que é refatoração isolada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

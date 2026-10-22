@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix que move a montagem de agent_tools para uma variável em vez de usar formatação com %, mas o trecho mostra só essa parte e não a definição de agent_tools, então a causa exata do defeito não é verificável.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

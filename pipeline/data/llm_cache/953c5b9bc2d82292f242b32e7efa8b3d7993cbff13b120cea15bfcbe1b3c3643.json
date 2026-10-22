@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram uma divisão de FLAVOR_TO_MODULE_NAME em grupos genai e não-genai, e o diff apenas move entradas de dicionário existentes para outra estrutura sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

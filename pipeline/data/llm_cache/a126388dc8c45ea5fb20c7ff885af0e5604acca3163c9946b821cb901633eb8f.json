@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "O título e a mensagem 'Update build' são genéricos e não há descrição; o diff apenas remove a desativação da verificação de versão do g4f, sem propósito declarado, o que indica informação insuficiente para classificar.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

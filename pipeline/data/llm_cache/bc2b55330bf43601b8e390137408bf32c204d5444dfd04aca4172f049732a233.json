@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a mensagem declaram 'fix' nas tags dos endpoints OAuth2 de clientes, indicando correção de um problema (tags incorretas na documentação/API), embora a alteração em si seja apenas a adição de uma tag pública.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

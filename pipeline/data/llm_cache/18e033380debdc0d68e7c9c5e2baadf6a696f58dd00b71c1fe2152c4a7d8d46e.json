@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de tornar o Product opcional no Checkout, e as mudanças adicionam guardas `has_product_checkout` para permitir checkouts sem produto, o que altera comportamento desejado e não corrige defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A mudança altera a tag de APITag.private para APITag.public, tornando os endpoints customer-seats parte da API pública, o que é uma mudança de requisito/exposição de API, conforme o título declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

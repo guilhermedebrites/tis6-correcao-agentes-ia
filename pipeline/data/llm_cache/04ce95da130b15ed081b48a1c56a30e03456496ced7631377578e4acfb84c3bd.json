@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'Fix eval result button link' indica correção de um link quebrado/incorreto do botão de resultados; o diff substitui a URL montada apenas para OSS por um resolvedor que também trata URIs Databricks, o que corrige o comportamento errado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

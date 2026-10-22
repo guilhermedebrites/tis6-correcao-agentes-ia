@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix' e explicam que a regex precisa coincidir com o prompt em en.json, corrigindo a extração de 'Thought' e 'Action' que falhava por exigir '\\n\\n' em vez de '\\n'.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

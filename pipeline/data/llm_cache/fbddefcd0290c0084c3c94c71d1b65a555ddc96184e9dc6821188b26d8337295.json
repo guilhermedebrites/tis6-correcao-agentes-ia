@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição da API de busca EXA, e as linhas alteradas substituem o mapeamento explícito de parâmetros por um repasse genérico, o que muda o comportamento de Tavily e Parallel AI dentro dessa funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

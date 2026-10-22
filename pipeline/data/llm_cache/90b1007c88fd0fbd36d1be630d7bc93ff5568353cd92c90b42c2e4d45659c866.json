@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix' e a descrição fala em limpeza de um dicionário que crescia sempre, o que indica correção de crescimento indevido de memória; trocar o dict por WeakValueDictionary muda o comportamento para remover entradas coletadas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

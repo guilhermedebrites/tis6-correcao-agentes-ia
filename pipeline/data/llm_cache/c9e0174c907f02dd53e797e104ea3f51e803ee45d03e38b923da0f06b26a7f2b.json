@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de permitir atribuição de seats via order em customer_seats, e o diff adiciona fallback para order_repository quando não há subscription, ampliando o comportamento dos endpoints.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

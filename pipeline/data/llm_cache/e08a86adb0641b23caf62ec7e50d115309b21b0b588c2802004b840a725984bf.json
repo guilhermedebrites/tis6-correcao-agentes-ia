@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix' e 'Fixes #5945', e o diff substitui a obtenção de tabelas via duckdb/catálogo separado por referências SQL com nomes qualificados, corrigindo o comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

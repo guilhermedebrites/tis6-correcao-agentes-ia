@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara a correção de um caso não tratado (transição entre preços gratuitos e fixos, referenciando o Fix #7052), e o diff adiciona guardas que ignoram preços gratuitos no cálculo de proration.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

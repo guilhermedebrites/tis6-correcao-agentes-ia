@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O PR melhora o desempenho sem mudar o resultado observável: só deixa de criar a thread de escrita do console quando a saída não é redirecionada, e ajusta a construção do stream nos threads.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

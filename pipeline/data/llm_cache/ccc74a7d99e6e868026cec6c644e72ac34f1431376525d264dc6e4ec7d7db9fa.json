@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de feature flag e rotas básicas do portal do cliente (nova funcionalidade), mas o trecho mostrado só altera um valor de exemplo de \"USD\" para \"usd\", que não relaciona diretamente com esse propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

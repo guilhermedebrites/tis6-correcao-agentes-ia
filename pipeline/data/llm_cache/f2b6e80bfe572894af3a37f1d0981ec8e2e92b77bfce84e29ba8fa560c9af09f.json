@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "A PR remove propriedades e métodos relacionados a IDs do Stripe que não são mais necessários, junto com imports não utilizados, sem alterar comportamento esperado; o título indica limpeza de código não essencial.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e os commits ('fix: mcp rest auth check', 'add permission test') declaram correção de checagem de autorização, e o diff adiciona verificação de acesso ao server_id (403) antes de executar a ferramenta MCP.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

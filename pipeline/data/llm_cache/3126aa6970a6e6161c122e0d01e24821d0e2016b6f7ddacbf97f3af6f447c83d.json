@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit dizem apenas adicionar import de pacotes genai, e o diff reorganiza constantes em GENAI_MODULES e NON_GENAI_MODULES sem alterar o conjunto final de módulos verificados, caracterizando reestruturação do código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

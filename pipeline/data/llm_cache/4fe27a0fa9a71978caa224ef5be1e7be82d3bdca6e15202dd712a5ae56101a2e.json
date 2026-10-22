@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara o propósito de incluir as classes de tipo no mlflow-skinny, e o diff troca a condição de IS_FULL_MLFLOW por IS_TRACING_SDK_ONLY, o que altera quais tipos ficam disponíveis no pacote.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,61 @@
+{
+  "repo": "deepmodeling/deepmd-kit",
+  "familia": "python",
+  "snapshot": "d07c097bbea1aede457af09f20ffbaf42a177c7c",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-08-25T09:23:39+00:00",
+  "frac_sem_marcacao": 0.005,
+  "api_consultas": 0,
+  "fa_validas": 3,
+  "hl_validas": 6,
+  "incluido": false,
+  "atividade_linhas": {},
+  "n_eventos": 0,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 3
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "grande_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 6
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 6
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 7
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 2385,
+    "bot": 251,
+    "direto": 60,
+    "HL": 15,
+    "FA": 10,
+    "fa_mista": 8,
+    "agente_fora": 6,
+    "fa_provavel": 4
+  }
+}

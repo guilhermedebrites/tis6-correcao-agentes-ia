@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "A descrição declara o propósito de atualizar o uso da API do Modal para a versão 1.0 (renomeações e novos decoradores), um ajuste de API, apesar do título 'fix', e as linhas mostradas adicionam informações de runtime sem corrigir um comportamento errado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

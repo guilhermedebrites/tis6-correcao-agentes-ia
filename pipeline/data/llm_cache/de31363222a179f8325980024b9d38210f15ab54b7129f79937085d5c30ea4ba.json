@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de habilitar nova sintaxe de variáveis ($workspace.$id, $items.Type.Name.$attribute) e lookups de itens em outros workspaces, o que adiciona comportamento novo mantendo compatibilidade com a sintaxe antiga.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

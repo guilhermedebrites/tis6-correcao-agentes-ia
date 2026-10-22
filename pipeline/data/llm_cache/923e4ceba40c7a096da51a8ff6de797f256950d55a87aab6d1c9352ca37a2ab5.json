@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar novos modos de seleção (células únicas/múltiplas), e o diff estende a API de seleção da tabela para aceitar coordenadas de célula, o que é adição de comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

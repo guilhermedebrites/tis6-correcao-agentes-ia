@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram correções de bugs (fixes #4135 e #4140), e as linhas alteradas tratam casos de borda em relatórios de traceback, expõem variáveis de tempo de execução e restauram sys.modules e sys.path após a execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

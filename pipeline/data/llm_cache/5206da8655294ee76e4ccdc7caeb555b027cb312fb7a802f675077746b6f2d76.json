@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um fix (o saldo do cliente deve considerar reembolsos) e a linha alterada passa a subtrair total_refunded, corrigindo o cálculo incorreto do saldo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

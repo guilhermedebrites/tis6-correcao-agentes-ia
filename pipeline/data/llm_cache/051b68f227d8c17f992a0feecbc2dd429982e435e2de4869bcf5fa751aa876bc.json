@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram tratar o caso de assinatura Stripe deletada na tarefa de migração, e o diff captura InvalidRequestError para um caso que antes lançava exceção, evitando a falha.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

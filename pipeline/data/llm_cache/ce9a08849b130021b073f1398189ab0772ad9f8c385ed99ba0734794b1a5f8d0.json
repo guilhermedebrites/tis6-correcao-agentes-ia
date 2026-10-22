@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram a correção de uma falha: o OpenSSL.speed() não detectava operações criptográficas com erro, pois o exit code 0 mascarava os ':error:' no stdout, e a mudança passa a validar o stdout e lançar LisaException.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

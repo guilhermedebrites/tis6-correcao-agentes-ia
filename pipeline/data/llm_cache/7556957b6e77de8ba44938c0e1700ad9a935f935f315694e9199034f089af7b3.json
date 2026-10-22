@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara explicitamente '[Refactor]' e o diff apenas remove um import eager (lazy load) e troca a anotação de tipo para string, sem alterar o comportamento funcional.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

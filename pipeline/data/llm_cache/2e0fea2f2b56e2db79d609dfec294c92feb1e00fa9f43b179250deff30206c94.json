@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma funcionalidade nova (rastreamento de contexto de crew), mas as linhas mostradas são só refatoração (import removido, isinstance combinado) e docstring, então o trecho não evidencia a mudança declarada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

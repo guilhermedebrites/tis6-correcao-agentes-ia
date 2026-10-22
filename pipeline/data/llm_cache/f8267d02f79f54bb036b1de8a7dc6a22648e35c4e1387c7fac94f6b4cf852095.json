@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "A descrição declara 'Fix #6751' e o objetivo de corrigir a entrega fora de ordem dos eventos de webhook, mas o trecho mostrado é apenas a adição de um import (`func`), insuficiente para confirmar a lógica implementada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

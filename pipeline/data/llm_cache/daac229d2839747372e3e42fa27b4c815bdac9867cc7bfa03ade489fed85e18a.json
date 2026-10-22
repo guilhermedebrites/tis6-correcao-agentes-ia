@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição indicam que a mudança remove a exibição indevida de 'explain' em erros de SQL, com saída de erro melhorada, o que corrige o comportamento incorreto de mensagens de erro exibidas ao usuário.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

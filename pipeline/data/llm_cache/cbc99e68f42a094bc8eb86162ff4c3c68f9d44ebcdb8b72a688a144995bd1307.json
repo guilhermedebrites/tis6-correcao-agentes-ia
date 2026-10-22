@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição da API DataForSEO e do Google PSE como provedores de busca, e o diff registra esses novos provedores no mapeamento de configurações, apesar de também incluir renomeações de tipos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

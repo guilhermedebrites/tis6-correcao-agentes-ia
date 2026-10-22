@@ -1,0 +1,63 @@
+{
+  "repo": "xtekky/gpt4free",
+  "familia": "python",
+  "snapshot": "1dbac2541335a2312f53002dfa9d14119af53099",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-08-21T08:52:11+02:00",
+  "frac_sem_marcacao": 0.873,
+  "api_consultas": 745,
+  "fa_validas": 6,
+  "hl_validas": 5,
+  "incluido": true,
+  "atividade_linhas": {
+    "agente_principal": 5780,
+    "humano": 11327
+  },
+  "n_eventos": 13,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 6
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 2
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 5
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 3
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "direto": 1819,
+    "fora_periodo": 772,
+    "agente_fora": 19,
+    "HL": 10,
+    "FA": 9,
+    "fa_mista": 2,
+    "bot": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara a correção de um erro de type check (um @property duplicado em Crew.fingerprint), o que se enquadra em erro de tipo, e o diff remove a definição duplicada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram a correção de um bug em que mo.stop() encerrava a execução do script, e as linhas removidas do script_runner fazem parte dessa mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

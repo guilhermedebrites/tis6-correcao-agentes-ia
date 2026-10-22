@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um fix e a mudança troca `.get('metadata', {})` por `.get('metadata') or {}`, o que evita erro quando a chave existe com valor None.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

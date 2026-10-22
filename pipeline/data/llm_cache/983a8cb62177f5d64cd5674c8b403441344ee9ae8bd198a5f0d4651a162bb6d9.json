@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas atualiza a versão máxima de um pacote de ML suportado no mapa de versões, como parte da preparação para o MLflow 3.1.0, sem alterar lógica de código ou corrigir comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

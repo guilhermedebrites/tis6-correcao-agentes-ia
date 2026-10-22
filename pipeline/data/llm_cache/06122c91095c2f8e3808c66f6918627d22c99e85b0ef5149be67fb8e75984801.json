@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma feature (limites tpm/rpm por modelo no nível da equipe), e o trecho mostra a validação de limites de chave condicionada a team_table.rpm_limit, embora boa parte das linhas seja só formatação e as descrições misturem 'fix' e 'feat'.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

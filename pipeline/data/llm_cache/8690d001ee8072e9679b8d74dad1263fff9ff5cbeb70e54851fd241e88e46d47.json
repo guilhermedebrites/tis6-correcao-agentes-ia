@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título 'remove pro 25' indica remoção de um plano de preço, e o diff altera a seleção padrão e o tier selecionado para 'Pro 50', o que muda o comportamento oferecido aos usuários em vez de corrigir um defeito ou apenas reorganizar o código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

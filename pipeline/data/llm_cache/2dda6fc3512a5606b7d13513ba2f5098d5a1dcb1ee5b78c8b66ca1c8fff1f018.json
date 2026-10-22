@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram a correção de um bug em que os gráficos com feature flag ativa não exibiam estatísticas além do limite de linhas, e o diff ajusta a lógica de cálculo de estatísticas e bins para tratar esse caso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

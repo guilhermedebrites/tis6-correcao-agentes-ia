@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara explicitamente a correção de um potential deadlock no RTC, e o diff troca a remoção inline por _do_remove_doc e move a criação do cleaner para fora do lock, o que trata a causa do travamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'improvement' e a descrição trata de novo suporte a LazyFrame e do novo mo.ui.table.lazy; o diff adiciona o parâmetro 'lazy' e o tratamento de total_rows como 'too_many', o que é comportamento novo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

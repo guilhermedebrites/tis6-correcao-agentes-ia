@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição dizem que a correção anterior não tratava __slots__ vazios, e o diff troca a verificação truthy por `is not None` e aceita qualquer iterável, eliminando a falha em objetos com slots vazios.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

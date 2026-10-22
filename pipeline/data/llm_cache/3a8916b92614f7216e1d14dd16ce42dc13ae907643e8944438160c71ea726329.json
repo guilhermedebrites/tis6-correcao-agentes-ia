@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram habilitar a regra UP045 para usar a sintaxe `X | None` no lugar de `Optional[X]`, e as linhas alteradas apenas reescrevem anotações de tipo e removem imports de `Optional`, sem alterar comportamento em tempo de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

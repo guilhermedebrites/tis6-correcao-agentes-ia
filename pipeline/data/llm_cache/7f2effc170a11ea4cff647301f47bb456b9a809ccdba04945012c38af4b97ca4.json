@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de habilitar automaticamente o revops ao ingerir um evento _cost, que é um novo comportamento desejado; o trecho mostrado apenas adiciona o import de or_, então o propósito vem do título e da mensagem de commit.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "As linhas mostradas só alteram o texto de uma mensagem de erro (mais específica sobre vegafusion e mo.ui.altair_chart), e o título sobre mathjax não corresponde a elas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

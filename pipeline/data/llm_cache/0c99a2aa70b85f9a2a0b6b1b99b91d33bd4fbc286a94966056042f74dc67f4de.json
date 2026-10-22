@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título e a descrição dizem implementar uma worker task e tornar o script de correção mais resiliente, mas o trecho mostrado apenas remove o arquivo fix_migrated_subscription.py, sem evidenciar a lógica de correção ou defeito corrigido nas linhas exibidas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

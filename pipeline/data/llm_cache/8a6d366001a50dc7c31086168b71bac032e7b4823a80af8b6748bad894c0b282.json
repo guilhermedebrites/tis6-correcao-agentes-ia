@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram o propósito de dar suporte a mensagens multi-turno, e o diff adiciona o parâmetro convert_to_single_text, alterando o comportamento de formatação do prompt otimizado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

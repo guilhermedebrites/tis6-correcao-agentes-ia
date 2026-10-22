@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix: exclude unauthorized MCP servers', indicando correção de comportamento incorreto, e o diff troca a chamada para o gerenciador global que filtra servidores não autorizados.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

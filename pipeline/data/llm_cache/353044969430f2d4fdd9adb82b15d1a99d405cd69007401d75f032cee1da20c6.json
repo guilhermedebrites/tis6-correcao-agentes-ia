@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'post fix accordion' indica correção de um problema já introduzido no accordion, e as mudanças ajustam cores e sombras com modificadores '!' para sobrescrever estilos incorretos (hover, bordas, fundo), o que corrige aparência indesejada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

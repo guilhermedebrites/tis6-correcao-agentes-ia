@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição (\"Fixes #4978. Python 3.9 doesn't have support for pipe operators\") e o diff substituem a sintaxe `X | Y` por `Union[X, Y]`, corrigindo um TypeError em Python 3.9 sem alterar o comportamento pretendido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

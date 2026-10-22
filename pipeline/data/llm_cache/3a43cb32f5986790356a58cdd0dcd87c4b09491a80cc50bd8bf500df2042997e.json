@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara duas finalidades, mas o trecho mostrado trata a entrada que antes não era str/dict (json.loads quebrava com TypeError), o que caracteriza a correção de serialização; o suporte a mais atributos não aparece nessas linhas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

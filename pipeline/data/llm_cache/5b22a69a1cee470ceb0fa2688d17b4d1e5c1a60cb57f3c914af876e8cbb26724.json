@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram um fix que adiciona scopes ausentes às credenciais de identity pool, mas o trecho mostrado só reformata uma linha, sem exibir a correção em si.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

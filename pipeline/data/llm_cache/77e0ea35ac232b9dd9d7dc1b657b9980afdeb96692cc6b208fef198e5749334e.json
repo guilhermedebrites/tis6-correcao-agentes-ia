@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'Fix experiment_id type' declara a intenção de corrigir um defeito de tipo, e a linha alterada passa a converter experiment_id com int(), corrigindo a comparação do filtro com o tipo esperado pela coluna.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

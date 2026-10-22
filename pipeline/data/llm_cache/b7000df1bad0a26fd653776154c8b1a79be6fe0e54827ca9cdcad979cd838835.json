@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara a correção do status do scorer para o backend de tracking do MLflow, e o diff troca a condição de verificação e protege a comparação contra sample_rate None, o que caracteriza conserto de comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "Atualização de versão e de dependências nos templates do CLI, sem alteração de comportamento de código; enquadra-se como manutenção de dependências/versão.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

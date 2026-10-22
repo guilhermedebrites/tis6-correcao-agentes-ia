@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "A PR declara ser uma limpeza para atender a nova regra do ruff (ASYNC240), trocando chamadas bloqueantes de os.path por equivalentes assíncronos sem alterar a funcionalidade pretendida.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

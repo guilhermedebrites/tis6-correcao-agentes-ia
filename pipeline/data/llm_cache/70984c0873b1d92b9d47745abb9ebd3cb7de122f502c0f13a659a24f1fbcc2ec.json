@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram refatoração (\"chore: refactor col summaries\", dividir Col Summaries em Col Charts + Col Stats), e o diff apenas renomeia variáveis e a função summary para stats/ColumnStats sem alterar a lógica.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

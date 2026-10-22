@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram que a mudança corrige o problema de lockfiles do Chroma sendo criados na raiz do crew, redirecionando-os para db_storage_path().", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

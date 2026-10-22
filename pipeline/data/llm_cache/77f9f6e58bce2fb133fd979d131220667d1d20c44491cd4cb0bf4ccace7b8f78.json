@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram suporte a múltiplos catálogos de registro para `import_all`, e o diff troca o caminho fixo por um parâmetro `catalog_paths`, ampliando a API para novos casos de uso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

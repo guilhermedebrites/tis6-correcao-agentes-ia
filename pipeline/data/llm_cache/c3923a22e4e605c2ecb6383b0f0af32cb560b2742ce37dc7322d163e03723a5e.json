@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix que impede variáveis SQL de entrarem na assinatura de retorno gerada, evitando NameError, e as alterações de `return (x,)` para `return` seguem esse propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

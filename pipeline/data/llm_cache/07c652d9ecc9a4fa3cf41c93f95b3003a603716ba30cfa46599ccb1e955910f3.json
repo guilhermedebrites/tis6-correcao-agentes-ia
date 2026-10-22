@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram uma correção de condição de corrida em FilteredStream, mas o trecho mostra apenas trocas de importação, sem a lógica da correção visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

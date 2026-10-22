@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O diff apenas remove a importação não utilizada 'from litellm._uuid import uuid' em guardrail_registry.py, sem alterar comportamento; embora a PR declare correções de UI e guardrails, esta linha específica é limpeza de código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

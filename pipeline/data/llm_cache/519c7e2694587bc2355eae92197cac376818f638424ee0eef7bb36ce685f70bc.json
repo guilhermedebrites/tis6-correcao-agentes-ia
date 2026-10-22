@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara o propósito de adicionar type hints faltantes, e o diff apenas acrescenta a anotação de retorno '-> \"Job\"' sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

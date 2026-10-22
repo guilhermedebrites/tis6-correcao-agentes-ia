@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O trecho alterado apenas reformata a anotação de tipo/comentário de `output_cost` (quebra de linha com parênteses), sem mudar comportamento; o título e commits tratam de guardrails e métricas Prometheus, que não correspondem a essa linha isolada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

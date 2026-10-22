@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de suporte a modelos de custo zero, e o diff altera a checagem de orçamento para ser pulada via skip_budget_checks, o que muda o comportamento desejado da API.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

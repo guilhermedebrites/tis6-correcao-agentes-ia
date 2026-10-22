@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente a correção da issue 2123 no comando de memória do CLI, e o diff altera a lógica de busca do objeto Crew (verificação por isinstance e nome do arquivo), o que corrige a detecção incorreta do crew.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

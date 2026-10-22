@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma migração do MCP para skills, e o diff apenas remove o arquivo dev/mcps/review.py, indicando que o código foi movido para outra estrutura sem mudança declarada de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

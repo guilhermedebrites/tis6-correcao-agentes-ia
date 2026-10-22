@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram a introdução de fingerprints (passagem de fingerprint_context pelas ferramentas), o que é uma nova funcionalidade; o trecho mostrado é pequeno e só exibe a passagem do parâmetro e um import de tipo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

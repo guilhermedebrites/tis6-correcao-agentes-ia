@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara 'Add support for custom LLM implementations', e as linhas mostradas generalizam o tipo de LLM para BaseLLM e tratam stop words de forma mais flexível, mas boa parte do trecho é ajuste de tipos e casts.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e o commit declaram melhoria de exemplos na documentação, e a mudança apenas adiciona o parâmetro `examples` aos campos Field do schema, sem alterar comportamento funcional.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

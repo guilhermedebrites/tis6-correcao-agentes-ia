@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a implementação de uma opção fail-open com padrão True e de um timeout configurável, o que adiciona comportamento novo ao guardrail, e não corrige um defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

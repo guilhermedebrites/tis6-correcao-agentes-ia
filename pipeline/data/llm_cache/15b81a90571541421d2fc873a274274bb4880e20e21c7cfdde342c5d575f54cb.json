@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "Troca o default mutável `[]` por `default_factory=list`, o que evita que a lista seja compartilhada entre instâncias, mas o título 'update pyplot demos' não descreve essa mudança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

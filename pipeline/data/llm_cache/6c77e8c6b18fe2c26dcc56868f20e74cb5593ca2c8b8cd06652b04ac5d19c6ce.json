@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'feat' e a descrição trata de uma nova funcionalidade (executar testes pytest dentro de blocos), e o trecho substitui `wrap_fn_for_pytest` por `build_stub_fn` com novos parâmetros, o que indica ampliação de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma limpeza com `marimo check --fix` (\"tidy\"), e o diff mostra apenas atualizações de versão em `__generated_with` e a remoção de um retorno redundante, sem mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

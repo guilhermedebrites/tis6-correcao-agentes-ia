@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'fix affiliate link' declara o propósito de corrigir o link de afiliados, trocando a URL antiga do agendamento (lemcal) pela nova (cal.com), o que indica correção de um link quebrado ou desatualizado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram um refactor que separa lógica e schemas de notificação, e o diff apenas troca chamadas `.broadcast()` por `broadcast_op(...)` mantendo os mesmos argumentos, sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

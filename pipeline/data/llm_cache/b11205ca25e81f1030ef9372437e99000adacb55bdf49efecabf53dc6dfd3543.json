@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O trecho mostrado só reformata a assinatura de get_vertex_ai_model_route para caber em outra linha, sem mudar comportamento; o título 'Fix token counting' descreve o PR como um todo, mas não se confirma nessas linhas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

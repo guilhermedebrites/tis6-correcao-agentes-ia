@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma feature (suporte a engines SQL), e o trecho altera só o tratamento de erro de importação, que parece ser uma extração para helper dentro dessa mudança maior, sem propósito de correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

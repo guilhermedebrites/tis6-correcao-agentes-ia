@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição dizem que o objetivo é evitar um erro quando a entrada contém apenas tool_calls, e o diff adiciona uma guarda `if filtered_messages:` para não chamar a API do Bedrock sem texto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix ('support static headers'), mas o trecho mostrado contém apenas quebras de linha e uma alteração de comentário, sem a lógica da correção visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

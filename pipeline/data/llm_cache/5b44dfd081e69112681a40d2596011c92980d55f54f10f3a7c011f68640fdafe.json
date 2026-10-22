@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'Fix Otel dual export' declara a correção de um defeito, e o diff passa a registrar o trace com o ID OTel correto e a usar o ID MLflow nos spans filhos, em vez de sempre gerar um novo ID de trace.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

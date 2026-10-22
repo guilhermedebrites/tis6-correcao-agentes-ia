@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas são apenas reformatação (quebras de linha, aspas, espaços em branco e anotações de tipo) sem mudança de comportamento; a correção declarada no título (suporte a notação de ponto) não aparece nesses trechos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

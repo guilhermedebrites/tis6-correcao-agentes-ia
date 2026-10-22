@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "Apesar do título 'fix(deps)', a mudança no trecho é apenas reformatação de código (novo estilo de formatação do ruff para o assert), sem alteração de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

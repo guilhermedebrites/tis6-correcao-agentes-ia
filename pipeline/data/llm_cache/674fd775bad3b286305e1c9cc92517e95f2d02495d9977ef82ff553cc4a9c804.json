@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram o propósito de exportar spans via API OTel /v1/traces e habilitar logging e busca por span, e o diff adiciona novo comportamento (_log_spans e tratamento de IntegrityError com merge) em vez de corrigir um defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "É um revert explícito de commit anterior (#16033), cujo propósito é desfazer a mudança de roteamento para endpoints PSC; trata-se de reversão, não de correção, evolução ou refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

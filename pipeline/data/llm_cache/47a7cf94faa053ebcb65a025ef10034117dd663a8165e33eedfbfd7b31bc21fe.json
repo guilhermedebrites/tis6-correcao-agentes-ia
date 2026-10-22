@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o diff renomeiam a variável CACHE_STORES para cache_stores sem alterar a lógica, o que é uma limpeza estrutural sem mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

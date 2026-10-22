@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'fix:' e as trocas de `getattr(p, slug)` por `getattr(p, slug) or 0` e de retorno `None` por `0` tratam valores nulos que quebrariam ou produziriam resultado incorreto na soma, caracterizando correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

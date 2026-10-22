@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "A descrição declara que a PR corrige a issue #6704, e o diff adiciona tratamento de NotImplementedException com fallback para o caso em que ducklakes não suportam SHOW ALL TABLES.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

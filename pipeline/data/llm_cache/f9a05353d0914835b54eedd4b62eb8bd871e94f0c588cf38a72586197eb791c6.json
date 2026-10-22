@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara o propósito de corrigir falsos positivos de pânico causados por um padrão regex amplo demais, e o diff remove exatamente essa linha.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

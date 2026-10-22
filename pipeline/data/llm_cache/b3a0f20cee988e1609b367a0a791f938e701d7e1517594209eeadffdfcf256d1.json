@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram adicionar uma nova seção 'Breaking changes' às notas de release, e o diff passa a direcionar PRs com o label 'breaking' para essa categoria, o que é uma mudança de comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

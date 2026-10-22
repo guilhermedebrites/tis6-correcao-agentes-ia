@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'fix accordion border radius' declara a intenção de corrigir um problema visual de border-radius, e o diff acrescenta !rounded-none para remover o arredondamento indevido do accordion da sidebar.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

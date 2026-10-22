@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de filtros de nulo e não nulo em mo.ui.dataframe e data-table, e o trecho do diff é apenas a renomeação do operador, parte dessa mudança de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

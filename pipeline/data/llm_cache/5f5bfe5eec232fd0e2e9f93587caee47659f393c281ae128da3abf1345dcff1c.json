@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a remoção do badge customizado, e o diff também troca show_build_with_reflex de False para True, o que altera o comportamento visível da página sem corrigir defeito nem apenas reestruturar o código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de executar o linter `clint` em blocos de código de arquivos markdown, o que adiciona suporte a `.md` e `.mdx` (novo comportamento desejado), apoiado pelos defaults de configuração e pelo novo iterador de blocos markdown.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

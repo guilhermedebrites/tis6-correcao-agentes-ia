@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o diff adicionam o campo `catalogs` e a função `load_catalogs`, o que cria uma nova funcionalidade de referenciar e incluir catálogos externos no catálogo de schemas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

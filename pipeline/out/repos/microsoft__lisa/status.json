@@ -1,0 +1,89 @@
+{
+  "repo": "microsoft/lisa",
+  "familia": "python",
+  "snapshot": "e0540ba8e224fdc7dcff7679af41f23f0f87d8ee",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-05-22T13:15:16+08:00",
+  "frac_sem_marcacao": 0.626,
+  "api_consultas": 0,
+  "fa_validas": 12,
+  "hl_validas": 142,
+  "incluido": true,
+  "atividade_linhas": {
+    "humano": 6651,
+    "agente_principal": 81
+  },
+  "n_eventos": 59,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 12
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "grande_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 10
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 142
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "acima_p99",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 7
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 15
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 9
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "so_formatacao",
+      "n": 2
+    }
+  ],
+  "fluxos": {
+    "direto": 3329,
+    "fora_periodo": 1627,
+    "pr_repetida": 550,
+    "HL": 177,
+    "FA": 25,
+    "agente_fora": 25,
+    "bot": 7,
+    "fa_mista": 2
+  }
+}

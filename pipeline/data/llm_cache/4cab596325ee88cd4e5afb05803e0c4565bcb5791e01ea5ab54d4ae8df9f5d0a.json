@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de impedir a atualização de país e estado do pedido, uma nova restrição de comportamento, mas o trecho mostrado contém apenas a importação de exceções, sem a lógica de validação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

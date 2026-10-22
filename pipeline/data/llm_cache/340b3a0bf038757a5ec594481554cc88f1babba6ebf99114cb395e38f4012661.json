@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem declaram migração de mock.patch de decoradores para context managers, e as linhas alteradas removem a regra/lista de exclusão e ajustam a assinatura de check, sem mudar comportamento funcional do sistema.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

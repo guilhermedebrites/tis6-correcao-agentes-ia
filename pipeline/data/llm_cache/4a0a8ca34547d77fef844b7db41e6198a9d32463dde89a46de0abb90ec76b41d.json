@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de adicionar novos snippets ao painel, e a linha alterada (anotação de tipo em `paths`) é apenas uma parte pequena dessa mudança maior, sem indicar defeito corrigido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

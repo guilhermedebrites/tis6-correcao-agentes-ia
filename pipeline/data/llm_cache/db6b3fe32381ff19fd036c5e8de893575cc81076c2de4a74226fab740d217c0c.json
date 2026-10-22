@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara refatoração e o diff é majoritariamente de tipagem (remoção de imports TYPE_CHECKING e troca de ContentType por Any), mas a mudança na exibição truncada do template altera um pouco o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

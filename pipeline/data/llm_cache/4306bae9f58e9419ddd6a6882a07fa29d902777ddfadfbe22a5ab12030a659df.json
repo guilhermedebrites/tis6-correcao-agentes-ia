@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma nova funcionalidade (controle de acesso a agentes por chave e time, com grupos de acesso), e o trecho mostrado apenas atualiza exemplos em docstrings para incluir os novos campos `agents` e `agent_access_groups`.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

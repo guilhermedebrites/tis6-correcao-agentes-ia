@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix no logger do publicador de ferramentas quando available_exports é encontrado, e o diff corrige a exibição que antes juntava dicts em vez dos nomes das ferramentas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas são apenas formatação (quebras de linha, vírgulas finais e aspas), sem mudança de comportamento, embora o título declare correção de bugs e o trecho esteja truncado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

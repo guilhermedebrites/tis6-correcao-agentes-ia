@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para extração de código quebrada com a tag live `<marimo-filename hidden>` que não casava, e o diff substitui a lógica frágil de split por regex, mantendo o mesmo resultado esperado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

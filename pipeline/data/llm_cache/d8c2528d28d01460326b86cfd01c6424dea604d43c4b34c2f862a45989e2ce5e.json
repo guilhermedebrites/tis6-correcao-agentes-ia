@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um fix para falha em métodos de classe decorados no pytest, e a mudança remove a exclusão de 'self' do filtro de argumentos, o que corrige o tratamento desses métodos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

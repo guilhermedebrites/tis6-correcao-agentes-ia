@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem declaram reorganização e renomeação (DeepInfraChat para DeepInfra), e a linha alterada apenas troca o nome de uma referência no mesmo provider list, sem mudar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

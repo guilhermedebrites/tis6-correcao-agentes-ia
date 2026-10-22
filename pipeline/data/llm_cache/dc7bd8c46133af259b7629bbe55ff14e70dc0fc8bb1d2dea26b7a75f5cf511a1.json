@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente a correção de return_url sendo a string 'None' quando nenhum valor é passado, e o diff troca str(return_url) por uma checagem que retorna None nesse caso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

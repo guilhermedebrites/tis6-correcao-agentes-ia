@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A PR declara propósito de documentação (atualizar docs markdown para f-strings) e as alterações do diff são apenas atualização da versão gerada no cabeçalho e remoção de um retorno em arquivo de tutorial, sem mudança de comportamento funcional declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

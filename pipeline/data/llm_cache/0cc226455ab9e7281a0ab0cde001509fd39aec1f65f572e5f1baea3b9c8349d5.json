@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix' para um painel de visualização de linhas que não mostrava todas as colunas por causa do limite (clamp) aplicado, e o diff remove esse corte e o substitui por um limite padrão maior.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

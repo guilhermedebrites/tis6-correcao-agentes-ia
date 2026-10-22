@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "Apesar do título 'chore', a descrição declara como propósito habilitar modelos mais recentes e suportar reasoning tokens, e o diff adiciona configuração de thinking e envio de partes de raciocínio, o que é nova funcionalidade além da troca de SDK.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

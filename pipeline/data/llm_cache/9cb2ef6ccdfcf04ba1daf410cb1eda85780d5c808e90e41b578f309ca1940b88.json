@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de suporte a modelo juiz customizado; o diff remove a restrição de Databricks e adiciona o campo `model` ao Safety, ampliando o comportamento disponível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

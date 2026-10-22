@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de remover borda e sombra de um botão na página de template, e o diff apenas acrescenta as classes shadow-none e border-none, alterando a aparência visual conforme o requisito de design.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

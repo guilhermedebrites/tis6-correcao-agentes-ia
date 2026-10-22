@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e o commit declaram uma migração do backfill de eventos de pedidos para um script, e o trecho mostra apenas remoção de imports, o que indica mudança estrutural sem alteração de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

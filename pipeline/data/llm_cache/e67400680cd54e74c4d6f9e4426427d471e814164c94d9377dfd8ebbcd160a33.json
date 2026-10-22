@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas atualiza um número de versão máxima em um arquivo de metadados gerado por script (update_ml_package_versions.py), sem alterar lógica de código, o que se encaixa em atualização de dependência/dados.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

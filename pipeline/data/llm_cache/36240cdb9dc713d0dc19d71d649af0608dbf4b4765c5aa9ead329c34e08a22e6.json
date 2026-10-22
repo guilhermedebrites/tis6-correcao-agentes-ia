@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança só altera o texto da mensagem de erro de formatação, removendo sugestões de comando pip, sem alterar lógica ou comportamento do código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

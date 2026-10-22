@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara explicitamente o propósito de corrigir uma falha do servidor MCP causada pelo click 8.3.0, e o diff adiciona a restrição 'click!=8.3.0' com comentário apontando para a issue do bug.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

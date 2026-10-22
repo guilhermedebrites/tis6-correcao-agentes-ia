@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "baixa", "justificativa": "O trecho só remove um import, o que seria refatoração isolada, mas o título e a descrição declaram uma feature (notificação por e-mail de rotação de chave), então o propósito declarado prevalece.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

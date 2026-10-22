@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a funcionalidade de gerar múltiplas células com IA, e o diff altera o prompt e o endpoint para suportar células múltiplas e streaming de mensagens completas, o que adiciona comportamento novo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

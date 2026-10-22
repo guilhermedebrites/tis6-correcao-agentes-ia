@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "As linhas mostradas só reformatam código (quebras de linha, parênteses e indentação) sem alterar comportamento, embora a PR como um todo declare uma funcionalidade de segurança em outros arquivos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

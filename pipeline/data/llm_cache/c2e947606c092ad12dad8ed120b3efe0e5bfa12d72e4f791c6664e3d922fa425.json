@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR habilita a regra UP007 do ruff e reescreve anotações Union[X, Y] para a sintaxe X | Y, sem alterar comportamento em tempo de execução, o que é limpeza/tipagem de código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

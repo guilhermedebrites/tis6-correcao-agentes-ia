@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição do suporte a `$workspace.<name>` para resolver IDs de workspace por nome, e o trecho alterado só ajusta a mensagem de erro dessa nova sintaxe.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

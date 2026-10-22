@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR remove um import de HTTPException que não é usado, o que é limpeza de código para satisfazer o ruff, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

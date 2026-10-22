@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix de quoting de strings no Windows, e o diff troca shlex.quote (inadequado para cmd no Windows) por uma função cmd_quote portada do mslex, corrigindo o comportamento incorreto de escape.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

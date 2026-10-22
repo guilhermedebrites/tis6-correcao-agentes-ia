@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um fix e a linha alterada troca o prefixo do id de reasoning de \"reasoning_\" para \"rs_\", o que corrige o formato do id gerado para a resposta de raciocínio.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,72 @@
+{
+  "repo": "airbytehq/airbyte",
+  "familia": "python",
+  "snapshot": "db79d7aa355fd30cdc07ec13b7cf6c8b4e6b4ede",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-01-24T15:09:46-08:00",
+  "frac_sem_marcacao": 0.001,
+  "api_consultas": 0,
+  "fa_validas": 3,
+  "hl_validas": 240,
+  "incluido": false,
+  "atividade_linhas": {},
+  "n_eventos": 0,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 3
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 80
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 240
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "acima_p99",
+      "n": 2
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 24
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 29
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 11852
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 43
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 26116,
+    "bot": 13623,
+    "HL": 12190,
+    "agente_fora": 1358,
+    "direto": 1275,
+    "FA": 84,
+    "fa_mista": 39,
+    "pr_repetida": 15,
+    "fa_provavel": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de atribuição de caso de uso no lado do cliente para telemetria do Databricks, e o diff propaga um novo parâmetro `use_case` e o envia quando a API o suporta.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

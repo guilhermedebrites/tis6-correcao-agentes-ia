@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram uma correção (\"Fix\") que exclui arquivos protobuf auto-gerados do filtro de diff Python, evitando que sejam tratados como código revisável; trata-se de um ajuste de comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

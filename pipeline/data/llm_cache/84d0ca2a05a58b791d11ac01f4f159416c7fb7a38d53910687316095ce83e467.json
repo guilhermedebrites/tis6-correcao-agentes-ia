@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança apenas quebra a assinatura da função em múltiplas linhas para formatação, sem alterar comportamento, e a descrição está vazia, então o propósito declarado não ajuda a distinguir de outra intenção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

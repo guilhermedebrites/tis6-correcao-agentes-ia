@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma reestruturação do serviço de webhook para usar repositórios, e o trecho só remove importações não utilizadas; a menção a 'Fix #8635' na descrição deixa a intenção um pouco ambígua.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

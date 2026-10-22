@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente a correção de um webhook `subscription.updated` que não disparava ao estender o trial, e o diff adiciona a chamada `_after_subscription_updated` que estava ausente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

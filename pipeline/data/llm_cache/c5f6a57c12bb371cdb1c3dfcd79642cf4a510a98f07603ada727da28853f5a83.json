@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "A PR declara corrigir o issue #5911: metadados PEP 723 com quebras de linha Windows (\\r\\n) não eram interpretados, e a normalização das quebras em Response.text() resolve esse resultado incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

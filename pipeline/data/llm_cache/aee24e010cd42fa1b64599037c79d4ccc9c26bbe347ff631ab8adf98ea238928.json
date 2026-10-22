@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O trecho altera apenas a sintaxe de um link em docstring (Markdown para RST), uma mudança de documentação; ela decorre da correção da regra MarkdownLink, mas nas linhas mostradas não há comportamento de código alterado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

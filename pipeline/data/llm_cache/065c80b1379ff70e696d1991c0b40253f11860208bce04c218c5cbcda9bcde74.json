@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título e a descrição declaram uma atualização de dependência (migração para Tailwind v4), e as linhas mostradas são em grande parte formatação e ajustes de classes CSS exigidos pela nova versão.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

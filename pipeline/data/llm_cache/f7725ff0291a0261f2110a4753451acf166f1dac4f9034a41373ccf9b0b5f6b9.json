@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix que impede a conversão agressiva de não-strings em markdown, e o trecho mostrado é apenas uma renomeação de const_string para _extract_const_string, parte de uma correção maior.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

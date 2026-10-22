@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram 'fix' para renomear colunas sem nome para string vazia de forma compatível com pd.MultiIndex, corrigindo o comportamento anterior que tratava apenas o primeiro índice e gerava nomes inadequados.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

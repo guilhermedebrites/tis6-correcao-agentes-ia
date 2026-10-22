@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram que a mudança permite que os metadados do script sobrescrevam a configuração no 'marimo edit', um novo comportamento desejado; o diff apenas passa o config_manager adicional, sem alterar o comportamento existente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

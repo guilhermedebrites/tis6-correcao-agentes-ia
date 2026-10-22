@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição tratam de adição de fingerprints e compatibilidade com Pydantic, mas o trecho alterado apenas reformata uma expressão condicional aninhada (envolvendo-a em parênteses) sem mudar o resultado, caracterizando limpeza de formatação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

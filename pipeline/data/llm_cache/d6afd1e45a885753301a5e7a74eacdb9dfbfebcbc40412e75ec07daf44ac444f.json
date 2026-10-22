@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix (extrair model_info do deployment para custom_tokenizer), mas o trecho mostrado contém apenas reformatações de estilo em proxy_server.py, sem a lógica da correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

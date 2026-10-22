@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram suporte novo à busca de traces por detalhes de span (atributos, tipo, status e conteúdo), o que adiciona comportamento de busca antes inexistente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

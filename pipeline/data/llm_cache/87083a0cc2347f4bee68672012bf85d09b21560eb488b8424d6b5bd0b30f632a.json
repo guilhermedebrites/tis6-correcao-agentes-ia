@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara um propósito de testes, mas o diff só altera anotações de tipo (importa Any e amplia a assinatura para aceitar NDArray), o que se enquadra em tipagem sem mudança de comportamento; a justificativa é curta porque a descrição está vazia.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

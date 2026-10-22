@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram suporte a preview customizado de request/response, e o diff adiciona a opção request_preview/response_preview em update_current_trace, além de só aplicar truncamento automático quando o usuário não definiu um valor.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

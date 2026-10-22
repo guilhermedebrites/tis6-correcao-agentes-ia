@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "As linhas mostradas só mudam a quebra de linha das atribuições entre parênteses (formatação do black), sem alterar o comportamento, embora o título fale em thought signatures.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

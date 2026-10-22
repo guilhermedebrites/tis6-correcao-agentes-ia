@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e o issue vinculado (#3764) declaram que o objetivo é corrigir o envio do notebookId via header, pois barras invertidas são removidas, e o diff aplica encodeURIComponent para resolver isso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

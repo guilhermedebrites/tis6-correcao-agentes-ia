@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram adicionar suporte a heatmaps reativos no Plotly, que é uma nova funcionalidade; o trecho mostrado é apenas uma reestruturação da condição de filtro dentro desse trabalho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

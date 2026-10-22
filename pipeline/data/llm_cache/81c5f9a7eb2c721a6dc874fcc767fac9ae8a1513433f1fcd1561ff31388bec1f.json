@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de APIs de cliente e store para vincular prompts a traces, e as linhas mostradas extraem a lógica do tag de prompts para um helper que suporta essa nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

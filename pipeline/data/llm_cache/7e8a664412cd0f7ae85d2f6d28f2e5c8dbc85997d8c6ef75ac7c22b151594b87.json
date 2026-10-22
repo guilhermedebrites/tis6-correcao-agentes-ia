@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara refatoração que abstrai a construção das meta tags e remove código duplicado, mas a remoção da meta tag keywords altera a saída, o que reduz a confiança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

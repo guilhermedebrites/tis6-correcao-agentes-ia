@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de adicionar suporte a trace inputs nos scorers built-in, e o diff atualiza a chamada para usar fields.outputs e importa uma nova função de structured output, o que indica ampliação de funcionalidade e não correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

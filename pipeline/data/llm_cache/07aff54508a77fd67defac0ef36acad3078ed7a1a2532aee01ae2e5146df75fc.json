@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e o commit declaram apenas a execução de um script auxiliar que atualiza versões de pacotes de ML, e as linhas alteradas são apenas atualizações de números de versão máxima em metadados de dependência, o que se encaixa em atualização de dependência.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

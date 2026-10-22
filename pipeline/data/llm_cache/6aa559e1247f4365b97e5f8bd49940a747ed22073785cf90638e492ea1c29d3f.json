@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma migração para o schema V3 de traces, que muda APIs usadas (TracingClient) e adiciona limites de truncamento por backend, indo além de uma simples reestruturação; a conversão de string para TraceState é um ajuste secundário.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

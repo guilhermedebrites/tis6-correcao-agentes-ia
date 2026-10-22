@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram refatoração para tornar SessionConsumer uma extensão de sessão, e o diff remove a criação de callbacks por sessão sem alterar o comportamento de tratamento de mudanças de arquivo, que é movido para outro lugar.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

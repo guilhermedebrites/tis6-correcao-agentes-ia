@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A PR declara o propósito de adicionar a classe HallucinationGuardrail e fazer os eventos de guardrail aceitarem essas instâncias, e o trecho altera a condição de isinstance para incluir o novo tipo, o que amplia comportamento existente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

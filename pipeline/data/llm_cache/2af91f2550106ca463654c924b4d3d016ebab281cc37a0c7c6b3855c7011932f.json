@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título e a descrição declaram uma mudança de documentação (novo guia MCP e correções de URL), e o trecho do diff só altera a navegação da barra lateral para exibir a seção, sem mudar comportamento de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

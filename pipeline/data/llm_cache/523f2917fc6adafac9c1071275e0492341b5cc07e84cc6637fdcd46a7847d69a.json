@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição falam em adicionar observabilidade, mas as linhas alteradas no diff só mudam formatação (quebra de linhas em imports e assinaturas, aspas simples para duplas, ajuste de espaços em branco), sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

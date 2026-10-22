@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara 'ui changes' sem descrição, e o diff reorganiza classes CSS e estrutura de layout (grid para flex, sidebars sticky) sem indicar correção de defeito nem nova funcionalidade, caracterizando ajustes de estrutura visual.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

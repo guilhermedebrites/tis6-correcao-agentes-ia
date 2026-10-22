@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título 'update pill' é vago e a descrição está vazia, mas o diff troca o card de preset 'Landing Page' por 'Live Dashboard' (novo texto, id e rótulo), o que indica alteração de conteúdo/opção oferecida ao usuário e não uma correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

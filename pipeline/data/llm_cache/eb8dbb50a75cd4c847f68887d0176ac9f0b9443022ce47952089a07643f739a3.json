@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um fix para erros de limite de tokens do embedder com CSVs grandes (#3574), e o diff divide upserts em lotes para evitar esse problema.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

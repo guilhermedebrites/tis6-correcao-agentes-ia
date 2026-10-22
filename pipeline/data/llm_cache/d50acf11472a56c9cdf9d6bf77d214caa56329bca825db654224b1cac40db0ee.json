@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte às configurações index-url, index e extra-index-url do uv, e o diff introduz a classe PyProjectReader com novas propriedades que leem essas chaves, o que é ampliação de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

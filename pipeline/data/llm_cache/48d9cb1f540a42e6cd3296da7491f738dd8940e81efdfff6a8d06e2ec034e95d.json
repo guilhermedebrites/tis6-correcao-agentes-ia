@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram uma feature de preservar o campo content, mas o trecho mostrado apenas troca um import multilinha por uma única linha, sem alteração de comportamento visível; o propósito declarado não aparece nas linhas exibidas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

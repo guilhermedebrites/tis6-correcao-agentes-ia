@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança apenas troca o caminho de importação de WSGIMiddleware de starlette para fastapi, sem alterar comportamento, e o título não indica correção de defeito nem nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

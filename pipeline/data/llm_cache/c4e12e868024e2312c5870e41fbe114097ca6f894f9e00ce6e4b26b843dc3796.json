@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O trecho altera apenas o texto de um print de log no exemplo, sem mudar comportamento, mesmo a PR sendo declarada como feat.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram que a PR adiciona a configuração de dados na UI, uma nova funcionalidade, e o diff apenas importa a constante CHEAP_DISCOVERY_DATABASES nos engines SQL, sinalizando a preparação de um novo comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

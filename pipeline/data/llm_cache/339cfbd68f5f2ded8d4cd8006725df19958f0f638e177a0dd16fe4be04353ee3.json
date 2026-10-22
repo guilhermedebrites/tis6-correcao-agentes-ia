@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a implementação da instrumentação do Google ADK para o AgentOps, o que adiciona comportamento novo; os trechos do diff alteram a lógica de detecção de imports para suportar essa funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

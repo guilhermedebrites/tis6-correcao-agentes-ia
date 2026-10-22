@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "A descrição trata o bloqueio de outros endpoints durante a instalação como um problema e o corrige tornando as chamadas não bloqueantes, embora o título use 'improvement' e o diff mostre principalmente mudanças estruturais de async/await.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

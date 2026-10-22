@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título declara uma melhoria do row viewer e documentação, mas o trecho mostrado só altera um link de documentação em um comentário/docstring (de `../state` para `state.md`), o que se encaixa em mudança apenas de documentação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

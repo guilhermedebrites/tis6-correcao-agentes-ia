@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram adicionar suporte a computer use, o que é uma nova funcionalidade; o trecho mostrado (if para elif) é pequeno e não confirma sozinho esse propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

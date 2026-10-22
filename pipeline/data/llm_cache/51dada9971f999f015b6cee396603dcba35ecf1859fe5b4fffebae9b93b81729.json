@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas renomeiam a função auxiliar de prefixo e extraem a lógica de cabeçalhos para `_prepare_mcp_server_headers`, sem alterar o comportamento, embora o título declare uma feature.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

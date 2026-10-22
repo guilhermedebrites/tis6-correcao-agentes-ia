@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'fix socials inner borders' indica correção de um problema visual (bordas internas indevidas) nos ícones sociais do rodapé, e o diff adiciona classes CSS para remover bordas laterais e de topo/base nesse item.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

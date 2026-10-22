@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram a correção de um problema de layout (o link 'Open Source' transbordando sobre o logo REFLEX em tamanhos intermediários de tela), e as alterações de breakpoint lg→xl e o whitespace-nowrap visam esse defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

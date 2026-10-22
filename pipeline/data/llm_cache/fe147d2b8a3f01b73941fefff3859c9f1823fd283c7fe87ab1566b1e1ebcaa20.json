@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram o propósito de adicionar suporte ao otimizador GEPA em mlflow.genai.optimize_prompt, e a linha alterada na documentação passa a anunciar esse novo suporte built-in além do MIPROv2, o que é adição de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

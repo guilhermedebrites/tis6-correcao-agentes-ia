@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara uma correção (\"fix: ai edit cell when there is existing text\") e a linha alterada passa o status como str(status) para a serialização, o que sugere correção de um erro de tipo na mensagem, embora a descrição não detalhe a causa.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

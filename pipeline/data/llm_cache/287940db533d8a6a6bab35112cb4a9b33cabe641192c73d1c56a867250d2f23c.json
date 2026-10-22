@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de dar suporte a repositórios privados de ferramentas, e a mudança passa a importar o módulo indicado pelo próprio tool em vez de sempre usar crewai_tools, o que altera o comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

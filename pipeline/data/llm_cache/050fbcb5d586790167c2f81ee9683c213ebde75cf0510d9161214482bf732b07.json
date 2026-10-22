@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'patch mobile navigation' indica correção de um problema de layout, e a mudança adiciona uma margem condicional (mt-[90px]) quando o banner aparece, provavelmente para evitar sobreposição com a navegação mobile.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

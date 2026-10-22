@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de permitir atualizar assentos em assinaturas baseadas em assentos, e o diff remove a exceção que bloqueava assinaturas em trial e pula a proration durante o trial, o que muda o comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

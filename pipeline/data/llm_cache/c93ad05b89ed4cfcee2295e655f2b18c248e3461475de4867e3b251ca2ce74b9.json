@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas só reformatam código (quebra de linhas, aspas e parênteses) sem alterar comportamento, embora o título declare 'fix' para a PR como um todo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

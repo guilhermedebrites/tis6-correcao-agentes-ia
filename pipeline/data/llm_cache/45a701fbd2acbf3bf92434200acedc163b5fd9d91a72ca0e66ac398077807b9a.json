@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título, a descrição e os commits declaram correção de erros de lint, e o diff só remove imports não utilizados, ajusta espaçamento, vírgulas finais e quebras de linha, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

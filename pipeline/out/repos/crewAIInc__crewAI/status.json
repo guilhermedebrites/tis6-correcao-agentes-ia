@@ -1,0 +1,90 @@
+{
+  "repo": "crewAIInc/crewAI",
+  "familia": "python",
+  "snapshot": "a8877f0cdfbca4fc4b95e3ce54aaa69aafca7688",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2024-12-27T18:16:02-03:00",
+  "frac_sem_marcacao": 0.282,
+  "api_consultas": 0,
+  "fa_validas": 23,
+  "hl_validas": 234,
+  "incluido": true,
+  "atividade_linhas": {
+    "humano": 25619,
+    "agente_principal": 337,
+    "outro_agente": 5
+  },
+  "n_eventos": 185,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 23
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "grande_demais",
+      "n": 2
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 6
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 234
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "acima_p99",
+      "n": 2
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 21
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 55
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 204
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 9
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "so_formatacao",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 1242,
+    "direto": 1010,
+    "HL": 526,
+    "FA": 33,
+    "fa_mista": 7,
+    "bot": 7,
+    "agente_fora": 3,
+    "fa_provavel": 1
+  }
+}

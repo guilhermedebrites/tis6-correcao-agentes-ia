@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram primeiro a refatoração da API de Store (simplificação, mover save_path para FileStore, remover singletons), mas também anunciam a adição do RESTStore, que é evolução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

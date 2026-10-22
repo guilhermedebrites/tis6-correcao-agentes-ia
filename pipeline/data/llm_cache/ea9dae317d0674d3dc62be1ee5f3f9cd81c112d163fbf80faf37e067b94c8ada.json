@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título 'sign in button' não corresponde às linhas alteradas, que trocam o texto do call-to-action de 'Get Early Access' para 'Get Access' e removem os badges '1 Month Free Trial' das páginas de preços, o que indica mudança de requisito de produto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

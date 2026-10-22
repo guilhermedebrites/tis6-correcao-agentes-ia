@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um 'fix' de exibição de runs do DSPy, mas o trecho mostra apenas a inclusão de um import (log_dummy_model_outputs) sem o corpo da correção e sem descrição na PR.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

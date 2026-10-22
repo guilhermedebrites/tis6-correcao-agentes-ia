@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram um revert do commit 7e56600, que desfaz a correção anterior de model_group e da localização de metadata, e o diff é coerente com isso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

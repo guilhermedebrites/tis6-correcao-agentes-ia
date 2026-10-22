@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix' e 'Fixes #4964', indicando correção de um defeito de tipagem: o parâmetro passa a aceitar alt.LayerChart, que antes não era reconhecido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

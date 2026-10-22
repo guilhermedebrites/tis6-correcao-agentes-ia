@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem declaram a adição de testes de rescind do netvsc, e o diff apenas renomeia 'rescind' para 'hotplug', troca strings literais por constante Pmd e adiciona tipagem aos parâmetros, sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

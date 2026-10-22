@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título indica a remoção de um padrão de detecção de panic, o que provavelmente elimina falsos positivos de linhas com 'watchdog', mas a descrição vazia não declara a motivação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

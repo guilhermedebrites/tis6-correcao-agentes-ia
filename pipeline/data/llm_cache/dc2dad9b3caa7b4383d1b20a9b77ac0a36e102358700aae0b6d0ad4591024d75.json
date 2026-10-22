@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma feature (aprovar/rejeitar recursos pendentes na revisão da organização), e o trecho remove a condição que checava o status DENIED, o que altera o comportamento desejado; o diff isolado não mostra o contexto completo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

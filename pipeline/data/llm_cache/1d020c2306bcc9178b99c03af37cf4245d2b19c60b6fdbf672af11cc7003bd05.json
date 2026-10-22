@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "baixa", "justificativa": "O título e a descrição declaram um fix de crash no json viewer e nos gráficos em dark mode, mas o trecho mostrado só altera arquivos de smoke test (versões de __generated_with e retorno de células), sem o código corrigido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

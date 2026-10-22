@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e o commit indicam apenas a execução de um script de atualização automática das versões máximas de pacotes ML, o que caracteriza atualização de dependência/metadados e não correção de defeito, evolução ou refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

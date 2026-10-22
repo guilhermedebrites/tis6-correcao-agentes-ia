@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "As linhas mostradas só trocam logger.info por logger.debug, uma mudança de nível de log; a funcionalidade de verificação de plano premium citada no título não aparece no trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

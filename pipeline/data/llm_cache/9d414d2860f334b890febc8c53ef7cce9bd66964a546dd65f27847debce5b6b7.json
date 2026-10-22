@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram correção de um regex que não extraía a versão de RPMs aarch64 e de um regex de menuentry permissivo demais que casava várias entradas, incluindo a de recovery mode.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

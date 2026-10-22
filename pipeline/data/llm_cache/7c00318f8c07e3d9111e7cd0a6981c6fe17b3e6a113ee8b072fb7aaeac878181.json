@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e o commit declaram explicitamente um revert de uma mudança anterior (tratamento de multi-moedas no checkout), que é classificado como 'outro' pelas regras.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

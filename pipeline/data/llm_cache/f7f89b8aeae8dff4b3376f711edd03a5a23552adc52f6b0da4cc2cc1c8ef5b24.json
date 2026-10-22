@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram suporte a Python 3.10+ e remoção de imports redundantes de Self; no trecho, Self é substituído pela string de tipo \"ExternalMemory\"/\"Memory\", sem mudança de comportamento em tempo de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

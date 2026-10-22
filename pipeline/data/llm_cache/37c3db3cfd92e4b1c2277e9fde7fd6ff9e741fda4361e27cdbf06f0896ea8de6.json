@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "baixa", "justificativa": "O título 'patch templates' é vago e a descrição está vazia; a troca de 'gallery_apps_data' por 'gallery_apps_data_open_source' sugere correção de dados usados na cópia dos templates, mas sem mais contexto a intenção não é clara.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

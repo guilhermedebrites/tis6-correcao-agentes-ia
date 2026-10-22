@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara explicitamente a correção de uma anotação de tipo incorreta (Prompt em vez de PromptVersion), o que corresponde à categoria de erro de tipo dentro de corrige_defeito, apesar de o diff também incluir tipagem e ajustes de docstring.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas só colapsam imports multilinha em uma única linha, sem alterar comportamento; a correção declarada no título (decriptação da lista de modelos) não aparece neste trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

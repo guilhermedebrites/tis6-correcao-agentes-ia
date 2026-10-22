@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR remove a supressão redundante '# noqa: D417' dos comentários das funções, mantendo apenas a diretiva do clint, sem alterar comportamento; é limpeza de configuração de lint.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

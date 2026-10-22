@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O trecho apenas extrai o bloco try/except de envio de spans para um método privado `_log_spans`, sem alterar o comportamento de tratamento de erro; o título sugere evolução (suporte a batch), mas as linhas mostradas são puramente estruturais.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

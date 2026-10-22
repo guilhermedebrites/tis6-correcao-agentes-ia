@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma nova funcionalidade (configurar auto download globalmente via marimo.toml), e o diff apenas ajusta tipos e passa um novo parâmetro para habilitar esse comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

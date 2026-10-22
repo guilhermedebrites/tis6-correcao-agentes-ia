@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente que se trata de um revert do commit cc63cf28, portanto a mudança desfaz a alteração anterior de tratamento de reasoning items e se enquadra em 'revert'.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara 'feat: add dynamic OAuth2 metadata discovery', indicando nova funcionalidade; o trecho mostra apenas adição de imports (re, Tuple, urlparse), que dá suporte a essa descoberta, sem corrigir comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

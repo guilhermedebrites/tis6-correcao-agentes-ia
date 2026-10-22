@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente a adição de suporte a configuração remota via HTTP(S), e o diff altera o fluxo de carregamento para aceitar URLs e repassar proxy/SSL, o que é nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

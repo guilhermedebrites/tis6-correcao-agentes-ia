@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O trecho mostra apenas a remoção de _create_opik_payload de opik.py, que está sendo movido para um namespace separado; a correção de bug citada no título não aparece nessas linhas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

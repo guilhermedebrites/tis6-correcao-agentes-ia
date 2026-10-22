@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara 'feat: add clickhouse connect & chdb', e o trecho mostra principalmente movimentação de código para outro módulo, que é refatoração, mas a finalidade declarada é adicionar suporte ao ClickHouse.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

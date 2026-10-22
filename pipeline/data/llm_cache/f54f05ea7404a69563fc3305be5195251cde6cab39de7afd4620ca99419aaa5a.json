@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição tratam de analytics e de correções de lint/segurança, mas a linha alterada apenas troca um método de instância por classmethod (@classmethod com cls), mudança estrutural que não altera o comportamento visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

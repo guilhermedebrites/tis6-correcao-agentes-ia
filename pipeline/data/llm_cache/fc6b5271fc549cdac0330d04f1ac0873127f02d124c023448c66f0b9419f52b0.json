@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram um fix (#7322) que reaproveita a correção de fundo do vegafusion, e as linhas mostradas removem o bloco de workaround do #6601, provavelmente para realocá-lo em outro ponto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

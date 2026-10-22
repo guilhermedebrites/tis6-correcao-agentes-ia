@@ -1,0 +1,63 @@
+{
+  "repo": "microsoft/fabric-cicd",
+  "familia": "python",
+  "snapshot": "5ca096c00a9a878c646c59fe537b883eba951329",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-06-12T07:03:51-07:00",
+  "frac_sem_marcacao": 0.0,
+  "api_consultas": 0,
+  "fa_validas": 7,
+  "hl_validas": 30,
+  "incluido": true,
+  "atividade_linhas": {
+    "humano": 646,
+    "agente_principal": 194
+  },
+  "n_eventos": 23,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 7
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 2
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 5
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 30
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 14
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 19
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 269,
+    "HL": 64,
+    "agente_fora": 25,
+    "bot": 15,
+    "FA": 14,
+    "fa_mista": 7,
+    "direto": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'feat' e a descrição diz que a mudança captura informações de log e as formata como erro de lint, o que adiciona comportamento novo, apesar de haver refatoração no meio.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

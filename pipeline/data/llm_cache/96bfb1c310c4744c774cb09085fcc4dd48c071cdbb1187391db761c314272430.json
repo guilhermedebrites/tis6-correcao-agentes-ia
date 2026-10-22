@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram tratar-se de um revert do commit eef8643 (\"fix: fix ruff errors\"), e o diff apenas desfaz ajustes de formatação/lint, sem alterar comportamento funcional.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

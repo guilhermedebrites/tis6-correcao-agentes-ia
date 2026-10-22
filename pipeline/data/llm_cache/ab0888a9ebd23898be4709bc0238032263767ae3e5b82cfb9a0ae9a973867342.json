@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O diff altera apenas a string de versão em const.py (beta5 para beta6), e o título e os commits tratam de ajustes de UI, mas a mudança mostrada é uma atualização de metadado de versão, que não corrige nem adiciona comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

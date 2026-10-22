@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O diff apenas incrementa a versão de __version__ de 0.1.12 para 0.1.13, sem alterar comportamento; a PR de suporte a provedores de modelo não se refere a essa linha, que é mudança de metadados de release.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

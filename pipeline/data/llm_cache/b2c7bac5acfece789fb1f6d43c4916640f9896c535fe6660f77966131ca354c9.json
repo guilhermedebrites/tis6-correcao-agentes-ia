@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para resumabilidade de listeners em fluxos HITL e cíclicos, e o diff altera a lógica para distinguir retomada HITL de execução cíclica, evitando que métodos completados impeçam re-execução em fluxos cíclicos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

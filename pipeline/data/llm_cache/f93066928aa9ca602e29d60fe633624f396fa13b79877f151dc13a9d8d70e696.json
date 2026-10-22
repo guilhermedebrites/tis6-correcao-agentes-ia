@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram um revert do commit 89e7b53, então a mudança desfaz uma reorganização de diretórios e não corrige defeito, adiciona funcionalidade nem reestrutura código com intenção de manter o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

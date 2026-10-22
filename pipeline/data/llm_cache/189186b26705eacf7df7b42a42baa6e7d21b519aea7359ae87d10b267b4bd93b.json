@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram um refactor que migra e centraliza implementações de ferramentas (ToolBase, types.py) sem alterar comportamento, e o diff mostra a remoção de código de `cells.py` que é movido para outro módulo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

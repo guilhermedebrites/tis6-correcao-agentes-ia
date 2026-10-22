@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança remove da lista de exclusão da regra de lint o arquivo que foi migrado de decorator para context manager, sem alterar o comportamento dos testes.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

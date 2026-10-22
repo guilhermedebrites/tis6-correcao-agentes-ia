@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de intervalos de cobrança flexíveis (recurring_interval_count) e a liberação de intervalos diário e semanal, e o diff remove restrições de acesso e adiciona novos campos de API, o que altera comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

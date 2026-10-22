@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas apenas removem imports não utilizados (get_async_httpx_client e LlmProviders), o que é limpeza de código sem mudança de comportamento, embora o título declare uma feature de streaming.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

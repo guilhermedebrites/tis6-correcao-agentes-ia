@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição tratam de mover as imagens de integração para um submódulo de docs, e o diff apenas troca caminhos locais por uma constante de URL e uma variável renomeada, sem alterar o resultado funcional esperado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

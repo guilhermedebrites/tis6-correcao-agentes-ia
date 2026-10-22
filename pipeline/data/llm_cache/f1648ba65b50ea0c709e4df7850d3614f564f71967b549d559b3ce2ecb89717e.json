@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um FIX: o marimo não renderizava GridPlot por não ser subclasse de Plot, e a mudança amplia o tipo aceito pelo formatador para Model e Document, corrigindo esse caso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

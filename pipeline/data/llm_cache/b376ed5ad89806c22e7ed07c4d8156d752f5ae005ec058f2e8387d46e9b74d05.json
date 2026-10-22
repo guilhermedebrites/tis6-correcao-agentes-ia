@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix' e o commit comenta a verificação de retomada de listeners, possivelmente para contornar um bug, mas a descrição está vazia e o TODO sugere uma correção provisória.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

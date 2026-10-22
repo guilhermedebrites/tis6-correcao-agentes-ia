@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "Sem descrição, o título indica apenas autologging do Code SDK; o diff troca o hook de saída inline por uma função que retorna um dicionário e depois imprime, reestruturando o código sem mudar o comportamento visível esperado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

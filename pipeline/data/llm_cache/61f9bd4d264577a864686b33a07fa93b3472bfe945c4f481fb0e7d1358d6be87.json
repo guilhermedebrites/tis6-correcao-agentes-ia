@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "As linhas alteradas são exemplos de uso (com comentários explicativos) que aparecem na documentação, e a mudança apenas passa o índice como argumento nomeado (index=0), sem alterar o comportamento do código em execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

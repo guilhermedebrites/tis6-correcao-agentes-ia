@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'Fix regression' e o diff envolve a chamada de download em try/except com log de falha, tratando um erro que antes propagava, o que caracteriza correção de comportamento defeituoso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

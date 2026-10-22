@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "baixa", "justificativa": "O título e a descrição declaram um fix (restaurar o logo do BigQuery), mas o trecho mostrado só adiciona o import de RequestId, que é tipagem e não corrige o defeito diretamente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

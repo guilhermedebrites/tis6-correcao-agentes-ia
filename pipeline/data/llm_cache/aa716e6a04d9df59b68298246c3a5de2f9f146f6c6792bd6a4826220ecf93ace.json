@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR apenas renomeia a função query_job para get_job (e suas referências), sem alterar o comportamento, conforme declarado no título e na mensagem de commit.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

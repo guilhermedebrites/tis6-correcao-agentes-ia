@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de dar suporte a function calling no provider, e o diff adiciona tratamento de functionCall (streaming e não streaming) que antes não existia, ampliando o comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

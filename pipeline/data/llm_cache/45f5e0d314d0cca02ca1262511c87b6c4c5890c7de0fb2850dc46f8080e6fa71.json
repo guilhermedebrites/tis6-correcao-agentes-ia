@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de recolocar o evento de importação do MLflow, e o diff adiciona o evento e um novo parâmetro `send_immediately` em `add_record`, o que amplia o comportamento de telemetria, embora pareça restauração de algo removido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram suporte a criação de guardrails sem código e novas funcionalidades, e o trecho mostrado é apenas uma reformatação de chamada de evento que não altera comportamento, portanto o propósito declarado é evolução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

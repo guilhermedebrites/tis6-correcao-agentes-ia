@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram explicitamente a correção do Fixes #345, em que IDs de workspace não eram substituídos em arquivos JSON de pipelines, e a alteração do regex é o ajuste que resolve esse comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

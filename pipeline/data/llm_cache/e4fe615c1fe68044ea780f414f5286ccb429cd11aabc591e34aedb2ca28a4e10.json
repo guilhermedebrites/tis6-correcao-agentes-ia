@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix' de tool calls e a mudança troca 'if tool_calls' por 'if tool_calls and span is not None', adicionando uma guarda que evita uso de span nulo, o que corrige um defeito de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

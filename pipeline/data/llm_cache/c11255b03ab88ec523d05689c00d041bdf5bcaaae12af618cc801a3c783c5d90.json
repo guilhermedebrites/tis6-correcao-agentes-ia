@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma nova funcionalidade (prompt errors_summary e opção include_stderr), mas as linhas do diff são majoritariamente refatoração de estrutura de dados e de extração de saídas do console.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

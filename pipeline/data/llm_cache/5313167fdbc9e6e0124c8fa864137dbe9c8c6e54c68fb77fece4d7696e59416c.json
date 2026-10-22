@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um propósito de segurança (\"security: statically load...\"), que se enquadra em falha de segurança, mas o diff também muda comportamento de carregamento e propagação de erros, o que se aproxima de evolução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

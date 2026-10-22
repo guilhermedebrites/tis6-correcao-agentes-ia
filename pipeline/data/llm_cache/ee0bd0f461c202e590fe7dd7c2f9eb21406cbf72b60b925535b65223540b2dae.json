@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma nova funcionalidade (engine Redshift) e o diff mistura remoção do registro de engines com a troca do tratamento de erro para polars, o que é menos claro sem o restante da PR.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

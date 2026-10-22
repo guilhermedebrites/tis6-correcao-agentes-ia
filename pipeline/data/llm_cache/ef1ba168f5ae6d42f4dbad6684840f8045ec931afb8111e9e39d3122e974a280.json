@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título é genérico, mas o diff adiciona a maioria dos campos das caixas do W-2 (7 a 20 e 12a–12d), substitui tax_year por form_year e relaxa validações de state/zip, o que amplia o comportamento do schema, não só sua estrutura.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

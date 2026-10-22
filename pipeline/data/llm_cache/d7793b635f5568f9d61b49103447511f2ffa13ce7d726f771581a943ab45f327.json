@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara explicitamente a intenção de permitir checkout de seats em pedidos únicos (feature nova), e o diff apenas importa `is_seat_price`, que sustenta essa nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

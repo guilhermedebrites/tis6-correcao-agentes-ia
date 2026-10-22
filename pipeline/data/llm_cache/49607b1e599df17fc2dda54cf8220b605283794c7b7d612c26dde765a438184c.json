@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O commit declara 'fix: mcp test' e o diff muda a lógica de nomeação de ferramentas MCP com prefixo, sugerindo correção de comportamento, mas a mensagem é vaga e a descrição está vazia.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

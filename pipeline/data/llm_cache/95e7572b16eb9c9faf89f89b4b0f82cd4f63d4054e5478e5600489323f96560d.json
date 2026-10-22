@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram reorganização de imports e movimentação de módulo (web_backoffice para backoffice), e as linhas alteradas só reescrevem caminhos de importação e removem um import local, sem mudar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

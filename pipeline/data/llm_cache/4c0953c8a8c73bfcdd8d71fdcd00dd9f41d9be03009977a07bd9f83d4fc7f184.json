@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um fix que corrige erros 404 em context caching quando a localização é 'global', alinhando o endpoint ao comportamento já correto das chamadas de completion regulares.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

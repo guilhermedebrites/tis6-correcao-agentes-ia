@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A descrição declara otimização de desempenho que mantém exatamente o mesmo comportamento, trocando copy()+append() por concatenação de listas, o que é uma mudança estrutural sem alteração funcional, apesar do prefixo 'feat' no título.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

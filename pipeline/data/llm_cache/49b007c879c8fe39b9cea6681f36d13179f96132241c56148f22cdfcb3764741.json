@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix que corrige health checks do Bedrock que removiam prefixos de inference profile (us., eu., etc.), causando erros da AWS, e o diff altera a lógica de remoção de regiões para preservar esses IDs.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

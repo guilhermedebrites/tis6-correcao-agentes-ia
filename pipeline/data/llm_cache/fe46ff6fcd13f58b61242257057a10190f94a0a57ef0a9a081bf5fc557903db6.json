@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de adicionar KnowledgeConfig e novos parâmetros de recuperação (results_limit, score_threshold), e o trecho mostra essas opções sendo repassadas, embora a maior parte do diff seja apenas quebra de linhas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente uma migração de UIElementId para NewType (tipagem e remoção de casts), sem alteração de comportamento, o que se encaixa em refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

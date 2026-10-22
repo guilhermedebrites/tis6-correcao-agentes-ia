@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança apenas remove a vírgula final de um argumento de string, sem alterar o valor nem o comportamento, o que é limpeza de formatação, conforme declarado no título e na descrição.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

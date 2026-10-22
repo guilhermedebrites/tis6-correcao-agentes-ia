@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e os commits declaram refatoração preparatória (\"refactor Refund service to prepare for Disputes API\"), e as linhas alteradas movem e reorganizam métodos do serviço de reembolso sem adicionar comportamento novo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

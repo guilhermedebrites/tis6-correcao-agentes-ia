@@ -1,0 +1,70 @@
+{
+  "repo": "AgentOps-AI/agentops",
+  "familia": "python",
+  "snapshot": "f8e907b92dabe47232978023fdcb01e2a7d4b752",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-05-10T13:33:17-07:00",
+  "frac_sem_marcacao": 0.012,
+  "api_consultas": 0,
+  "fa_validas": 7,
+  "hl_validas": 36,
+  "incluido": true,
+  "atividade_linhas": {
+    "humano": 8814,
+    "outro_agente": 151,
+    "agente_principal": 35
+  },
+  "n_eventos": 25,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 7
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 8
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 36
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 19
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 2
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 43
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 2
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "so_formatacao",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 443,
+    "direto": 131,
+    "HL": 103,
+    "fa_provavel": 16,
+    "bot": 15,
+    "FA": 15,
+    "agente_fora": 5,
+    "fa_mista": 3
+  }
+}

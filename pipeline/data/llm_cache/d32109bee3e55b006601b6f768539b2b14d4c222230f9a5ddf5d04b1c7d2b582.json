@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'Fix Mem0 OSS' e a descrição indicam correção de comportamento; o diff passa a definir 'output_format' apenas quando o storage usa MemoryClient, evitando passar o parâmetro para a versão OSS, que não o suporta.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

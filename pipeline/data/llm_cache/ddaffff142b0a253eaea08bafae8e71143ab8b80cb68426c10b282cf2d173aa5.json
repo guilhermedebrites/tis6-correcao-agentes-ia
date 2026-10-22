@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix tools conversion' e o diff passa a tratar ToolInvocationPart e a separar as mensagens de tool call e tool result, corrigindo a conversão de ferramentas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "O título e a mensagem ('test: fix raise') são vagos e sem descrição, e o diff apenas remove um bloco 'except HTTPException: raise e' que, isolado, parece um re-raise redundante, mas a remoção pode alterar o fluxo caso haja um 'except' genérico posterior.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

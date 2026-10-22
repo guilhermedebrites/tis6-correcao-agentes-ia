@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'Fix endpoints error in judge' declara o propósito de corrigir um erro, e o diff troca o argumento `model_provider=model_provider` por `model_provider=provider`, indicando correção de uma referência incorreta ao valor passado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

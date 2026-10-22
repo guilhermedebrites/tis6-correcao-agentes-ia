@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram que o objetivo é adicionar o atributo source aos eventos de guardrail, o que é uma evolução; o trecho mostrado só remove _process_guardrail e troca Optional por união, sem exibir a adição do source.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

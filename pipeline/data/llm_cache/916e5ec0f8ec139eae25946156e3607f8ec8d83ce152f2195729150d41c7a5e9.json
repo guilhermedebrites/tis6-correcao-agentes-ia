@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de editar a ferramenta de notebook e adicionar suporte a deletes e edições, e a linha alterada passa a permitir o modo 'agent' além de 'ask', o que amplia o comportamento desejado da ferramenta.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

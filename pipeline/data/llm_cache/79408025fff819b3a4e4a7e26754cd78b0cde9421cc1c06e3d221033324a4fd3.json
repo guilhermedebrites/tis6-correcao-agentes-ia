@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente a correção do nome da feature flag que habilita as tools, e o diff troca a flag \"mcp_tools\" por \"mcp_docs\", indicando que a referência anterior estava errada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

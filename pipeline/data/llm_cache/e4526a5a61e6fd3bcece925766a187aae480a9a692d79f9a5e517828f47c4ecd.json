@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a mensagem do commit declaram a intenção de adicionar atributos de telemetria ao recurso OpenTelemetry, e o diff substitui um Resource vazio por um com atributos telemetry.sdk.*, o que é uma adição de comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

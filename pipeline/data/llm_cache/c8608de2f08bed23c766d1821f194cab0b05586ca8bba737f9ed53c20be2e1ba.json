@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix' e a descrição menciona correção de efeitos colaterais que afetam o uso de cache e exceções, então a troca de get_context().globals por ctx.globals é uma correção de defeito, embora o diff isolado não deixe o bug explícito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

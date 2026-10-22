@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de LinkedIn ao formulário, e o diff troca a validação de telefone por uma validação de URL do LinkedIn, além de alterar campos e opções do formulário.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

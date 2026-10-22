@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma mudança de comportamento: o script passa a gravar pyproject.toml e README_SKINNY.md somente quando há alterações, em vez de sempre sobrescrevê-los.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

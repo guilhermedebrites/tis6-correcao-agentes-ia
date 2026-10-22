@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A PR promove o data editor para fora do status experimental (renomeando mo.ui.experimental_data_editor para mo.ui.data_editor), o que é uma mudança de API/estado de release desejada, não uma correção de defeito nem apenas refatoração interna.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

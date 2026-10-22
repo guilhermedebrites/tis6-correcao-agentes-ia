@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título e as mensagens declaram apenas um bump de versão (beta0 para final), e a troca de `not x` por `x is None` altera o comportamento para valores vazios, sem propósito declarado que a explique.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

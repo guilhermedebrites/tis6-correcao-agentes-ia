@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram 'fix' substituindo argumentos padrão mutáveis por None, o que corrige o bug clássico de estado compartilhado entre chamadas (o dict default `{}` é reutilizado).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

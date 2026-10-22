@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de um novo tipo de store (tiered), com nova configuração de lista de stores e novo tipo StoreKey, o que altera o comportamento desejado da API de cache.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

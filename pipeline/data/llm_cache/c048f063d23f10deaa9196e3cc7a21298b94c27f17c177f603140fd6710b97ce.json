@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram migrar decoradores mock.patch para context managers, e o trecho remove apenas entradas de uma lista de exceções do linter, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

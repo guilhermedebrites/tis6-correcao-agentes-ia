@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "A descrição declara a adição de total_tokens ao CrewKickoffCompletedEvent para rastreamento de uso de tokens, o que é uma nova funcionalidade; a maioria dos hunks, porém, são apenas quebras de linha de formatação (refatoração).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

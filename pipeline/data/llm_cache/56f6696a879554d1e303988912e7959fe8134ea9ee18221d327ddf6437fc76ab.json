@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de suporte a profile usage nas operações da API de datasets do Databricks Agents, e o trecho mostra só a nova importação de get_db_info_from_uri, que sinaliza essa funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de sempre retornar a fonte gerenciada, e o diff remove o ramo que devolvia a fonte original quando ela era DatasetSource, o que altera o comportamento esperado sem indicar que seja correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

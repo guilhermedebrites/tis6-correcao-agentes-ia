@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "A mudança adiciona uma guarda isinstance(header, str) antes de 'header in raw_headers', o que previne erro em headers não-string, indicando correção de um caso de borda, embora o título declare evolução (suporte a headers para MCP).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

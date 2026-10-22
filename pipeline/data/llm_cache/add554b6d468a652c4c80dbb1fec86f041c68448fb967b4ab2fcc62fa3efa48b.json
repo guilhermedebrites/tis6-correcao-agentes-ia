@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram um aprimoramento da instrumentação AG2 (novos wrappers para operações assíncronas), e a linha alterada passa a incluir autogen na condição de instrumentação, o que adiciona comportamento, não corrige um defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

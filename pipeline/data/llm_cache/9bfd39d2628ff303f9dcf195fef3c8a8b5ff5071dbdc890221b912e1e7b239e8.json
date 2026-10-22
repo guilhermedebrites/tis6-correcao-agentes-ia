@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix de flag de teste inválida (typo), e o diff corrige a chave de configuração de 'reactive_pytest' para 'reactive_tests', restaurando a leitura correta da opção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

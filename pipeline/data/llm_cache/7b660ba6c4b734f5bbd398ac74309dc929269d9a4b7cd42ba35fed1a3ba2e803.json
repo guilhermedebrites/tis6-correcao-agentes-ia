@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente 'fix' e tratam de validar limites de equipes org-scoped contra os limites da organização, em vez dos limites pessoais do usuário, corrigindo um comportamento incorreto de validação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

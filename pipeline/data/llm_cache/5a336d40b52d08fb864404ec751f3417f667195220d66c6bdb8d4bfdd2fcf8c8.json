@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara a intenção de corrigir uma anotação de tipo, que a definição classifica como tipagem (refatoração), embora a descrição mencione erros de runtime e do pydantic que poderiam indicar defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e o commit são explicitamente um revert de 'Add Autologging event', e o diff apenas remove as chamadas _record_event e os imports de telemetria, o que caracteriza reversão.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

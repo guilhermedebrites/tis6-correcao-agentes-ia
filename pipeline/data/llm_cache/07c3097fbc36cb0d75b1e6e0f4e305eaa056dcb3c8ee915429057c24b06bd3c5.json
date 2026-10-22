@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O PR é um revert explícito do commit c5fa78c que introduziu o enum de país, portanto é classificado como outro pela regra de reverts.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

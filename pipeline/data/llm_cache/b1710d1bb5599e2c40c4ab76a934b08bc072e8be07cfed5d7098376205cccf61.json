@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara uma feature (/ocr mode + health check), mas o diff mostrado só extrai o dicionário mode_handlers para HealthCheckHelpers.get_mode_handlers e reorganiza imports, sem alterar o comportamento observável nas linhas apresentadas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

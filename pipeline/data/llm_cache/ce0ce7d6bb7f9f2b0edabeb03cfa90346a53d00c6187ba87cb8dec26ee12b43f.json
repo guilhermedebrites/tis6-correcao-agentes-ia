@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição indicam a adição de um prompt específico para geração multi-célula, e o diff passa a usar regras de linguagem próprias (language_rules_multiple_cells) com fallback, o que altera o comportamento desejado do prompt para esse caso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

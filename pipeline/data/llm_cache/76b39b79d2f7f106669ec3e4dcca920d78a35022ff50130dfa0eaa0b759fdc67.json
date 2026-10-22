@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram que a mudança tenta corrigir o issue #3764 (assets em /public no Windows), e o diff encoda o file_key no script injetado e troca o service worker por uma versão nova, ajustando o tratamento do notebook ID.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

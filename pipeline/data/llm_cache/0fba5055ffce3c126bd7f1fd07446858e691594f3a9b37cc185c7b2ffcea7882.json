@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para quebra da serialização de funções de nível superior no exemplo WASM, e o diff passa a capturar OSError ao chamar ruff, com fallback para o código não formatado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

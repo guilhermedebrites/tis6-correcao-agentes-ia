@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara apenas 'reasoning logs', mas o diff adiciona emissão de eventos (started/completed/failed) no event bus e passa available_functions ao chamado, o que altera comportamento além de mensagens de log.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

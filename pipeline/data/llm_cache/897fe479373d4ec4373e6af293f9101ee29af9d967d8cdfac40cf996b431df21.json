@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a intenção de pedir confirmação antes de sobrescrever um arquivo existente, o que adiciona um novo comportamento interativo ao comando de conversão.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

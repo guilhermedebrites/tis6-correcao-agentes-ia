@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "As linhas alteradas são apenas do arquivo de smoke test (novas células de exemplo e ajuste de string de Markdown), sem mudança de comportamento do produto; o prefixo 'fix' do título não é sustentado pela descrição, que fala em ampliar cobertura e testes.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

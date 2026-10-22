@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara que fastmcp passa a ser um extra opcional; as mudanças fazem imports de fastmcp serem tardios e anotações virarem strings, sem alterar o comportamento quando a dependência está instalada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara uma correção e o diff troca o mapeamento incorreto de `import a.b.c` (chave com o nome completo) pelo nome de nível superior correto (`a`), tratando o caso sem alias.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

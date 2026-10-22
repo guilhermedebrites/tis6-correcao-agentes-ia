@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "Título e commit genéricos ('Update build') sem descrição, e o trecho mostra apenas a remoção do entry point g4f_cli.py, sem a parte que o substitui, então não dá para determinar se é refatoração ou mudança de build.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram um 'fix' para requisitos de sandbox em 'marimo edit <url>', e o diff remove as chamadas que executavam o sandbox nesses caminhos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

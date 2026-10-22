@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR é declarada como uma migração de tipagem (\"typesafe migration\") do CellId: troca o alias str por NewType e envolve o valor vindo do path_params com CellId_t, sem alterar o comportamento em runtime.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

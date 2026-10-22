@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título é 'Prompt Refactor' e as mudanças renomeiam tipos (PromptInfo/Prompt para Prompt/PromptVersion), remover imports e ajustar anotações de tipo, sem alterar o comportamento funcional declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

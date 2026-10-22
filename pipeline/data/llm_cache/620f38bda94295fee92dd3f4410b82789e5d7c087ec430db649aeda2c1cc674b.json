@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O diff apenas aninha a condição existente dentro de `if data is not None:`, sem mudar o resultado, pois o `and` original já curto-circuitava; o título genérico 'fixing bug' não descreve um defeito nas linhas mostradas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

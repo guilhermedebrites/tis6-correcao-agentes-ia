@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma funcionalidade nova (tracking de overhead do LiteLLM em cache hits), mas o trecho do diff mostra apenas a remoção de um import não utilizado, o que não comprova o propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

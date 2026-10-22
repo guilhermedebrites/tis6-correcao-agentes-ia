@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar um modo 'monitor' ao guardrail Lakera (novo parâmetro on_flagged), permitindo registrar violações sem bloquear requisições, o que é uma nova funcionalidade/opção de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

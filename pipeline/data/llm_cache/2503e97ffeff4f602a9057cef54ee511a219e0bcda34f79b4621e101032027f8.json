@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de suporte a REST store e API para logging de spans, e o trecho acrescenta o atributo REQUEST_ID aos atributos do span, uma nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

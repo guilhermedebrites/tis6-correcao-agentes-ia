@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'feat: write env vars from secrets panel', e o diff adiciona comportamento novo: criar o arquivo .env quando não existe em vez de falhar, o que habilita gravar variáveis de ambiente a partir do painel de secrets.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

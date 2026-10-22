@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para falha de desserialização do ChatPart após a migração para msgspec, e o diff torna `output` opcional com valor padrão, o que corrige essa falha.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

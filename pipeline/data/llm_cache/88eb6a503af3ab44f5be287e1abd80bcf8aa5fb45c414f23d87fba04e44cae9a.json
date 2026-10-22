@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix server version check request timeout' e o diff substitui a política de retry que causava esperas de minutos por retry_timeout_seconds=1, corrigindo um comportamento de timeout incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

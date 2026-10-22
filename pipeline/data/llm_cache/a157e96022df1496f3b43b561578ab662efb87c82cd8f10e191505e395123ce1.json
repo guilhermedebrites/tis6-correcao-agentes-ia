@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de aceitar BaseLLM em vez de LLM, ampliando os tipos aceitos pelo guardrail, o que altera a API e o comportamento de validação (assert substituído por TypeError).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

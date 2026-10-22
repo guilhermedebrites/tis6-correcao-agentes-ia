@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram a correção de duplicação de texto em RTC após reconexão rápida, e o diff adiciona tratamento de CancelledError e verificação de existência em ycells para evitar esse estado inconsistente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

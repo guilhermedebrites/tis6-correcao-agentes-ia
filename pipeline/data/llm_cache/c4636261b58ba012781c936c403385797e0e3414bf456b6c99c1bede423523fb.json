@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas só removem um import não usado (random) e reformatam atribuições de common_data sem mudar o comportamento, embora o título declare correções em outros arquivos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

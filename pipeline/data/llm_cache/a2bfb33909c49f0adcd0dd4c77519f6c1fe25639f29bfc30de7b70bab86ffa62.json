@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram 'increase debounce for specific org', e o diff adiciona um caso especial via case() para uma organização específica, alterando o comportamento desejado do scheduler.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

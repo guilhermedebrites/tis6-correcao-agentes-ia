@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um bug fix: em modo run com autenticação habilitada, o código passa a usar o token de skew baseado no código em vez do token aleatório, corrigindo comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

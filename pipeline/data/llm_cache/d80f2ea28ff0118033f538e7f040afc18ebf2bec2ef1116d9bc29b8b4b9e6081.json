@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O diff apenas renomeia o método privado `_get_tables_in_schema` para `get_tables_in_schema` e atualiza sua chamada, sem alterar comportamento, embora o título/descrição descrevam uma feature maior de carregamento sob demanda e centralização de estado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

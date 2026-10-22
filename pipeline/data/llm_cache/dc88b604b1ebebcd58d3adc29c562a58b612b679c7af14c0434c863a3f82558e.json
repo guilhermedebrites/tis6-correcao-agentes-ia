@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara o propósito de definir tratamento de erro para parâmetros de função ausentes, e o diff adiciona um try/except que converte MlflowException em HTTPException, evitando uma exceção não tratada na API de jobs.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

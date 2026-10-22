@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de um backend SQL para Endpoints, uma nova funcionalidade; o trecho mostra só a inclusão do import de Session, então a confiança é moderada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

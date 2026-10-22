@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara explicitamente 'Bug fix' e o commit descreve que a fonte retornava string em vez de instância de DatasetSource; o diff corrige isso ao retornar um DatasetSource tipado e tratar o caso em que a fonte não é DatasetSource.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

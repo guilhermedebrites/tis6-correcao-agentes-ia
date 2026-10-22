@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara uma correção de estilização da sidebar da documentação, mas as linhas mostradas do diff alteram apenas imports (reordenação e remoção), sem evidência direta do conserto visual.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

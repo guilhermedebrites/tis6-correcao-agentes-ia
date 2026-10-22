@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O diff apenas renomeia duas referências (huggingface para hugging_face e open_ai para openai) sem alterar a estrutura da lógica, mas o título 'push' e a descrição vazia não declaram o propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

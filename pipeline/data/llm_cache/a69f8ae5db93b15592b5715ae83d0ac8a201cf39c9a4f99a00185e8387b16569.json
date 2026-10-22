@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma nova funcionalidade (configuração RAG com ChromaDB e dependências opcionais), e o trecho mostra a adição de um módulo de configuração e um wrapper de módulo, em vez de correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

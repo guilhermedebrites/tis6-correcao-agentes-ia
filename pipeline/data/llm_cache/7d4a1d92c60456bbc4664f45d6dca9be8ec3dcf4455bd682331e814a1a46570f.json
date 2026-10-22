@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente uma migração de tipagem (VariableName de str para NewType) e as linhas alteradas apenas trocam anotações de tipo, sem mudar comportamento em tempo de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

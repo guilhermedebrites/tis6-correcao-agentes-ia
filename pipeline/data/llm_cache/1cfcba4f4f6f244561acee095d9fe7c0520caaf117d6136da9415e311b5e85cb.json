@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O diff apenas remove o import não utilizado do decorator 'experimental' sem alterar comportamento, o que é limpeza de código; o título 'Remove experimental decorators' indica o mesmo propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

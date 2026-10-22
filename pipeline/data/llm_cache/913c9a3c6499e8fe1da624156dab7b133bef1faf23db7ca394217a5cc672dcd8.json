@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título declara refatoração, mas a única mudança de código nas linhas mostradas remove uma linha de log de depuração, o que se enquadra em mudança apenas de log; o restante é apenas o bump de versão.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

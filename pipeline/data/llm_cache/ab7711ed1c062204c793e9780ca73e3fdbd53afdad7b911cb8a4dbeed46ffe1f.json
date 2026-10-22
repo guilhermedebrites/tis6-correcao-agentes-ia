@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de tratar exceções (BaseException) vindas de bibliotecas de dataframe para não derrubar o kernel, o que é correção de falha em caso de erro não tratado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'Fix', e o diff adiciona restrições de pré-requisitos (memória mínima, tipo de plataforma e funcionalidade Azure) que corrigem a aplicação do teste a VMs incompatíveis, sem descrição adicional para confirmar o propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente que a PR corrige a issue #7388 ao passar strict_json=True para manager.to_json(), o que altera o comportamento de download_json para produzir JSON em conformidade com a especificação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

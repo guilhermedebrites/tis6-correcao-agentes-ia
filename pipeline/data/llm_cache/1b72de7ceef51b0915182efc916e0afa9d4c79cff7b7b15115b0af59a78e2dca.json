@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram que a mudança adiciona suporte a saídas estruturadas nos providers, e a linha alterada apenas passa o finish_reason por um novo helper de normalização como parte dessa funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

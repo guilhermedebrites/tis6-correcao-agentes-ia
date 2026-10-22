@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara a intenção de corrigir testes quebrados na main, e o diff ajusta a condição de suporte a quantis (separando numéricos e temporais e excluindo pyarrow/ibis), o que sugere correção de um comportamento incorreto por backend.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram a adição de integração LSP (pylsp) como funcionalidade experimental, mas o trecho mostrado apenas renomeia GlobalSettings para GLOBAL_SETTINGS, o que seria refatoração isolada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

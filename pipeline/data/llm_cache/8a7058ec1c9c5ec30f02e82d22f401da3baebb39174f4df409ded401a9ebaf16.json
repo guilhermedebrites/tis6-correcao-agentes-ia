@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara a remoção de um modelo Pydantic não utilizado (SubmitJobResponse), e o diff apenas remove essa classe sem alterar comportamento em execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

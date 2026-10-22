@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara o propósito de corrigir a checagem do secret scope para reduzir taxas de erro, e o diff ajusta a lógica de retorno para tratar a ausência do escopo, o que se encaixa em correção de comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

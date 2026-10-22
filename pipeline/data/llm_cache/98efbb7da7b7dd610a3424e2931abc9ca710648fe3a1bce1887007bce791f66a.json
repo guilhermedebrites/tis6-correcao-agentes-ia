@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A PR adiciona suporte a print em mo.Thread (saída encaminhada ao console do frontend), e o trecho alterado apenas atualiza a docstring para descrever esse novo comportamento, indicando uma mudança de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

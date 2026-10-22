@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara a correção de um logger OpenTelemetry incorreto e a normalização de caminhos, e o diff troca o LogRecord da API pelo do SDK e obtém o logger pelo provider, o que indica correção de comportamento errado e não mera refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a intenção de adicionar automaticamente recursos de 'lsp' no modo sandbox, e o diff passa a incluir features adicionais nas dependências do comando uv, ampliando o comportamento existente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

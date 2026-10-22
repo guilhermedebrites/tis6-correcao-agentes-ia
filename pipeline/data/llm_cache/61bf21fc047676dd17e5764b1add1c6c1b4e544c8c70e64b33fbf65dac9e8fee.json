@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "A mudança passa skip_json_loads=True para repair_json para evitar um json.loads desnecessário, o que é uma otimização de desempenho que mantém o resultado esperado, sem corrigir defeito nem alterar funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

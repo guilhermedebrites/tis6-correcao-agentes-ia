@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O diff passa a remover o prefixo nvidia_nim/ do nome do modelo antes de montar a URL e o corpo da requisição, o que corrige um comportamento incorreto; o título genérico 'Fix ... tests' não deixa o propósito totalmente claro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "A PR remove uma constante de lista de supressão de avisos sem descrição, indicando limpeza de código não utilizado; não há mudança de comportamento declarada, mas a remoção pode afetar avisos de versão, o que deixa a confiança apenas média.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

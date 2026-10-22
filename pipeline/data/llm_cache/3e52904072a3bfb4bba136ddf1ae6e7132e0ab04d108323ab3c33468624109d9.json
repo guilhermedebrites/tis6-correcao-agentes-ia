@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara 'feat' com suporte a um novo provedor DNS, mas as linhas mostradas são apenas renomeações e ajustes de imports, que seriam refatoração isoladamente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

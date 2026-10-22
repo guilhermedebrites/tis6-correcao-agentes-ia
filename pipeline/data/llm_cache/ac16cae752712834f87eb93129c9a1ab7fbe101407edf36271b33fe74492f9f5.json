@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas atualiza os intervalos de versões de pacotes ML no arquivo de metadados gerado pelo script dev/update_ml_package_versions.py, sem alterar lógica ou comportamento de código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

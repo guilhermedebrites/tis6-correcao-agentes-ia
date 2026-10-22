@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram adição de suporte a ferramentas (tool support), novo parâmetro de modo no AiConfig e novos tipos de evento de stream, o que são novas funcionalidades, e as alterações do diff seguem esse propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

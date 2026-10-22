@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas atualiza os limites de versão máxima de pacotes de ML (dependências) no arquivo ml_package_versions.py, sem alterar lógica de código, o que se encaixa em atualização de dependência.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

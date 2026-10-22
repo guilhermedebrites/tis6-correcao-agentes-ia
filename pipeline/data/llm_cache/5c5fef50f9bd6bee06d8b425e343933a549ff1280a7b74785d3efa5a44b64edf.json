@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma docstring e um rename, sem mudança de comportamento; o trecho mostra apenas a remoção de imports de mlflow/genai/__init__.py, que sugere reorganização de código, mas o diff não mostra onde esses imports foram realocados.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

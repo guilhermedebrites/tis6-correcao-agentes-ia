@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "A descrição declara que, com página lenta, o seletor podia achar um link do rodapé e rolar até o fim da página; restringir a busca a '#sidebar-container' corrige esse comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

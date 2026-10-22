@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título é 'feat', mas a descrição declara que a mudança corrige o problema #5752, em que só o banco padrão era retornado, e as alterações no diff são fallbacks e tratamento de exceções para listagem de bancos e tabelas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

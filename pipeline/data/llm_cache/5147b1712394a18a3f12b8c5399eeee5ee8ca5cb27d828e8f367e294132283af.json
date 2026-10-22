@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara uma feature de logging no console para eventos de guardrail, e as linhas novas adicionam os handlers de exibição; o try/except e a formatação aparecem como ajustes auxiliares.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança adiciona anotação de tipo (Optional[str]) e reformata um dict para uma linha, sem alterar o comportamento; o título declara a intenção de corrigir um erro de lint.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "Título e mensagem de commit genéricos ('merge') sem descrição; o diff remove a feature de key rotation (constantes, campos de tipo, método e um módulo inteiro), o que sugere um revert ou remoção de código, mas o propósito declarado não é explícito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

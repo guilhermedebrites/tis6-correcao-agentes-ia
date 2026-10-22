@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e o commit declaram refatoração do módulo de telemetria, mas o trecho mostrado só altera a docstring de logger_utils.py, então a classificação depende do propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

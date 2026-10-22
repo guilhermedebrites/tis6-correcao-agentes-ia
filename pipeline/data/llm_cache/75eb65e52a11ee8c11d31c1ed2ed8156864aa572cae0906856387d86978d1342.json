@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para tracebacks exibidos como texto simples na UI (issue #4303), e a mudança de tipagem é apenas acessória à correção de deserialização de sessão.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

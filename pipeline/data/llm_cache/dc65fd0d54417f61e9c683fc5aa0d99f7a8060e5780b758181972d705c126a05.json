@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram a substituição do Inkeep pela nova busca Typesense com modal, o que é uma mudança de funcionalidade; o trecho mostra apenas a remoção de inkeep.py, sem o contexto da implementação que a substitui.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara uma nova funcionalidade (permitir configuração do marimo no notebook.py via metadados de script PEP 723), e o diff apenas reformata imports para acomodar isso, sem alterar lógica existente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

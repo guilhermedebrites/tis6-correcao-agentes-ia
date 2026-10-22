@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix', e a mudança torna o campo `request` opcional com default None e remove uma dataclass não utilizada, o que corrige um problema de uso/contrato de tipo sem alterar o comportamento desejado de forma explícita.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

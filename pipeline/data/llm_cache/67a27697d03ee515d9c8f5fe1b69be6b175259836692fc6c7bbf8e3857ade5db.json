@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix', e a linha corrigida troca o caminho de recurso 'engines/{engine_id}' por 'dataStores/{datastore_id}', o que sugere correção de um caminho de API incorreto; a descrição vazia e o título genérico deixam a inferência incerta.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

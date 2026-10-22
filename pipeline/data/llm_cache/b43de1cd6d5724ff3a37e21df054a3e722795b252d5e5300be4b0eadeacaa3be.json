@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara melhoria da saída estruturada do LLM, o que indica evolução, mas o trecho visível só adiciona o import de `Type`, sem mostrar a lógica alterada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

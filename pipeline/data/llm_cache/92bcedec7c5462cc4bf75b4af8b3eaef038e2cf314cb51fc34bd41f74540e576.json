@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram explicitamente um fix ('fix return URL not correctly handled'), e a linha alterada troca HttpUrl por HttpUrlToStr, indicando correção no tratamento da URL de retorno.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

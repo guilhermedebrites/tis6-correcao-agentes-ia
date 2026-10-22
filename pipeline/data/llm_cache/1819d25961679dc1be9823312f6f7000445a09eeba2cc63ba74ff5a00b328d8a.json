@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara explicitamente que a mudança corrige um erro na ferramenta MCP evaluate_traces, trocando o acesso a results.tables['eval_results'] por results.result_df, o que indica uma falha de execução corrigida.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'fix _is_redis_cluster' indica correção, e o diff passa a usar cálculo de slot apenas quando é cluster, em vez de agrupar por hash tag, o que muda o comportamento de agrupamento para instâncias Redis comuns.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

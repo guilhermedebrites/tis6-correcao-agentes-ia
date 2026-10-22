@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de adicionar o nome completo ao Agent e ao LLM, e o diff altera o nome dos spans para incluir a classe ou o nome do agente, o que muda o comportamento observável do rastreamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

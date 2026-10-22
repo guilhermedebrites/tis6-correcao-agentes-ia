@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título diz 'refactor', mas a descrição declara que a PR corrige uma falha de segurança que permitia acesso não autenticado a serviços internos em qualquer porta, removendo o proxy genérico e validando a requisição pelo figure id.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

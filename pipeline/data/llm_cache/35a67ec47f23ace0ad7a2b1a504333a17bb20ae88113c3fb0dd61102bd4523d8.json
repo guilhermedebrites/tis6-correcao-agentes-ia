@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'fix: gate loro < 3.11' e a referência a #4914 indicam correção de um problema; o diff adiciona uma verificação de versão do Python que impede o uso do Loro em versões não suportadas, evitando falha.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'Fix deletion of original request' indica que o `del` mutava o dicionário original da requisição; a troca por um novo dict sem a chave 'type' corrige esse efeito colateral.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

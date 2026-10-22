@@ -1,0 +1,50 @@
+{
+  "repo": "mabel-dev/opteryx",
+  "familia": "python",
+  "snapshot": "f6aa6e1d33a5e6cd2670e12300b5b2f7f4f9c3b0",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-09-26T20:30:41+01:00",
+  "frac_sem_marcacao": 0.0,
+  "api_consultas": 0,
+  "fa_validas": 3,
+  "hl_validas": 20,
+  "incluido": false,
+  "atividade_linhas": {},
+  "n_eventos": 0,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 3
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 3
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 20
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 4
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 1189,
+    "direto": 285,
+    "bot": 75,
+    "HL": 25,
+    "fa_mista": 9,
+    "FA": 6,
+    "agente_fora": 4
+  }
+}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'fix: support links.marimo.app' declara o propósito de corrigir o reconhecimento de URLs do domínio links.marimo.app, que antes eram rejeitadas pela checagem restrita a https://marimo.app/.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

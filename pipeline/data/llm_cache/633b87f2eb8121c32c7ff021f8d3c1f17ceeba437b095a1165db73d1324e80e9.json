@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O diff no trecho mostrado só troca aspas simples por duplas e reflow de linhas longas em flow.py, sem alterar comportamento; o título 'General Clean UP' também indica limpeza.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

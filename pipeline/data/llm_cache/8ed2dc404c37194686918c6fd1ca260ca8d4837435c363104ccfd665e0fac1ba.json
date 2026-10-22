@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A PR altera deliberadamente os valores de max-width do popup de templates para dar mais espaço ao conteúdo, mudando o comportamento visual desejado, e não corrige defeito nem apenas reestrutura código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

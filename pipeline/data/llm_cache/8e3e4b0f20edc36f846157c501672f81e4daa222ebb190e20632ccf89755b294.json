@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança apenas adiciona uma vírgula final em um item de lista, o que é formatação feita pelo ruff e não altera o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

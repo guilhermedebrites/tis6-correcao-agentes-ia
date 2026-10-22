@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de verificação de arquivos de swap, e o diff adiciona o tratamento de swap files (com `SwapPartition` e consulta via `Df`) além das partições já verificadas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

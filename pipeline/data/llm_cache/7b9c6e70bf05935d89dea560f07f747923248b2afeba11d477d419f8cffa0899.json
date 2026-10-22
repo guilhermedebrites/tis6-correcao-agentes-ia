@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'fix doc page ai builder route' declara explicitamente uma correção, e o diff troca o caminho de link de 'overview' para 'overview.what_is_reflex_build', indicando que a rota anterior estava apontando incorretamente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

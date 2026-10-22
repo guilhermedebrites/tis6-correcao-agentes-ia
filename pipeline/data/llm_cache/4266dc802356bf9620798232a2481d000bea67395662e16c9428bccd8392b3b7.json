@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram o objetivo de adicionar suporte a sampling global para tracing, e a linha alterada passa um novo parâmetro `sampler` ao TracerProvider, o que adiciona uma opção de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

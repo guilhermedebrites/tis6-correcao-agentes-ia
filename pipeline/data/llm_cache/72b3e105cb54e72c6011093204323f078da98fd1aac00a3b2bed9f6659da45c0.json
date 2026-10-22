@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas incrementa a string de versão de 0.1.30 para 0.1.31 em version.py, sem alterar comportamento, o que se encaixa em atualização de versão/metadados.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

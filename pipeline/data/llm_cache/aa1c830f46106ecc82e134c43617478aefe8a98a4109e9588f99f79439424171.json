@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram otimização de desempenho (\"Speed up events query\") mantendo o resultado, mas o diff altera a estrutura da consulta e antecipa o filtro de bounds, o que pode mudar o comportamento e reduz a confiança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix' e o trecho corrige o carregamento incompleto de CustomerSeat (eager load de subscription, customer e product_price, além da back-reference exigida por lazy='raise_on_sql'), evitando acessos lazy que falhariam.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

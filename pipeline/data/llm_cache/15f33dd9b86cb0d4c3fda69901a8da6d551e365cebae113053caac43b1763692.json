@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título é 'fix' e a descrição diz que arquivos inválidos eram sobrescritos sem aviso, além de corrigir um bug de comparação que impedia a detecção do run guard; as linhas alteradas introduzem a classificação de status para tratar esses casos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit usam o prefixo 'fix' e a mudança troca a detecção de executável congelado (sys.frozen) por uma checagem de __compiled__ no __main__, o que corrige como o caminho do agendador é determinado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

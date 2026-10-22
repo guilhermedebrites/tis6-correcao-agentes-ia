@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara que, sem scope na requisição, deve-se usar o scope do cliente, e a linha alterada passa a ler scope de request.payload, o que sugere correção de um acesso que não retornava o valor esperado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um bug (a primeira célula de um notebook novo com auto-run desligado fica indevidamente marcada como stale) e o diff corrige isso ao não marcar como stale células com código vazio.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

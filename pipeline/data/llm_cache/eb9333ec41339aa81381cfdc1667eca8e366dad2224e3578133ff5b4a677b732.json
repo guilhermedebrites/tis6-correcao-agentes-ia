@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram refatoração, e as linhas alteradas apenas trocam Location por Range/Position na chamada de _check, sem mudar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

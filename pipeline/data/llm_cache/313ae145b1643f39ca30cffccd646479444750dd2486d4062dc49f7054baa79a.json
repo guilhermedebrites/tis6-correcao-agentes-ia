@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara explicitamente uma feature (feat: Allow black/white list in extensions) e o diff passa a filtrar nomes de plugins por uma regra de permissão (_is_allowed), alterando o comportamento do registro para uma nova opção de lista branca/negra.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

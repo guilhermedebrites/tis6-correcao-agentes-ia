@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título 'imporve HITL' indica melhoria do fluxo de feedback humano, e o diff troca a classificação de feedback por LLM por uma verificação simples de resposta vazia e altera o texto de instruções, o que muda o comportamento desejado da funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

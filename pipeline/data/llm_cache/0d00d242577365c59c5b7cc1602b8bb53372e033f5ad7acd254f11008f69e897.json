@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para um problema de compatibilidade com WASM causado pela importação de starlette no nível superior, e o diff remove essas importações problemáticas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título 'Trace V4 APIs' indica um ajuste de API, e as linhas alteradas adicionam campos de nome de tabela, novas propriedades e mudam a interface de conversão, além de renomear métodos para públicos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

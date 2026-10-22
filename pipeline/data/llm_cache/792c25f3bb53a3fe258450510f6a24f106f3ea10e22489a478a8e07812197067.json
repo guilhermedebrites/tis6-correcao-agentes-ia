@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "baixa", "justificativa": "O título e a descrição são genéricos e não declaram o propósito; o diff apenas remove o parâmetro de token do redirecionamento, uma mudança de comportamento que pode ser um ajuste de requisito, mas sem contexto não dá para afirmar isso com segurança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

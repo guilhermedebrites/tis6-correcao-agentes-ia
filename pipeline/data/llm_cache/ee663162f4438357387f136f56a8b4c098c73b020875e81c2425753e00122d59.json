@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara \"feat\" para estender o banco e permitir pedidos em precificação por assento, e o diff torna subscription_id opcional e adiciona order_id, o que amplia o comportamento suportado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

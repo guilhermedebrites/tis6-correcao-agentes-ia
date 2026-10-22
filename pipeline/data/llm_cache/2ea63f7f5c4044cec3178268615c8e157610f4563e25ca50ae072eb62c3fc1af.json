@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma feature (suporte a modelos Gemma no Vertex AI), mas o trecho mostrado apenas remove um import do Lemonade, que não indica diretamente o propósito da mudança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

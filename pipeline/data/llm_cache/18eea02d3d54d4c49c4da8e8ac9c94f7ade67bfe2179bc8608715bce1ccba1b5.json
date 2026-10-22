@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um fix para o comportamento quebrado de restart/run no PDB, e a alteração força code_is_stale=True em vez de depender de should_autorun, corrigindo o fluxo de reinício da célula.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara 'more helpers and docs' e o diff substitui blocos inline por chamadas a funções auxiliares (responses_agent_output_reducer, responses_to_cc, create_text_output_item etc.), sem alterar o comportamento esperado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

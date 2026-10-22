@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a mensagem são genéricos, mas a alteração troca um texto de exibição de landing page por outro novo ('Live Dashboard'), indicando mudança de conteúdo/requisito em vez de correção de defeito ou refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

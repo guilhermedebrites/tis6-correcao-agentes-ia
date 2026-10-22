@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram 'fix' para tratar o formato de dicionário da resposta de embed do Cohere v4, e o diff adiciona um caso em que embeddings é dict, forçando o tratamento por tipo, o que corrige um caso não tratado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título ('fix:') e a descrição indicam que a mudança corrige o problema de não conseguir descobrir a célula de setup na resolução de topo, passando-a explicitamente ao posthook.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

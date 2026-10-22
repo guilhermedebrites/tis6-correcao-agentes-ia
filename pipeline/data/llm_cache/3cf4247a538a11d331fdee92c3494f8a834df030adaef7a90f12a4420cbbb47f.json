@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara suporte novo ao get_trace nas stores, e o diff passa a usar get_trace com allow_partial antes do fallback para batch_get_traces, o que altera o comportamento de obtenção de traces.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

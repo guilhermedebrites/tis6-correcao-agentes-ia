@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição ('Fixes #6209', 'sql cells can't both define and refer to itself') declaram a correção de um defeito, e o diff remove a coleta de referências SQL que causava a auto-referência indevida.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

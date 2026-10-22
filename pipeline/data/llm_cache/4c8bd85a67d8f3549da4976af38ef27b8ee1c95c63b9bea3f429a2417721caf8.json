@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "A PR declara como propósito corrigir o issue #7252 (\"Fix #7252\") e, no trecho, troca o cálculo de proratas para usar os preços da assinatura ativa em vez dos preços do produto antigo, o que corrige o comportamento incorreto de cobrança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

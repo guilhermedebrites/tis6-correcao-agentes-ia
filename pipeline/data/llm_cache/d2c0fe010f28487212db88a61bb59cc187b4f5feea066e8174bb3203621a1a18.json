@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'Fix serialization and deserialization', e a mudança cacheia os dados serializados para evitar problemas de re-serialização com funções dinâmicas, o que corrige um comportamento incorreto na desserialização de scorers Python.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

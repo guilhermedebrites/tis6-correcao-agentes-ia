@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram que o objetivo é corrigir a mutação indevida do DataFrame pandas (issue #6898), e o diff passa a operar sobre uma cópia em vez de sobrescrever as colunas do original.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

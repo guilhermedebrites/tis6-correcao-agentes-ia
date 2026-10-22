@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um caso não tratado (o LLM incluir o nome da linguagem após as cercas de código), e o diff passa a remover corretamente essas cercas com idioma.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

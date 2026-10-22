@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição indicam correção do issue #7168 ('don't send cycle email on subscription end'), e o diff adiciona uma condição que impede o envio de e-mail de ciclo quando a assinatura termina, evitando um comportamento indevido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

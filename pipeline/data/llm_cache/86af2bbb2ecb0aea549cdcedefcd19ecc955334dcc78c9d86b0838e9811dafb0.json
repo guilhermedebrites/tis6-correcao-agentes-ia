@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "PR de revert que desfaz o commit 236f8cd (#5758); o título, a descrição e a mensagem de commit declaram explicitamente que o propósito é reverter a mudança anterior.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

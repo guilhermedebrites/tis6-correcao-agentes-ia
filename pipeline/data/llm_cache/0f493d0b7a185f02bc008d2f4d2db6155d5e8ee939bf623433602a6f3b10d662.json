@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram correção de erros de lint e mypy; as alterações são apenas remoção de import não usado, ajuste de anotação de tipo e renomeação de variável local, sem mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

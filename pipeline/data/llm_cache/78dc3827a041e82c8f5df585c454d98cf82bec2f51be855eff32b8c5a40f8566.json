@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a intenção de tornar o logging de salvamento de estado (flag `verbose`) desligado por padrão, adicionando um novo parâmetro opcional e condicionando as mensagens de log, o que altera o comportamento visível da API.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

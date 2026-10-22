@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix' e o diff troca a montagem manual da URL do backoffice por settings.generate_external_url, o que é coerente com a correção de um link quebrado ou incorreto no Plain.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O diff apenas reformata a assinatura da função `tool` (quebra de linha), sem alterar comportamento, embora o título/descrição da PR falem de tracking de uso e defaults de retry.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

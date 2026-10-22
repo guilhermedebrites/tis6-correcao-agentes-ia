@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título é [Fix] e a descrição menciona a correção de um TypeError com isinstance/typing.Any no caching handler, embora o diff mostrado trate principalmente de mover a checagem de disponibilidade do cache e trocar datetime por time.perf_counter.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

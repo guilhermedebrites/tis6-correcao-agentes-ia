@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "baixa", "justificativa": "O título e a descrição dizem apenas 'refresh' e não explicam o motivo, e o diff altera o comportamento do script de smoke test ao enviar passos pares para stderr, o que se enquadra como mudança de comportamento e não como refatoração ou correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

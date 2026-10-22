@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título pede adicionar registries de entrypoints (mudança interna), e o diff apenas remove imports e substitui por TYPE_CHECKING, sem alterar comportamento, o que indica limpeza/reorganização estrutural.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

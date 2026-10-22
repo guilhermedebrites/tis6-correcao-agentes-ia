@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram a restauração de uma capacidade de agendamento que havia sido removida, o que se caracteriza como correção de regressão, embora o limiar de 5+ funcionários sugira também um ajuste de requisito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

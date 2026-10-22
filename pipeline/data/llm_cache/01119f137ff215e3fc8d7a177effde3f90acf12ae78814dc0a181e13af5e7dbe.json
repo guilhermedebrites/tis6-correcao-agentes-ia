@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O trecho remove integralmente o módulo llm_call_hooks.py, e a descrição menciona refatoração do registro de hooks, indicando provável realocação do código sem mudança de comportamento; a PR também se declara como feat, o que deixa a decisão incerta.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

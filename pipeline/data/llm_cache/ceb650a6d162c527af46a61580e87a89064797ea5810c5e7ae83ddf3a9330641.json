@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "As linhas mostradas alteram apenas strings de descrição de campos (espaçamento e o texto 'Once set, it can't be changed'), sem mudança de lógica, o que equivale a mudança de documentação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

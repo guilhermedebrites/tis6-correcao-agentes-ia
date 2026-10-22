@@ -1,0 +1,63 @@
+{
+  "repo": "jeroenterheerdt/HAsmartirrigation",
+  "familia": "python",
+  "snapshot": "a77c99442bf8b62896d70743dedb7a506c0b87a0",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-07-12T11:29:39-07:00",
+  "frac_sem_marcacao": 0.799,
+  "api_consultas": 304,
+  "fa_validas": 12,
+  "hl_validas": 7,
+  "incluido": true,
+  "atividade_linhas": {
+    "humano": 5670,
+    "agente_principal": 201
+  },
+  "n_eventos": 32,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 12
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "grande_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 7
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 9
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 7
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 3
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "direto": 965,
+    "fora_periodo": 87,
+    "bot": 30,
+    "FA": 29,
+    "pr_repetida": 14,
+    "HL": 11,
+    "fa_mista": 1
+  }
+}

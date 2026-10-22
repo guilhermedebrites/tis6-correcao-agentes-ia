@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix e a mudança troca o endpoint de '/oauth/parameters' para '/auth/parameters', corrigindo a rota usada para obter parâmetros na configuração enterprise, o que indica um erro de endereçamento da API.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

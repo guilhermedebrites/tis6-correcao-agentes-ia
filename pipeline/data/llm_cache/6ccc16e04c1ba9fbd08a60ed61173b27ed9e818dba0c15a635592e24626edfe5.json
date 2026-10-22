@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "A descrição relata que o regex com o caminho completo gerava warnings do grep que contaminavam a saída do contador (100 virava duas linhas de aviso mais o número), e a mudança corrige isso usando apenas o basename.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

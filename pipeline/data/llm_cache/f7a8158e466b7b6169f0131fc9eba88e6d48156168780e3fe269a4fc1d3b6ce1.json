@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título 'Add Assessments backend' declara a adição de suporte a assessments, substituindo o placeholder `assessments=[]` por uma conversão real para entidades MLflow, o que adiciona comportamento novo e desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

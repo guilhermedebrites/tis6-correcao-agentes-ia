@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O diff comenta a entrada do Airtable na sidebar, o que muda o comportamento visível da página ao remover um item de integração, mas o título e a descrição genéricos ('Integrations updates') não explicam o motivo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

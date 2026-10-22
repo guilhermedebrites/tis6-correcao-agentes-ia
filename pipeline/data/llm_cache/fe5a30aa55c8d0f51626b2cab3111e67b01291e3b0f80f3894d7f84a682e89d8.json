@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de corrigir o parse de valores NaN/inf em gráficos Altair (Fixes #4568), e a troca de chart.to_json por chart_to_json visa tratar esses valores para que virem null, o que caracteriza correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

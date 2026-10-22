@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram consolidação de constantes e limpeza, e o diff apenas move definições (MAX_FILE_SIZE_MB, MAX_IMAGES_COUNT, PROMPT_MAP) para constants.py, renomeando prompt_map para PROMPT_MAP, sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma nova funcionalidade (imports de nível superior para células de apenas importação), e o trecho inclui mudanças de API como o parâmetro allowed_refs, embora várias linhas sejam apenas tipagem e renomeação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

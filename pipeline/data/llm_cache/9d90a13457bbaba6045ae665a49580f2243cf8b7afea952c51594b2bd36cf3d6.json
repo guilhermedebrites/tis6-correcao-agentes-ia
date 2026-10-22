@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit dizem 'add lint', e o diff apenas reformata atribuições (quebras de linha e parênteses) sem alterar o comportamento, o que é típico de ajuste de formatação exigido por linter.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

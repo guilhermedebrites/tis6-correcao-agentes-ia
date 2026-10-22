@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'fix health status' e os commits 'fix:' indicam correção; o diff troca dicionários soltos por LiteLLM_MCPServerTable, adiciona log de servidor não encontrado e corrige o tratamento de status/erro do health check.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

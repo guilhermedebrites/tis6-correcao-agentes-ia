@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O trecho altera apenas a formatação de uma mensagem de log (`{str(e)}` para `{e}`), enquanto o título declara um fix de conversão de colunas não-string que não aparece nessas linhas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

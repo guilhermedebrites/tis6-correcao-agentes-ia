@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "Embora o título diga 'fix', as linhas alteradas apenas removem aspas de anotações (forward references) e movem/removem imports para habilitar annotations adiadas via __future__, sem mudar o comportamento em runtime das funções.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

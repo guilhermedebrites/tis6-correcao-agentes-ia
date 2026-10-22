@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente que o objetivo é quebrar o session.py em partes menores e com fronteira clara, e o diff remove o arquivo original sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

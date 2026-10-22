@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'fix: tools being empty' declara a intenção de corrigir um defeito, e o diff remove a inclusão de 'tools' com valor None nos payloads e passa a omiti-la quando não há ferramentas, evitando enviar tools vazias às APIs.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

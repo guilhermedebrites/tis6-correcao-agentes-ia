@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara tornar organization_id não nulo e usá-lo, mas as linhas do diff apenas removem o parâmetro product_load de get_eager_options e reorganizam o joinedload, sem mudar o comportamento visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

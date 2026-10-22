@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "A descrição diz que trata o caso em que a resposta do stream tem sucesso mas o primeiro chunk falha, e o diff acrescenta try/except e tratamento de erro onde antes as exceções não eram tratadas, apesar do título usar 'improvement'.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

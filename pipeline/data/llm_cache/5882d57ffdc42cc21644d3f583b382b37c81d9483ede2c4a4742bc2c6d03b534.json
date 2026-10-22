@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix (retornar o stream de resposta mock apenas quando stream é true), mas o trecho mostrado remove parâmetros e blocos não relacionados a esse ajuste, então a confiança é limitada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

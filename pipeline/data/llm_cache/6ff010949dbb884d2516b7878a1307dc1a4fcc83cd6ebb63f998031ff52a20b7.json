@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título e a descrição declaram uma migração de dependência (google-generativeai para google-genai), o que se enquadra em atualização de dependência, embora também ajuste o uso da API nas linhas do diff.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

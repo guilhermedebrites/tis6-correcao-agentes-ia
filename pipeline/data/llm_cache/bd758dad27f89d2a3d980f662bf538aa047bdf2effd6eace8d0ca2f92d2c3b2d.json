@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de suporte a temperature para modelos 5.1, e o diff altera apenas a mensagem de erro para documentar que, no gpt-5.1, temperature é aceita quando reasoning_effort='none', o que descreve um novo comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram que a mudança corrige o caso em que bibliotecas upstream com metaclasses ou tipos malformados fazem `mro()` lançar exceção, referenciando a issue #6532.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "A PR é uma atualização automática de metadados gerada por script (`dev/update_ml_package_versions.py`), apenas alterando valores de versão mínima em um arquivo de configuração, sem corrigir defeito, adicionar funcionalidade ou refatorar código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte a conexões PEP 249 como conexão SQL consultável; as linhas mostradas são majoritariamente renomeações de uma refatoração que sustenta essa funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

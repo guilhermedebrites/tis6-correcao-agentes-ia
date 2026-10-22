@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "baixa", "justificativa": "O título e a descrição declaram a adição de integração Azure AVA TTS, mas as linhas mostradas alteram o padrão do limite de mensagens do websocket realtime e fazem limpeza no endpoint de batches, sem relação clara com TTS.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

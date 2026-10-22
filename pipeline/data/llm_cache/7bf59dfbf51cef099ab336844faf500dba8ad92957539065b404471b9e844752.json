@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix' e o objetivo de permitir adicionar memórias ao Mem0 com agent_id, corrigindo o filtro de consulta e a inclusão de user_id/agent_id, além de tratar run_id opcional.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

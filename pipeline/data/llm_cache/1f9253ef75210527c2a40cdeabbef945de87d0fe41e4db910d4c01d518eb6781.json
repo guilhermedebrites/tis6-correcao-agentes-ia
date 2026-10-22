@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix' e o objetivo de permitir caminhos de binário com espaços; a mudança substitui a quotação manual (cmd_quote) por um formato tipado, que resolve o defeito de caminhos com espaços e caracteres especiais.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O trecho apenas troca chamadas posicionais por argumentos nomeados e remove o parâmetro `logger`, que faz parte da limpeza de dependências de logger descrita nos commits, sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

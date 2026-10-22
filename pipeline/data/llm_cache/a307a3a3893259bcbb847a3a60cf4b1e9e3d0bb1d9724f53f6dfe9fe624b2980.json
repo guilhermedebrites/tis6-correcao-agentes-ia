@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "PR de revert declarado no título e na descrição (reverte #5028), que desfaz a adição dos parâmetros de gráfico iniciais em data_explorer.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

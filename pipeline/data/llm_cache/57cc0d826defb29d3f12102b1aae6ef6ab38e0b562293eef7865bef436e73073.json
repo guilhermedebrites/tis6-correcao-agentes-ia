@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram a adição da nova Google Interactions API (\"[Feat]\"), mas o trecho mostrado só remove imports de proxy_server de dentro de funções, o que sozinho sugeriria refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

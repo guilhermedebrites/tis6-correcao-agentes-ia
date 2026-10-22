@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o comentário no diff indicam que a mudança corrige o tratamento do `Sentinel.UNSET` do Click 8.3.0, evitando que um valor sentinela seja usado como default.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

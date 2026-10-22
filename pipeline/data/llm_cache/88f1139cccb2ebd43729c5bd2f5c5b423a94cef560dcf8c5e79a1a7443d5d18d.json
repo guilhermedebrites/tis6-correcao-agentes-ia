@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR troca split(\"\\n\")[0] por partition(\"\\n\")[0] para otimização, mantendo o mesmo resultado (a parte antes do delimitador) sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

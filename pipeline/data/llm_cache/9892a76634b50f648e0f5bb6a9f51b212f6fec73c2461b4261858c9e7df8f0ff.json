@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de telemetria específica para o Databricks, um comportamento novo, embora o trecho mostre também uma reestruturação de `invoke_judge_model` com um dataclass de saída.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de suportar formato de mensagens multi-turn e de resposta no registro de prompts do Unity Catalog, o que adiciona uma nova capacidade de comportamento (suporte a chat e response_format), e não corrige um defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

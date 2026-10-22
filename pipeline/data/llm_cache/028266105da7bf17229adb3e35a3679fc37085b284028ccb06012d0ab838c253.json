@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e o commit declaram que o objetivo é corrigir falhas de instalação com uv causadas por erros de permissão de escrita no cache, adicionando um retry com --no-cache.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

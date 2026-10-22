@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança troca @staticmethod por @classmethod e passa a construir `cls(...)` em vez de `Job(...)`, alterando a estrutura sem mudar o comportamento esperado para o chamador, o que caracteriza refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

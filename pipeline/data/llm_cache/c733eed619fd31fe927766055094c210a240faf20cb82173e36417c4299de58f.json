@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de integração com webhook do Slack e de um campo opcional de telefone ao formulário, e o diff mostra o novo campo phone_number sendo incluído no DemoEvent.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

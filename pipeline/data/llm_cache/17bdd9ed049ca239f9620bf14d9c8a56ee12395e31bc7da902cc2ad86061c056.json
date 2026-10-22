@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de uma fila de baixa prioridade, e o diff acrescenta as filas MEDIUM_PRIORITY e LOW_PRIORITY e mapeia os níveis de prioridade para elas, o que altera o comportamento do sistema de filas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

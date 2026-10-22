@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram explicitamente a correção de métricas de custos quando há valores decimais, e o diff troca as conversões as_integer() por as_numeric(17, 12), que evitam a truncagem de valores fracionários.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

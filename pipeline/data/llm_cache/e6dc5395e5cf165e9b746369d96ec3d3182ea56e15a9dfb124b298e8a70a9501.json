@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de adicionar suporte à truncagem para a Responses API, o que inclui o novo tipo 'output_text' e o parsing do JSON serializado, apesar de parte do diff ser reestruturação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

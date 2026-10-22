@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram 'Lazy load' de 41 classes de configuração, e o diff apenas remove imports diretos do __init__.py (provavelmente substituídos por carregamento sob demanda), sem alterar comportamento observável.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

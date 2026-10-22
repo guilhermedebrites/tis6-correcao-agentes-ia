@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O diff apenas remove chamadas print de depuração em llm_utils.py, sem alterar a lógica; embora o título fale em correção de bug, as linhas alteradas são só remoção de logs, então o propósito dessas linhas é limpeza.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

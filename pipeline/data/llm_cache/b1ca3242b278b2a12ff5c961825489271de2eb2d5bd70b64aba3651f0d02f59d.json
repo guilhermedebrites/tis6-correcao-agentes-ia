@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O diff apenas remove o import não utilizado 'import json', o que é limpeza sem mudança de comportamento; o título 'small adjustments' é vago, mas não indica correção ou nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

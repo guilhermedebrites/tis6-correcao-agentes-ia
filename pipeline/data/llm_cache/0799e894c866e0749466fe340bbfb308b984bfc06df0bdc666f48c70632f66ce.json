@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'fix: [rtc] edge cases for auto-run and focus' declara correção de casos de borda, e o diff move a criação do cleaner para fora do lock e a condição de criação do doc, o que corrige comportamento incorreto na sincronização RTC.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

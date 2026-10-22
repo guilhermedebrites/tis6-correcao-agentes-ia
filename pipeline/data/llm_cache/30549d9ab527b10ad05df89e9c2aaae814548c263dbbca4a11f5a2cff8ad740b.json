@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O diff apenas reformata chamadas de SpanAttributeManager e dicionários de atributos (quebra de linhas, formatação estilo ruff) sem alterar o comportamento, apesar da descrição da PR mencionar outras mudanças de Supabase que não aparecem neste trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

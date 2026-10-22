@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram o propósito de vendorizar os arquivos proto em vez de baixá-los no build, e o diff apenas remove a função de download, sem alterar o comportamento desejado do gerador.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

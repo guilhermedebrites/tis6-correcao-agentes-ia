@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um fix de desserialização da configuração no pyodide, e o diff troca o modelo de parsing para SaveUserConfigurationRequest, que aceita configuração parcial, corrigindo o erro anterior.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

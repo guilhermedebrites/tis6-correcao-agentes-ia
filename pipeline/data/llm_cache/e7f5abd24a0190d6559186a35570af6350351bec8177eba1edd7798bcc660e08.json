@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram a exibição dos argumentos das ferramentas no accordion, uma nova funcionalidade de interface, mas o trecho mostrado altera apenas docstrings de documentação em datasource.py, sem relação direta com esse propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

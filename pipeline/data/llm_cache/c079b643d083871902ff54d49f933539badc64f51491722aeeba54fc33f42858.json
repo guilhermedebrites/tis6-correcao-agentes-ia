@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "É um revert explícito do commit 71b9b58, que remove a classe ParallelRequestLimitError e volta a usar HTTPException, sem alterar a lógica de negócio além disso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma nova funcionalidade (modo post mortem para depuração), mas o trecho mostra apenas a troca de um tipo de requisição por outro, sem relação clara com essa funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

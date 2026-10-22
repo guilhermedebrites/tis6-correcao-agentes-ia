@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma funcionalidade nova (suporte de backend para registro OAuth2 via UI), e o diff refatora assinaturas e a construção de MCPServer para aceitar credenciais e auth_type, o que altera o comportamento esperado da API.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

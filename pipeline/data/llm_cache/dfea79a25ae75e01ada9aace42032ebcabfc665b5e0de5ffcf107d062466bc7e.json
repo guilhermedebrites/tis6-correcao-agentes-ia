@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e o commit declaram 'fix' para evitar erros da API com modelos não-reasoning, e o diff passa a incluir reasoning_effort e thinking apenas quando o modelo suporta, corrigindo o comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

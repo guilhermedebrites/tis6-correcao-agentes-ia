@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix que permite a chamada de ferramenta mesmo sem o prefixo do nome do servidor, e as linhas alteradas mudam a lógica de resolução do servidor e do nome da ferramenta para tratar essa ausência.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

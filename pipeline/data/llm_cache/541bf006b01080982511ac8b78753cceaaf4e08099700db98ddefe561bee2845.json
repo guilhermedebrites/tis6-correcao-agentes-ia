@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente que a mudança corrige a falha de hash em funções builtin do CPython (#5993), onde o atributo `__code__` não existe, e o diff adiciona um desvio para tratar esses casos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram implementar um calendário de irrigação de 12 meses, e o trecho adiciona um novo handler websocket que expõe essa funcionalidade, ou seja, comportamento novo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

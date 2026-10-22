@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de um parâmetro `location` à assinatura do hook (ajuste de API), e a descrição justifica isso como uma necessidade de contexto, sem relatar um defeito existente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

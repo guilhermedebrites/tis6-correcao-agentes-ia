@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título fala em tratar o endpoint corretamente e a descrição declara a correção do issue #6368 ao desativar o reasoning_mode para Azure, o que aponta para correção de comportamento, embora o diff também extraia lógica para novos métodos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

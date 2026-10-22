@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de suporte a prompts no formato de chat com saída estruturada (parâmetro response_format), e o diff introduz novos tipos de prompt, tags e parâmetros de API, o que caracteriza nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

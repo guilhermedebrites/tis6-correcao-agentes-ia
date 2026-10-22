@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara o propósito 'feat: add endpoint to delete users' e a mudança no diff apenas adiciona a importação de Field em schemas.py, que serve à nova funcionalidade de exclusão de usuários.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

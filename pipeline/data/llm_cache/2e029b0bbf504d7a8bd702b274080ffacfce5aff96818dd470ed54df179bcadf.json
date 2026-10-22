@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'feat: allow to assign seat using API', e o diff adiciona um fluxo de 'immediate_claim' que concede benefícios e dispara webhook de claim sem enviar convite, alterando o comportamento desejado da atribuição de assentos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

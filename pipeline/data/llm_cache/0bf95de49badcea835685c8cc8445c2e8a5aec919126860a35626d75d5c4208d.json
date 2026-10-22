@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma nova opção de configuração (`watcher_on_save = \"autorun\"`) que adiciona o comportamento de execução automática das células em modo watch, substituindo o marcador fixo de stale que antes era usado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

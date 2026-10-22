@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um refactor de renomeação (Op para Notification) para maior clareza, e o diff apenas renomeia classes, tags e imports sem alterar a lógica.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

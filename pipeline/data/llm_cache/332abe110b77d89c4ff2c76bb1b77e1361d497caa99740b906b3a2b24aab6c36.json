@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título 'Add Autologging event' sugere evolução, mas o diff só move a construção do Record para dentro de um novo helper `_add_telemetry_record` e reorganiza a verificação do cliente, sem alterar o comportamento observável das linhas mostradas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

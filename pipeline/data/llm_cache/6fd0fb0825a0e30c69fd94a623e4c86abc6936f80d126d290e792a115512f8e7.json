@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de detalhes do pedido nos e-mails de pedido e assinatura, e o diff adiciona novos templates, URLs com parâmetros de e-mail e a lógica de envio por tipo de cobrança, o que altera comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

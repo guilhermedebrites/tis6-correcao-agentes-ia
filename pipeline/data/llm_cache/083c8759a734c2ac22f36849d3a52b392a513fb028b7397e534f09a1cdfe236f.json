@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix sql get traces' e a mudança troca 'return []' por 'continue' dentro de um loop, o que corrige o comportamento de interromper a busca de traces prematuramente em vez de retornar lista vazia.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

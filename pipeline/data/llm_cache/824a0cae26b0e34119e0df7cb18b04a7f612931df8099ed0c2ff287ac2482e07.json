@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente a correção de um redirecionamento duplo de '/' no sign in, e a alteração remove a barra final duplicada da URL do Reflex Cloud com strip('/').", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

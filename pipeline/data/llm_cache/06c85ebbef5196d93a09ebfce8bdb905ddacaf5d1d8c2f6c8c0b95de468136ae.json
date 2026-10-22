@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara uma funcionalidade nova (buscar a role do provedor SSO genérico, como o Keycloak), e a linha alterada passa a repassar user_role em vez de None, habilitando esse comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

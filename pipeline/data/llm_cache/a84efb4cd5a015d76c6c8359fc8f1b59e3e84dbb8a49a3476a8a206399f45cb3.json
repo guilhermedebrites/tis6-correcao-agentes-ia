@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma refatoração para classe abstrata com separação de tipos, e o trecho mostra apenas a remoção de código que estava comentado, sem alteração de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

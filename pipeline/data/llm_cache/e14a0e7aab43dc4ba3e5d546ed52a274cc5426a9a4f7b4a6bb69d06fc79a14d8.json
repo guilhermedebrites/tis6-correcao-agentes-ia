@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "A mudança adiciona um novo plugin (rx.plugins.SitemapPlugin) à configuração, o que introduz uma funcionalidade nova (geração de sitemap); o título genérico e a ausência de descrição deixam a intenção apenas inferida do diff.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

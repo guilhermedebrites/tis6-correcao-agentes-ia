@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e o commit declaram 'fix' para o problema de perda de informação de fuso horário (issue #3564), e o diff adiciona %z ao formato de data para preservar o timezone na exibição.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

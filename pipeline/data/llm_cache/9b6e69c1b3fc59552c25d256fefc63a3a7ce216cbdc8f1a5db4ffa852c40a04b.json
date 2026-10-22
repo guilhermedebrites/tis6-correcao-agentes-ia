@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix' e a mudança troca o nome do argumento de extra_headers para additional_headers, o que corrige uma chamada que usava o parâmetro incorreto (provável erro de API que causaria falha ou headers ignorados).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

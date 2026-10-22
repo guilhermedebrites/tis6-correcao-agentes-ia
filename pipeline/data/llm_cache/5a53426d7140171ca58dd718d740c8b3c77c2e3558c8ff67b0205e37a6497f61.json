@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente que é um revert do commit e75d8b7, então a mudança é uma reversão, classificada como outro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

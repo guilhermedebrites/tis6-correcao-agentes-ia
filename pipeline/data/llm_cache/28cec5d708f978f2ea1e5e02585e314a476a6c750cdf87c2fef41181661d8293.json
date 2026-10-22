@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e o commit declaram remover a flag experimental dos scorers, e o diff apenas remove o decorador @experimental sem alterar lógica, o que caracteriza limpeza estrutural sem mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

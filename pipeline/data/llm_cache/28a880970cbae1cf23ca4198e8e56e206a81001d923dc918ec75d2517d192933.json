@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A PR é um revert explícito do commit 48fa80e (feat de schema de placa), e o diff apenas remove o arquivo inteiro, o que caracteriza reversão, não defeito, evolução ou refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

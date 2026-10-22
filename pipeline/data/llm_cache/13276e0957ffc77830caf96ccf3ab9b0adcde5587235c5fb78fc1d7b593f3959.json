@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título diz 'Pass aggregation to legacy metric', mas o diff só substitui a anotação de tipo verbosa por um alias `_AggregationType` e troca `Optional[...]` por `| None`, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

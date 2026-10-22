@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'feat' e o objetivo de abrir tipos de arquivo desconhecidos com `edit --convert`, e o diff adiciona novas funções de conversão e um novo caminho de fallback para scripts não reconhecidos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

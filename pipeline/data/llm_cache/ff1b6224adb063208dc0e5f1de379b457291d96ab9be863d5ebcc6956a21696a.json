@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O trecho mostrado apenas altera a versão de 0.1.27 para 0.1.28, um ajuste de release sem mudança de comportamento; o título declara 'feat', mas essa funcionalidade não aparece nas linhas analisadas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

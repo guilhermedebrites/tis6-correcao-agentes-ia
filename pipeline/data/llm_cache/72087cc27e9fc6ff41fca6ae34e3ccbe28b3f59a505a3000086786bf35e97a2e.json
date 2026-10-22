@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara uma feature (mensagem de violação customizada), mas o diff mostrado só reformata linhas existentes (quebra de linha de argumentos de chamada) sem alterar comportamento, o que caracteriza refatoração/formatação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

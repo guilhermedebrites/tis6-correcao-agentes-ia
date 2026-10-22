@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram a adição de um destino de tracing por thread via mlflow.tracing.set_destination, uma nova funcionalidade, e o diff introduz a variável de ambiente correspondente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

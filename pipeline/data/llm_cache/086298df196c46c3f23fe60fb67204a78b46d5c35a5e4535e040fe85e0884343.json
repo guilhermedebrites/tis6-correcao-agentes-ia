@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram que o objetivo é dividir rules.py em arquivos de regra individuais, e o diff apenas remove o conteúdo original sem alterar o comportamento das regras.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

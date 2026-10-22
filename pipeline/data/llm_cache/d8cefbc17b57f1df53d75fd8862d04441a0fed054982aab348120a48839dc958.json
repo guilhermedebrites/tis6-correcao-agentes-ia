@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título, a descrição e o commit declaram o propósito de adicionar documentação ('docs for commands'), e o diff altera apenas a docstring de uma função, sem mudar comportamento de código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

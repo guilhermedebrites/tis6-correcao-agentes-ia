@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O diff só reformata atribuições de dicionário com parênteses (estilo de formatação), sem alterar a lógica; o título é apenas um número de versão e a descrição está vazia.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

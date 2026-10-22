@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix' e 'Fixes #4381' para colocar nulos no fim da ordenação, e a alteração no diff substitui a chave de ordenação `str(...)` por uma função dedicada (`sort_func_str`), que trata o caso de valores nulos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

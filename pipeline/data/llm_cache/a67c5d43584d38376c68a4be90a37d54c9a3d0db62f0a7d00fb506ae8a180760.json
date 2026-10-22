@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um fix (teste falhando para o caso de saldo de cliente e 'take into account refunds on customer balance'), e o diff altera o cálculo do saldo para tratar reembolsos e créditos negativos corretamente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

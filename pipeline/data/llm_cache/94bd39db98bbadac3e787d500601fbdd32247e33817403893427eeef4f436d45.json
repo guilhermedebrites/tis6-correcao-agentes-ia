@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O propósito declarado é performance (tornar operações não bloqueantes), e o diff apenas reindenta blocos e move a exportação automática para uma função de background, sem alterar a lógica funcional, o que caracteriza reestruturação de código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição indicam que a mudança trata o caso em que não há fatura futura durante a migração, evitando que a exceção do Stripe quebre o fluxo, o que corrige um comportamento de erro não tratado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

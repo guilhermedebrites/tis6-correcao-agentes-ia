@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título declara um smoke test com sqlmodel e psql, mas o trecho só remove células de exemplo do notebook de smoke test e troca a versão do gerador, sem alterar comportamento de código de produção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

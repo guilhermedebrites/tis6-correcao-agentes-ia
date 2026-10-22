@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram uma funcionalidade de comentários JSON, mas o trecho mostrado só troca aspas simples por duplas em uma chamada dump(), o que é mudança de formatação/estilo e não altera o comportamento visível nas linhas apresentadas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

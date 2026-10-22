@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram refatoração para usar `SymbolIndex`, e o diff remove código auxiliar (`_resolve_call`), torna o parâmetro `index` obrigatório, repassa-o adiante e ajusta um exemplo de documentação, sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

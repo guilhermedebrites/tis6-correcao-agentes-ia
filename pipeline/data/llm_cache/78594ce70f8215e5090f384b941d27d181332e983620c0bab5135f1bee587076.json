@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'add enterprise docs url' sugere evolução, mas a alteração substitui um placeholder `href=\"#\"` por uma URL real com `is_external=True`, o que corrige um link quebrado/inerte; a descrição vazia deixa a intenção ambígua.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

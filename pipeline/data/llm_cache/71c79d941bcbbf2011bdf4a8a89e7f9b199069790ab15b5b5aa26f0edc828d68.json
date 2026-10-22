@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram modernização de tipagem (Python 3.10+), e o diff apenas troca Union/List/Dict/Optional pela sintaxe `|` e `list`/`dict` nativos, sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

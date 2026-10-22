@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "baixa", "justificativa": "O título declara uma correção ('fixed trigger issues'), mas o trecho mostra apenas a remoção de um import, que pode ser limpeza de código não utilizado e não há evidência direta do defeito corrigido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

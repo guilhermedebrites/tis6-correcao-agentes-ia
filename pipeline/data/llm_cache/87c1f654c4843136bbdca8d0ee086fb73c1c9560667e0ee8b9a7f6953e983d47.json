@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram adição de suporte ao operador RLIKE na busca de traces, e o diff apenas acrescenta 'RLIKE' aos conjuntos de comparadores válidos, o que amplia o comportamento aceito pela API.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

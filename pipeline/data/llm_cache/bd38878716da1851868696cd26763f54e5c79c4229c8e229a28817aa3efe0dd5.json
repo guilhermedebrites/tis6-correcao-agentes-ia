@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara que o objetivo é adicionar um caso de teste, e as linhas alteradas mudam o comportamento do teste: novo caminho de log, verificação com polling de até 10 segundos via Stat com sudo no lugar de os.path.getsize.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

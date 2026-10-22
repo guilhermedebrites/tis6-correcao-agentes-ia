@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título 'Allow disable eval sample check' declara o propósito de adicionar uma opção para desabilitar a validação de traces, controlada pela variável MLFLOW_GENAI_EVAL_SKIP_TRACE_VALIDATION, o que é nova funcionalidade e não correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

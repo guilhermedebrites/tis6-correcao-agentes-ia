@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e o commit declaram a adição de datasets de avaliação ao MLflow; o diff altera assinaturas e adiciona um ramo para usar o dataset do MLflow ou o do Databricks, o que amplia funcionalidade em vez de corrigir defeito ou apenas reestruturar.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

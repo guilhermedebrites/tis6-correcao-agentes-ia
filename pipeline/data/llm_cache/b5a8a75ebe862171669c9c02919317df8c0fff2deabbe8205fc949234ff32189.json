@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram que o objetivo é habilitar o column explorer também no modo run, e o diff altera a condição para incluir app_mode == \"run\", mudando o comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

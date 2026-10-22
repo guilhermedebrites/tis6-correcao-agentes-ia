@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara a adição de checagem de tipos com mypy, e as linhas alteradas são majoritariamente anotações de tipo e reescritas equivalentes de expressões booleanas, sem mudança intencional de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de uma nova opção `--sandbox` para `marimo edit` em modo home/diretório, e o diff substitui a lógica de sandbox por um novo modo multi-arquivo, o que é ampliação de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

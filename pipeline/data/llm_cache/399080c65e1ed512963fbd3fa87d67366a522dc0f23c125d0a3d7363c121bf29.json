@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de novas configurações de IA (azure, ollama, open_ai_compatible) com roteamento por provedor, o que é uma mudança de comportamento desejado, embora o trecho mostrado contenha apenas remoções.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

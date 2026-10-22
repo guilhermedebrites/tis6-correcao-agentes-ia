@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix encrypted content error' e o diff remove a geração de 'id' com hash() para itens sem id, o que indica correção de um erro de conteúdo criptografado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O trecho mostrado apenas quebra a mesma string em outras linhas, sem alterar o texto final da mensagem; a correção de fato (tratamento de 'import *') está fora das linhas exibidas, embora o título declare um fix.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

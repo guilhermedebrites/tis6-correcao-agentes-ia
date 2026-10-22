@@ -1,0 +1,79 @@
+{
+  "repo": "marimo-team/marimo",
+  "familia": "python",
+  "snapshot": "ca983d9b4e86c6a3868f09d32018e6a1f17bc065",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-01-03T10:06:33-05:00",
+  "frac_sem_marcacao": 0.039,
+  "api_consultas": 0,
+  "fa_validas": 7,
+  "hl_validas": 860,
+  "incluido": true,
+  "atividade_linhas": {
+    "humano": 36594,
+    "agente_principal": 40,
+    "bot": 92
+  },
+  "n_eventos": 478,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 7
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 14
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 860
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "acima_p99",
+      "n": 8
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 27
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 80
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 876
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 9
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "so_formatacao",
+      "n": 3
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 4361,
+    "HL": 1863,
+    "direto": 390,
+    "bot": 351,
+    "FA": 22,
+    "agente_fora": 16,
+    "fa_mista": 11
+  }
+}

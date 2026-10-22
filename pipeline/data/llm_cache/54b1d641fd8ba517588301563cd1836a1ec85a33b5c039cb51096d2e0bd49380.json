@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a implementação de um health check para entrega de webhooks, mas o trecho mostrado só reorganiza imports (movendo WebhookEndpoint para TYPE_CHECKING), o que seria refatoração; prevalece o propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

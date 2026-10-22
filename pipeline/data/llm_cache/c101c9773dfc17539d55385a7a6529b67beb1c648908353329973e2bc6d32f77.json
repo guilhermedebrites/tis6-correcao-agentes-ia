@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma feature (suporte a múltiplos provedores), e o trecho mostrado é majoritariamente formatação, com a remoção de um print de sucesso no login, que não se relaciona diretamente ao propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

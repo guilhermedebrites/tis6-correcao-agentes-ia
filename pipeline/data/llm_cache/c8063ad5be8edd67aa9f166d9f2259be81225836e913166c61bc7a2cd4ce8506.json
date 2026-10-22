@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um refactor que move código para extensões, e o diff substitui a lógica inline de put_control_request por uma chamada a _event_bus.emit_received_command, sem alterar o comportamento declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

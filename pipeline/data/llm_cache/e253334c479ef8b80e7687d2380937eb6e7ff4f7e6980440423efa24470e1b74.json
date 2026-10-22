@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'Fix sanitization when judges return an error' declara o propósito de corrigir um caso de erro não tratado, e o diff passa a verificar se feedback.value existe antes de acessar .value, evitando exceção quando o juiz retorna erro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

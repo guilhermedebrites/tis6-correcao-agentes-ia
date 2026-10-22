@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título, a descrição e os commits declaram explicitamente um refactor: remoção de código morto e imports, modernização de type hints (List → list, Optional → união com None) e adição de docstrings, sem alteração de comportamento nas linhas mostradas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

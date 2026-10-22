@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de excluir 'litellm_credential_name' do mascaramento de dados sensíveis, e o diff passa a repassar 'excluded_keys' ao masker, o que altera o comportamento desejado da função de mascaramento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

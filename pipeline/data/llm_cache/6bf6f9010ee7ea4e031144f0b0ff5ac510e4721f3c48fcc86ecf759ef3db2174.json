@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "A PR troca imports da API de registro de prompts por APIs genai para eliminar um aviso, sem mudar o comportamento declarado; o trecho mostra só as linhas de import, então o código de substituição não é visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

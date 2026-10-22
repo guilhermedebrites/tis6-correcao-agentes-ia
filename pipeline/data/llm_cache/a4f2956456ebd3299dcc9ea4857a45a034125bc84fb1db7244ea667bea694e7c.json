@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "As linhas mostradas só trocam aspas, removem imports não usados (sys, Any, Union) e fazem limpeza de lint, o que é coerente com o título 'general cleanup' e a descrição de linting e type safety, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

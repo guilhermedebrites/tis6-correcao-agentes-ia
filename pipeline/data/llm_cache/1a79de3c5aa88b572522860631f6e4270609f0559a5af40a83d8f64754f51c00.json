@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara o propósito de passar a usar a read replica no health check de webhook, o que altera o comportamento (a conexão passa a ir para a réplica quando configurada), e não corrige um defeito nem é apenas refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

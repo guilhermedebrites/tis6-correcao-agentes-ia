@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "A descrição declara a melhoria do fluxo de detecção de pânico e a integração com o resultado do teste, incluindo novo formato de mensagem e logging, o que altera comportamento; a remoção de linhas duplicadas é um ajuste secundário.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

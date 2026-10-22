@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara a adição de uma regra de lint para impor tipos genéricos parametrizados, e o diff apenas acrescenta parâmetros de tipo (dict[str, Any], Callable[..., Any], list[Any]) e imports de Any, sem alterar comportamento em tempo de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,50 @@
+{
+  "repo": "translate/translate",
+  "familia": "python",
+  "snapshot": "51c5e35df32290d10f301d45cb8d9e267e3227c1",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-10-17T12:24:40+00:00",
+  "frac_sem_marcacao": 0.438,
+  "api_consultas": 366,
+  "fa_validas": 13,
+  "hl_validas": 4,
+  "incluido": false,
+  "atividade_linhas": {},
+  "n_eventos": 0,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 13
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 2
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 4
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 4
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "direto": 8583,
+    "bot": 1317,
+    "fora_periodo": 345,
+    "agente_fora": 74,
+    "FA": 19,
+    "HL": 5,
+    "fa_mista": 3
+  }
+}

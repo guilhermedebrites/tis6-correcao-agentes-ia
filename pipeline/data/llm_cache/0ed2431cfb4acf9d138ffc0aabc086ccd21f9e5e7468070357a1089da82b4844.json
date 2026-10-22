@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O diff altera apenas a versão em vlmrun/hub/version.py de 0.1.29 para 0.1.30, um bump de versão sem mudança de comportamento, enquanto o título e a descrição tratam de adicionar um schema de catálogo de produtos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

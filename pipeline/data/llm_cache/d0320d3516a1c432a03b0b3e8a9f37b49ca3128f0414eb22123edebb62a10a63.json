@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e o commit declaram que se trata de um revert (reversão) do commit #17067; reverter um commit é classificado como 'outro', e as alterações nas linhas mostradas apenas restauram anotações de experimental no lugar de deprecated.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

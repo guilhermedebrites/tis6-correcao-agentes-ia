@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara 'feat: add price per seat property', mas o trecho mostrado só troca a concatenação de strings (f-string adjacente por '+'), sem alterar o comportamento, então o propósito vem do título e não do diff.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

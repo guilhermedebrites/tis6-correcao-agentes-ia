@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição tratam de logging de guardrail no OTel, mas as linhas alteradas apenas substituem tipos Literal inline por um alias CallTypesLiteral, o que é uma mudança estrutural de tipagem sem alteração de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

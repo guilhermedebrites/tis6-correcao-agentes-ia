@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título e a descrição declaram edições de documentação, e o trecho mostrado só atualiza a versão em __generated_with, sem alterar comportamento de código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

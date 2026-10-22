@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para `://` removido por `Path()` em mo.notebook_location(), e o diff passa a retornar URLPath preservando a string original, corrigindo o comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

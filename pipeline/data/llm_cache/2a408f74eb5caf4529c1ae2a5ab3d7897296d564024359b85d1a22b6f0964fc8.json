@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte a resumability de flows (restauração de estado via id e persistência), e o diff introduz essa lógica de restauração e inicialização de estado, além do reembrulhamento dos eventos em try.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

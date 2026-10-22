@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'Fix' sobre a lógica de parsing de aderência às diretrizes, e o diff altera o tratamento de inputs/outputs para corrigir o formato enviado ao scorer.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

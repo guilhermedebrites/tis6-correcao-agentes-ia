@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma nova funcionalidade (permitir ao admin definir parâmetros permitidos/proibidos por ferramenta MCP), mas o trecho do diff mostra apenas quebras de linha e reformatação, sem a lógica nova visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

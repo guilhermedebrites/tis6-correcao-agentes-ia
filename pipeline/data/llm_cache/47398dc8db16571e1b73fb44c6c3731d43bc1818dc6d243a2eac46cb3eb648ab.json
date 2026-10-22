@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram que a PR move os diretórios examples e microsoft para dentro do pacote Python, e o diff apenas remove imports antigos de caminhos microsoft.testsuites, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

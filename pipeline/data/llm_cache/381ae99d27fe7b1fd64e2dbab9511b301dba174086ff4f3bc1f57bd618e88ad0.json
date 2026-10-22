@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a introdução de uma nova API de otimização de prompts, o que é evolução; o trecho mostra apenas a remoção de base.py, possivelmente uma realocação de código, e a descrição está vazia.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

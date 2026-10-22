@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram principalmente novas funcionalidades (feat: exceção ToolUsageLimitExceeded, metadados de tarefa nos eventos de tracing), mas os trechos mostrados misturam formatação, limpeza de imports e algumas guardas defensivas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

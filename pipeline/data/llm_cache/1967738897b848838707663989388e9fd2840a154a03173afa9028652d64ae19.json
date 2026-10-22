@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram a reescrita do script dev/preview_docs.py de Python para JavaScript para simplificar o fluxo, e o diff apenas remove o arquivo Python sem alterar o comportamento pretendido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de uma opção de autolog para genai.optimize_prompt, e o diff envolve a chamada do otimizador em um context manager de autolog, o que adiciona comportamento novo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

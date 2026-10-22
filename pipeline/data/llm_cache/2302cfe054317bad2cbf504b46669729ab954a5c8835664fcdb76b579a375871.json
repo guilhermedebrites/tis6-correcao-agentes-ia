@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'don't calculate tax for free cycle orders', indicando que a condição taxable_amount != 0 evita cobrar imposto em pedidos gratuitos, corrigindo cálculo indevido de tax.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

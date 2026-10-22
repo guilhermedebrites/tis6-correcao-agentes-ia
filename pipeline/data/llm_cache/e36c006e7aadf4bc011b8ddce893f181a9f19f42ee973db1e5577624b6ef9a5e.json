@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix: allow empty keys', e o diff troca a exigência de chave por um retorno de string vazia quando require_key é falso, além de remover a migração de modelos, o que aponta para correção de um erro na validação de chaves de API.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

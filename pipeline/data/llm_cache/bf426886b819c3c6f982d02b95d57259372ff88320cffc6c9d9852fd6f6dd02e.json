@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma migração da skill para a CLI unificada, o que é movimentação de código; o trecho mostra só a remoção do arquivo original, sem o código de destino, então não dá para confirmar que o comportamento se manteve.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

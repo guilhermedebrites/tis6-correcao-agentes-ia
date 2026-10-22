@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de um novo modelo (nvidia/llama-3.2-nv-rerankqa-1b-v2) e a descrição inclui novo suporte ao endpoint /ranking, e o diff passa a delegar a configuração de rerank por modelo em vez de usar uma configuração fixa.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

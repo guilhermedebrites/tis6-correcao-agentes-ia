@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram correções de bugs de RTC e sincronização, e o trecho mostra tratamento de exceções mais específico e um timeout de limpeza alterado de 0 para 60 segundos para permitir reconexão do cliente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

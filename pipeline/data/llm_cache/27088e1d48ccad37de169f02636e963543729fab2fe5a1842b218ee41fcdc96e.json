@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix que fecha a issue #4819, e o diff restringe o parâmetro max_completion_tokens aos modelos de raciocínio, corrigindo o envio incorreto para os demais modelos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

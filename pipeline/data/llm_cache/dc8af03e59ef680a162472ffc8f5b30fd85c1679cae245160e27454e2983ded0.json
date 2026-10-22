@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de um parâmetro no checkout para forçar a desativação de trial (allow_trial), e o diff remove a chamada a _update_trial_end, indicando mudança de comportamento desejado e não correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

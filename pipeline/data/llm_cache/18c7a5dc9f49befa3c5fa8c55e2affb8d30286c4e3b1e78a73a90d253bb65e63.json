@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título, a descrição e o diff declaram uma limpeza que deduplica a lógica de instalação dos gerenciadores de pacotes e extrai o método install_command, sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

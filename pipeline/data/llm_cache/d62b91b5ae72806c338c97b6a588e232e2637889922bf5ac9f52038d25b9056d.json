@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix que remove imports eager de starlette que quebram o build wasm, e o diff move esses imports para TYPE_CHECKING, eliminando a dependência em tempo de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

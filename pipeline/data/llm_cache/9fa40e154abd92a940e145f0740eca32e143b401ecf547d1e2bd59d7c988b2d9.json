@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título declara atualização de documentação e o diff apenas remove um item de navegação da sidebar de docs, sem alterar lógica de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

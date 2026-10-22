@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara explicitamente 'Fix an issue with trace ingest', e as alterações passam a tratar corretamente outputs não-dict (wrapping, None e tipos escalares) que antes eram ignorados ou mal persistidos, corrigindo comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

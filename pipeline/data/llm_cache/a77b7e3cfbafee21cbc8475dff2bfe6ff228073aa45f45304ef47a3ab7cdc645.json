@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O diff apenas remove a importação não utilizada de `uuid` em um arquivo, sem alterar comportamento; embora o título declare uma feature de métrica, o trecho mostrado é uma limpeza de import.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

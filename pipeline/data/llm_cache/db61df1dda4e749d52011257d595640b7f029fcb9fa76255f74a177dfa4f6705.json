@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A PR é um revert explícito do commit ff2d19e, que reverte as mudanças de api_base do Vertex AI para proxies, e o diff mostra a remoção dessa lógica.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

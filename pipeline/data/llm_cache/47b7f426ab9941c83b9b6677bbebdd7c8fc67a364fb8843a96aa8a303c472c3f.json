@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a mensagem de commit declaram a implementação de uma nova regra de lint (MLF0024), o que é adição de funcionalidade, mas o trecho mostrado é apenas a troca de nome de uma classe e a descrição está vazia.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

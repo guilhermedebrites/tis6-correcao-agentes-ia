@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas só quebram linhas, removem espaços em branco e ajustam formatação, sem mudar comportamento; o propósito declarado (corrigir mensagem TODO e adicionar calendário de rega) não aparece neste trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

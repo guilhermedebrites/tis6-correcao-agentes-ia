@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um fix, e o diff passa a aplicar cache_control só ao último bloco de conteúdo, evitando exceder o limite de 4 breakpoints de cache da Anthropic.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

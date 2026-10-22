@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram aplicar correções do ruff e anotações de tipo, e o diff apenas troca Optional[str] por str | None e Dict por dict, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

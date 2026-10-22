@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição indicam correção de posicionamento de erro de coluna em SQL com chaves, e o diff ajusta o número da coluna de erro compensando o offset causado pelas aspas adicionadas, corrigindo a posição mostrada ao usuário.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

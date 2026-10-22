@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'feat', e o diff adiciona os parâmetros configuráveis csv_encoding e json_ensure_ascii ao download de DataFrame, o que é nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

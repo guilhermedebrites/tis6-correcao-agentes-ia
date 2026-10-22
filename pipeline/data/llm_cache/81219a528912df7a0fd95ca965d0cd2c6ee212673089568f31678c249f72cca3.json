@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'Fix ... positional argument bug' e o diff troca argumento posicional por keyword (tracking_uri=...), corrigindo a passagem incorreta do parâmetro em get_artifact_repository.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

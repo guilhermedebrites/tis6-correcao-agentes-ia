@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit 'fixing linting again' indicam ajuste de formatação/estilo de imports; o diff apenas reformata listas de importação sem alterar nomes ou comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

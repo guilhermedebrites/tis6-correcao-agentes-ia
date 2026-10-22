@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas alteradas só mexem em tipagem (remoção do import não usado `Any` e troca de `Sequence` por `list` na anotação), sem alterar comportamento, embora a descrição mencione correções de tipagem que poderiam indicar erro de tipo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

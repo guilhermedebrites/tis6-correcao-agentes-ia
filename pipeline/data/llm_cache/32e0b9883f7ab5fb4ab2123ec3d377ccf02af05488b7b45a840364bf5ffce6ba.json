@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram um fix de formatação markdown para colunas e para o SQL engine, embora o diff também adicione suporte a `engine=` e `hide_output`, o que tem traços de evolução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

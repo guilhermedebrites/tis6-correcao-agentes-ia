@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'Fix agent knowledge' e a descrição indicam correção da consulta de conhecimento; o diff separa a consulta de conhecimento do agente da do crew e passa a executá-la apenas quando self.knowledge existe, o que corrige o fluxo anterior.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

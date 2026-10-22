@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara a aplicação de correções do ruff, e o diff apenas remove o import não utilizado `Tuple`, uma limpeza sem mudança de comportamento, apesar do prefixo 'fix:'.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

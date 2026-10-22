@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a mensagem de commit 'fix(order): order product can be none' declaram explicitamente a correção de um caso de borda, e o diff adiciona a verificação de None em order.product, evitando AttributeError.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

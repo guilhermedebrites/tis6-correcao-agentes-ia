@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram uma limpeza para compartilhar código com o narwhals table manager, mas o trecho também altera comportamento (tratamento de colunas só com nulos e condição de drop), o que reduz a confiança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

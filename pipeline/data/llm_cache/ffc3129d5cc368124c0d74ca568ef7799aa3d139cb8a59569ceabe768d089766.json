@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "baixa", "justificativa": "O título 'fix events' indica correção, mas a descrição está vazia e o diff só remove o import 'Decimal' de schemas.py, o que sugere limpeza de import não usado (refatoração) e não há evidência clara de defeito corrigido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

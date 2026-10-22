@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um bug fix (hooks quebrados no passthrough /bedrock por falta de metadata) e o diff substitui a chamada direta ao router pelo caminho de processamento comum, que inicializa metadata e hooks.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

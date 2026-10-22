@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix width on main content for some docs pages', indicando correção de um problema de largura/layout em páginas da documentação, em vez de nova funcionalidade ou reorganização estrutural.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

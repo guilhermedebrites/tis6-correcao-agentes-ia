@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança remove um import não usado (`cast`) e um prefixo `f` desnecessário em strings sem placeholders, ambos ajustes de lint que não alteram o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

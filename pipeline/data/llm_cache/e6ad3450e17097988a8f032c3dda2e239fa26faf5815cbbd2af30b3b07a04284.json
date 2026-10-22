@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma feature (feat: suporte a múltiplos arquivos de configuração e provedores), mas o trecho mostra principalmente remoção e reorganização de código em http.py, que sugere refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

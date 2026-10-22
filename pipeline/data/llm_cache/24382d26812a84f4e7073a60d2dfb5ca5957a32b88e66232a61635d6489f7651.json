@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar uma métrica de evento PostHog, e o trecho inclui a nova chamada `yield QuoteFormState.send_demo_event(form_data)`, além de mudanças de formatação e tipagem sem alteração de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

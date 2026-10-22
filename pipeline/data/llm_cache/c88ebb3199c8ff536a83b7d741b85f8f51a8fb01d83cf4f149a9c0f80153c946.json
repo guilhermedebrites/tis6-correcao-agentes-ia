@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram o objetivo de compartilhar tipos e funções entre table e dataframe, e o diff substitui blocos duplicados de download por uma chamada a `download_as`, sem alterar a funcionalidade pretendida.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

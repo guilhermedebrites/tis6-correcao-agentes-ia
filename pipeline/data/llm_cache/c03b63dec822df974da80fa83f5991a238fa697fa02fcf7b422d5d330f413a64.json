@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara o propósito de permitir ligar o LSP sem reiniciar o servidor, o que é uma nova capacidade; a mudança em start.py passa a repassar o config_reader inteiro, em vez de valores fixos, habilitando esse comportamento dinâmico.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

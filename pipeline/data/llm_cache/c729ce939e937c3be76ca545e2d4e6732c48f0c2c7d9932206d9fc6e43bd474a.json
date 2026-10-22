@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "baixa", "justificativa": "O título declara 'fix #627', mas as linhas mostradas são majoritariamente formatação, remoção de import não usado e simplificação de retorno, sem um defeito corrigido visível no trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

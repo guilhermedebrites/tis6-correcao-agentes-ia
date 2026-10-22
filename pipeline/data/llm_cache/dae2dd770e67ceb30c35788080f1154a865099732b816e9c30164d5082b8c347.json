@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de um post de blog, e a linha alterada muda como o caminho da página é gerado, o que parece dar suporte à nova página, mas o diff não deixa claro se a mudança é intencional ou ajuste colateral.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

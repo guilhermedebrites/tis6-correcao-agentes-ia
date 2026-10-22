@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'feat: enables sandboxing for markdown files' e as linhas alteradas passam a aceitar arquivos .md/.qmd na sandbox, o que adiciona comportamento novo, apesar de parte do diff ser extração de frontmatter.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara explicitamente 'fix' e o objetivo de limitar as retentativas a uma vez com backoff de 30s, indicando correção de comportamento de retry anterior (max_retries=0) que não estava adequado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

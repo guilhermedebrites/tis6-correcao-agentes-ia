@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de emitir eventos de início, conclusão e falha de avaliação de agentes (feat), e os trechos mostram novos imports dos eventos e handlers registrados.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram a adição de preços ad-hoc no checkout, e o trecho em order/service.py passa a verificar uma lista de preços em vez de um único preço, o que altera o comportamento; a troca de StrEnumType por StringEnum é apenas renomeação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

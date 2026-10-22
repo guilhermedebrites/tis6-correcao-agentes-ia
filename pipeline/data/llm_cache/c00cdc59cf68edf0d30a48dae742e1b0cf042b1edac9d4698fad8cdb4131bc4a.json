@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram que a PR corrige o problema de UIElements que não eram re-registrados no UIElementRegistry ao restaurar valores do cache (issue #5930), e o diff estende o mecanismo de stubs para `self.meta[\"return\"]`.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

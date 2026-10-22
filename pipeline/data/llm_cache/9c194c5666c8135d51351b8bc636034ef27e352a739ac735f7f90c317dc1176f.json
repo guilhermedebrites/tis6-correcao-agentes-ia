@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara refatoração e a descrição está vazia, mas o diff também remove métodos públicos (from_model_version, link_prompts_to_trace) e troca argumentos (version_metadata por tags), o que pode indicar mudança de API além de reestruturação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

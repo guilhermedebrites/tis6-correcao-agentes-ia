@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a criação de um framework de ferramentas do frontend integrado ao sistema de IA do backend, e o diff apenas passa a incluir `additional_tools` nas chamadas de convert_to_*_tools, ampliando as ferramentas enviadas ao modelo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

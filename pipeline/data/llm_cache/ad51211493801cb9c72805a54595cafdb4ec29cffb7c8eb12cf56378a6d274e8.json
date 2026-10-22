@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram a correção do issue #2351, que sanitiza nomes de coleção para atender aos requisitos do ChromaDB, e o diff passa o nome pelo sanitizador antes de criar a coleção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

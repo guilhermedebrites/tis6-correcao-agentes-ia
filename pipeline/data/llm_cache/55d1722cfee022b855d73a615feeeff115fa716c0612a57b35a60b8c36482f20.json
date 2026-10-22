@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix numbers image path' e a mudança adiciona a barra inicial ao caminho da imagem, corrigindo a referência quebrada do recurso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram que o objetivo é dividir a classe monolítica do websocket em classes testáveis e reutilizáveis, e o diff remove o código original sem alterar comportamento declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

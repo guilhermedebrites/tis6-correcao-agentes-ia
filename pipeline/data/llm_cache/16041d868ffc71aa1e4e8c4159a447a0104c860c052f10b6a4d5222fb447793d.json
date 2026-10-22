@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram apenas a remoção de decoradores @experimental, que é limpeza de código sem alterar o comportamento das funções.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título e a mensagem de commit declaram apenas a adição de um comentário de documentação; a troca de _EnvironmentVariable por _BooleanEnvironmentVariable é secundária e não é o propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

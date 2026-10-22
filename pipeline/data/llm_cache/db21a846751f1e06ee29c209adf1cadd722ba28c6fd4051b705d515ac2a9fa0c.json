@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas altera uma mensagem de log/print_header de 'KQLDashboard' para 'KQL Dashboards', sem alterar comportamento de código, o que se enquadra em mudança só de mensagem.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

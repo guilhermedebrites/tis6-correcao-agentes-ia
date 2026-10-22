@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de uma funcionalidade (anexar a fatura ao e-mail de confirmação e permitir regenerá-la), e a linha alterada troca o envio síncrono do e-mail por um job assíncrono como parte dessa mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

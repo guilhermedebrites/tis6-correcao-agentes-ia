@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A descrição declara que a mudança move todos os IDs para `marimo._types.ids`, e o diff só remove imports e aliases de tipo (`CellId_t`, `VariableName`, `ConsumerId`) sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

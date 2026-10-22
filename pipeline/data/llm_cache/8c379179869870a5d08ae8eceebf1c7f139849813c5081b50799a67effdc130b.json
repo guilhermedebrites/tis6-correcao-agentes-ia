@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram que a PR é um revert do commit 9ec52a6 (PR #5435), portanto o propósito é desfazer uma mudança anterior, que é o caso 'revert' da categoria outro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

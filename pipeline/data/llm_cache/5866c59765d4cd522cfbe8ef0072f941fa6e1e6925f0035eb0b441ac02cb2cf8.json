@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a mudança como renomeação do nome padrão da avaliação, o que altera o comportamento visível da API (o assessment_name passa a usar uma constante quando não é informado), em vez de apenas reestruturar o código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "baixa", "justificativa": "O título e a descrição declaram atualizações cosméticas, mas o diff remove campos e classes, altera o tipo de weight e adiciona restrições de tamanho, o que pode mudar a API dos schemas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

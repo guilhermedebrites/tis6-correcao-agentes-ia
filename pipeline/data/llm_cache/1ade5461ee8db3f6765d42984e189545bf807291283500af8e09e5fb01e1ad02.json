@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram a correção de um erro de sintaxe ('Syntax error: \"(\" unexpected') em debian/ubuntu, e o diff troca a execução via shell=True por bash -c com shlex.quote, o que corrige o comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

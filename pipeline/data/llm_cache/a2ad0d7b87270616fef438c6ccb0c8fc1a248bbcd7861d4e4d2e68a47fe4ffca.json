@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição da opção runtime.default_sql_output, e o diff apenas passa essa nova configuração adiante para a sessão, expondo um comportamento novo e desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

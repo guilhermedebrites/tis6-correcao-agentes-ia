@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram migrar decorators @mock.patch para context managers em testes, o que muda a estrutura sem alterar o comportamento; o diff apenas remove cinco arquivos de uma lista de exceções da regra do linter.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

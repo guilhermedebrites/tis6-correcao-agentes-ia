@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "A mudança substitui a atualização incondicional por uma transição atômica que só inicia jobs em PENDING, evitando condição de corrida e início de jobs em estado inválido, embora o título use o termo 'add' e a descrição esteja vazia.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

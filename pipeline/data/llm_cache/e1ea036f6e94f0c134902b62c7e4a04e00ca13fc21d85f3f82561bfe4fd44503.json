@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O diff apenas troca a importação de ParamSpec de typing_extensions para typing (e consolida as linhas de import), sem alterar comportamento, após a remoção do suporte ao Python 3.9, o que é uma limpeza estrutural.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

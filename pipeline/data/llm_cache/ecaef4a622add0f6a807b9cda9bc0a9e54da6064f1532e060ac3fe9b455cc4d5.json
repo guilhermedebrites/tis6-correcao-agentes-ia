@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e o commit declaram 'Fix judge regression', mas o diff remove o caminho LiteLLM/nativo e fixa o provedor em 'databricks', o que é uma mudança de comportamento mais ampla do que uma correção pontual.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

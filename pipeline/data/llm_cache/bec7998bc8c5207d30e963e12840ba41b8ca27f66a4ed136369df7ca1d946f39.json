@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram 'allow to change the number of seats' (nova funcionalidade), e as linhas alteradas introduzem cálculo de proration para troca de assentos, além de ajustar o schema de quantidade de assentos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

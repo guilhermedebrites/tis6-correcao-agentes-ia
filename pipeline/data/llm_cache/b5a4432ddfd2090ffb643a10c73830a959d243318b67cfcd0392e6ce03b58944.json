@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título fala em melhorar a regra e o diff muda a API de `check` (agora recebe a lista de decoradores e retorna o nó) e a localização reportada da violação (do `def` para o decorador), o que é ajuste de comportamento e de API, não apenas refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

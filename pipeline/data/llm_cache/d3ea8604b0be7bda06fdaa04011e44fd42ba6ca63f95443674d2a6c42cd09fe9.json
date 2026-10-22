@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram uma refatoração (KISS, trocar integração LiteAgent por Agent), e o diff nas linhas mostradas só remove um import não utilizado (`re`) e adiciona `Type` ao import de typing, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

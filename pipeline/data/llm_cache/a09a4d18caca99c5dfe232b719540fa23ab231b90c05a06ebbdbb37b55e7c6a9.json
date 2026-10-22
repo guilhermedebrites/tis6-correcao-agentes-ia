@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram a correção de um erro de ordenação com tipos datetime misturados, e a linha alterada substitui um fallback datetime.min por um parser seguro, o que é consistente com a correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

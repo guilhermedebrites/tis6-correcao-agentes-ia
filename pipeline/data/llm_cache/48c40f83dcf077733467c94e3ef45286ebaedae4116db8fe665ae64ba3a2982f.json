@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de suporte a múltiplos senders e um receiver com múltiplas portas no testpmd, e o diff introduz uma nova opção de pareamento específico (specific_pairings) que altera o comportamento de definição dos test_nics.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

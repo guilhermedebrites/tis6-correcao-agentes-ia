@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de um botão de correção automática para células SQL, e o diff altera os prompts da IA para mudar o comportamento gerado (removendo as instruções de `mo.sql` e exigindo somente o código na linguagem pedida).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

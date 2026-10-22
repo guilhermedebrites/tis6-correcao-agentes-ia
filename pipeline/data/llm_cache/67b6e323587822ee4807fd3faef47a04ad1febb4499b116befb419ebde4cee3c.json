@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram um cleanup e DRY da lógica de import_files, e as linhas alteradas substituem import_files(\"marimo\") por um helper marimo_package_path() sem mudar o resultado, além de ajustes de nomes e imports.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

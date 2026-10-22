@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título fala em correções de testes, e o diff passa a tratar o caso de sub-rede com um único address_prefix, que antes era ignorado ao iterar apenas address_prefixes.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

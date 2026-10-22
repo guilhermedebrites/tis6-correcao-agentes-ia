@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de melhorar a mensagem de erro quando a opção follow-symlinks falha, o que se enquadra em mudança de mensagem; as linhas mostradas só trocam str()/os.path.islink por is_symlink(), sem indicar a mensagem em si.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,7 @@
+{
+  "repo": "Azure/azure-sdk-for-python",
+  "familia": "python",
+  "erro": "BrokenPipeError: [Errno 32] Broken pipe",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/guilhermedebrites/github/faculdade/tis/tis6-correcao-agentes-ia/pipeline/correcao/executar.py\", line 32, in processar_repo\n    log(\"clonando…\")\n  File \"/Users/guilhermedebrites/github/faculdade/tis/tis6-correcao-agentes-ia/pipeline/correcao/executar.py\", line 29, in log\n    print(f\"  [{repo}] {msg}\", flush=True)\nBrokenPipeError: [Errno 32] Broken pipe\n",
+  "incluido": false
+}

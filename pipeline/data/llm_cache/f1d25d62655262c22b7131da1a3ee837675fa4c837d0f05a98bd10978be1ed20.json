@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas atualiza os limites de versão de pacotes ML gerados pelo script de manutenção `dev/update_ml_package_versions.py`, sem alterar lógica de comportamento do código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,64 @@
+{
+  "repo": "vlm-run/vlmrun-hub",
+  "familia": "python",
+  "snapshot": "55b534d87980aaca55fba28a4a6062a58f8f01ab",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-01-04T13:10:00-08:00",
+  "frac_sem_marcacao": 0.184,
+  "api_consultas": 0,
+  "fa_validas": 6,
+  "hl_validas": 34,
+  "incluido": true,
+  "atividade_linhas": {
+    "bot": 4,
+    "humano": 931,
+    "agente_principal": 3
+  },
+  "n_eventos": 25,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 6
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 6
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 34
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 16
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 11
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "HL": 63,
+    "fora_periodo": 25,
+    "direto": 13,
+    "FA": 12,
+    "bot": 6,
+    "fa_mista": 2,
+    "agente_fora": 1
+  }
+}

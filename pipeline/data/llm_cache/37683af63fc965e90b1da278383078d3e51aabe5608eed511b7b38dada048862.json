@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição ('Fixes #5005') e o commit indicam correção de um bug de serialização JSON com Decimal, e o diff adiciona `default=str` para tratar tipos não serializáveis.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

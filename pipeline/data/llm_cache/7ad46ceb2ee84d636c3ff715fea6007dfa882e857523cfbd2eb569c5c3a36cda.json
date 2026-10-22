@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix: as visualizações de sessão vazias deixam de ser gravadas como snapshots, e o diff mostra o bloco de escrita sendo pulado com `continue`, além de uma refatoração de argumentos que é secundária ao propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

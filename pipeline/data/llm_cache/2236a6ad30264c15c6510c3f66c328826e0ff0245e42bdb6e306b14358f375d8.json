@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram a correção de um bug: o usuário não deveria ser sobrescrito quando o valor é None, e o diff adiciona essa guarda condicional para evitar a sobrescrita indevida.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

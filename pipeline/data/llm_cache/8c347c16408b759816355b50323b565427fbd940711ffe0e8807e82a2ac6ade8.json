@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR declara propósito de adicionar nova API RAG, mas o trecho mostrado apenas substitui uma anotação de tipo `Literal[...]` inline pelo alias `CallTypesLiteral`, sem alterar comportamento, o que caracteriza refatoração de tipagem.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um fix que restaura log.file ignorado no formato v4.1 multi-provider, e a linha alterada troca a condição que zerava json_config quando havia mais de um provider.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

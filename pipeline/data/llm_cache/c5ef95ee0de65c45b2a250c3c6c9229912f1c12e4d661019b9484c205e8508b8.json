@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma nova funcionalidade (vincular prompts a traces carregados pela API fluente), e o diff introduz o wrapper ManagerTrace com prompts, mas as linhas mostradas são majoritariamente renomeações.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

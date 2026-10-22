@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix que remove um raise de ValueError em caminho quente, o que muda o comportamento de erro, mas a descrição está vazia e o trecho sozinho não deixa claro o defeito corrigido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

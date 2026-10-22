@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "A mudança torna os campos html e wasm opcionais (NotRequired), alterando o requisito de configuração de sharing, o que se encaixa como ajuste de requisito/API em vez de correção de defeito ou refatoração pura.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix e a descrição diz que o PR permite abrir arquivos com erros de sintaxe em células, mas o trecho mostra apenas a remoção da linha que criava a célula, sem o código que a substitui.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

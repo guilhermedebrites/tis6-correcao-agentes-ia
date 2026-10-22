@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a implementação de uma nova instrumentação (concurrent.futures), e as linhas do diff adicionam a categoria UTILITY_INSTRUMENTORS com novos caminhos de busca, embora parte das mudanças mostradas seja estrutural (mover configurações).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

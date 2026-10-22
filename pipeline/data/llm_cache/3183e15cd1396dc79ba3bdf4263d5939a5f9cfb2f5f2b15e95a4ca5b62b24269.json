@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix: a dica não deve ser exibida fora de um terminal interativo porque isso causaria travamento, e a alteração adiciona a verificação sys.stdin.isatty() para corrigir esse comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

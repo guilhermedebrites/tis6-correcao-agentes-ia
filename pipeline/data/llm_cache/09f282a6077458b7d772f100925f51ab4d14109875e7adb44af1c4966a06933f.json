@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título indica remoção do proto databricks_trace_server e o trecho mostra apenas a remoção de imports não utilizados (ParseDict, Value), o que é limpeza sem mudança de comportamento; a confiança é média porque o restante do PR não foi visto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

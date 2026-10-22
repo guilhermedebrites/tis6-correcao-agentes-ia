@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mensagem de commit declara que é um revert do commit 97c4bd9 (remoção do pin do certifi), e o diff apenas remove o script certifi-pin-check.py, sem alterar comportamento de código de produção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

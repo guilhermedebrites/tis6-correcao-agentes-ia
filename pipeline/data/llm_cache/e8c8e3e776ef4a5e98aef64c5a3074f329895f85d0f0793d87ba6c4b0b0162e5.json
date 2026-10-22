@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título 'clean assets' e a mensagem de commit indicam limpeza de recursos; a troca de '/previews/index_preview.png' para '.webp' nas duas páginas muda apenas o formato do asset de pré-visualização, sem alterar a lógica do código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O PR é um revert (back out) de um commit anterior que trocava o import de msgspec por um fork; a mudança apenas restaura os imports originais, sem alterar comportamento novo ou corrigir defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

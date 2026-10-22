@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o objetivo de suportar busca de traces por versão de prompt, e o diff substitui o vínculo via tag por um vínculo via tracking store, o que adiciona capacidade nova.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A PR declara a adição de uma funcionalidade nova (`marimo new` passa a aceitar prompt a partir de arquivo e de stdin via pipe), e o diff move a leitura de stdin para um helper compartilhado usado no novo fluxo de prompt.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

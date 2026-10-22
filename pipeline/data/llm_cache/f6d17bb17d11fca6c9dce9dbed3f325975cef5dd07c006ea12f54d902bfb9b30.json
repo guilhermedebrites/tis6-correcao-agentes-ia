@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix: recursive key completion' e descrevem um bug na completação de chaves aninhadas, que a mudança corrige ao percorrer o caminho de chaves encadeadas em vez de usar só o objeto raiz.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

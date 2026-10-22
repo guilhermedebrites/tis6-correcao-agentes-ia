@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "PR de revert explícito (\"This reverts commit 801044e...\") que desfaz a remoção do create_task bloqueante, sendo classificada como revert pela regra de outro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

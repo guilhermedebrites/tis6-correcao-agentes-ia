@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição referenciam a issue #6837 (\"Fixes #6837\") e o propósito declarado é aumentar o timeout para modelos de raciocínio, indicando que o timeout padrão causava falhas com esses modelos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara correções de três issues (#624, #643, #649) e a linha passa a gravar `calc_data` em vez de `data`, o que indica correção de dados gravados incorretamente, embora a descrição vazia deixe o defeito específico sem detalhe.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

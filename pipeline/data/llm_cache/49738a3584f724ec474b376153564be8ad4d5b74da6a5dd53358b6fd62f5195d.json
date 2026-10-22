@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para notebooks que importam marimo mas não são apps, que antes falhavam, e a linha alterada passa a capturar também MarimoFileError no tratamento de exceção, o que corrige essa falha.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

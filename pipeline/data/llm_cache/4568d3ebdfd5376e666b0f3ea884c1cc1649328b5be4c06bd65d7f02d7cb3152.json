@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'Add Cost Estimator' e a descrição adiciona o endpoint estimate_cost e a rota /cost/estimate, portanto a mudança introduz nova funcionalidade; o trecho mostra apenas imports de tipos e completion_cost, coerentes com essa adição.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

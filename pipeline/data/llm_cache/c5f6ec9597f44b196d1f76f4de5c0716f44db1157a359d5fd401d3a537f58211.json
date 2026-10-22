@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram correções ('fix: PriorityReservationSettings', 'fix type casting'), mas o trecho só remove o campo tracking_multiplier, sem mostrar a correção em si.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

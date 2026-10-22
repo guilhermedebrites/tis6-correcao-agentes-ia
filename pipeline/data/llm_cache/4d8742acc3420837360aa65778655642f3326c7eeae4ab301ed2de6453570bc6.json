@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança só ajusta níveis de log (debug→info, warning→error) em mensagens de inicialização do servidor LSP, sem alterar lógica de comportamento, o que se encaixa em mudança de log/mensagem.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

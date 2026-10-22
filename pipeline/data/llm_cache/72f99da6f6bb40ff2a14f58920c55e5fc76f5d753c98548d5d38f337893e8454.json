@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "A mudança troca o padrão de 'infer' de False para True e a descrição menciona a adição de um teste de regressão, o que indica correção de comportamento anterior, embora o título só fale em alterar o valor padrão.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

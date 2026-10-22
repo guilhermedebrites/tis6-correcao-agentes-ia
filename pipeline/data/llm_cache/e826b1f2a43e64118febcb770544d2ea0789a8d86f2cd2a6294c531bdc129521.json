@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara melhoria de tipagem (chore) e o diff apenas remove o comentário `# type: ignore[import-untyped]`, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte a rerank da Nvidia NIM; o trecho mostrado apenas remove imports não usados de `uuid` em providers de rerank, o que é limpeza, mas a classificação pelo propósito declarado da PR é evolução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

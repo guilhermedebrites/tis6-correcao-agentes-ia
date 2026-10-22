@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "A mudança remove o 'await' de create_redis, o que sugere ajuste de chamada síncrona; porém o título 'feat: add local monitoring' indica propósito de evolução e o diff é mínimo e sem contexto suficiente para confirmar se altera comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

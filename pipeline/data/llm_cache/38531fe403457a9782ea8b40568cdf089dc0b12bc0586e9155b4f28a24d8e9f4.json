@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de permitir vincular assentos (seats) a pedidos (orders), e o diff adiciona um novo ramo de order_id com validação e leitura de Order, ampliando o comportamento do endpoint.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

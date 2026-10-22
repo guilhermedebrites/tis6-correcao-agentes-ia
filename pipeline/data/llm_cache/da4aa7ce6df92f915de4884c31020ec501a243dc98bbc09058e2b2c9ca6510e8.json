@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram que a PR é um revert do commit que adicionou o código de observabilidade de prompts (#2027), e o diff apenas remove essas linhas, o que é compatível com o propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

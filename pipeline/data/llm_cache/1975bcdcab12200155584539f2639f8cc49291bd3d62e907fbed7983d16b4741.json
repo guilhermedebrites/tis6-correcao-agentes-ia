@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de uma ferramenta OpenSSL e suítes de teste para criar a base de testes de criptografia, e o diff apenas acrescenta imports (simple_requirement, CBLMariner, Posix) para suportar essa nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

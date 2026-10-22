@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara a adição de casos de teste, mas o diff mostrado apenas extrai a lógica de _perf_nvme para uma função módulo-level perf_nvme e substitui a chamada, sem alterar o comportamento; a parte de testes não aparece no trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

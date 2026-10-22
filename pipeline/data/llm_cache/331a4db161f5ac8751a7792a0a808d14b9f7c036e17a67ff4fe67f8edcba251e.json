@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix' e a descrição indica que INFO deve continuar chegando ao arquivo de log, pois o StreamHandler o filtraria; a mudança corrige o nível do logger que bloqueava essas mensagens antes de chegarem ao file handler.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

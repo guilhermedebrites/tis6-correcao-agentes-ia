@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e as mensagens de commit declaram o propósito de adicionar agendamento avançado e integração com Irrigation Unlimited, e o diff introduz novas constantes de configuração, tipos de agendamento, serviços e eventos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

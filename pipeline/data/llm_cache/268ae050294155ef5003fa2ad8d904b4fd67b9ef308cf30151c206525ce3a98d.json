@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram que a mudança corrige memórias que não podiam ser resetadas por dependerem de caminhos relativos, permitindo executar o comando a partir da raiz do projeto, além de tratar exceções ao buscar crews.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

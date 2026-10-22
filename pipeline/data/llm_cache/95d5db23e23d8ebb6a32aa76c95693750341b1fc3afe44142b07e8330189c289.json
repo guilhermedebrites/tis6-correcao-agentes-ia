@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "baixa", "justificativa": "O título declara um 'fix' em team_endpoints.py, mas não descreve o defeito, a descrição está vazia e o trecho só remove a importação de uuid, sem mostrar o getattr citado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

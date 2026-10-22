@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram a troca de `rx.color_mode_cond` por classes utilitárias `dark:` para alternar imagens por tema, o que muda o mecanismo sem mudar a funcionalidade; a inclusão de `loading` e `alt` é complementar.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

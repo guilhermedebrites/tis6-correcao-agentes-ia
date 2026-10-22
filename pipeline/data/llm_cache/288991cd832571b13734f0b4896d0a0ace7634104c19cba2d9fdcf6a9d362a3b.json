@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a criação de uma nova landing page de pricing, e o diff adiciona novos componentes de UI (select, select_item) e estado de formulário de cotação, o que caracteriza nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

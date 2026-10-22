@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a mensagem são apenas um rótulo de versão, e o diff reformata linhas (quebras, indentação, espaços), sem alterar a lógica, embora alguns trechos apareçam truncados ou embaralhados.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

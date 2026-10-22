@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara que a mudança corrige a flag --env-file para funcionar com --dev, e o diff passa a repassar env_file ao comando uvicorn e a expor o valor do parâmetro, o que resolve a falha de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

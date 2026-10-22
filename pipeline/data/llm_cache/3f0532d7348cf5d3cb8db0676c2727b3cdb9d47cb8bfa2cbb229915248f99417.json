@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas atualiza a string de versão (1.1.0 para 1.2.0) em arquivos __init__.py, sem alterar comportamento de código; o título declara o propósito de bump de versão, que se encaixa em 'outro' (atualização de metadados/versão).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

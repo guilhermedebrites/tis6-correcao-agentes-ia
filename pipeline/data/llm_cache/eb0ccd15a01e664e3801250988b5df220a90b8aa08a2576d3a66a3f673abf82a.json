@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'Fix trace_id for spans' e a linha alterada troca a geração do REQUEST_ID a partir do trace_id OTel pelo mlflow_trace_id já pronto, o que corrige o ID de trace atribuído aos spans.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

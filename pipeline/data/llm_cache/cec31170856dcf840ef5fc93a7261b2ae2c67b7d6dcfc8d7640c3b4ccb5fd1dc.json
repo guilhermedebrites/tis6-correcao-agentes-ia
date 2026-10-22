@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara 'simplify narwhals utils' e o diff substitui a verificação inline de tipo Time por uma chamada a `is_narwhals_time_type`, mantendo a mesma lógica sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

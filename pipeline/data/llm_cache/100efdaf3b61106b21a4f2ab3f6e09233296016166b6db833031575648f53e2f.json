@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte a contexto vazio na Task (feature), e as remoções de imports no diff são limpeza ligada ao lint, mas o trecho mostrado não evidencia diretamente a nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

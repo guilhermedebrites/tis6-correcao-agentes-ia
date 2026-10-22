@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram explicitamente um fix para a issue #4883 de to_json com UUID do pandas, e o diff adiciona default_handler=str para serializar tipos não suportados, o que corrige o erro de serialização.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

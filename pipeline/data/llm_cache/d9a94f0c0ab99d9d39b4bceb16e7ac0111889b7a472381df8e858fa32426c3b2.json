@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram testes de integração dos exemplos com adição de tags e nomes de trace, o que altera a configuração de comportamento dos exemplos, mas a remoção de exports em __all__ não tem propósito claro e pode ser apenas reorganização.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "baixa", "justificativa": "O título declara 'fix', mas o trecho mostra apenas a remoção de um import, que pode ser limpeza de import não usado ou correção de importação circular; sem descrição, não há como confirmar o defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

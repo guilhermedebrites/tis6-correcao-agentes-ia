@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas apenas quebram a assinatura de _parse_token_usage_from_generation em várias linhas, sem mudar comportamento; o título declara uma correção, mas ela não aparece neste trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

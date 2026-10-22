@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a referência a 'fixes #5156' indicam que a PR corrige o cache ao importar funções do notebook no nível superior, substituindo get_context por safe_get_context com tratamento de None.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

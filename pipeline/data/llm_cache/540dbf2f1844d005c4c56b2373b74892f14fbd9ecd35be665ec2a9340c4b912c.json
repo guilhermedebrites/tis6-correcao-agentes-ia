@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A descrição declara explicitamente a migração de KernelMessage de tupla (nome, bytes) para bytes tipados, e o diff apenas reorganiza como o op é desserializado e montado em texto, sem alterar o comportamento final observável.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

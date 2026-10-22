@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e o commit declaram 'fix' para corrigir a saída vazia do endpoint /responses com geração de imagem (issue #16227), e o diff adiciona a detecção de imagens que substitui o caminho anterior de mensagem de texto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

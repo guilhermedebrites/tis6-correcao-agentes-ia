@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição indicam mudanças de documentação, e o trecho do diff apenas reformata atribuições para quebrar linhas, sem alterar a lógica de mapeamento de nomes de ferramentas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

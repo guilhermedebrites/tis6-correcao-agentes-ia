@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de presets de MCP (marimo e context7), e o diff substitui a flag experimental mcp_docs por uma configuração de presets e reconfiguração dinâmica dos servidores MCP, o que altera o comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

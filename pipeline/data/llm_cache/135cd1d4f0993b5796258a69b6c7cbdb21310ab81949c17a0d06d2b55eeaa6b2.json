@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara a correção de uma mensagem de erro de carregamento de modelo, e o diff passa a lançar uma exceção explícita quando o caminho é None, em vez de retornar None silenciosamente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

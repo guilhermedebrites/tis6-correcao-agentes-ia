@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram um fix que permite cache hits de módulos externos (fecha #6716), e a linha alterada corrige a sanitização do nome do loader para que a chave de cache seja calculada corretamente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

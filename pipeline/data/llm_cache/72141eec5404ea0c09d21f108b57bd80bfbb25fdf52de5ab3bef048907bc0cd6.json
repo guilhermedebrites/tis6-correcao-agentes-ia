@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de uma nova verificação de requisito de espaço em disco, e o diff acrescenta um novo tratamento de erro de defrag com mensagem orientando aumentar osdisk_size_in_gb, além de renomear a variável existente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O trecho passa a atualizar o router apenas quando há ferramentas no banco, evitando que uma lista vazia sobrescreva as ferramentas carregadas do config, o que corrige um comportamento incorreto, embora o título fale em logging e cost tracking.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

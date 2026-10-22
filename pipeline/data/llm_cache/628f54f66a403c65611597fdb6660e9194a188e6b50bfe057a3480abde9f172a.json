@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram um 'fix' que faz o handler de SSO aceitar também a claim 'roles' quando 'app_roles' está ausente, corrigindo a leitura de papéis; os demais trechos são apenas reformatação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

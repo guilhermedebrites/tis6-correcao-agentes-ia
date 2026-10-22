@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título '[Feature] SSO Role Mapping' e os commits ('Adding role mappings to SSOConfig DB', 'Working SSO Mapping') declaram a criação de um novo recurso de mapeamento de papéis por grupos via SSO, que o trecho implementa.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição dizem apenas 'bump dependencies', mas as linhas alteradas adicionam um import e envolvem a chamada de execute com cast para tipagem, sem mudar o comportamento, o que indica ajuste de tipagem para a nova versão do SQLAlchemy.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

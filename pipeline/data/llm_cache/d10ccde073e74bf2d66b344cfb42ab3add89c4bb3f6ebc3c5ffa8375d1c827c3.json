@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix tool auto-import', e o diff troca o uso de um nome de ferramenta (string) por `tool[\"name\"]`, corrigindo o carregamento automático de ferramentas do repositório de agentes.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

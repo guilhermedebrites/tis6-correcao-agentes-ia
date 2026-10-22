@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram uma refatoração de carregamento tardio (lazy loading) sem mudança de comportamento, e o trecho mostra apenas a troca de `encoding` por `_get_encoding()` nas chamadas, sem a definição de `__getattr__`.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

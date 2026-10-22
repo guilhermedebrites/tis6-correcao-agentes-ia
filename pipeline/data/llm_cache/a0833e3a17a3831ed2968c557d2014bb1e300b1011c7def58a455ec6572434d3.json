@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a implementação de um job assíncrono para a API InvokeScorer, e o diff adiciona a configuração de MLFLOW_GATEWAY_URI para os workers do job, o que é uma nova capacidade de roteamento em vez de correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

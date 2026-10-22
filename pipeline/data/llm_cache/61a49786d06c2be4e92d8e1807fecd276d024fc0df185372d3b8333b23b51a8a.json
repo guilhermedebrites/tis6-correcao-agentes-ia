@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título é 'fix' e a descrição afirma que charts com enum (polars) passaram a não gerar mais erro, e a linha alterada estende a condição de Categorical para incluir nw.Enum, tratando um caso que antes falhava.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

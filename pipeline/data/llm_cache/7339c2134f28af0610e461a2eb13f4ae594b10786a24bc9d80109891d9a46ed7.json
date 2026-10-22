@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR corrige typos em nomes de variáveis (function_code_reult -> function_code_result) sem alterar comportamento, o que é uma limpeza/renomeação; o propósito declarado é verificar lints e hooks, e a mudança é apenas de nomenclatura.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

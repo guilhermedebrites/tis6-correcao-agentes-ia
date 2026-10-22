@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição relatam falha ao executar 'uname -m' em uma imagem Azure que nega comandos, e a mudança passa a lançar exceção com a mensagem de erro quando o comando falha, em vez de seguir com saída inválida.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

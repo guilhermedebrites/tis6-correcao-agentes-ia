@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara 'Refact(config): 统一配置' (unificar configuração), e o trecho move a lógica de execução para `load_config`/`run` e remove `util/config.py`, mas a descrição mistura testes, features de endpoint e correções, o que reduz a confiança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

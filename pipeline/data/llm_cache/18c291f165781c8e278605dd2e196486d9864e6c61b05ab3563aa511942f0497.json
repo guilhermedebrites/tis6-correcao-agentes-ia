@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de habilitar search_datasets no MLflow gerenciado pelo Databricks, e o diff remove o bloqueio que lançava NotImplementedError, além de adicionar suporte REST correspondente, ou seja, uma nova capacidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

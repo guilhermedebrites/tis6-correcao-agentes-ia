@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a implementação de novos eventos de sistema (Order Paid e Order Refunded), e o diff apenas adiciona esses dois tipos à união de eventos, o que é uma adição de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

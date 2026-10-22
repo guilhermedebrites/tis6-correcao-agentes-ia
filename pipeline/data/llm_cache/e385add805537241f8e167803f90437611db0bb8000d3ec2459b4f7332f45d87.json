@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma funcionalidade (configuração isolada de memórias), mas o trecho mostrado apenas extrai a inicialização para métodos auxiliares, o que sugere refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

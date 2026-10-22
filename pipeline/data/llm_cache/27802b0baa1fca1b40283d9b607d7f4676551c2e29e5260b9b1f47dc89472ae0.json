@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma nova funcionalidade (provedor customizado de completions inline, ex.: Ollama), e o diff remove código de endpoint de IA como parte da reestruturação, sem propósito de correção declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

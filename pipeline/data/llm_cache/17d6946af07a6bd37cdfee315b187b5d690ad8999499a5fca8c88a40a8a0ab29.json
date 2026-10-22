@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a intenção de registrar avaliações nos traces de eval do DSPy, e o diff remove o patch que desativava traces em Evaluate por padrão, o que muda o comportamento; porém, a descrição está vazia e o trecho mostra apenas remoções.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

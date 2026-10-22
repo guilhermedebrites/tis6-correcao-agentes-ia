@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de uma função de parse no endpoint /validate para melhorar os erros de lint em células SQL, o que é uma nova funcionalidade, apesar de haver renomeações no diff.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

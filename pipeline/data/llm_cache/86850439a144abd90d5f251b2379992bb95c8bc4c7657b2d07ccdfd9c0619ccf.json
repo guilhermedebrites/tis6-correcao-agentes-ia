@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte à API de containers (E2E, proxy e logging), e o diff apenas inclui novas operações de container na lista de rotas, o que amplia comportamento suportado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

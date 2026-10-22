@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram a correção de falhas de deploy causadas por shortcuts de Lakehouse apontando para Mirrored Databases ainda não publicados, e a mudança reordena os blocos de publicação para resolver isso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

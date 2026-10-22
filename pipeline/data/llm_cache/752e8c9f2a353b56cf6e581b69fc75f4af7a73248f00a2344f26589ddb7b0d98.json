@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram a intenção de atualizar parâmetros padrão de optimize_prompt, e o diff altera apenas os valores default documentados (8→6 e 3→6), o que muda o comportamento desejado da API sem corrigir defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

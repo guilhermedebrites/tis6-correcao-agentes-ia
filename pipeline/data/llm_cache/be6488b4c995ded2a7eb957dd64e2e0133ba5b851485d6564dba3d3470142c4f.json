@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma nova funcionalidade (autorun de células após instalação de pacote), e o diff apenas remove a função auxiliar should_show_traceback, o que indica uma reorganização do fluxo de execução para suportar esse comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

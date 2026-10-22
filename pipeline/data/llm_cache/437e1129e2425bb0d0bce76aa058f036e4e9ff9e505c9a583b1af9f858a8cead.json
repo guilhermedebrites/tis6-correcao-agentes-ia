@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "baixa", "justificativa": "O título e a descrição declaram uma nova funcionalidade (suporte a Google Maps grounding no Vertex AI), mas o trecho mostrado apenas remove um import não relacionado, provavelmente como ajuste de lint.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

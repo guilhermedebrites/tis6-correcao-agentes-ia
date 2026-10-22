@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente a correção de problemas de interpolação quando inputs são dict/list, e o diff amplia os tipos aceitos e remove a validação que bloqueava esses valores.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

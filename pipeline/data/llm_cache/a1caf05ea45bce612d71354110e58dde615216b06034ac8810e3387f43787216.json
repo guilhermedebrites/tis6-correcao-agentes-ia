@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "A linha alterada apenas troca o nível de log de exception para error, sem mudar comportamento funcional, e o título e a descrição da PR (feat: inline edits) não explicam essa mudança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

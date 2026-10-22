@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "É um revert explícito (título e descrição indicam reversão do commit #6535) que remove a sobreposição do auto-save no modo --watch, sem introduzir comportamento novo nem corrigir um defeito identificado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

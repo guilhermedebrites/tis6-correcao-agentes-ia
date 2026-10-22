@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram a correção da issue #6107, e a mudança troca o tipo genérico `dict[str, Any]` por schemas tipados, embora a mensagem de commit também mencione um revert.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

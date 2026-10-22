@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram explicitamente um rename de formulários 'account' para 'organization' por consistência, e o diff apenas troca nomes de classes e referências sem alterar lógica.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

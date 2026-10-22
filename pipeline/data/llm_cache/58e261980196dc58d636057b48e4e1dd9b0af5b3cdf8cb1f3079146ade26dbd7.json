@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara o propósito de preservar a ordem dos argumentos de register_prompt, e o diff apenas reordena os parâmetros (response_format sai da posição anterior e passa para o fim da chamada), sem alterar a lógica do comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

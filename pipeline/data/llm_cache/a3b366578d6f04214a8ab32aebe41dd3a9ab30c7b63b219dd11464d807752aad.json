@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram a adição de uma propriedade description à interface Scorer, e o diff adiciona uma nova opção de CLI (--description) repassada ao make_judge, ampliando a funcionalidade existente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

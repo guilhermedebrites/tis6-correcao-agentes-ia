@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de configuração de per-file-ignores, e o diff remove as exclusões fixas por caminho (\"tests\", \"examples\") das regras, que passam a depender dessa nova configuração; a descrição está vazia, o que reduz a confiança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

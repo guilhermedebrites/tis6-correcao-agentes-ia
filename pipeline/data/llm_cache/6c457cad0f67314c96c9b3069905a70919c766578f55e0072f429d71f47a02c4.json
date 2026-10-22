@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram explicitamente 'Fix', e o diff adiciona um tratamento para o caso em que o objeto já é um DatasetEntity, evitando a conversão incorreta que causava falha.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

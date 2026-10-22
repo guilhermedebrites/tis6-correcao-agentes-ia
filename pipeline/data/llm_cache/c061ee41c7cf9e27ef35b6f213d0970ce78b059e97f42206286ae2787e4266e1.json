@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título declara atualização de licenças para Apache-2.0, que é mudança de metadados sem alteração de comportamento; o trecho mostra apenas um bump de versão e não contém a alteração de licença, então a confiança é média.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

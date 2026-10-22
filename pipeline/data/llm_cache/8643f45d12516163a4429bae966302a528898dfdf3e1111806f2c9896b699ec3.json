@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix que faz o column explorer suportar colunas de duração, que antes não eram tratadas, e o diff adiciona esse tratamento na sanitização de dtypes.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

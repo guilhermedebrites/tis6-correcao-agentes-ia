@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e o commit ('fix:') declaram a correção de um erro em que o estilo das células não era aplicado com linhas em ordem decrescente, e o diff substitui um aviso por lógica que detecta a ordenação descendente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a substituição da API de scorers agendados por um sistema de registro de scorers, o que é uma mudança de API (remoção das funções antigas e exposição de um novo fluxo), não correção de defeito nem refatoração pura.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

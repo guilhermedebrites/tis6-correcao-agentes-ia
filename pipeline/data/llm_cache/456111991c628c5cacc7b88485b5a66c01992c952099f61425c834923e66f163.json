@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara refatoração de tratamento de modelos, mas as linhas mostradas também mudam o comportamento de erro (acesso seguro ao content-type e nova exceção no lugar do texto de resposta), o que enfraquece a classificação como refatoração pura.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

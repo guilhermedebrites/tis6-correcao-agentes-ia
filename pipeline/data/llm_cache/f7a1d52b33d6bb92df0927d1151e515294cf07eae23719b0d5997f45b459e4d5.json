@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram simplificação e refatoração da estrutura da factory, e o diff apenas reorganiza a construção dos clientes (retorno direto do construtor) e troca um import de módulo, sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

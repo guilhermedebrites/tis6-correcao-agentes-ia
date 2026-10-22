@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram explicitamente a correção de um TypeError causado por comparação entre None e str na chave de ordenação, e o diff adiciona o fallback `or \"\"` que resolve esse caso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

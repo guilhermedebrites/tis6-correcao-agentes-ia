@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de uma variante AddressInput para países restritos e de um enum Speakeasy, o que é nova funcionalidade; o trecho mostrado contém apenas ajustes de importação, então a classificação depende do propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

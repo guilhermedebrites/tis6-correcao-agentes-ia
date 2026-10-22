@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram que a PR corrige a issue #5062 (gráficos Altair falhando sem vlc-convert-python), e o diff apenas introduz a resolução manual de locale, indicando conserto de comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

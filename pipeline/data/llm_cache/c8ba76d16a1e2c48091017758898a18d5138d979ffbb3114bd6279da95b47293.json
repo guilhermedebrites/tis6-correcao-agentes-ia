@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'Fix agent kn reset', mas as linhas mostradas acrescentam uma nova opção `agent_knowledge` na CLI e refatoram o acesso aos sistemas de memória, o que se parece com evolução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

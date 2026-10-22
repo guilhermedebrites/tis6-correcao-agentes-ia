@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O diff apenas troca aspas simples por duplas em strings (formatação exigida pelo ruff-format), sem alterar comportamento, e a descrição do PR é focada em checks verdes e formatação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

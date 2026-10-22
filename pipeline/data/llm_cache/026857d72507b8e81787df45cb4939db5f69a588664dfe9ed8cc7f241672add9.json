@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título declara o propósito como instrumentação (observabilidade), que se encaixa em 'outro'; o trecho mostra só a remoção da chamada session.stream, e o código que a substitui não aparece no diff.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

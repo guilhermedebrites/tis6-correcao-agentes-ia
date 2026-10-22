@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "É um revert explícito de um commit anterior (\"Revert 'Update order email'\"), e o diff apenas remove os campos computados de formatação e a URL do pedido, sem propósito de correção, evolução ou refatoração próprio.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

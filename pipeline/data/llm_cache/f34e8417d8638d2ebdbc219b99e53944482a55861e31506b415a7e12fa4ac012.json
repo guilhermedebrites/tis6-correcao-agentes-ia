@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix' com referência à issue #4440, e o diff troca o cálculo de refs permitidas para descontar a assinatura esperada, corrigindo o escopo determinado para o pytest.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

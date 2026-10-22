@@ -1,0 +1,55 @@
+{
+  "repo": "QuantEcon/QuantEcon.py",
+  "familia": "python",
+  "snapshot": "8c85f1b2bdb8410b50093cc9ed0bc2c2155334e9",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-08-12T15:25:35+10:00",
+  "frac_sem_marcacao": 0.021,
+  "api_consultas": 0,
+  "fa_validas": 5,
+  "hl_validas": 3,
+  "incluido": false,
+  "atividade_linhas": {},
+  "n_eventos": 0,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 5
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 3
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 2
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 3
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 461,
+    "direto": 243,
+    "bot": 9,
+    "HL": 8,
+    "FA": 7,
+    "fa_mista": 1,
+    "agente_fora": 1
+  }
+}

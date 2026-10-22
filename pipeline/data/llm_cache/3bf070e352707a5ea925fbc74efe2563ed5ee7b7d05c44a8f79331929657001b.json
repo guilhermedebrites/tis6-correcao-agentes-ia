@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "A PR remove a funcionalidade user memory, previamente depreciada, incluindo o campo user_memory do Crew e o tipo \"user\" do Mem0Storage, o que altera a API pública e o comportamento, sem se encaixar em correção de defeito ou refatoração pura.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

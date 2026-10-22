@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título, a descrição e o commit declaram limpeza da pasta utils movendo código e arquivos, e o diff apenas troca imports de read_toml para outro módulo e remove imports não usados, sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

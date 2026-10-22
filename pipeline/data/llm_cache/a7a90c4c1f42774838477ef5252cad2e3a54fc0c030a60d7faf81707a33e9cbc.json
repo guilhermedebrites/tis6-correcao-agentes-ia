@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "O título é apenas um squash merge sem descrição, e a maioria das linhas são reformatações, mas o trecho de bedrock_guardrails.py substitui uma chamada assíncrona por None, uma mudança de comportamento sem propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título declara a intenção de adicionar logging ao fallback para CSV, mas o diff também separa o tratamento de NotImplementedError, o que pode alterar o fluxo de exceção, então a confiança é média.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

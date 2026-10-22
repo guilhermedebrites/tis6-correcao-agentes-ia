@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR remove a pasta evaluation do pacote porque ela foi movida para experimental, o que é reorganização estrutural sem mudança de comportamento pretendida no código principal.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

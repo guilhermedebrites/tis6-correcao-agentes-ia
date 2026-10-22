@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título genérico 'Improve Kdump test suite' não declara um defeito; o diff adiciona comportamento novo (validação de tamanho do sistema de arquivos e entrada persistente em fstab) além de parametrizar o valor fixo de 25 GB.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

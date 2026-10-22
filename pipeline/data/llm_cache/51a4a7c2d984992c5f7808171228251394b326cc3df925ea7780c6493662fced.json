@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um [Fix] e a descrição fala em prevenir comparação entre NoneType e str, e o diff troca acessos diretos a chaves por .get() com fallback \"\", o que corrige um erro de tipo/exceção no sort.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de suporte a seleção inicial de células, e o diff acrescenta um novo modo de seleção (single-cell/multi-cell) com novos formatos de entrada, sem corrigir comportamento existente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

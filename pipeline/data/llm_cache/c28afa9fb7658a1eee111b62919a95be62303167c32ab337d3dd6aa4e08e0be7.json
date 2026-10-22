@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram refatoração (criar constants.py e usar em telemetry), e a mudança no trecho apenas reposiciona o operador 'or' para o início da linha, uma alteração de formatação sem mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

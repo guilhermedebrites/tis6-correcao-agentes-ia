@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um fix que permite cache em apps embutidos, e o diff passa a tratar IDs de célula externos em save.py em vez de usar o contexto principal do grafo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

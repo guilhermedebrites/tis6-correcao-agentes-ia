@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix' e referenciam a issue #4465, e o diff adiciona `sanitize_json_bigint` às saídas JSON para tratar inteiros grandes, indicando correção de comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

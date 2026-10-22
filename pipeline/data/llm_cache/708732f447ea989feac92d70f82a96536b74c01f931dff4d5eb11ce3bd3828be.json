@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram adição de suporte a uma nova ferramenta (Memory Tool), e as linhas alteradas mapeiam o novo tipo de ferramenta hospedada para um header beta, o que é uma mudança de comportamento desejada e não uma correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

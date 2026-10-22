@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram o objetivo de evitar erro de decodificação em Windows asiáticos, e a linha alterada passa a especificar encoding=\"utf-8\" na leitura do arquivo, corrigindo esse comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

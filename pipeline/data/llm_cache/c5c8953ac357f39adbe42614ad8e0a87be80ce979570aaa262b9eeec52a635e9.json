@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram refatorar o teste trocando decoradores mock.patch por fixture do pytest, e o diff apenas remove a linha de exceção do lint que apontava esse arquivo, indicando limpeza estrutural sem mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

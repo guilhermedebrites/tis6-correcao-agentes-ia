@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de uma nova validação de telefone com suporte a formatos e estado de erro, e o trecho altera o campo para exibir um estado de erro, o que é uma mudança de comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

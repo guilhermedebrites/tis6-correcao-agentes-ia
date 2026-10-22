@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'Fix' e o diff substitui um mapeamento de código de erro por outro baseado em isinstance, corrigindo o cálculo do status HTTP retornado para exceções do SDK do Databricks.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

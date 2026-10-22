@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um fix, e o trecho substitui o @lru_cache por um cache em dicionário porque o objeto platform não é hasheável, o que caracteriza correção de um erro de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

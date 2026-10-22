@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'Fix tags endpoint' declara conserto, e a linha alterada troca o handler de SetTraceTagV3 de _set_trace_tag para _set_trace_tag_v3, indicando correção de rota para a versão correta do endpoint.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

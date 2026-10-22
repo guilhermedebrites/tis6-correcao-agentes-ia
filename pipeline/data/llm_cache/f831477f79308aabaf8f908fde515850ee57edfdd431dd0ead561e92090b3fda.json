@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O trecho alterado só quebra a mesma expressão em várias linhas (formatação), sem mudar o comportamento; a correção declarada no título deve estar em outras linhas da PR.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "baixa", "justificativa": "O título e a descrição declaram a adição de `mo.ui.app_meta().request`, mas o trecho altera a lógica de formatação de células em `format.py` (tratamento de None e de exceções), sem relação aparente com o propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

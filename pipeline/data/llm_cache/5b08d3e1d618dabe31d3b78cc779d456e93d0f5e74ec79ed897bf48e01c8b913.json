@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma migração de versão do Python e a correção de falhas de CI, mas as linhas mostradas são apenas reformatação (quebras de linha e ajustes de estilo), sem mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

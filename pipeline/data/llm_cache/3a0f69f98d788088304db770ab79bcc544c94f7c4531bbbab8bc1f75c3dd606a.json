@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título diz 'remove dead file' e o diff apenas remove o arquivo litellm/llms/ollama_chat.py inteiro, sem alterar comportamento ativo; a remoção de código morto é limpeza estrutural, embora o prefixo 'fix:' sugira correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

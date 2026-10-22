@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O trecho só remove um import, mas o título declara a correção de um defeito (o prefixo \"accounts/fireworks/models\" era adicionado indevidamente), e a remoção faz parte dessa correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

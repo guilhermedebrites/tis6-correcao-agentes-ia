@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de um caso de teste de speed para OpenSSL, sem indicar correção de defeito; o trecho mostrado só adiciona o import `Optional`, que provavelmente dá suporte ao novo teste.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

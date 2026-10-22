@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara '[Fix]' e a mudança troca o agrupamento por hash tag de chaves por cálculo de slot do Redis Cluster, corrigindo o algoritmo de agrupamento incorreto para clusters.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

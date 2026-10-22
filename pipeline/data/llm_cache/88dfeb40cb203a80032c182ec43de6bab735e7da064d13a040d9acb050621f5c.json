@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix' e o diff substitui um assert por tratamento gracioso de tipo de store inválido e de exceções na criação do store, evitando falhas, o que corrige comportamento defeituoso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

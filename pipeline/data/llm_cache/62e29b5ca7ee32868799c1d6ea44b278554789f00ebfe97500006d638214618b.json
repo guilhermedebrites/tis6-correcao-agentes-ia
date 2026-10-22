@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara o propósito de melhorar o suporte a fluxos assíncronos, e o diff move a inicialização de estado para kickoff_async e passa a repassar inputs, mudando o comportamento do caminho assíncrono.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

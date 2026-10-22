@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara a supressão de um alerta falso, e o diff trata o erro 501 do FileStore que antes gerava warning indevido, desativando a exportação incremental nesse caso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'add Mem0 OSS support' e o diff altera a inicialização para aceitar uma configuração antes não suportada, criando o MemoryClient apenas com api_key quando não há org_id/project_id.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas só mudam formatação (aspas simples para duplas, quebras de linha e vírgulas finais) sem alterar comportamento; a correção de headers e a feature do Bedrock declaradas no título não aparecem nesses trechos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

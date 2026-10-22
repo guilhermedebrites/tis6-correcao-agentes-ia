@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram uma migração de serialização de dataclasses para msgspec.Struct, o que é reestruturação; porém, algumas linhas mostradas (como a troca de as_camel_case por asdict) podem alterar a saída, por isso a confiança não é alta.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de um timestamp ao payload do webhook conforme a especificação Standard Webhooks, e o diff passa a enviar created_at=payload.timestamp, o que altera o comportamento desejado da API de webhooks.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

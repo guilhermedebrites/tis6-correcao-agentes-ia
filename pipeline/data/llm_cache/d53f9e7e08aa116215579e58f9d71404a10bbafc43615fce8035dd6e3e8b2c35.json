@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e os commits declaram novas funcionalidades (gatilhos de início configuráveis, pulo de irrigação por previsão do tempo), e as linhas alteradas adicionam a verificação de precipitação antes de disparar o evento de irrigação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

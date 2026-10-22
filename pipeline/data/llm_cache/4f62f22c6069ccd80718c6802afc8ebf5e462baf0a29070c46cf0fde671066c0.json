@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título 'Fix type issue' e a mudança adicionam a checagem de `cached_tokens` antes de acessar `prompt_tokens_details`, evitando erro quando o campo existe mas é None, o que caracteriza correção de defeito de tipo/acesso inválido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

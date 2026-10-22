@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'Add bedrock support' e as linhas alteradas adicionam um ramo específico para Bedrock em _get_base_url, usando region_name, o que é nova funcionalidade; as mudanças de type: ignore e de anotação de tipo são secundárias.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

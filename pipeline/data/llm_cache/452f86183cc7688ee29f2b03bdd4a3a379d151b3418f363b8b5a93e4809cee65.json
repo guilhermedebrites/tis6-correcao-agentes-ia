@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara a resolução da issue #544 (deploy baseado em configuração falha sem exclude_regex), e a descrição adiciona um valor padrão \"^$\"; o trecho mostrado só altera o import, então a confiança é média.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

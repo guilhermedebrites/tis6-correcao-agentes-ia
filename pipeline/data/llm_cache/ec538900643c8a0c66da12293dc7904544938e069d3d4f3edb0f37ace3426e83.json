@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram explicitamente a correção da extração de app roles do JWT (de 'roles' para 'app_roles'), o que corresponde a um defeito de comportamento no processamento do claim do id_token.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

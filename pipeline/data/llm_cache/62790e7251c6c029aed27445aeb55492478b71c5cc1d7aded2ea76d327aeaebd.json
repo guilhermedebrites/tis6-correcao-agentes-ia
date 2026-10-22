@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'improvement' e a descrição pede para não mostrar traceback Python em erros SQL, o que altera o comportamento exibido ao usuário em vez de corrigir um resultado incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

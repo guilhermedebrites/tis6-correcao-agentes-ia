@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram a implementação de uma camada de serviço genérica e a integração com a API Numeral, o que adiciona comportamento novo, embora o trecho mostrado contenha apenas remoções de código movido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

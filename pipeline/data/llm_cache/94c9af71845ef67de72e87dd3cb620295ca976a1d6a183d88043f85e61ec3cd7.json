@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A PR declara a introdução de uma alternativa à hover_template para tabelas, aceitando um callable para gerar o texto de hover por célula (funcionalidade nova, análoga ao style_cell), e o diff altera a assinatura e a documentação para suportar isso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

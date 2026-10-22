@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente o propósito de corrigir falhas de testes contra o Fedora 41+, e a linha alterada substitui a busca simples do disco do sistema por uma lógica com fallbacks, o que trata um caso que antes falhava.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

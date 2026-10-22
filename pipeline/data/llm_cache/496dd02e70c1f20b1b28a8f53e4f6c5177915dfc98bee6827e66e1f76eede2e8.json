@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "Altera o tipo do campo `amount` de `int` para `Decimal` com restrições de dígitos, o que muda o contrato do schema da API; sem descrição, o título 'adjust amount schema' indica ajuste de API e não apenas tipagem.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

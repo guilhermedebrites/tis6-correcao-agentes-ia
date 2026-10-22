@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte ao Google Vertex via ADC, e a mudança para require_key=False torna a chave de API opcional, alterando o comportamento esperado da configuração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

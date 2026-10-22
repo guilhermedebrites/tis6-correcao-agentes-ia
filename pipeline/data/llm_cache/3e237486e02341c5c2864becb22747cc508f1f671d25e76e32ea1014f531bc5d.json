@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a migração do FileStore para o esquema de traces V3, o que muda o comportamento de exportação para esse backend, e o diff remove a seleção condicional de V2 e torna V3 o único exportador.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

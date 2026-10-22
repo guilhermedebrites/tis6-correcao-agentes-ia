@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a mensagem de commit declaram adicionar as ferramentas do CrewAI à UI do MLflow, mas o trecho mostra apenas remoção de indentação de blocos existentes, sem a funcionalidade nova visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

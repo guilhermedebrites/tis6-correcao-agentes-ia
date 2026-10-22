@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição tratam de migrar os providers para pydantic-ai e unificar o código, com o objetivo declarado de limpar código antigo, embora também mencionem a correção de chamadas de ferramentas quebradas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

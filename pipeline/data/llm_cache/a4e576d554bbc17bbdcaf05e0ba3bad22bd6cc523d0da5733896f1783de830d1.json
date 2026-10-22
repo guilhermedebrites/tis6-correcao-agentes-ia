@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara o propósito de mostrar uma mensagem de erro mais útil para tipos de scorer inválidos, o que indica tratamento de um caso de entrada inválida; o diff em si só importa `get_all_scorers`, então a confiança é média.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

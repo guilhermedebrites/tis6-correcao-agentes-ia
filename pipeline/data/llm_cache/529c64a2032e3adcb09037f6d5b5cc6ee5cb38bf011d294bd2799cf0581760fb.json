@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de uma configuração 'select' ao linter, e o diff passa a filtrar a execução da regra pelo conjunto configurado, além de expor os atributos id e name das regras, indicando nova funcionalidade de seleção de regras.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

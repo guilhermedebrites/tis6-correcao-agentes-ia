@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram 'fix' para suportar timeout de conexão MCP, mas as linhas alteradas são majoritariamente tipagem, imports e lint, com a passagem de connect_timeout como o único ponto de mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

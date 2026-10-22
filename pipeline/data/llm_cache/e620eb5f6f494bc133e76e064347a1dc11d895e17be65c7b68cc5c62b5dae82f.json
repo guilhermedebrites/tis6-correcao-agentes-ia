@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para o issue #7111, em que conexões DuckDB fechadas geravam logs de erro, e o diff passa a tratar essa exceção de forma silenciosa.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

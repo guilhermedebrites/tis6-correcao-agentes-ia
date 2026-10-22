@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas alteradas apenas separam atribuições múltiplas em linhas individuais, exigidas pela nova regra MultiAssign, sem mudar o comportamento; a única alteração funcional (index para cell_index no linter) é um ajuste pequeno que não domina o diff.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

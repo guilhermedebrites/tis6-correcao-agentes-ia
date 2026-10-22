@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e o commit declaram um ajuste de lint (mypy), e as linhas alteradas apenas adicionam anotações de tipo `Any` às variáveis, sem mudar o comportamento em tempo de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

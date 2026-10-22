@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram a correção de um bug (fix #5015, largura em vconcat aninhado), mas as linhas mostradas são majoritariamente refatoração de tipos e imports, sem a lógica da correção visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

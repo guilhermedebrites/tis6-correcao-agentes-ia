@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e a descrição declaram um 'refresh' do exemplo para chamadas diretas de função e para o formato atual do notebook (@app.function), sem mudança de comportamento pretendida; a correção de f-string isolada no trecho é pequena frente a isso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

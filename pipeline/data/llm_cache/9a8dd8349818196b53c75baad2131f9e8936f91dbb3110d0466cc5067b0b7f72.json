@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para caminhos com espaços no LSP, e o diff substitui comandos montados em f-string (que quebram com espaços no caminho do binário) por variáveis de comando já tratadas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

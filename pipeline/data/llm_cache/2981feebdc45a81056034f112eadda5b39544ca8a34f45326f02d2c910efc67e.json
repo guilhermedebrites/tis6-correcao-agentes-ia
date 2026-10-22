@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título 'fix' e a adição de try/except em torno da chamada de telemetria indicam correção de falha não tratada, embora a ausência de descrição e a remoção de `__version__` no final do trecho deixem o propósito parcialmente ambíguo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

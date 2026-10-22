@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título 'Uv dev install' indica adição de um parâmetro `dev` para controlar a instalação de dependências de desenvolvimento, uma nova capacidade no comando de instalação de pacotes.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

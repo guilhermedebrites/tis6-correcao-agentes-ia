@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição de uma nova flag --builtin/-b ao comando de listagem, e o diff mostra a assinatura alterada para aceitar o novo parâmetro builtin, tornando experiment_id opcional, o que altera o comportamento e a API do comando.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

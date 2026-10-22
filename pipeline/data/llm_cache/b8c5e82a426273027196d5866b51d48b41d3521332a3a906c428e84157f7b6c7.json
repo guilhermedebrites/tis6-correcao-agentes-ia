@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram correção de lint (ruff), ajuste de caminhos de import e modernização de anotações de tipo (List/Dict/Optional para list/dict/| None), sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara 'add [ferramenta] response formatters' e o diff adiciona a nova classe OpenAIFormatter com formatadores para Completion, Stream e ChatCompletion, além de registrá-la, ampliando o suporte de exibição a uma nova integração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

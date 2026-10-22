@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A PR declara como propósito remover a flag experimental `toplevel_defs` para ativar definições de nível superior por padrão, e o diff remove os condicionais que escondiam esse comportamento, tornando-o o caminho padrão.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

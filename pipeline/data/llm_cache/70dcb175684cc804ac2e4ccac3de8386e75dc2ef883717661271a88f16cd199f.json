@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de permitir a opção --no-sandbox; a linha mostrada só renomeia 'config' para 'server_config', provavelmente como parte dessa funcionalidade, mas o trecho isolado não deixa essa relação explícita.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

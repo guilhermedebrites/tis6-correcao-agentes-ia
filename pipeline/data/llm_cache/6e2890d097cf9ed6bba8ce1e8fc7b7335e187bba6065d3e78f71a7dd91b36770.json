@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de habilitar o banner de hospedagem por padrão e adicioná-lo à navbar, o que altera o comportamento desejado (exibição do banner) em vez de corrigir um defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição referem-se à issue #6152 e o diff envolve try/except em torno da introspecção de datasource, com log e retorno seguro em caso de falha, o que evita exceções não tratadas, caracterizando correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

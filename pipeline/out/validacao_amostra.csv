@@ -1,0 +1,2991 @@
+evento,link,titulo,descricao,trecho_diff,rotulo_a,rotulo_b,consenso
+marimo-team/marimo#4130,https://github.com/marimo-team/marimo/pull/4130,fix: handle cloudpath client,Support the `client` arg used in cloudpathlib,"--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -75,1 +78,1 @@
+-            initial_path=S3Path(""s3://mybucket/mydir"")
++            initial_path=S3Path(""s3://my-bucket/folder/"")
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -117,1 +135,1 @@
+-        selection_mode: str = ""file"",
++        selection_mode: Literal[""file"", ""directory""] = ""file"",
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -152,4 +160,5 @@
+-        self.filetypes: set[str] = set(filetypes) if filetypes else set()
+-        self.restrict_navigation = restrict_navigation
+-        self.initial_path: Path = initial_path
+-        self.limit = limit
++        self._selection_mode = selection_mode
++        self._filetypes: set[str] = set(filetypes) if filetypes else set()
++        self._restrict_navigation = restrict_navigation
++        self._initial_path: Path = initial_path
++        self._limit = limit
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -157,1 +166,1 @@
+-        self.path_cls: type[Path]
++        self._path_cls: type[Path]
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -159,1 +168,1 @@
+-            self.path_cls = Path
++            self._path_cls = Path
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -161,1 +170,1 @@
+-            self.path_cls = initial_path.__class__
++            self._path_cls = initial_path.__class__
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -193,1 +214,1 @@
+-        path = self.path_cls(args.path)
++        path = self._create_path(args.path)
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -195,1 +216,1 @@
+-        if self.restrict_navigation and path in self.initial_path.parents:
++        if self._restrict_navigation and path in self._initial_path.parents:
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -206,1 +227,1 @@
+-            if self.selection_mode == ""directory"" and not file.is_dir():
++            if self._selection_mode == ""directory"" and not file.is_dir():
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -210,2 +231,2 @@
+-            if self.filetypes and not file.is_dir():
+-                if extension not in self.filetypes:
++            if self._filetypes and not file.is_dir():
++                if extension not in self._filetypes:
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -223,1 +244,1 @@
+-            if len(files) >= self.limit:
++            if len(files) >= self._limit:
+--- marimo/_plugins/ui/_impl/file_browser.py
+@@ -235,1 +256,1 @@
+-                path=self.path_cls(file[""path""]),
++                path=self._create_path(file[""path""]),",,,
+jeroenterheerdt/HAsmartirrigation#604,https://github.com/jeroenterheerdt/HAsmartirrigation/pull/604,Fix weather records retrieval error in websockets.py where sorting fails with mixed datetime types,Fix weather records retrieval error in websockets.py where sorting fails with mixed datetime types,"--- custom_components/smart_irrigation/websockets.py
+@@ -403,1 +424,1 @@
+-        sorted_data = sorted(mapping_data, key=lambda x: x.get(const.RETRIEVED_AT, datetime.datetime.min), reverse=True)
++        sorted_data = sorted(mapping_data, key=lambda x: _safe_parse_datetime(x.get(const.RETRIEVED_AT)), reverse=True)",,,
+marimo-team/marimo#6449,https://github.com/marimo-team/marimo/pull/6449,fix: specify utf-8 encoding when writing toml files,"## 📝 Summary
+
+Fixes #6434.
+Fixes a `UnicodeEncodeError` on Windows by specifying UTF-8 encoding
+when writing TOML files.
+
+## 🔍 Description of Changes
+
+This pull request addresses an issue where saving a marimo notebook on
+Windows with a file path containing non-ASCII characters would result in
+a `UnicodeEncodeError`.
+
+The error was caused by the `write_toml` function in
+`marimo/_utils/config/config.py`, which did not specify the file
+encoding when writing the TOML configuration. This led to issu","--- marimo/_utils/config/config.py
+@@ -51,1 +51,1 @@
+-        self.filepath.write_text(tomlkit.dumps(dict_data))
++        self.filepath.write_text(tomlkit.dumps(dict_data), encoding=""utf-8"")",,,
+marimo-team/marimo#5978,https://github.com/marimo-team/marimo/pull/5978,feat: ibis catalogs,"## 📝 Summary
+
+When listing the databases for Ibis, only the default database was
+returned. With this PR we fix #5752 and correctly return all the
+databases by using the `list_catalogs` methods for backends that support
+this feature.
+
+## 🔍 Description of Changes
+
+The `IbisEngine.get_databases` method has been changed to retrieve all
+databases by calling `list_catalogs` if it's available for the backend.
+
+Both tests and smoke tests have been added. Due to some dependency
+conflicts the smoke tests ","--- marimo/_sql/engines/ibis.py
+@@ -210,3 +222,21 @@
+-        # TODO handle backends without .list_databases()
+-        for schema_name in self._connection.list_databases():
+-            if schema_name.lower() in meta_schemas:
++
++        # Try to get schemas, with fallback for backends that don't support catalog parameter
++        try:
++            schema_names = self._connection.list_databases(catalog=database)
++        except (TypeError, AttributeError) as e:
++            # Backend doesn't support catalog parameter or list_databases method
++            LOGGER.debug(
++                f""Backend doesn't support catalog-based database listing: {e}""
++            )
++            try:
++                # Fallback: try without catalog parameter
++                schema_names = self._connection.list_databases()
++            except (TypeError, AttributeError):
++                # Backend doesn't support list_databases at all
++                LOGGER.debug(
++                    ""Backend doesn't support list_databases, using default schema""
++                )
++                schema_names = [self.default_schema or ""main""]
++
++        for schema_name in schema_names:
++            if schema_name and schema_name.lower() in meta_schemas:
+--- marimo/_sql/engines/ibis.py
+@@ -249,3 +280,18 @@
+-            table_names = self._connection.list_tables(
+-                database=(database, schema)
+-            )
++            # Try tuple format first (works for DuckDB and most backends)
++            try:
++                table_names = self._connection.list_tables(
++                    database=(database, schema)
++                )
++            except (TypeError, Exception):
++                # Fallback: try just schema (works for SQLite and other simple backends)
++                LOGGER.debug(
++                    f""Tuple database parameter failed, trying schema only for {database}.{schema}""
++                )
++                table_names = self._connection.list_tables(database=schema)
++
++            # For DuckDB: filter out temp-only tables when NOT in temp catalog
++            if self._is_duckdb_backend() and database.lower() != ""temp"":
++                table_names = self._filter_out_temp_only_tables(
++                    table_names, schema, database
++                )
++",,,
+reflex-dev/reflex-web#1547,https://github.com/reflex-dev/reflex-web/pull/1547,make demos background events,,"--- pcweb/pages/framework/demos/image_gen/image_gen.py
+@@ -23,6 +24,13 @@
+-        output = replicate.run(
+-            ""black-forest-labs/flux-schnell"",
+-            input=input,
+-        )
+-        self.image_url = str(output[0])
+-        self.processing = False
++        try:
++            output = await replicate.async_run(
++                ""black-forest-labs/flux-schnell"",
++                input=input,
++            )
++            async with self:
++                self.image_url = str(output[0])
++        except Exception:
++            async with self:
++                self.image_url = """"
++        finally:
++            async with self:
++                self.processing = False
+--- pcweb/signup.py
+@@ -100,6 +103,11 @@
+-        self.send_contact_to_webhook(email)
+-        self.add_contact_to_loops(email)
+-        self.signed_up = True
+-        return [
+-            rx.call_script(f""try {{ ko.identify('{email}'); }} catch(e) {{ console.warn('Koala identify failed:', e); }}""),
+-            rx.toast.success(""Thanks for signing up to the Newsletter!"")
++                return
++        yield IndexState.send_contact_to_webhook(email)
++        yield IndexState.add_contact_to_loops(email)
++        async with self:
++            self.signed_up = True
++            yield
++        yield [
++            rx.call_script(
++                f""try {{ ko.identify('{email}'); }} catch(e) {{ console.warn('Koala identify failed:', e); }}""
++            ),
++            rx.toast.success(""Thanks for signing up to the Newsletter!""),",,,
+marimo-team/marimo#4966,https://github.com/marimo-team/marimo/pull/4966,fix: add alt.LayeredChart to types,Fixes #4964,"--- marimo/_output/formatters/altair_formatters.py
+@@ -5,1 +5,1 @@
+-from typing import TYPE_CHECKING, Literal
++from typing import TYPE_CHECKING, Literal, Union
+--- marimo/_output/formatters/altair_formatters.py
+@@ -127,1 +131,1 @@
+-    chart: altair.Chart,
++    chart: Union[altair.Chart, altair.LayerChart],",,,
+jeroenterheerdt/HAsmartirrigation@a687747c06de,https://github.com/jeroenterheerdt/HAsmartirrigation/commits,fix #570 and fix #658,,"--- custom_components/smart_irrigation/options_flow.py
+@@ -62,1 +61,1 @@
+-        self._manual_coordinates_enabled = self.config_entry.options.get(
++        self._manual_coordinates_enabled = config_entry.options.get(
+--- custom_components/smart_irrigation/options_flow.py
+@@ -64,1 +63,1 @@
+-            self.config_entry.data.get(
++            config_entry.data.get(
+--- custom_components/smart_irrigation/options_flow.py
+@@ -69,1 +68,1 @@
+-        self._manual_latitude = self.config_entry.options.get(
++        self._manual_latitude = config_entry.options.get(
+--- custom_components/smart_irrigation/options_flow.py
+@@ -73,1 +72,1 @@
+-        self._manual_longitude = self.config_entry.options.get(
++        self._manual_longitude = config_entry.options.get(
+--- custom_components/smart_irrigation/options_flow.py
+@@ -77,1 +76,1 @@
+-        self._manual_elevation = self.config_entry.options.get(
++        self._manual_elevation = config_entry.options.get(",,,
+marimo-team/marimo#7593,https://github.com/marimo-team/marimo/pull/7593,refactor: rename kernel Requests to Command,"This renames and makes consistent the kernel **Commands**. Previously
+they were called `X_Request` which was similar but kinda different from
+the REST Requests. Having this indirection/separate will be better long
+term.
+
+Some Commands match exactly request to they are aliased like:
+
+```python
+class ListSecretKeysRequest(ListSecretKeysCommand, tag=False):
+    pass
+
+# this does not work since we want to get rid of the `tag` field
+ListSecretKeysRequest = ListSecretKeysCommand
+```
+
+This also cleans ","--- marimo/_cli/development/commands.py
+@@ -211,30 +244,7 @@
+-        models.UpdateComponentValuesRequest,
+-        models.InvokeAiToolRequest,
+-        models.InvokeAiToolResponse,
+-        models.MCPStatusResponse,
+-        models.MCPRefreshResponse,
+-        requests.CodeCompletionRequest,
+-        requests.DeleteCellRequest,
+-        requests.UpdateCellIdsRequest,
+-        requests.HTTPRequest,
+-        requests.ExecuteMultipleRequest,
+-        requests.ExecuteScratchpadRequest,
+-        requests.ExecuteStaleRequest,
+-        requests.ExecutionRequest,
+-        requests.FunctionCallRequest,
+-        requests.InstallMissingPackagesRequest,
+-        requests.ListSecretKeysRequest,
+-        requests.ClearCacheRequest,
+-        requests.GetCacheInfoRequest,
+-        requests.PdbRequest,
+-        requests.PreviewDatasetColumnRequest,
+-        requests.PreviewSQLTableListRequest,
+-        requests.PreviewDataSourceConnectionRequest,
+-        requests.PreviewSQLTableRequest,
+-        requests.ValidateSQLRequest,
+-        requests.RenameRequest,
+-        requests.SetCellConfigRequest,
+-        requests.ModelMessage,
+-        requests.SetModelMessageRequest,
+-        requests.SetUserConfigRequest,
+-        requests.StopRequest,
++        models.UpdateCellConfigRequest,
++        models.UpdateCellIdsRequest,
++        models.UpdateUIElementValuesRequest,
++        models.UpdateUIElementRequest,
++        models.UpdateUserConfigRequest,
++        models.UpdateWidgetModelRequest,
++        models.ValidateSQLRequest,
+--- marimo/_cli/development/commands.py
+@@ -279,2 +260,2 @@
+-    specs = msgspec.json.schema_components(
+-        MESSAGES + [KnownUnions],
++    _defs, component_schemas = msgspec.json.schema_components(
++        MODELS + [KnownUnions],
+--- marimo/_cli/development/commands.py
+@@ -315,10 +275,1 @@
+-    schemas = schemas_generator.get_schema(routes=build_routes())
+-
+-    # Find/replace #/$defs with #/components/schemas
+-    import json
+-
+-    schemas_str = json.dumps(schemas)
+-    schemas_str = schemas_str.replace(""#/$defs"", ""#/components/schemas"")
+-    schemas = json.loads(schemas_str)
+-
+-    return schemas
++    return schemas_generator.get_schema(routes=build_routes())
+--- marimo/_pyodide/pyodide_session.py
+@@ -13,2 +11,0 @@
+-import msgspec
+-
+--- marimo/_runtime/requests.py
+@@ -187,1 +207,1 @@
+-class SyncGraphRequest(msgspec.Struct, rename=""camel""):
++class SyncGraphCommand(Command):
+--- marimo/_runtime/requests.py
+@@ -200,1 +220,1 @@
+-            ExecutionRequest(
++            ExecuteCellCommand(
+--- marimo/_runtime/requests.py
+@@ -388,9 +404,1 @@
+-class ParseSQLRequest(msgspec.Struct, rename=""camel""):
+-    """"""Parse an SQL query for linting""""""
+-
+-    request_id: RequestId
+-    dialect: str
+-    query: str
+-
+-
+-class ListSecretKeysRequest(msgspec.Struct, rename=""camel""):
++class ListSecretKeysCommand(Command):
+--- marimo/_runtime/requests.py
+@@ -415,1 +423,1 @@
+-class ClearCacheRequest(msgspec.Struct, rename=""camel""):
++class ClearCacheCommand(Command)",,,
+marimo-team/marimo#6304,https://github.com/marimo-team/marimo/pull/6304,fix: `progress_bar` type hints,"## 📝 Summary
+
+Well, if I knew I was going to end up issuing a PR anyway, I would have
+skipped making an issue yesterday. Oh well.
+
+There were a few things I overlooked in #6291, such as how
+`progress_bar` was not registered properly as a `Generic`, and a few
+other related typing issues.
+
+## 🔍 Description of Changes
+
+- Made `progress_bar` inherit from `Generic[S]`, as per the [Python docs
+on
+Generics](https://typing.python.org/en/latest/spec/generics.html#user-defined-generic-types).
+- Remove red","--- marimo/_plugins/stateless/status/_progress.py
+@@ -362,1 +417,5 @@
+-    def __iter__(self) -> Iterator[S | int]:
++    def __iter__(self) -> Iterator[S]:
++        if self.collection is None:
++            raise RuntimeError(
++                ""progress_bar can only be iterated over if a collection is provided""
++            )",,,
+microsoft/lisa#4135,https://github.com/microsoft/lisa/pull/4135,xdpdump: fix compile error,,"--- lisa/tools/lagscope.py
+@@ -269,1 +269,3 @@
+-                ""name"": ""min_latency"",
++                ""name"": (
++                    f""min_latency_interval_{int(interval_us)}_freq_{int(frequency)}""
++                ),
+--- lisa/tools/lagscope.py
+@@ -276,1 +278,3 @@
+-                ""name"": ""max_latency"",
++                ""name"": (
++                    f""max_latency_interval_{int(interval_us)}_freq_{int(frequency)}""
++                ),
+--- lisa/tools/lagscope.py
+@@ -283,1 +287,3 @@
+-                ""name"": ""average_latency"",
++                ""name"": (
++                    f""average_latency_interval_{int(interval_us)}_freq_{int(frequency)}""
++                ),
+--- lisa/tools/lagscope.py
+@@ -290,1 +296,4 @@
+-                ""name"": ""latency_95th_percentile"",
++                ""name"": (
++                    ""latency_95th_percentile_interval_""
++                    f""{int(interval_us)}_freq_{int(frequency)}""
++                ),
+--- lisa/tools/lagscope.py
+@@ -297,1 +306,4 @@
+-                ""name"": ""latency_99th_percentile"",
++                ""name"": (
++                    ""latency_99th_percentile_interval_""
++                    f""{int(interval_us)}_freq_{int(frequency)}""
++                ),
+--- lisa/tools/lagscope.py
+@@ -303,14 +314,0 @@
+-            {
+-                ""name"": ""interval_us"",
+-                ""value"": float(interval_us),
+-                ""unit"": ""microseconds"",
+-                ""description"": ""Test interval"",
+-                ""relativity"": MetricRelativity.Parameter,
+-            },
+-            {
+-                ""name"": ""frequency"",
+-                ""value"": float(frequency),
+-                ""unit"": ""Hz"",
+-                ""description"": ""Test frequency"",
+-                ""relativity"": MetricRelativity.Parameter,
+-            },",,,
+jeroenterheerdt/HAsmartirrigation@d242ef624b18,https://github.com/jeroenterheerdt/HAsmartirrigation/commits,fixing bug,,"--- custom_components/smart_irrigation/__init__.py
+@@ -1703,8 +1703,9 @@
+-                if data is not None and data.get(const.ATTR_DELETE_WEATHER_DATA, False):
+-                    # remove sensor data from mapping
+-                    changes = {}
+-                    changes[const.MAPPING_DATA] = []
+-                    if mapping_id is not None:
+-                        await self.store.async_update_mapping(
+-                            mapping_id, changes=changes
+-                        )
++                if data is not None:
++                    if data.get(const.ATTR_DELETE_WEATHER_DATA, False):
++                        # remove sensor data from mapping
++                        changes = {}
++                        changes[const.MAPPING_DATA] = []
++                        if mapping_id is not None:
++                            await self.store.async_update_mapping(
++                                mapping_id, changes=changes
++                            )",,,
+BerriAI/litellm#15052,https://github.com/BerriAI/litellm/pull/15052,[Fix] Parallel Request Limiter v3 - use well known redis cluster hashing algorithm,"* test_keyslot_for_redis_cluster
+
+* fix _is_redis_cluster
+
+* Update litellm/proxy/hooks/parallel_request_limiter_v3.py
+
+Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>
+
+---------
+
+Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>","--- litellm/proxy/hooks/parallel_request_limiter_v3.py
+@@ -301,13 +348,13 @@
+-        for key in keys:
+-            # Extract hash tag from key like ""{api_key:sk-123}:requests""
+-            if ""{"" in key and ""}"" in key:
+-                start = key.find(""{"")
+-                end = key.find(""}"", start)
+-                hash_tag = key[start : end + 1]
+-            else:
+-                # Fallback for keys without hash tags
+-                hash_tag = ""no_hash_tag""
+-
+-            if hash_tag not in groups:
+-                groups[hash_tag] = []
+-            groups[hash_tag].append(key)
++        
++        # Use slot calculation for Redis clusters only
++        if self._is_redis_cluster():
++            for key in keys:
++                slot = self.keyslot_for_redis_cluster(key)
++                slot_key = f""slot_{slot}""
++                
++                if slot_key not in groups:
++                    groups[slot_key] = []
++                groups[slot_key].append(key)
++        else:
++            # For regular Redis, no grouping needed - process all keys together
++            groups[REDIS_NODE_HASHTAG_NAME] = keys",,,
+mlflow/mlflow#18269,https://github.com/mlflow/mlflow/pull/18269,Migrate mock.patch decorators to context managers in tests/langchain/test_langchain_model_export.py,"Co-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>
+Co-authored-by: harupy <17039389+harupy@users.noreply.github.com>
+Co-authored-by: Harutaka Kawamura <hkawamura0130@gmail.com>","--- dev/clint/src/clint/rules/mock_patch_as_decorator.py
+@@ -15,1 +14,0 @@
+-        ""tests/langchain/test_langchain_model_export.py"",  # 5",,,
+BerriAI/litellm@ea8d0bb7d58d,https://github.com/BerriAI/litellm/commits,fix: re-add scheduled rotations,,"--- litellm/proxy/_types.py
+@@ -3,1 +2,0 @@
+-from litellm._uuid import uuid
+--- litellm/proxy/management_endpoints/key_management_endpoints.py
+@@ -17,1 +16,0 @@
+-from litellm._uuid import uuid
+--- litellm/proxy/proxy_server.py
+@@ -12,1 +11,0 @@
+-from litellm._uuid import uuid",,,
+mlflow/mlflow#17171,https://github.com/mlflow/mlflow/pull/17171,Run `python3 dev/update_ml_package_versions.py`,"Signed-off-by: mlflow-app[bot] <mlflow-app[bot]@users.noreply.github.com>
+Signed-off-by: harupy <17039389+harupy@users.noreply.github.com>
+Co-authored-by: mlflow-app[bot] <mlflow-app[bot]@users.noreply.github.com>
+Co-authored-by: harupy <17039389+harupy@users.noreply.github.com>","--- mlflow/ml_package_versions.py
+@@ -25,1 +25,1 @@
+-            ""maximum"": ""2.7.1""
++            ""maximum"": ""2.8.0""
+--- mlflow/ml_package_versions.py
+@@ -29,1 +29,1 @@
+-            ""maximum"": ""2.7.1""
++            ""maximum"": ""2.8.0""",,,
+BerriAI/litellm#16030,https://github.com/BerriAI/litellm/pull/16030,[UI] Feature - Add Apply Guardrail Testing Playground,"* add applyGuardrail endpoints
+
+* v0 testing apply guard
+
+* fix: use tabs
+
+* move apply guardrails endpoint
+
+* fix apply_guardrail
+
+* fix applyGuardrail
+
+* fix apply guardrail for bedrock
+
+* test guard endpoints
+
+* add tooltip for enter button
+
+* refactor
+
+* add guardrail test
+
+* tests guardrails selector
+
+* TestNomaApplyGuardrail","--- enterprise/litellm_enterprise/proxy/guardrails/endpoints.py
+@@ -1,43 +0,0 @@
+-""""""
+-Enterprise Guardrail Routes on LiteLLM Proxy
+-
+-To see all free guardrails see litellm/proxy/guardrails/*
+-
+-
+-Exposed Routes:
+-- /mask_pii
+-""""""
+-from typing import Optional
+-
+-from fastapi import APIRouter, Depends
+-
+-from litellm.integrations.custom_guardrail import CustomGuardrail
+-from litellm.proxy._types import UserAPIKeyAuth
+-from litellm.proxy.auth.user_api_key_auth import user_api_key_auth
+-from litellm.proxy.guardrails.guardrail_endpoints import GUARDRAIL_REGISTRY
+-from litellm.types.guardrails import ApplyGuardrailRequest, ApplyGuardrailResponse
+-
+-router = APIRouter(tags=[""guardrails""], prefix=""/guardrails"")
+-
+-
+-@router.post(""/apply_guardrail"", response_model=ApplyGuardrailResponse)
+-async def apply_guardrail(
+-    request: ApplyGuardrailRequest,
+-    user_api_key_dict: UserAPIKeyAuth = Depends(user_api_key_auth),
+-):
+-    """"""
+-    Mask PII from a given text, requires a guardrail to be added to litellm.
+-    """"""
+-    active_guardrail: Optional[
+-        CustomGuardrail
+-    ] = GUARDRAIL_REGISTRY.get_initialized_guardrail_callback(
+-        guardrail_name=request.guardrail_name
+-    )
+-    if active_guardrail is None:
+-        raise Exception(f""Guardrail {request.guardrail_name} not found"")
+-
+-    response_text = await active_guardrail.apply_guardrail(
+-        text=request.text, language=request.language, entities=request.entities
+-    )
+-
+-    return ApplyGuardrailResponse(response_text=response_text)
+--- litellm/proxy/guardrails/guardrail_hooks/noma/noma.py
+@@ -12,1 +12,1 @@
+-from typing import TYPE_CHECKING, Any, Dict, Final, Literal, Optional, Type, Union
++from typing import TYPE_CHECKING, Any, Dict, Final, List, Literal, Optional, Type, Union",,,
+mlflow/mlflow#16186,https://github.com/mlflow/mlflow/pull/16186,Run `python3 dev/update_ml_package_versions.py`,"Signed-off-by: mlflow-app[bot] <mlflow-app[bot]@users.noreply.github.com>
+Co-authored-by: mlflow-app[bot] <mlflow-app[bot]@users.noreply.github.com>","--- mlflow/ml_package_versions.py
+@@ -225,1 +225,1 @@
+-            ""maximum"": ""1.84.0""
++            ""maximum"": ""1.85.0""
+--- mlflow/ml_package_versions.py
+@@ -229,1 +229,1 @@
+-            ""maximum"": ""1.84.0""
++            ""maximum"": ""1.85.0""
+--- mlflow/ml_package_versions.py
+@@ -321,1 +321,1 @@
+-            ""maximum"": ""0.52.2""
++            ""maximum"": ""0.53.0""
+--- mlflow/ml_package_versions.py
+@@ -416,1 +416,1 @@
+-            ""maximum"": ""1.38.32""
++            ""maximum"": ""1.38.33""",,,
+BerriAI/litellm#15153,https://github.com/BerriAI/litellm/pull/15153,[Feat] MCP Gateway Fine-grained Tools Addition,"* feat: UI to add specific tools under creating MCP connection
+
+* chore: pydantic + prisma changes
+
+* feat: adding specific MCP tools now works
+
+* fix: allowed tools filtering
+
+* chore: filtered list to mcp server cost config
+
+* chore: update Readme
+
+* chore: refactor the filtering
+
+* test: Added tests
+
+When the allowed_tests is null, empty list or populated
+
+* chore: resolve the proxy issue
+
+* feat: updating MCP tool filtering","--- litellm/proxy/_experimental/mcp_server/server.py
+@@ -369,1 +395,12 @@
+-        Filter tools by allowed tools
++        Filter tools by allowed/disallowed tools configuration.
++        
++        If allowed_tools is set, only tools in that list are returned.
++        If disallowed_tools is set, tools in that list are excluded.
++        Tool names are matched with and without server prefixes for flexibility.
++        
++        Args:
++            tools: List of tools to filter
++            mcp_server: Server configuration with allowed_tools/disallowed_tools
++            
++        Returns:
++            Filtered list of tools
+--- litellm/proxy/_experimental/mcp_server/server.py
+@@ -374,1 +413,2 @@
+-                tool for tool in tools if tool.name in mcp_server.allowed_tools
++                tool for tool in tools 
++                if _tool_name_matches(tool.name, mcp_server.allowed_tools)
+--- litellm/proxy/_experimental/mcp_server/server.py
+@@ -378,1 +420,2 @@
+-                tool for tool in tools if tool.name not in mcp_server.disallowed_tools
++                tool for tool in tools_to_return
++                if not _tool_name_matches(tool.name, mcp_server.disallowed_tools)
+--- litellm/proxy/_experimental/mcp_server/server.py
+@@ -456,1 +500,4 @@
+-                all_tools.extend(filter_tools_by_allowed_tools(tools, server))
++                
++                filtered_tools = filter_tools_by_allowed_tools(tools, server)
++                all_tools.extend(filtered_tools)
++                ",,,
+xtekky/gpt4free@ae985be2ebaa,https://github.com/xtekky/gpt4free/commits,Update build,,"--- g4f_cli.py
+@@ -1,8 +0,0 @@
+-#!/usr/bin/env python3
+-""""""
+-Entry point for g4f CLI executable builds
+-""""""
+-
+-if __name__ == ""__main__"":
+-    from g4f.cli import main
+-    main()",,,
+jeroenterheerdt/HAsmartirrigation#591,https://github.com/jeroenterheerdt/HAsmartirrigation/pull/591,Fix weather records TODO message and add watering calendar to zone page,Fix weather records TODO message and add watering calendar to zone page,"--- custom_components/smart_irrigation/const.py
+@@ -3,1 +3,1 @@
+-VERSION = ""v2025.7.0-beta2""
++VERSION = ""v2025.7.0-beta3""
+--- custom_components/smart_irrigation/websockets.py
+@@ -442,1 +442,1 @@
+-            if any(value is not None for key, value in record.items() 
++            if any(value is not None for key, value in record.items()
+--- custom_components/smart_irrigation/websockets.py
+@@ -445,3 +445,4 @@
+-        
+-        _LOGGER.debug(""Retrieved %d weather records for mapping %s"", len(records), mapping_id)
+-        
++
++        _LOGGER.debug(""Retrieved %d weather records for mapping %s"",
++                      len(records), mapping_id)
++
+--- custom_components/smart_irrigation/websockets.py
+@@ -449,1 +450,2 @@
+-        _LOGGER.error(""Error retrieving weather records for mapping %s: %s"", mapping_id, e)
++        _LOGGER.error(""Error retrieving weather records for mapping %s: %s"",
++                      mapping_id, e)
+--- custom_components/smart_irrigation/websockets.py
+@@ -456,1 +457,2 @@
+-async def websocket_get_watering_calendar(hass: HomeAssistant, connection, msg):
++async def websocket_get_watering_calendar(hass: HomeAssistant, connection,
++                                          msg):
+--- custom_components/smart_irrigation/websockets.py
+@@ -460,3 +462,3 @@
+-    
+-    _LOGGER.debug(""websocket_get_watering_calendar called for zone %s"", zone_id)
+-    
++
++    _LOGGER.debug(""websocket_get_watering_calendar called for zone %s"",
++                  zone_id)
+--- custom_components/smart_irrigation/websockets.py
+@@ -468,1 +470,2 @@
+-        calendar_data = await coordinator.async_generate_watering_calendar(zone_id)
++        calendar_data = await coordinator.async_generate_watering_calendar(
++            zone_id)
+--- custom_components/smart_irrigation/websockets.py
+@@ -472,1 +475,2 @@
+-        _LOGGER.error(""Error generating watering calendar for zone %s: %s"", zone_id, e)
++        _LOGGER.error(""Error generating watering calendar for zone %s: %s"",
++                      zone_id, e)
+--- custom_components/smart_irrigation/websockets.py
+@@ -496,2 +500,3 @@
+-            
+-            calendar_data = await coordinator.async_generate_watering_calendar(zone_id)
++
++            calendar_data = await coordinator.async_generate_watering_calendar(
++                zone_id)
+--- custom_components/smart_irrigation/websockets.py
+@@ -501,1 +506,2 @@
+-            _LOGGER.error(""Error generating watering calendar for zone %s: %s"", zone_id, e)
++            _LOGGER.error(""Error generating watering calendar for zone %s: %s"",
++                          zone_id, e)",,,
+BerriAI/litellm#18443,https://github.com/BerriAI/litellm/pull/18443,fix health status,fix health status,"--- litellm/proxy/_experimental/mcp_server/mcp_server_manager.py
+@@ -2146,8 +2145,9 @@
+-            return {
+-                ""server_id"": server_id,
+-                ""server_name"": None,
+-                ""status"": ""unknown"",
+-                ""error"": ""Server not found"",
+-                ""last_health_check"": datetime.now().isoformat(),
+-                ""response_time_ms"": None,
+-            }
++            verbose_logger.warning(f""MCP Server {server_id} not found"")
++            return LiteLLM_MCPServerTable(
++                server_id=server_id,
++                server_name=None,
++                transport=MCPTransport.http,  # Default transport for not found servers
++                status=""unknown"",
++                health_check_error=""Server not found"",
++                last_health_check=datetime.now(),
++            )
+--- litellm/proxy/_experimental/mcp_server/mcp_server_manager.py
+@@ -2155,27 +2155,2 @@
+-        start_time = time.time()
+-        try:
+-            # Try to get tools from the server as a health check
+-            tools = await self._get_tools_from_server(server, mcp_auth_header)
+-            response_time = (time.time() - start_time) * 1000
+-
+-            return {
+-                ""server_id"": server_id,
+-                ""server_name"": server.name,
+-                ""status"": ""healthy"",
+-                ""tools_count"": len(tools),
+-                ""last_health_check"": datetime.now().isoformat(),
+-                ""response_time_ms"": round(response_time, 2),
+-                ""error"": None,
+-            }
+-        except Exception as e:
+-            response_time = (time.time() - start_time) * 1000
+-            error_message = str(e)
+-
+-            return {
+-                ""server_id"": server_id,
+-                ""server_name"": server.name,
+-                ""status"": ""unhealthy"",
+-                ""last_health_check"": datetime.now().isoformat(),
+-                ""response_time_ms"": round(response_time, 2),
+-                ""error"": error_message,
+-            }
++        status: Literal[""healthy"", ""unhealthy"", ""unknown""] = ""unknown""
++        health_check_error = None
+--- litellm/proxy/_experimental/mcp_server/mcp_server_manager.py
+@@ -2257,72 +2240,5 @@
+-        # Get servers from database
+-        list_mcp_servers: List[LiteLLM_MCPServerTable] = []
+-        if prisma_client is not None:
+-            list_mcp_servers = await get_mcp_servers(prisma_client, allowed_server_ids)
+-
+-            # If admin, also get all servers from database
+-            if user_api_key_auth and _user_has_admin_view(user_api_key_auth):
+-                all_mcp_servers = await get_all_mcp_servers(prisma_client)
+-                for server in all_mcp_servers:
+-                    if server.server_id not in allowed_server_ids:
+-                        list_mcp_servers.append(server)
+-
+-        # Add config.yaml servers
+-        for _server_id, _server_config in self.config_mcp_servers.items():
+-            if _server_id in allowed_server_ids:
+-                ",,,
+crewAIInc/crewAI@58413b663a95,https://github.com/crewAIInc/crewAI/commits,chore: fix ruff linting issues in rag module,"linting, list embedding handling, and test update","--- src/crewai/rag/__init__.py
+@@ -3,1 +2,0 @@
+-import sys
+--- src/crewai/rag/__init__.py
+@@ -54,2 +54,4 @@
+-        except ImportError:
+-            raise AttributeError(f""module '{self.__name__}' has no attribute '{name}'"")
++        except ImportError as e:
++            raise AttributeError(
++                f""module '{self.__name__}' has no attribute '{name}'""
++            ) from e
+--- src/crewai/rag/config/optional_imports/__init__.py
+@@ -1,1 +1,1 @@
+-""""""Optional imports for RAG configuration providers.""""""
++""""""Optional imports for RAG configuration providers.""""""
+--- src/crewai/rag/config/optional_imports/base.py
+@@ -3,1 +2,0 @@
+-from typing import Literal
+--- src/crewai/rag/config/optional_imports/protocols.py
+@@ -5,1 +5,1 @@
+-from typing import Protocol, TYPE_CHECKING
++from typing import TYPE_CHECKING, Protocol
+--- src/crewai/rag/config/optional_imports/providers.py
+@@ -3,1 +2,0 @@
+-from typing import Literal
+--- src/crewai/rag/config/types.py
+@@ -3,1 +3,2 @@
+-from typing import Annotated, TypeAlias, TYPE_CHECKING
++from typing import TYPE_CHECKING, Annotated, TypeAlias
++
+--- src/crewai/rag/config/utils.py
+@@ -7,3 +6,0 @@
+-from crewai.utilities.import_utils import require
+-from crewai.rag.core.base_client import BaseClient
+-from crewai.rag.config.types import RagConfigType
+--- src/crewai/rag/config/utils.py
+@@ -11,1 +7,0 @@
+-    DEFAULT_RAG_CONFIG_PATH,
+--- src/crewai/rag/embeddings/__init__.py
+@@ -1,1 +1,1 @@
+-""""""Embedding components for RAG infrastructure.""""""
++""""""Embedding components for RAG infrastructure.""""""
+--- src/crewai/rag/embeddings/configurator.py
+@@ -45,1 +45,1 @@
+-            raise ImportError( 
++            raise ImportError(
+--- src/crewai/rag/embeddings/configurator.py
+@@ -47,1 +47,1 @@
+-            )
++            ) from e
+--- src/crewai/rag/factory.py
+@@ -9,1 +8,0 @@
+-from crewai.rag.core.base_client import BaseClient
+--- src/crewai/rag/qdrant/config.py
+@@ -8,1 +8,0 @@
+-from crewai.rag.qdrant.types import QdrantClientParams, QdrantEmbeddingFunctionWrapper
+--- src/crewai/rag/qdrant/config.py
+@@ -27,1 +28,1 @@
+-    from fastembed import TextEmbedding
++    from fastembed import TextEmbedding  # type: ignore[import-not-found]
+--- src/crewai/rag/qdrant/types.py
+@@ -5,1 +4,0 @@
+-from typing_extensions import NotRequired, TypedDict
+--- src/crewai/rag/storage/__init__.py
+@@ -1,1 +1,1 @@
+-""""""Storage components for RAG infrastructure.""""""
++""""""Storage components for RAG infrastructure.""""""
+--- src/crewai/rag/types.py
+@@ -4,1 +4,1 @@
+-from typing import TypeAlias, Any
++from typing import Any, TypeAlias",,,
+jeroenterheerdt/HAsmartirrigation@cedd1e0d77e1,https://github.com/jeroenterheerdt/HAsmartirrigation/commits,"v2025.8.1 fix #624, #643, #649",,"--- custom_components/smart_irrigation/__init__.py
+@@ -1624,1 +1633,1 @@
+-                await self.store.async_update_zone(zone.get(const.ZONE_ID), data)
++                await self.store.async_update_zone(zone.get(const.ZONE_ID), calc_data)",,,
+jeroenterheerdt/HAsmartirrigation@f655964b2291,https://github.com/jeroenterheerdt/HAsmartirrigation/commits,v2025.7.2,,"--- custom_components/smart_irrigation/__init__.py
+@@ -1020,2 +1023,2 @@
+-                await self.store.async_update_mapping(mapping_id, changes)
+-            # add the weatherdata value to the mappings sensor values zone here.
++
++            # add the weatherdata value to the mappings sensor values
+--- custom_components/smart_irrigation/__init__.py
+@@ -1148,3 +1151,3 @@
+-        return data_by_sensorates:
+-            last_calc_val = zone.get(const.ZONE_LAST_CALCULATED)
+-    def _handle_retrieved_at(e difference between last calculation an previous calculation
++        return data_by_sensor
++
++    def _handle_retrieved_at(
+--- custom_components/smart_irrigation/__init__.py
+@@ -1186,1 +1189,1 @@
+-                    ""[_handle_retrieved_at]: zone has never been calculated, skipping""
++
+--- custom_components/smart_irrigation/__init__.py
+@@ -1563,2 +1566,2 @@
+-            data[const.ZONE_DELTA] = delta
+-                delta = modinst.calculate(le]: new delta: %s"", delta)
++
++                delta = modinst.calculate(
+--- custom_components/smart_irrigation/__init__.py
+@@ -1685,2 +1688,2 @@
+-        if maximum_bucket is not None and maximum_bucket > 0:
+-        if bucket_plus_delta_capped <= 0:ucket_loc}] + [{delta_loc}], {max_bucket_loc}) - [{drainage_loc}] = min({data[const.ZONE_OLD_BUCKET]:.2f}{data[const.ZONE_DELTA]:+.2f}, {maximum_bucket:.1f}) - {drainage:.2f} = {newbucket:.2f}.<br/>""
++
++        if bucket_plus_delta_capped <= 0:
+--- custom_components/smart_irrigation/__init__.py
+@@ -1870,4 +1873,4 @@
+-        data[const.ZONE_EXPLANATION] = explanationodule_id)
+-        data[const.ZONE_LAST_CALCULATED] = datetime.datetime.now()e_id):
+-        return datay a module
+-            await self.store.async_update_module(module_id, data)
++        data[const.ZONE_EXPLANATION] = explanation
++        data[const.ZONE_LAST_CALCULATED] = datetime.datetime.now()
++        return data
++
+--- custom_components/smart_irrigation/__init__.py
+@@ -1909,3 +1912,3 @@
+-            await self.store.async_update_mapping(mapping_id, data)
+-        Args:sync_dispatcher_send(
+-            mapping_id: The ID of the mapping to update or delete.ng_id
++
++        Args:
++            mapping_id: The ID of the mapping to update or delete.
+--- custom_components/smart_irrigation/__init__.py
+@@ -2126,1 +2129,1 @@
+-            _LOGGER.info(""No enabled zones with duration > 0, skipping trigger registration"")
++
+--- custom_components/smart_irrigation/__init__.py
+@@ -2133,5 +2136,5 @@
+-                
+-        for unsub in self._track_irrigation_triggers_unsub:YPE)
+-            unsub()minutes = trigger.get(const.TRIGGER_CONF_OFFSET_MINUTES, 0)
+-        self._track_irrigation_triggers_unsub.clear()CONF_NAME, ""Unnamed Trigger"")
+-            account_for_duration = trigger.get(const.TRIGGER_CONF_ACCOUNT_FOR_DURATION, True)
++
++        for unsub in self._track_irrigation_triggers_unsub:
++            unsub()
++        self._track_irrigation_triggers_unsub.clear()
++
+--- custom_components/smart_irriga",,,
+marimo-team/marimo#5994,https://github.com/marimo-team/marimo/pull/5994,fix: allow builtin functions to be hashed for cache,"## 📝 Summary
+
+Fixes #5993
+
+the `__code__` attribute does not live on cpython builtin functions,
+this provides a stub hash in its place. Test provided to capture the
+broken behavior","--- marimo/_save/hash.py
+@@ -103,1 +103,5 @@
+-        fn_hash = hash_module(fn.__code__, hash_type)
++        if not inspect.isbuiltin(fn):
++            fn_hash = hash_module(fn.__code__, hash_type)
++        else:
++            # Builtin functions are not hashable, so we use their name.
++            fn_hash = type_sign(bytes(fn.__name__, ""utf-8""), ""builtin"")",,,
+polarsource/polar#7366,https://github.com/polarsource/polar/pull/7366,Prefill checkout link query parameters server-side,"* Allow preselecting a specific product ID on checkout links
+
+* fix(checkout-link): Take prefilled checkout links parameters before redirect
+
+This will allow us to:
+1) Simplify the frontend code
+2) Make the checkout link session URL a bit more magical in the sense that they contain all of the
+prefilled data, but doesn't have them in the URL.
+
+* fix(checkout-link): Validate prefilled custom fields
+
+* Remove query parameter prefilling from front-end
+
+---------
+
+Co-authored-by: Jesper Bränn <jesper","--- server/polar/checkout/service.py
+@@ -720,1 +716,2 @@
+-                price.preset_amount
++                valid_query_amount
++                or price.preset_amount",,,
+crewAIInc/crewAI#1843,https://github.com/crewAIInc/crewAI/pull/1843,Brandon/eng 266 conversation crew v1,"* worked on foundation for new conversational crews. Now going to work on chatting.
+
+* core loop should be working and ready for testing.
+
+* high level chat working
+
+* its alive!!
+
+* Added in Joaos feedback to steer crew chats back towards the purpose of the crew
+
+* properly return tool call result
+
+* accessing crew directly instead of through uv commands
+
+* everything is working for conversation now
+
+* Fix linting
+
+* fix llm_utils.py and other type errors
+
+* fix more type errors
+
+* fixing type ","--- src/crewai/llm.py
+@@ -7,2 +8,3 @@
+-from importlib import resources
+-from typing import Any, Dict, List, Optional, Union
++from typing import Any, Dict, List, Optional, Union, cast
++
++from dotenv import load_dotenv
+--- src/crewai/llm.py
+@@ -82,1 +89,3 @@
+-        warnings.filterwarnings(""ignore"", message=""open_text is deprecated*"", category=DeprecationWarning)
++        warnings.filterwarnings(
++            ""ignore"", message=""open_text is deprecated*"", category=DeprecationWarning
++        )
+--- src/crewai/task.py
+@@ -434,3 +434,1 @@
+-                else pydantic_output.model_dump_json()
+-                if pydantic_output
+-                else result
++                else pydantic_output.model_dump_json() if pydantic_output else result
+--- src/crewai/task.py
+@@ -456,1 +454,3 @@
+-    def interpolate_inputs(self, inputs: Dict[str, Union[str, int, float]]) -> None:
++    def interpolate_inputs_and_add_conversation_history(
++        self, inputs: Dict[str, Union[str, int, float]]
++    ) -> None:",,,
+reflex-dev/reflex-web#1475,https://github.com/reflex-dev/reflex-web/pull/1475,ENG-6637: replace color_mode_cond with dark: utility for images,"* replace color_mode_cond with dark: utility
+
+* add missing f","--- pcweb/pages/landing/views/companies.py
+@@ -141,1 +141,1 @@
+-def company_card(image: str, name: str, id: str) -> rx.Component:
++def company_card(name: str, id: str) -> rx.Component:
+--- pcweb/pages/landing/views/companies.py
+@@ -167,2 +168,10 @@
+-                    src=image,
+-                    class_name=""w-[4.75rem] h-auto pointer-events-none group-hover:grayscale-0 grayscale-[1] opacity-50 group-hover:opacity-100 transition-all"",
++                    src=f""/landing/companies/light/{name}.svg"",
++                    class_name=""w-[4.75rem] h-auto pointer-events-none group-hover:grayscale-0 grayscale-[1] opacity-50 group-hover:opacity-100 transition-all dark:hidden"",
++                    loading=""lazy"",
++                    alt=f""{name} logo"",
++                ),
++                # Dark
++                rx.image(
++                    src=f""/landing/companies/dark/{name}.svg"",
++                    class_name=""w-[4.75rem] h-auto pointer-events-none group-hover:grayscale-0 grayscale-[1] opacity-50 group-hover:opacity-100 transition-all dark:block hidden"",
++                    loading=""lazy"",
+--- pcweb/pages/landing/views/companies.py
+@@ -243,1 +251,0 @@
+-                    image=f""/landing/companies/{rx.color_mode_cond(light='light', dark='dark')}/{company}.svg"",
+--- pcweb/pages/pricing/plan_cards.py
+@@ -231,6 +236,8 @@
+-                rx.tooltip(
+-                    rx.icon(""info"", class_name=""!text-slate-9"", size=12),
+-                    content=feature[2],
+-                )
+-                if len(feature) == 3
+-                else """",
++                (
++                    rx.tooltip(
++                        rx.icon(""info"", class_name=""!text-slate-9"", size=12),
++                        content=feature[2],
++                    )
++                    if len(feature) == 3
++                    else """"
++                ),",,,
+crewAIInc/crewAI@8d2928e49af1,https://github.com/crewAIInc/crewAI/commits,fixing handler,,"--- src/crewai/utilities/reasoning_handler.py
+@@ -154,8 +154,15 @@
+-            ""name"": ""create_reasoning_plan"",
+-            ""description"": ""Create or refine a reasoning plan for a task"",
+-            ""parameters"": {
+-                ""type"": ""object"",
+-                ""properties"": {
+-                    ""plan"": {
+-                        ""type"": ""string"",
+-                        ""description"": ""The detailed reasoning plan for the task.""
++            ""type"": ""function"",
++            ""function"": {
++                ""name"": ""create_reasoning_plan"",
++                ""description"": ""Create or refine a reasoning plan for a task"",
++                ""parameters"": {
++                    ""type"": ""object"",
++                    ""properties"": {
++                        ""plan"": {
++                            ""type"": ""string"",
++                            ""description"": ""The detailed reasoning plan for the task.""
++                        },
++                        ""ready"": {
++                            ""type"": ""boolean"",
++                            ""description"": ""Whether the agent is ready to execute the task.""
++                        }
+--- src/crewai/utilities/reasoning_handler.py
+@@ -163,6 +170,2 @@
+-                    ""ready"": {
+-                        ""type"": ""boolean"",
+-                        ""description"": ""Whether the agent is ready to execute the task.""
+-                    }
+-                },
+-                ""required"": [""plan"", ""ready""]
++                    ""required"": [""plan"", ""ready""]
++                }",,,
+marimo-team/marimo#4294,https://github.com/marimo-team/marimo/pull/4294,fix: next page & styling of cells,,"--- marimo/_plugins/ui/_impl/table.py
+@@ -746,1 +755,1 @@
+-                for row in range(skip, skip + take)
++                for row in row_ids
+--- marimo/_plugins/ui/_impl/table.py
+@@ -816,1 +825,10 @@
+-        """"""Get row IDs of a table. If searched, return searched rows else all rows.""""""
++        """"""Get row IDs of a table. If searched, return searched rows else all_rows flag is True.
++
++        Args:
++            args (EmptyArgs): Empty arguments
++
++        Returns:
++            GetRowIdsResponse: Response containing:
++                - row_ids: List of row IDs
++                - all_rows: Whether all rows are selected
++        """"""
+--- marimo/_plugins/ui/_impl/table.py
+@@ -840,2 +858,2 @@
+-        # For dictionary data, return sequential indices
+-        if isinstance(self.data, dict):
++        # For dictionary or list data, return sequential indices
++        if isinstance(self.data, dict) or isinstance(self.data, list):",,,
+crewAIInc/crewAI#2048,https://github.com/crewAIInc/crewAI/pull/2048,WIP crew events emitter,"* WIP crew events emitter
+
+* Refactor event handling and introduce new event types
+
+- Migrate from global `emit` function to `event_bus.emit`
+- Add new event types for task failures, tool usage, and agent execution
+- Update event listeners and event bus to support more granular event tracking
+- Remove deprecated event emission methods
+- Improve event type consistency and add more detailed event information
+
+* Add event emission for agent execution lifecycle
+
+- Emit AgentExecutionStarted and Agen","--- src/crewai/agents/crew_agent_executor.py
+@@ -114,1 +120,0 @@
+-                self._handle_unknown_error(e)
+--- src/crewai/agents/crew_agent_executor.py
+@@ -352,12 +358,24 @@
+-        tool_usage = ToolUsage(
+-            tools_handler=self.tools_handler,
+-            tools=self.tools,
+-            original_tools=self.original_tools,
+-            tools_description=self.tools_description,
+-            tools_names=self.tools_names,
+-            function_calling_llm=self.function_calling_llm,
+-            task=self.task,  # type: ignore[arg-type]
+-            agent=self.agent,
+-            action=agent_action,
+-        )
+-        tool_calling = tool_usage.parse_tool_calling(agent_action.text)
++        try:
++            if self.agent:
++                crewai_event_bus.emit(
++                    self,
++                    event=ToolUsageStartedEvent(
++                        agent_key=self.agent.key,
++                        agent_role=self.agent.role,
++                        tool_name=agent_action.tool,
++                        tool_args=agent_action.tool_input,
++                        tool_class=agent_action.tool,
++                    ),
++                )
++            tool_usage = ToolUsage(
++                tools_handler=self.tools_handler,
++                tools=self.tools,
++                original_tools=self.original_tools,
++                tools_description=self.tools_description,
++                tools_names=self.tools_names,
++                function_calling_llm=self.function_calling_llm,
++                task=self.task,  # type: ignore[arg-type]
++                agent=self.agent,
++                action=agent_action,
++            )
++            tool_calling = tool_usage.parse_tool_calling(agent_action.text)
+--- src/crewai/crew.py
+@@ -554,9 +582,10 @@
+-        for before_callback in self.before_kickoff_callbacks:
+-            if inputs is None:
+-                inputs = {}
+-            inputs = before_callback(inputs)
+-
+-        """"""Starts the crew to work on its assigned tasks.""""""
+-        self._execution_span = self._telemetry.crew_execution_span(self, inputs)
+-        self._task_output_handler.reset()
+-        self._logging_color = ""bold_purple""
++        try:
++            for before_callback in self.before_kickoff_callbacks:
++                if inputs is None:
++                    inputs = {}
++                inputs = before_callback(inputs)
++
++            crewai_event_bus.emit(
++                self,
++                CrewKickoffStartedEvent(crew_name=self.name or ""crew"", inputs=inputs),
++            )
+--- src/crewai/crew.py
+@@ -1169,6 +1205,16 @@
+-        test_crew = self.copy()
+-
+-        eval_llm = create_llm(eval_llm)
+-
+-        if not eval_llm:
+-            raise ValueError(""Failed to create LLM instance."")
++        try:
++            eval_llm = create_llm(eval_llm)
++            if not eval_llm:
++                raise ValueError(""Failed to create LLM instance."")
++
++            crewai_event_bus.emit(
++                self,
++       ",,,
+crewAIInc/crewAI#3499,https://github.com/crewAIInc/crewAI/pull/3499,chore: bump CrewAI version to 0.186.1 and update dependencies in CLI templates,"- Updated CrewAI version from 0.186.0 to 0.186.1 in `__init__.py`.
+- Updated `crewai[tools]` dependency version in `pyproject.toml` for crew, flow, and tool templates to reflect the new CrewAI version.","--- src/crewai/__init__.py
+@@ -43,1 +43,1 @@
+-__version__ = ""0.186.0""
++__version__ = ""0.186.1""",,,
+jeroenterheerdt/HAsmartirrigation@5ffedcd31c5e,https://github.com/jeroenterheerdt/HAsmartirrigation/commits,v2025.7.2 fixed trigger issues,,"--- custom_components/smart_irrigation/__init__.py
+@@ -43,1 +44,0 @@
+-    calculate_solar_azimuth,",,,
+BerriAI/litellm#15000,https://github.com/BerriAI/litellm/pull/15000,[Performance] Reduce complexity of `InMemoryCache.evict_cache` from O(n*log(n)) to O(log(n)),"* Improved performance by reducing complexity
+
+* Improved logic to prevent memory from increasing too much, added test
+
+* Restore indent
+
+* Restore indent
+
+* Added type annotation
+
+* Updated test to correctly initialize the expiration_heap","--- litellm/caching/in_memory_cache.py
+@@ -123,7 +120,20 @@
+-        # Step 2: If cache is still full, evict items with earliest expiration times
+-        if len(self.cache_dict) >= self.max_size_in_memory:
+-            # Sort by expiration time (earliest first) and evict until we're under the limit
+-            items_by_expiration = sorted(self.ttl_dict.items(), key=lambda x: x[1])
+-            keys_to_evict = items_by_expiration[:len(self.cache_dict) - self.max_size_in_memory + 1]
+-            
+-            for key, _ in keys_to_evict:
++        # Step 1: Remove expired or outdated items
++        while self.expiration_heap:
++            expiration_time, key = self.expiration_heap[0]
++
++            # Case 1: Heap entry is outdated
++            if expiration_time != self.ttl_dict.get(key):
++                heapq.heappop(self.expiration_heap)
++            # Case 2: Entry is valid but expired
++            elif expiration_time <= current_time:
++                heapq.heappop(self.expiration_heap)
++                self._remove_key(key)
++            else:
++                # Case 3: Entry is valid and not expired
++                break
++
++        # Step 2: Evict if cache is still full
++        while len(self.cache_dict) >= self.max_size_in_memory:
++            expiration_time, key = heapq.heappop(self.expiration_heap)
++            # Skip if key was removed or updated
++            if self.ttl_dict.get(key) == expiration_time:",,,
+BerriAI/litellm#17338,https://github.com/BerriAI/litellm/pull/17338,"Guardrail API V2 - user api key metadata, session id, specify input type (request/response), image support","* refactor(generic_guardrail_api.py): refactor to update to new guardrail api logic
+
+* refactor: refactor llm api integrations to support passing in text as a list[str] instead of one at a time
+
+* refactor: fix linting errors
+
+* refactor: pass request type to guardrail api
+
+allows request vs. response processing to occur
+
+* feat: pass user api key dict information to the guardrail api
+
+* fix: pass user api key dict information to the guardrail api
+
+* feat: pass litellm call id + trace id, if pre","--- litellm/integrations/custom_guardrail.py
+@@ -2,1 +2,12 @@
+-from typing import Any, Dict, List, Optional, Type, Union, get_args
++from typing import (
++    TYPE_CHECKING,
++    Any,
++    Dict,
++    List,
++    Literal,
++    Optional,
++    Tuple,
++    Type,
++    Union,
++    get_args,
++)
+--- litellm/proxy/guardrails/guardrail_endpoints.py
+@@ -1221,1 +1224,1 @@
+-        return ApplyGuardrailResponse(response_text=response_text)
++        return ApplyGuardrailResponse(response_text=response_text[0][0])
+--- litellm/proxy/guardrails/guardrail_hooks/bedrock_guardrails.py
+@@ -44,1 +44,1 @@
+-from litellm.types.guardrails import GuardrailEventHooks, PiiEntityType
++from litellm.types.guardrails import GuardrailEventHooks
+--- litellm/proxy/guardrails/guardrail_hooks/bedrock_guardrails.py
+@@ -1244,5 +1247,6 @@
+-        text: str,
+-        language: Optional[str] = None,
+-        entities: Optional[List[PiiEntityType]] = None,
+-        request_data: Optional[dict] = None,
+-    ) -> str:
++        texts: List[str],
++        request_data: dict,
++        input_type: Literal[""request"", ""response""],
++        logging_obj: Optional[""LiteLLMLoggingObj""] = None,
++        images: Optional[List[str]] = None,
++    ) -> Tuple[List[str], Optional[List[str]]]:
+--- litellm/proxy/guardrails/guardrail_hooks/bedrock_guardrails.py
+@@ -1250,1 +1254,1 @@
+-        Apply Bedrock guardrail to the given text for testing purposes.
++        Apply Bedrock guardrail to a batch of texts for testing purposes.
+--- litellm/proxy/guardrails/guardrail_hooks/bedrock_guardrails.py
+@@ -1253,1 +1257,1 @@
+-        It creates a mock request and response to test the guardrail functionality.
++        It creates mock messages to test the guardrail functionality.
+--- litellm/proxy/guardrails/guardrail_hooks/bedrock_guardrails.py
+@@ -1283,3 +1294,4 @@
+-            if bedrock_response.get(""action"") == ""BLOCKED"":
+-                raise Exception(
+-                    f""Content blocked by Bedrock guardrail: {bedrock_response.get('reason', 'Unknown reason')}""
++                bedrock_response = await self.make_bedrock_api_request(
++                    source=""INPUT"",
++                    messages=mock_messages,
++                    request_data=request_data,
+--- litellm/proxy/guardrails/guardrail_hooks/bedrock_guardrails.py
+@@ -1288,15 +1300,11 @@
+-            # Apply any masking that was applied by the guardrail
+-            masked_text = text
+-            output_list = bedrock_response.get(""output"")
+-            if output_list:
+-                # If the guardrail returned modified content, use that
+-                for output_item in output_list:
+-                    text_content = output_item.get(""text"")
+-                    if text_content:
+-                        masked_text = str(text_content)
+-                        break
+-            else:
+-                outputs_list = bedrock_response.get(""outputs"")
+-                if outputs_list:
+-                    # Fallback to outputs field if output is not a",,,
+polarsource/polar#8827,https://github.com/polarsource/polar/pull/8827,Fix discount expiration when applied to existing subscriptions,"Use the new discount_applied_at field to properly track when a discount
+was first applied to a billing cycle, rather than using started_at.
+
+This fixes issues where:
+- Discounts applied to existing subscriptions expired immediately
+  (because started_at was in the past)
+- Repeating discounts during trial periods expired too early (the
+  discount should only count months where it was actually applied)
+
+Changes:
+- Update is_repetition_expired to use discount_applied_at instead of
+  started_at, sim","--- server/polar/models/discount.py
+@@ -140,1 +140,1 @@
+-        started_at: datetime,
++        discount_applied_at: datetime,
+--- server/polar/models/discount.py
+@@ -142,1 +141,0 @@
+-        trial_ended: bool = False,
+--- server/polar/models/discount.py
+@@ -145,3 +155,3 @@
+-            # If transitioning from trial to active, this is the first billed cycle
+-            # so the discount should still apply
+-            return not trial_ended
++            # ""once"" discounts only apply to the first billing cycle where applied
++            # They're expired if current period is after the period when first applied
++            return current_period_start > discount_applied_at
+--- server/polar/subscription/service.py
+@@ -664,1 +671,1 @@
+-                    subscription.started_at,
++                    subscription.discount_applied_at,
+--- server/polar/subscription/service.py
+@@ -666,1 +672,0 @@
+-                    previous_status == SubscriptionStatus.trialing,
+--- server/polar/subscription/service.py
+@@ -1779,1 +1789,1 @@
+-                subscription.started_at,
++                discount_applied_at,
+--- server/polar/subscription/service.py
+@@ -1781,1 +1790,0 @@
+-                subscription.status == SubscriptionStatus.trialing,",,,
+crewAIInc/crewAI#2193,https://github.com/crewAIInc/crewAI/pull/2193,Better support async flows,"* Better support async
+
+* Drop coroutine","--- src/crewai/flow/flow.py
+@@ -716,1 +716,2 @@
+-        """"""Start the flow execution.
++        """"""
++        Start the flow execution in a synchronous context.
+--- src/crewai/flow/flow.py
+@@ -718,2 +719,11 @@
+-        Args:
+-            inputs: Optional dictionary containing input values and potentially a state ID to restore
++        This method wraps kickoff_async so that all state initialization and event
++        emission is handled in the asynchronous method.
++        """"""
++
++        async def run_flow():
++            return await self.kickoff_async(inputs)
++
++        return asyncio.run(run_flow())
++
++    @init_flow_main_trace
++    async def kickoff_async(self, inputs: Optional[Dict[str, Any]] = None) -> Any:
+--- src/crewai/flow/flow.py
+@@ -721,4 +731,6 @@
+-        # Handle state restoration if ID is provided in inputs
+-        if inputs and ""id"" in inputs and self._persistence is not None:
+-            restore_uuid = inputs[""id""]
+-            stored_state = self._persistence.load_state(restore_uuid)
++        Start the flow execution asynchronously.
++
++        This method performs state restoration (if an 'id' is provided and persistence is available)
++        and updates the flow state with any additional inputs. It then emits the FlowStartedEvent,
++        logs the flow startup, and executes all start methods. Once completed, it emits the
++        FlowFinishedEvent and returns the final output.
+--- src/crewai/flow/flow.py
+@@ -733,11 +752,14 @@
+-            if stored_state:
+-                self._log_flow_event(
+-                    f""Loading flow state from memory for UUID: {restore_uuid}"",
+-                    color=""yellow"",
+-                )
+-                # Restore the state
+-                self._restore_state(stored_state)
+-            else:
+-                self._log_flow_event(
+-                    f""No flow state found for UUID: {restore_uuid}"", color=""red""
+-                )
++            # If persistence is enabled, attempt to restore the stored state using the provided id.
++            if ""id"" in inputs and self._persistence is not None:
++                restore_uuid = inputs[""id""]
++                stored_state = self._persistence.load_state(restore_uuid)
++                if stored_state:
++                    self._log_flow_event(
++                        f""Loading flow state from memory for UUID: {restore_uuid}"",
++                        color=""yellow"",
++                    )
++                    self._restore_state(stored_state)
++                else:
++                    self._log_flow_event(
++                        f""No flow state found for UUID: {restore_uuid}"", color=""red""
++                    )
+--- src/crewai/flow/flow.py
+@@ -763,10 +784,0 @@
+-        if inputs is not None and ""id"" not in inputs:
+-            self._initialize_state(inputs)
+-
+-        async def run_flow():
+-            return await self.kickoff_async()
+-
+-        return asyncio.run(run_flow())
+-
+-    @init_flow_main_trace
+-    async def kickoff_async(self",,,
+marimo-team/marimo#4089,https://github.com/marimo-team/marimo/pull/4089,fix: only add packages that we haven't already tried installing,"Check that we haven't tried installing a package already, before adding
+it to the list of missing packages.","--- marimo/_runtime/runtime.py
+@@ -1330,1 +1330,11 @@
+-                missing_packages.update(e.package_names)
++                # filter out packages that we already attempted to install
++                # to prevent an infinite loop
++                missing_packages.update(
++                    {
++                        package
++                        for package in e.package_names
++                        if not self.package_manager.attempted_to_install(
++                            package
++                        )
++                    }
++                )",,,
+mlflow/mlflow#16307,https://github.com/mlflow/mlflow/pull/16307,Auto-generate ID for Rule Classes in clint using `__init_subclass__` with itertools.count,"Co-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>
+Co-authored-by: harupy <17039389+harupy@users.noreply.github.com>","--- dev/clint/src/clint/rules.py
+@@ -385,3 +323,0 @@
+-    def _id(self) -> str:
+-        return ""MLF0023""
+-
+--- dev/clint/src/clint/rules.py
+@@ -414,3 +349,0 @@
+-    def _id(self) -> str:
+-        return ""MLF0024""
+-",,,
+jeroenterheerdt/HAsmartirrigation@109afefdcbed,https://github.com/jeroenterheerdt/HAsmartirrigation/commits,v2025.8.0 fix #627,,"--- custom_components/smart_irrigation/__init__.py
+@@ -263,2 +265,4 @@
+-            effective_lat, effective_lon, effective_elev = self._get_effective_coordinates()
+-            
++            effective_lat, effective_lon, effective_elev = (
++                self._get_effective_coordinates()
++            )
++
+--- custom_components/smart_irrigation/__init__.py
+@@ -285,2 +289,6 @@
+-        self._effective_latitude, self._effective_longitude, self._effective_elevation = self._get_effective_coordinates()
+-        
++        (
++            self._effective_latitude,
++            self._effective_longitude,
++            self._effective_elevation,
++        ) = self._get_effective_coordinates()
++
+--- custom_components/smart_irrigation/__init__.py
+@@ -377,2 +387,4 @@
+-        manual_enabled = self._get_config_value(const.CONF_MANUAL_COORDINATES_ENABLED, False)
+-        
++        manual_enabled = self._get_config_value(
++            const.CONF_MANUAL_COORDINATES_ENABLED, False
++        )
++
+--- custom_components/smart_irrigation/__init__.py
+@@ -388,1 +400,3 @@
+-                    latitude, longitude, elevation
++                    latitude,
++                    longitude,
++                    elevation,
+--- custom_components/smart_irrigation/__init__.py
+@@ -391,5 +405,4 @@
+-            else:
+-                _LOGGER.warning(
+-                    ""Manual coordinates enabled but latitude or longitude not set, falling back to Home Assistant config""
+-                )
+-        
++            _LOGGER.warning(
++                ""Manual coordinates enabled but latitude or longitude not set, falling back to Home Assistant config""
++            )
++
+--- custom_components/smart_irrigation/__init__.py
+@@ -403,1 +416,3 @@
+-            ha_lat, ha_lon, ha_elev
++            ha_lat,
++            ha_lon,
++            ha_elev,
+--- custom_components/smart_irrigation/__init__.py
+@@ -2372,1 +2485,0 @@
+-        from homeassistant.helpers.event import async_track_point_in_utc_time
+--- custom_components/smart_irrigation/__init__.py
+@@ -3087,3 +3205,1 @@
+-        monthly_et = daily_et * days_in_month
+-
+-        return monthly_et
++        return daily_et * days_in_month
+--- custom_components/smart_irrigation/__init__.py
+@@ -3120,3 +3237,1 @@
+-        volume_liters = adjusted_water_need_mm * zone_size_m2
+-
+-        return volume_liters
++        return adjusted_water_need_mm * zone_size_m2
+--- custom_components/smart_irrigation/calcmodules/pyeto/__init__.py
+@@ -125,1 +147,5 @@
+-            deltas.append(self.calculate_et_for_day(weather_data=weather_data, hour_multiplier=hour_multiplier))
++            deltas.append(
++                self.calculate_et_for_day(
++                    weather_data=weather_data, hour_multiplier=hour_multiplier
++                )
++            )
+--- custom_components/smart_irrigation/calcmodules/pyeto/__init__.py
+@@ -133,1 +159,6 @@
+-                    deltas.append(self.calculate_et_for_day(weather_data=forecast_data[x], hour_multiplier=hour_multiplier))
++         ",,,
+BerriAI/litellm#16035,https://github.com/BerriAI/litellm/pull/16035,(feat) Milvus - search vector store support  + (fix) Passthrough Endpoints - support multi-part form data on passthrough,"* feat(milvus/): initial commit adding milvus vector store support to LiteLLM
+
+allows querying milvus vector store through litellm
+
+* feat(bedrock/vector_stores): support translating openai filters param to aws kb
+
+adds filtering to aws kb
+
+* feat(milvus/): add milvus vector store unified search support
+
+allows calling milvus vector store in through chat completions
+
+* docs(milvus_vector_stores.md): document new milvus vector search integration
+
+* feat(pass_through_endpoints.py): support passing","--- litellm/llms/custom_httpx/http_handler.py
+@@ -21,1 +21,1 @@
+-    DEFAULT_SSL_CIPHERS
++    DEFAULT_SSL_CIPHERS,
+--- litellm/llms/custom_httpx/http_handler.py
+@@ -756,1 +756,1 @@
+-                    **connector_kwargs
++                    **connector_kwargs,",,,
+crewAIInc/crewAI#1931,https://github.com/crewAIInc/crewAI/pull/1931,Stateful flows,"* fix: ensure persisted state overrides class defaults
+
+- Remove early return in Flow.__init__ to allow proper state initialization
+- Add test_flow_default_override.py to verify state override behavior
+- Fix issue where default values weren't being overridden by persisted state
+
+Fixes the issue where persisted state values weren't properly overriding
+class defaults when restarting a flow with a previously saved state ID.
+
+Co-Authored-By: Joe Moura <joao@crewai.com>
+
+* test: improve state restora","--- src/crewai/flow/flow.py
+@@ -467,23 +465,2 @@
+-        # Validate state model before initialization
+-        if isinstance(self.initial_state, type):
+-            if issubclass(self.initial_state, BaseModel) and not issubclass(
+-                self.initial_state, FlowState
+-            ):
+-                # Check if model has id field
+-                model_fields = getattr(self.initial_state, ""model_fields"", None)
+-                if not model_fields or ""id"" not in model_fields:
+-                    raise ValueError(""Flow state model must have an 'id' field"")
+-
+-        # Handle persistence and potential ID conflicts
+-        stored_state = None
+-        if self._persistence is not None:
+-            if (
+-                restore_uuid
+-                and kwargs
+-                and ""id"" in kwargs
+-                and restore_uuid != kwargs[""id""]
+-            ):
+-                raise ValueError(
+-                    f""Conflicting IDs provided: restore_uuid='{restore_uuid}' ""
+-                    f""vs kwargs['id']='{kwargs['id']}'. Use only one ID for restoration.""
+-                )
++        # Initialize state with initial values
++        self._state = self._create_initial_state()
+--- src/crewai/flow/flow.py
+@@ -491,34 +468,3 @@
+-            # Attempt to load state, prioritizing restore_uuid
+-            if restore_uuid:
+-                self._log_flow_event(f""Loading flow state from memory for UUID: {restore_uuid}"", color=""bold_yellow"")
+-                stored_state = self._persistence.load_state(restore_uuid)
+-                if not stored_state:
+-                    raise ValueError(
+-                        f""No state found for restore_uuid='{restore_uuid}'""
+-                    )
+-            elif kwargs and ""id"" in kwargs:
+-                self._log_flow_event(f""Loading flow state from memory for ID: {kwargs['id']}"", color=""bold_yellow"")
+-                stored_state = self._persistence.load_state(kwargs[""id""])
+-                if not stored_state:
+-                    # For kwargs[""id""], we allow creating new state if not found
+-                    self._state = self._create_initial_state()
+-                    if kwargs:
+-                        self._initialize_state(kwargs)
+-                    return
+-
+-        # Initialize state based on persistence and kwargs
+-        if stored_state:
+-            # Create initial state and restore from persistence
+-            self._state = self._create_initial_state()
+-            self._restore_state(stored_state)
+-            # Apply any additional kwargs to override specific fields
+-            if kwargs:
+-                filtered_kwargs = {k: v for k, v in kwargs.items() if k != ""id""}
+-                if filtered_kwargs:
+-                    self._initialize_state(filtered_kwargs)
+-        else:
+-            # No stored state, create new state with initial values
+-            self._state = self._create_initial_state()
+-            # Apply any additional kwargs
+-            if kwargs:
+-    ",,,
+jeroenterheerdt/HAsmartirrigation#681,https://github.com/jeroenterheerdt/HAsmartirrigation/pull/681,Fixed issue #644,Fixed issue #644 ,"--- custom_components/smart_irrigation/__init__.py
+@@ -2728,5 +2728,1 @@
+-            weather_client = None
+-            if weather_service == const.CONF_WEATHER_SERVICE_OWM:
+-                weather_client = self._OWMClient
+-            elif weather_service == const.CONF_WEATHER_SERVICE_PW:
+-                weather_client = self._PirateWeatherClient
++            weather_client = self._WeatherServiceClient
+--- custom_components/smart_irrigation/__init__.py
+@@ -2739,1 +2735,1 @@
+-            forecast_data = weather_client.get_forecast_data()
++            forecast_data = await self.hass.async_add_executor_job( weather_client.get_forecast_data )",,,
+marimo-team/marimo#5892,https://github.com/marimo-team/marimo/pull/5892,fix: handle double interruptions,"This change makes the cell runner more robust to keyboard interrupts by
+catching an additional `KeyboardInterrupt` when handling the original
+`KeyboardInterrupt`.
+
+Interrupting `pl.read_parquet()` raises two `KeyboardInterrupts` (polars
+may be forwarding signals); without this change, attempting to interrupt
+this function would kill the kernel.
+
+More work could be done to make the `CellRunner` more robust to
+`KeyboardInterrupts`, but this fixes the issue with polars in local
+testing.
+
+Fixes #588","--- marimo/_runtime/runner/cell_runner.py
+@@ -527,3 +574,3 @@
+-                        assert isinstance(tb, TracebackType)
+-                        self.debugger._last_traceback = tb
+-                        self.debugger._last_tracebacks[cell_id] = tb
++                        if isinstance(tb, TracebackType):
++                            self.debugger._last_traceback = tb
++                            self.debugger._last_tracebacks[cell_id] = tb",,,
+microsoft/fabric-cicd#510,https://github.com/microsoft/fabric-cicd/pull/510,Fix deployment order: publish Mirrored Databases before Lakehouses,"The deployment order in `publish_all_items()` was causing issues with
+Lakehouse shortcuts to Mirrored Databases. Previously, Lakehouses were
+deployed before Mirrored Databases, which prevented shortcuts from being
+established correctly since the target Mirrored Database didn't exist
+yet.
+
+**Problem:**
+```python
+# Previous order in publish_all_items():
+if _should_publish_item_type(""Lakehouse""):
+    print_header(""Publishing Lakehouses"")
+    items.publish_lakehouses(fabric_workspace_obj)
+if _should","--- src/fabric_cicd/publish.py
+@@ -136,3 +138,0 @@
+-    if _should_publish_item_type(""MirroredDatabase""):
+-        print_header(""Publishing Mirrored Databases"")
+-        items.publish_mirroreddatabase(fabric_workspace_obj)",,,
+polarsource/polar#7568,https://github.com/polarsource/polar/pull/7568,server/checkout: use eagerly-loaded Checkout.organization where applicable,"
+- server/checkout: use eagerly-loaded Checkout.organization where applicable
+- dx: fix Zed settings
+  ","--- server/polar/checkout/service.py
+@@ -773,1 +781,5 @@
+-                        session, product, price, discount_code=discount_code
++                        session,
++                        product.organization,
++                        product,
++                        price,
++                        discount_code=discount_code,",,,
+reflex-dev/reflex-web#1445,https://github.com/reflex-dev/reflex-web/pull/1445,Ban .edu email domains in pricing form validation,"* Ban .edu email domains in pricing form validation
+
+- Add generalized .edu domain validation using endswith('.edu') check
+- Prevents educational institution emails from being submitted in demo request form
+- Maintains existing banned domain validation for consumer email providers
+- Uses pattern matching instead of hardcoding specific university domains
+
+Co-Authored-By: Alek <alek@pynecone.io>
+
+* Fix formatting issues with ruff
+
+- Run ruff format to fix code formatting
+- Fix import sorting in he","--- pcweb/components/docpage/sidebar/sidebar.py
+@@ -180,1 +181,3 @@
+-                    rx.accordion.icon(class_name=""size-4 !text-slate-9 group-hover:!text-violet-9""),
++                    rx.accordion.icon(
++                        class_name=""size-4 !text-slate-9 group-hover:!text-violet-9""
++                    ),
+--- pcweb/components/docpage/sidebar/sidebar.py
+@@ -549,3 +552,1 @@
+-                                            rx.icon(
+-                                                ""atom"", size=16
+-                                            ),  # pyright: ignore [reportCallIssue]
++                                            rx.icon(""atom"", size=16),  # pyright: ignore [reportCallIssue]
+--- pcweb/components/docpage/sidebar/sidebar.py
+@@ -589,3 +590,1 @@
+-                                            rx.icon(
+-                                                ""atom"", size=16
+-                                            ),  # pyright: ignore [reportCallIssue]
++                                            rx.icon(""atom"", size=16),  # pyright: ignore [reportCallIssue]
+--- pcweb/pages/docs/env_vars.py
+@@ -25,1 +26,1 @@
+-            if name.startswith('_') or not hasattr(attr, 'name'):
++            if name.startswith(""_"") or not hasattr(attr, ""name""):
+--- pcweb/pages/docs/env_vars.py
+@@ -47,1 +48,1 @@
+-                while j >= 0 and lines[j].strip().startswith('#'):
++                while j >= 0 and lines[j].strip().startswith(""#""):
+--- pcweb/pages/docs/env_vars.py
+@@ -67,2 +68,6 @@
+-            env_vars = [(name, var) for name, var in env_vars if not getattr(var, 'internal', False)]
+-        
++            env_vars = [
++                (name, var)
++                for name, var in env_vars
++                if not getattr(var, ""internal"", False)
++            ]
++
+--- pcweb/pages/docs/env_vars.py
+@@ -75,4 +80,16 @@
+-                        rx.table.column_header_cell(""Name"", class_name=""font-small text-slate-12 text-normal w-[20%] justify-start pl-4 font-bold""),
+-                        rx.table.column_header_cell(""Type"", class_name=""font-small text-slate-12 text-normal w-[15%] justify-start pl-4 font-bold""),
+-                        rx.table.column_header_cell(""Default"", class_name=""font-small text-slate-12 text-normal w-[15%] justify-start pl-4 font-bold""),
+-                        rx.table.column_header_cell(""Description"", class_name=""font-small text-slate-12 text-normal w-[50%] justify-start pl-4 font-bold""),
++                        rx.table.column_header_cell(
++                            ""Name"",
++                            class_name=""font-small text-slate-12 text-normal w-[20%] justify-start pl-4 font-bold"",
++                        ),
++                        rx.table.column_header_cell(
++                            ""Type"",
++                            class_name=""font-small text-slate-12 text-normal w-[15%] justify-start pl-4 font-bold"",
++                        ),
++                        rx.table.column_header_cell(
++                        ",,,
+polarsource/polar#6839,https://github.com/polarsource/polar/pull/6839,Fix session.stream usage,,"--- server/polar/billing_entry/repository.py
+@@ -72,1 +73,4 @@
+-        results = await self.session.stream(statement)
++        results = await self.session.stream(
++            statement,
++            execution_options={""yield_per"": settings.DATABASE_STREAM_YIELD_PER},
++        )
+--- server/polar/billing_entry/repository.py
+@@ -74,1 +78,1 @@
+-            async for result in results.unique():
++            async for result in results:
+--- server/polar/order/service.py
+@@ -1694,8 +1697,2 @@
+-        paid_orders = await order_repository.get_all(
+-            order_repository.get_base_statement()
+-            # .join(Customer, Order.customer_id == Customer.id)
+-            .where(
+-                Customer.id == customer.id,
+-                Order.deleted_at.is_(None),
+-                Order.status == OrderStatus.paid,
+-            )
++        paid_orders = await order_repository.get_all_by_customer(
++            customer.id, status=OrderStatus.paid
+--- server/polar/order/service.py
+@@ -1704,8 +1702,2 @@
+-        payments = await payment_repository.get_all(
+-            payment_repository.get_base_statement()
+-            .join(Order, Payment.order_id == Order.id)
+-            .where(
+-                Order.customer_id == customer.id,
+-                Order.deleted_at.is_(None),
+-                Payment.status == PaymentStatus.succeeded,
+-            )
++        payments = await payment_repository.get_all_by_customer(
++            customer.id, status=PaymentStatus.succeeded",,,
+crewAIInc/crewAI#2636,https://github.com/crewAIInc/crewAI/pull/2636,Supporting no-code Guardrail creation,"* feat: support to define a guardrail task no-code
+
+* feat: add auto-discovery for Guardrail code execution mode
+
+* feat: handle malformed or invalid response from CodeInterpreterTool
+
+* feat: allow to set unsafe_mode from Guardrail task
+
+* feat: renaming GuardrailTask to TaskGuardrail
+
+* feat: ensure guardrail is callable while initializing Task
+
+* feat: remove Docker availability check from TaskGuardrail
+
+The CodeInterpreterTool already ensures compliance with this requirement.
+
+* refactor: re","--- src/crewai/task.py
+@@ -467,1 +484,3 @@
+-            crewai_event_bus.emit(self, TaskCompletedEvent(output=task_output, task=self))
++            crewai_event_bus.emit(
++                self, TaskCompletedEvent(output=task_output, task=self)
++            )",,,
+crewAIInc/crewAI#2428,https://github.com/crewAIInc/crewAI/pull/2428,Feat/improve yaml extraction,"* Support wildcard handling in `emit()`
+
+Change `emit()` to call handlers registered for parent classes using
+`isinstance()`. Ensures that base event handlers receive derived
+events.
+
+* Fix failing test
+
+* Remove unused variable
+
+* update interpolation to work with example response types in yaml docs
+
+* make tests
+
+* fix circular deps
+
+* Fixing interpolation imports
+
+* Improve test
+
+---------
+
+Co-authored-by: Vinicius Brasil <vini@hey.com>
+Co-authored-by: Lorenze Jay <63378463+lorenzejay@users.n","--- src/crewai/task.py
+@@ -527,1 +531,1 @@
+-                self.output_file = self.interpolate_only(
++                self.output_file = interpolate_only(
+--- src/crewai/task.py
+@@ -558,66 +561,0 @@
+-    def interpolate_only(
+-        self,
+-        input_string: Optional[str],
+-        inputs: Dict[str, Union[str, int, float, Dict[str, Any], List[Any]]],
+-    ) -> str:
+-        """"""Interpolate placeholders (e.g., {key}) in a string while leaving JSON untouched.
+-
+-        Args:
+-            input_string: The string containing template variables to interpolate.
+-                         Can be None or empty, in which case an empty string is returned.
+-            inputs: Dictionary mapping template variables to their values.
+-                   Supported value types are strings, integers, floats, and dicts/lists
+-                   containing only these types and other nested dicts/lists.
+-
+-        Returns:
+-            The interpolated string with all template variables replaced with their values.
+-            Empty string if input_string is None or empty.
+-
+-        Raises:
+-            ValueError: If a value contains unsupported types
+-        """"""
+-
+-        # Validation function for recursive type checking
+-        def validate_type(value: Any) -> None:
+-            if value is None:
+-                return
+-            if isinstance(value, (str, int, float, bool)):
+-                return
+-            if isinstance(value, (dict, list)):
+-                for item in value.values() if isinstance(value, dict) else value:
+-                    validate_type(item)
+-                return
+-            raise ValueError(
+-                f""Unsupported type {type(value).__name__} in inputs. ""
+-                ""Only str, int, float, bool, dict, and list are allowed.""
+-            )
+-
+-        # Validate all input values
+-        for key, value in inputs.items():
+-            try:
+-                validate_type(value)
+-            except ValueError as e:
+-                raise ValueError(f""Invalid value for key '{key}': {str(e)}"") from e
+-
+-        if input_string is None or not input_string:
+-            return """"
+-        if ""{"" not in input_string and ""}"" not in input_string:
+-            return input_string
+-        if not inputs:
+-            raise ValueError(
+-                ""Inputs dictionary cannot be empty when interpolating variables""
+-            )
+-        try:
+-            escaped_string = input_string.replace(""{"", ""{{"").replace(""}"", ""}}"")
+-
+-            for key in inputs.keys():
+-                escaped_string = escaped_string.replace(f""{{{{{key}}}}}"", f""{{{key}}}"")
+-
+-            return escaped_string.format(**inputs)
+-        except KeyError as e:
+-            raise KeyError(
+-                f""Template variable '{e.args[0]}' not found in inputs dictionary""
+-            ) from e
+-        except ValueError as e:
+-            raise ValueError(f""Error during string interpolation: {str(e)}"") from e
+-",,,
+mlflow/mlflow#17024,https://github.com/mlflow/mlflow/pull/17024,Add mypy type checking to dev/clint,Signed-off-by: harupy <17039389+harupy@users.noreply.github.com>,"--- dev/clint/src/clint/comments.py
+@@ -22,1 +22,1 @@
+-            return Noqa(
++            return cls(
+--- dev/clint/src/clint/config.py
+@@ -36,1 +36,1 @@
+-        per_file_ignores: dict[re.Pattern[str], list[str]] = {}
++        per_file_ignores: dict[re.Pattern[str], set[str]] = {}
+--- dev/clint/src/clint/linter.py
+@@ -136,1 +141,1 @@
+-            if line.strip() and indent <= header_indent:
++            if line.strip() and (header_indent is not None) and indent <= header_indent:
+--- dev/clint/src/clint/linter.py
+@@ -162,1 +167,2 @@
+-                idx, line = next(line_iter, (None, None))
++                if next_line := next(line_iter, None):
++                    idx, line = next_line
+--- dev/clint/src/clint/linter.py
+@@ -204,1 +210,1 @@
+-    if code_lines:
++    if code_lines and code_block_loc:
+--- dev/clint/src/clint/linter.py
+@@ -290,1 +296,1 @@
+-    def visit_Attribute(self, node):
++    def visit_Attribute(self, node: ast.Attribute) -> None:
+--- dev/clint/src/clint/linter.py
+@@ -720,1 +736,1 @@
+-            if noqa := Noqa.parse_token(comment):
++            if noqa := Noqa.from_token(comment):
+--- dev/clint/src/clint/resolver.py
+@@ -7,1 +8,1 @@
+-    def __init__(self):
++    def __init__(self) -> None:
+--- dev/clint/src/clint/resolver.py
+@@ -26,1 +27,1 @@
+-    def scope(self):
++    def scope(self) -> Iterator[None]:
+--- dev/clint/src/clint/resolver.py
+@@ -72,1 +73,1 @@
+-    def _extract_call_parts(self, node: ast.AST) -> list[str]:
++    def _extract_call_parts(self, node: ast.expr) -> list[str]:
+--- dev/clint/src/clint/rules/forbidden_set_active_model_usage.py
+@@ -16,6 +16,7 @@
+-        return (
+-            (resolved := resolver.resolve(node))
+-            and len(resolved) >= 1
+-            and resolved[0] == ""mlflow""
+-            and resolved[-1] == ""set_active_model""
+-        )
++        if names := resolver.resolve(node):
++            match names:
++                case [""mlflow"", *_, ""set_active_model""]:
++                    return True
++                case _:
++                    return False
++        return False
+--- dev/clint/src/clint/rules/thread_pool_executor_without_thread_name_prefix.py
+@@ -19,5 +19,5 @@
+-        return (
+-            (resolved := resolver.resolve(node))
+-            and resolved == [""concurrent"", ""futures"", ""ThreadPoolExecutor""]
+-            and not any(keyword.arg == ""thread_name_prefix"" for keyword in node.keywords)
+-        )
++        if names := resolver.resolve(node):
++            return names == [""concurrent"", ""futures"", ""ThreadPoolExecutor""] and not any(
++                kw.arg == ""thread_name_prefix"" for kw in node.keywords
++            )
++        return False
+--- dev/clint/src/clint/rules/unnamed_thread.py
+@@ -19,5 +19,5 @@
+-        return (
+-            (resolved := resolver.resolve(node))
+-            and resolved == [""threading"", ""Thread""]
+-            and not any(keyword.arg == ""name"" for keyword in node.keywords)
+-        )
++        if names := resolver.resolve(node):
++            return names",,,
+marimo-team/marimo#4426,https://github.com/marimo-team/marimo/pull/4426,feat: marimo new prompt.txt,"This PR adds the ability for `marimo new` to read its prompt from a
+file. It also supports unix-style piping (but not on Windows).
+
+ Example usage:
+ 
+ ```
+Usage: marimo new [OPTIONS] [PROMPT]
+
+  Create an empty notebook, or generate from a prompt with AI
+
+* marimo new Create an empty notebook
+  
+* marimo new ""Plot an interactive 3D surface with matplotlib."" Generate
+a notebook from a prompt.
+  
+* marimo new prompt.txt Generate a notebook from a file containing a
+prompt.
+    
+  Visit https://mari","--- marimo/_cli/cli.py
+@@ -337,26 +369,6 @@
+-    # Utility to support unix-style piping, e.g. cat notebook.py | marimo edit
+-    #
+-    # This check is complicated, because we need to support running
+-    #
+-    #   marimo edit
+-    #
+-    # without a filename as well. To distinguish between `marimo edit` and
+-    # `... | marimo edit`, we need to check if sys.stdin() has data on it in a
+-    # nonblocking way. This does not seem to be possible on Windows, but it
+-    # is possible on unix-like systems with select.
+-    if name is None and not is_windows():
+-        import select
+-
+-        try:
+-            if (
+-                not sys.stdin.isatty()
+-                and select.select([sys.stdin], [], [], 0)[0]
+-                and (contents := sys.stdin.read().strip())
+-            ):
+-                temp_dir = tempfile.TemporaryDirectory()
+-                path = create_temp_notebook_file(
+-                    ""notebook.py"", ""py"", contents, temp_dir
+-                )
+-                name = path.absolute_name
+-        except Exception:
+-            pass
++    if name is None and (stdin_contents := _get_stdin_contents()) is not None:
++        temp_dir = tempfile.TemporaryDirectory()
++        path = create_temp_notebook_file(
++            ""notebook.py"", ""py"", stdin_contents, temp_dir
++        )
++        name = path.absolute_name
+--- marimo/_cli/cli.py
+@@ -526,1 +565,6 @@
+-    if prompt:
++
++    if prompt is None:
++        # We support unix-style prompting, cat prompt.txt | marimo new
++        prompt = _get_stdin_contents()
++
++    if prompt is not None:",,,
+polarsource/polar#7327,https://github.com/polarsource/polar/pull/7327,server/subscription: trigger a cycle immediately when removing the trial,"Fix #7317
+
+- server/subscription: trigger a cycle immediately when removing the trial
+- server/discount: tweak is_repetition_expired logic around trials
+","--- server/polar/customer_portal/endpoints/subscription.py
+@@ -156,1 +157,3 @@
+-            subscription.started_at, subscription.current_period_end
++            subscription.started_at,
++            subscription.current_period_end,
++            subscription.status == SubscriptionStatus.trialing,
+--- server/polar/models/discount.py
+@@ -160,1 +160,1 @@
+-        was_trialing: bool = False,
++        trial_ended: bool = False,
+--- server/polar/models/discount.py
+@@ -165,1 +165,1 @@
+-            return not was_trialing
++            return not trial_ended
+--- server/polar/subscription/service.py
+@@ -643,1 +643,1 @@
+-                    was_trialing=previous_status == SubscriptionStatus.trialing,
++                    previous_status == SubscriptionStatus.trialing,",,,
+BerriAI/litellm#17424,https://github.com/BerriAI/litellm/pull/17424,fix(unified_guardrail.py): correctly map a v1/messages call to the anthropic unified guardrail,"* fix(unified_guardrail.py): correctly map a v1/messages call to the anthropic unified guardrail
+
+* fix: add more rigorous call type checks
+
+* fix(anthropic_endpoints/endpoints.py): initialize logging object at the beginning of endpoint
+
+ensures call id + trace id are emitted to guardrail api
+
+* feat(anthropic/chat/guardrail_translation): support streaming guardrails
+
+sample on every 5 chunks
+
+* fix(openai/chat/guardrail_translation): support openai streaming guardrails
+
+* fix: initial commit fi","--- litellm/cost_calculator.py
+@@ -1078,3 +1083,5 @@
+-                    _final_cost, discount_percent, discount_amount = _apply_cost_discount(
+-                        base_cost=_final_cost,
+-                        custom_llm_provider=custom_llm_provider,
++                    _final_cost, discount_percent, discount_amount = (
++                        _apply_cost_discount(
++                            base_cost=_final_cost,
++                            custom_llm_provider=custom_llm_provider,
++                        )
+--- litellm/proxy/anthropic_endpoints/endpoints.py
+@@ -71,144 +67,1 @@
+-
+-        # override with user settings, these are params passed via cli
+-        if user_temperature:
+-            data[""temperature""] = user_temperature
+-        if user_request_timeout:
+-            data[""request_timeout""] = user_request_timeout
+-        if user_max_tokens:
+-            data[""max_tokens""] = user_max_tokens
+-        if user_api_base:
+-            data[""api_base""] = user_api_base
+-
+-        ### MODEL ALIAS MAPPING ###
+-        # check if model name in model alias map
+-        # get the actual model name
+-        if data[""model""] in litellm.model_alias_map:
+-            data[""model""] = litellm.model_alias_map[data[""model""]]
+-
+-        ### CALL HOOKS ### - modify incoming data before calling the model
+-        data = await proxy_logging_obj.pre_call_hook(  # type: ignore
+-            user_api_key_dict=user_api_key_dict, data=data, call_type=CallTypes.anthropic_messages.value
+-        )
+-
+-        tasks = []
+-        tasks.append(
+-            proxy_logging_obj.during_call_hook(
+-                data=data,
+-                user_api_key_dict=user_api_key_dict,
+-                call_type=ProxyBaseLLMRequestProcessing._get_pre_call_type(
+-                    route_type=""anthropic_messages""  # type: ignore
+-                ),
+-            )
+-        )
+-
+-        ### ROUTE THE REQUESTs ###
+-        router_model_names = llm_router.model_names if llm_router is not None else []
+-
+-        # skip router if user passed their key
+-        if (
+-            llm_router is not None and data[""model""] in router_model_names
+-        ):  # model in router model list
+-            llm_coro = llm_router.aanthropic_messages(**data)
+-        elif (
+-            llm_router is not None
+-            and llm_router.model_group_alias is not None
+-            and data[""model""] in llm_router.model_group_alias
+-        ):  # model set in model_group_alias
+-            llm_coro = llm_router.aanthropic_messages(**data)
+-        elif (
+-            llm_router is not None and data[""model""] in llm_router.deployment_names
+-        ):  # model in router deployments, calling a specific deployment on the router
+-            llm_coro = llm_router.aanthropic_messages(**data, specific_deployment=True)
+-        elif (
+-            llm_router is not None and llm_router.has_model_id(data[""model""])
+-        ):  # model in router model list
+-            llm_coro = llm_router.aanthropic_messa",,,
+BerriAI/litellm#17459,https://github.com/BerriAI/litellm/pull/17459,"Guardrail API - support tool call checks on OpenAI `/chat/completions`, OpenAI `/responses`, Anthropic `/v1/messages`","* fix(unified_guardrail.py): correctly map a v1/messages call to the anthropic unified guardrail
+
+* fix: add more rigorous call type checks
+
+* fix(anthropic_endpoints/endpoints.py): initialize logging object at the beginning of endpoint
+
+ensures call id + trace id are emitted to guardrail api
+
+* feat(anthropic/chat/guardrail_translation): support streaming guardrails
+
+sample on every 5 chunks
+
+* fix(openai/chat/guardrail_translation): support openai streaming guardrails
+
+* fix: initial commit fi","--- litellm/proxy/guardrails/guardrail_endpoints.py
+@@ -1217,2 +1217,2 @@
+-        response_text = await active_guardrail.apply_guardrail(
+-            texts=[request.text],
++        guardrailed_inputs = await active_guardrail.apply_guardrail(
++            inputs={""texts"": [request.text]},",,,
+reflex-dev/reflex-web#1498,https://github.com/reflex-dev/reflex-web/pull/1498,ENG-6660: Fix double / sign in redirect,"* ENG-6660: Fix double / sign in redirect
+
+* clean
+
+* fix
+
+---------
+
+Co-authored-by: Ahmad Hakim <84860195+LineIndent@users.noreply.github.com>","--- pcweb/components/docpage/navbar/navbar.py
+@@ -518,1 +518,1 @@
+-                    href=f""{REFLEX_CLOUD_URL}/?redirect_url={REFLEX_BUILD_URL}"",
++                    href=f""{REFLEX_CLOUD_URL.strip('/')}/?redirect_url={REFLEX_BUILD_URL}"",",,,
+reflex-dev/reflex-web#1544,https://github.com/reflex-dev/reflex-web/pull/1544,add 1st product of the day svg,"* add 1st product of the day svg
+
+* fix","--- pcweb/components/docpage/navbar/navbar.py
+@@ -437,7 +437,9 @@
+-                        class_name=""text-violet-9 xl:flex hidden text-sm"",
+-                        display=rx.cond(
+-                            rx.State.router.page.path.contains(""docs"")
+-                            | rx.State.router.page.path.contains(""ai-builder"")
+-                            | rx.State.router.page.path.contains(""cloud""),
+-                            ""block"",
+-                            ""none"",
++                        class_name=(
++                            ""text-violet-9 text-sm"",
++                            rx.cond(
++                                rx.State.router.page.path.contains(""docs"")
++                                | rx.State.router.page.path.contains(""ai-builder"")
++                                | rx.State.router.page.path.contains(""cloud""),
++                                ""xl:flex hidden"",
++                                ""hidden"",
++                            ),
+--- pcweb/pages/customers/views/footer.py
+@@ -167,1 +168,5 @@
+-                    dark_mode_toggle(),
++                    rx.el.div(
++                        ph_1(),
++                        dark_mode_toggle(),
++                        class_name=""flex flex-row items-center gap-6"",
++                    ),",,,
+marimo-team/marimo#6518,https://github.com/marimo-team/marimo/pull/6518,"strips explain, better error output for sql error","## 📝 Summary
+
+<!--
+Provide a concise summary of what this pull request is addressing.
+
+If this PR fixes any issues, list them here by number (e.g., Fixes
+#123).
+-->
+
+marimo error:
+<img width=""866"" height=""232"" alt=""CleanShot 2025-09-25 at 02 37 56@2x""
+src=""https://github.com/user-attachments/assets/5508527e-1042-45e9-a554-dab922019857""
+/>
+
+no more explain for validate mode:
+<img width=""574"" height=""159"" alt=""CleanShot 2025-09-25 at 02 40 15@2x""
+src=""https://github.com/user-attachments/assets/baf","--- marimo/_sql/engines/types.py
+@@ -16,1 +16,5 @@
+-from marimo._sql.utils import is_query_empty, wrap_query_with_explain
++from marimo._sql.utils import (
++    is_query_empty,
++    strip_explain_from_error_message,
++    wrap_query_with_explain,
++)
+--- marimo/_sql/engines/types.py
+@@ -146,1 +150,1 @@
+-            return None, str(e)
++            return None, strip_explain_from_error_message(str(e))",,,
+jeroenterheerdt/HAsmartirrigation#594,https://github.com/jeroenterheerdt/HAsmartirrigation/pull/594,Fix Smart Irrigation UI consistency: Add missing Size label and align form fields,Fix Smart Irrigation UI consistency: Add missing Size label and align form fields,"--- custom_components/smart_irrigation/const.py
+@@ -3,1 +3,1 @@
+-VERSION = ""v2025.7.0-beta5""
++VERSION = ""v2025.7.0-beta6""",,,
+polarsource/polar#7983,https://github.com/polarsource/polar/pull/7983,Implement customer balance using wallets,"Fix #7964
+","--- server/polar/customer/endpoints.py
+@@ -15,1 +14,0 @@
+-from polar.order.service import order as order_service
+--- server/polar/customer/endpoints.py
+@@ -30,1 +28,0 @@
+-    CustomerBalance,
+--- server/polar/customer/endpoints.py
+@@ -304,25 +301,0 @@
+-@router.get(
+-    ""/{id}/balance"",
+-    summary=""Get Customer Balance"",
+-    response_model=CustomerBalance,
+-    responses={404: CustomerNotFound},
+-)
+-async def get_balance(
+-    id: CustomerID,
+-    auth_subject: auth.CustomerRead,
+-    session: AsyncSession = Depends(get_db_session),
+-) -> CustomerBalance:
+-    """"""Get customer balance information.""""""
+-    customer = await customer_service.get(session, auth_subject, id)
+-
+-    if customer is None:
+-        raise ResourceNotFound()
+-
+-    balance_amount = await order_service.customer_balance(session, customer)
+-
+-    # Currency is always USD as specified by the user
+-    currency = ""USD""
+-
+-    return CustomerBalance(balance=balance_amount, currency=currency)
+-
+-
+--- server/polar/customer/schemas/customer.py
+@@ -134,12 +133,0 @@
+-class CustomerBalance(Schema):
+-    """"""Customer balance information.""""""
+-
+-    balance: int = Field(
+-        description=""Customer balance in cents. Positive values represent credit (customer is owed money), negative values represent debit (customer owes money).""
+-    )
+-    currency: str = Field(
+-        description=""The currency code (ISO 4217) for the balance amount."",
+-        examples=[""usd""],
+-    )
+-
+-
+--- server/polar/order/service.py
+@@ -10,1 +10,1 @@
+-from sqlalchemy import and_, or_, select
++from sqlalchemy import select
+--- server/polar/order/service.py
+@@ -713,5 +713,9 @@
+-        customer_balance = await self.customer_balance(session, customer)
+-        applied_balance_amount = 0
+-        if total_amount < 0:
+-            if customer_balance < 0:
+-                applied_balance_amount = -max(total_amount, customer_balance)
++        customer_balance = await wallet_service.get_billing_wallet_balance(
++            session, customer, subscription.currency
++        )
++
++        # Calculate balance change and applied amount
++        if total_amount >= 0:
++            # Order is a charge: use customer balance if available
++            balance_change = -min(total_amount, customer_balance)
++            applied_balance_amount = balance_change
+--- server/polar/order/service.py
+@@ -719,1 +723,7 @@
+-            applied_balance_amount = -min(total_amount, customer_balance)
++            # Order is a credit: always add to balance
++            balance_change = -total_amount
++            # Track how much existing debt was cleared
++            if customer_balance < 0:
++                applied_balance_amount = min(-total_amount, -customer_balance)
++            else:
++                applied_balance_amount = 0
+--- server/polar/order/service.py
+@@ -1986,92 +2010,0 @@
+-    async def customer_balance(self, session: AsyncSession, customer: Customer) -> int:
+-        """"""
+-        Returns what the customer is ""owed"".
+-
+-        Th",,,
+reflex-dev/reflex-web#1466,https://github.com/reflex-dev/reflex-web/pull/1466,ENG-6550: form patches to include linkedin and other stuff,"* form patches to include linkedin and other stuff
+
+* clean up unused state vars","--- pcweb/pages/pricing/header.py
+@@ -118,1 +120,1 @@
+-    banned_phone: bool = False
++    banned_linkedin: bool = False
+--- pcweb/pages/pricing/header.py
+@@ -126,11 +132,9 @@
+-        # Phone number validation
+-        phone = form_data.get(""phone_number"", """").strip()
+-        if phone:
+-            phone_pattern = r'^(\+?1[-.\s]?)?(\(?[0-9]{3}\)?[-.\s]?[0-9]{3}[-.\s]?[0-9]{4})|(\+[1-9]\d{0,3}[-.\s]?(\(?[0-9]{1,4}\)?[-.\s]?){1,5}[0-9]{1,4})$'
+-            
+-            # Remove common formatting characters for validation
+-            clean_phone = re.sub(r'[^\d+]', '', phone)
+-            
+-            if not re.match(phone_pattern, phone) or len(clean_phone) < 10 or len(clean_phone) > 15:
+-                self.banned_phone = True
+-                yield rx.set_focus(""phone_number"")
++        # LinkedIn URL validation
++        linkedin_url = form_data.get(""linkedin_url"", """").strip()
++        if linkedin_url:
++            # Basic LinkedIn URL validation
++            linkedin_pattern = r'^https?://(www\.)?linkedin\.com/(in|company)/.+$'
++
++            if not re.match(linkedin_pattern, linkedin_url):
++                self.banned_linkedin = True
++                yield rx.set_focus(""linkedin_url"")
+--- pcweb/pages/pricing/header.py
+@@ -138,2 +142,2 @@
+-            
+-            self.banned_phone = False
++
++            self.banned_linkedin = False
+--- pcweb/pages/pricing/header.py
+@@ -179,1 +183,1 @@
+-Phone Number: {form_data.get(""phone_number"", """")}
++LinkedIn URL: {form_data.get(""linkedin_url"", """")}
+--- pcweb/pages/pricing/header.py
+@@ -195,2 +207,0 @@
+-            yield QuoteFormState.send_demo_event(form_data)
+-
+--- pcweb/pages/pricing/header.py
+@@ -209,1 +221,1 @@
+-                phone_number=form_data.get(""phone_number"", """"),
++                linkedin_url=form_data.get(""linkedin_url"", """"),  # Updated from phone_number
+--- pcweb/pages/pricing/header.py
+@@ -269,14 +293,1 @@
+-        *[
+-            select_item(
+-                content=(
+-                    option,
+-                    lambda opt=option, var=state_var: QuoteFormState.set_select_value(
+-                        var, opt
+-                    ),
+-                ),
+-                size=""sm"",
+-                variant=""selectable"",
+-                class_name=""w-full justify-start px-4 py-2 hover:bg-slate-2 rounded-md"",
+-            )
+-            for option in options
+-        ],
++        *[create_select_item(option, state_var) for option in options],
+--- pcweb/pages/pricing/header.py
+@@ -398,1 +451,1 @@
+-                        QuoteFormState.banned_phone,
++                        QuoteFormState.banned_linkedin,
+--- pcweb/pages/pricing/header.py
+@@ -402,1 +455,1 @@
+-                                    ""Phone number"",
++                                    ""LinkedIn profile URL"",
+--- pcweb/pages/pricing/header.py
+@@ -406,1 +459,1 @@
+-                                    ""Invalid phone number format!"",
++                                    ""Invalid LinkedIn URL format!"",
+--- pcweb/pages/pric",,,
+microsoft/fabric-cicd#568,https://github.com/microsoft/fabric-cicd/pull/568,Resolves #566 Eventhouses published after Semantic Models causing parameter replacement error,"This pull request reorganizes the publishing order of item types in the
+`src/fabric_cicd/publish.py` file to ensure that ""Eventhouse"" items are
+published after ""Notebook"" and before ""SemanticModel"" items.
+Additionally, it updates the order of item types handled by the
+`unpublish_all_orphan_items` function to match this new sequence. No new
+functionality has been added or removed—only the order of operations has
+been adjusted for consistency.
+
+Order adjustments to publishing and unpublishing logi","--- src/fabric_cicd/publish.py
+@@ -217,3 +219,0 @@
+-    if _should_publish_item_type(""Eventhouse""):
+-        print_header(""Publishing Eventhouses"")
+-        items.publish_eventhouses(fabric_workspace_obj)",,,
+BerriAI/litellm#15305,https://github.com/BerriAI/litellm/pull/15305,[MCP Gateway] QA/Fixes - Ensure Team/Key level enforcement works for MCPs,"* fix: _set_object_permission
+
+* fix: _set_object_permission on teams
+
+* fix: _set_object_permission
+
+* fixes for team/key permissions
+
+* statsh: object permission view
+
+* fix: MCPServerPermissions
+
+* fix: _get_team_object_permission
+
+* test mcp checks for permissions
+
+* fix server checks with prefix names
+
+* test_list_tools_strips_prefix_when_matching_permissions
+
+* ruff fix
+
+* docs - refactor MCP
+
+* docs update MCP docs
+
+* docs allowed tools","--- litellm/proxy/_experimental/mcp_server/auth/user_api_key_auth_mcp.py
+@@ -372,1 +372,1 @@
+-        from litellm.proxy.auth.auth_checks import get_team_object
++        from litellm.proxy.auth.auth_checks import get_object_permission, get_team_object
+--- litellm/proxy/_experimental/mcp_server/auth/user_api_key_auth_mcp.py
+@@ -390,1 +391,18 @@
+-        return team_obj.object_permission if team_obj else None
++        if not team_obj:
++            return None
++        
++        # Already loaded
++        if team_obj.object_permission:
++            return team_obj.object_permission
++        
++        # Need to fetch from DB using object_permission_id
++        if team_obj.object_permission_id:
++            return await get_object_permission(
++                object_permission_id=team_obj.object_permission_id,
++                prisma_client=prisma_client,
++                user_api_key_cache=user_api_key_cache,
++                parent_otel_span=user_api_key_auth.parent_otel_span,
++                proxy_logging_obj=proxy_logging_obj,
++            )
++        
++        return None
+--- litellm/proxy/_experimental/mcp_server/auth/user_api_key_auth_mcp.py
+@@ -544,7 +562,0 @@
+-        from litellm.proxy.auth.auth_checks import get_team_object
+-        from litellm.proxy.proxy_server import (
+-            prisma_client,
+-            proxy_logging_obj,
+-            user_api_key_cache,
+-        )
+-
+--- litellm/proxy/_experimental/mcp_server/auth/user_api_key_auth_mcp.py
+@@ -562,6 +570,3 @@
+-            team_obj: Optional[LiteLLM_TeamTable] = await get_team_object(
+-                team_id=user_api_key_auth.team_id,
+-                prisma_client=prisma_client,
+-                user_api_key_cache=user_api_key_cache,
+-                parent_otel_span=user_api_key_auth.parent_otel_span,
+-                proxy_logging_obj=proxy_logging_obj,
++            # Use the helper method that properly handles fetching from DB if needed
++            object_permissions = await MCPRequestHandler._get_team_object_permission(
++                user_api_key_auth
+--- litellm/proxy/_experimental/mcp_server/server.py
+@@ -530,1 +530,7 @@
+-        """"""Filter tools based on key/team mcp_tool_permissions.""""""
++        """"""
++        Filter tools based on key/team mcp_tool_permissions.
++        
++        Note: Tool names in the DB are stored without server prefixes,
++        but tool names from MCP servers are prefixed. We need to strip
++        the prefix before comparing.
++        """"""
+--- litellm/proxy/_experimental/mcp_server/server.py
+@@ -537,1 +543,8 @@
+-            filtered_tools = [t for t in tools if t.name in allowed_tool_names]
++            # Strip prefix from tool names before comparing
++            # Tools are stored in DB without prefix, but come from MCP server with prefix
++            filtered_tools = []
++            for t in tools:
++                # Get tool name without server prefix
++                unprefixed_tool_name, _ = get_server_name_prefix_tool_mcp(t.name)
++            ",,,
+marimo-team/marimo#5025,https://github.com/marimo-team/marimo/pull/5025,tidy: executor cleanup,,"--- marimo/_runtime/executor.py
+@@ -56,8 +76,0 @@
+-def get_executor(config: ExecutionConfig) -> Executor:
+-    """"""Get a code executor based on the execution configuration.""""""
+-    base = DefaultExecutor()
+-    if config.is_strict:
+-        return StrictExecutor(base)
+-    return base
+-
+-
+--- marimo/_runtime/executor.py
+@@ -131,3 +146,0 @@
+-    def __init__(self, base: Executor):
+-        self.base = base
+-",,,
+vlm-run/vlmrun-hub#82,https://github.com/vlm-run/vlmrun-hub/pull/82,Updates to w2-form schema,"Test: `pytest -sv tests/test_instructor.py --domain=""document.w2-form""`
+
+JSON
+```json
+{
+  ""ssn"": ""554-03-0876"",
+  ""ein"": ""63-0065650"",
+  ""employer_name"": ""NORTH 312"",
+  ""employer_address"": {
+    ""street"": ""151 N Market Street"",
+    ""city"": ""Wooster"",
+    ""state"": ""OH"",
+    ""zip_code"": ""44691""
+  },
+  ""control_number"": ""GNI851"",
+  ""employee_name"": ""Anastasia Hodges"",
+  ""employee_address"": {
+    ""street"": ""200 2nd Street NE"",
+    ""city"": ""Waseca"",
+    ""state"": ""MN"",
+    ""zip_code"": ""56093""
+  },
+  ""","--- vlmrun/hub/schemas/document/w2_form.py
+@@ -7,2 +8,2 @@
+-    state: str | None = Field(None, description=""State"", min_length=2, max_length=2)
+-    zip_code: str | None = Field(None, description=""ZIP code"", min_length=5, max_length=10)
++    state: SkipValidation[str] | None = Field(None, description=""State"", min_length=2, max_length=2)
++    zip_code: SkipValidation[str] | None = Field(None, description=""ZIP code"", min_length=5, max_length=10)
+--- vlmrun/hub/schemas/document/w2_form.py
+@@ -14,3 +15,2 @@
+-    control_number: str | None = Field(None, description=""Control number assigned to the W2 form"")
+-    ein: str | None = Field(None, description=""Employer Identification Number (EIN)"")
+-    ssn: str | None = Field(None, description=""Employee's Social Security Number (SSN)"")
++    ssn: str | None = Field(None, description=""Employee's Social Security Number (SSN) (Box a)"")
++    ein: str | None = Field(None, description=""Employer Identification Number (EIN) (Box b)"")
+--- vlmrun/hub/schemas/document/w2_form.py
+@@ -18,2 +18,2 @@
+-    employee_name: str | None = Field(None, description=""Full name of the employee"")
+-    employee_address: Address | None = Field(None, description=""Employee's complete address"")
++    employer_name: str | None = Field(None, description=""Full name of the employer (Box c)"")
++    employer_address: Address | None = Field(None, description=""Employer's complete address (Box c)"")
+--- vlmrun/hub/schemas/document/w2_form.py
+@@ -21,2 +21,4 @@
+-    employer_name: str | None = Field(None, description=""Full name of the employer"")
+-    employer_address: Address | None = Field(None, description=""Employer's complete address"")
++    control_number: str | None = Field(None, description=""Control number assigned to the W2 form (Box d)"")
++
++    employee_name: str | None = Field(None, description=""Full name of the employee (Box e)"")
++    employee_address: Address | None = Field(None, description=""Employee's complete address (Box e)"")
+--- vlmrun/hub/schemas/document/w2_form.py
+@@ -30,2 +32,28 @@
+-
+-    tax_year: int | None = Field(None, description=""Tax year for which the W2 form is issued"")
++    social_security_tips: float | None = Field(None, description=""Social security tips (Box 7)"")
++    allocated_tips: float | None = Field(None, description=""Allocated tips (Box 8)"")
++    dependent_care_benefits: float | None = Field(None, description=""Dependent care benefits (Box 10)"")
++    nonqualified_plans: float | None = Field(None, description=""Nonqualified plans (Box 11)"")
++    total_wages: float | None = Field(None, description=""Total wages (Box 12)"")
++
++    statutory_employee: bool | None = Field(None, description=""Statutory employee checkbox value (Box 13)"")
++    retirement_plan: bool | None = Field(None, description=""Retirement plan checkbox value (Box 13)"")
++    third_party_sick_pay: bool | None = Field(None, description=""Third party sick pay checkbox value (Box 13)"")
++    other_wages: bool | None = Field(None, description=""Other wages checkbox va",,,
+marimo-team/marimo#4891,https://github.com/marimo-team/marimo/pull/4891,improvement: add runtime.default_sql_output,,"--- marimo/_server/sessions.py
+@@ -796,1 +796,2 @@
+-                default_width=self._config_manager.default_width
++                default_width=self._config_manager.default_width,
++                default_sql_output=self._config_manager.default_sql_output,",,,
+marimo-team/marimo#6537,https://github.com/marimo-team/marimo/pull/6537,"improvement: google vertex support, make google key optional","This makes the Google API Key optional so you can use hit Google Vertex
+using environment variabes and application default credentials (ADC)","--- marimo/_server/ai/config.py
+@@ -165,1 +165,1 @@
+-            require_key=True,
++            require_key=False,",,,
+mlflow/mlflow#17166,https://github.com/mlflow/mlflow/pull/17166,Fix Databricks secret scope check to reduce error rates,"Signed-off-by: Harutaka Kawamura <harutaka.kawamura@databricks.com>
+Signed-off-by: harupy <17039389+harupy@users.noreply.github.com>","--- mlflow/utils/environment.py
+@@ -457,1 +457,1 @@
+-def _get_uv_options_for_databricks() -> tuple[list[str], dict[str, str]]:
++def _get_uv_options_for_databricks() -> tuple[list[str], dict[str, str]] | None:
+--- mlflow/utils/environment.py
+@@ -473,1 +475,6 @@
+-        return [], {}
++        return None
++
++    workspace_client = WorkspaceClient()
++    secret_scopes = workspace_client.secrets.list_scopes()
++    if not any(s.name == ""databricks-package-management"" for s in secret_scopes):
++        return None
+--- mlflow/utils/environment.py
+@@ -478,1 +485,1 @@
+-        return [], {}
++        return None
+--- mlflow/utils/environment.py
+@@ -537,1 +544,5 @@
+-            uv_options, uv_envs = _get_uv_options_for_databricks()
++            if res := _get_uv_options_for_databricks():
++                uv_options, uv_envs = res
++            else:
++                uv_options = []
++                uv_envs = {}",,,
+marimo-team/marimo#5515,https://github.com/marimo-team/marimo/pull/5515,fix: reuse ports that are available but recently closed,"This fixes find free port to actually use addr/ports that are available
+but whose sockets were recently closed. The fix is based on logic from
+Tornado and Jupyter.
+
+Previously, 
+
+* `marimo new` -> port 2718
+* shut down marimo
+* `marimo new` -> port 2719
+* shut down marimo
+* `marimo new` -> port 2720
+* ...
+
+(This behavior was introduced in
+https://github.com/marimo-team/marimo/pull/5090, which was correct to
+use `bind` but added this unfortunate behavior.)
+
+Now, all instances of `marimo new` use ","--- marimo/_server/utils.py
+@@ -45,10 +210,15 @@
+-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+-        try:
+-            sock.settimeout(0.1)
+-            sock.bind(("""", port))
+-            return port
+-        except OSError:
+-            LOGGER.debug(f""Port {port} is already in use"")
+-            pass
+-
+-    # Ensure we don't exceed valid port range
++    # Based on logic from Jupyter server:
++    # https://github.com/jupyter-server/jupyter_server/blob/56e2478a728ff292d8270e62d27dd50c316ee6b7/jupyter_server/serverapp.py#L2670
++    try:
++        sockets = bind_sockets(port, addr)
++        sockets[0].close()
++        return port
++    except OSError as e:
++        if e.errno == errno.EADDRINUSE:
++            LOGGER.debug(""Port %d already in use, trying another port."", port)
++        elif e.errno in (
++            errno.EACCES,
++            getattr(errno, ""WSAEACCES"", errno.EACCES),
++        ):
++            LOGGER.warning(""Permission to listen on port %d denied."", port)
++",,,
+crewAIInc/crewAI#1992,https://github.com/crewAIInc/crewAI/pull/1992,"fixes interpolation issues when inputs are type dict,list specificall…","* fixes interpolation issues when inputs are type dict,list specifically when defined on expected_output
+
+* improvements with type hints, doc fixes and rm print statements
+
+* more tests
+
+* test passing
+
+---------
+
+Co-authored-by: Brandon Hancock <brandon@brandonhancock.io>","--- src/crewai/task.py
+@@ -527,1 +529,3 @@
+-        self, input_string: Optional[str], inputs: Dict[str, Union[str, int, float]]
++        self,
++        input_string: Optional[str],
++        inputs: Dict[str, Union[str, int, float, Dict[str, Any], List[Any]]],
+--- src/crewai/task.py
+@@ -535,2 +539,2 @@
+-                   Supported value types are strings, integers, and floats.
+-                   If input_string is empty or has no placeholders, inputs can be empty.
++                   Supported value types are strings, integers, floats, and dicts/lists
++                   containing only these types and other nested dicts/lists.
+--- src/crewai/task.py
+@@ -543,2 +547,1 @@
+-            ValueError: If a required template variable is missing from inputs.
+-            KeyError: If a template variable is not found in the inputs dictionary.
++            ValueError: If a value contains unsupported types
+--- src/crewai/task.py
+@@ -556,7 +580,0 @@
+-            # Validate input types
+-            for key, value in inputs.items():
+-                if not isinstance(value, (str, int, float)):
+-                    raise ValueError(
+-                        f""Value for key '{key}' must be a string, integer, or float, got {type(value).__name__}""
+-                    )
+-",,,
+BerriAI/litellm#15095,https://github.com/BerriAI/litellm/pull/15095,"Revert ""[Feature]: Replace HTTPException with ParallelRequestLimitError in pa…""",This reverts commit 71b9b58fa9a5852050fa1f14bbbec6e5d319765b.,"--- litellm/__init__.py
+@@ -1304,1 +1303,0 @@
+-    ParallelRequestLimitError,
+--- litellm/exceptions.py
+@@ -356,43 +355,0 @@
+-class ParallelRequestLimitError(RateLimitError):  # type: ignore
+-    def __init__(
+-        self,
+-        message: str,
+-        llm_provider: Optional[str] = ""litellm"",
+-        model: Optional[str] = ""unknown"",
+-        headers: Optional[dict] = None,
+-        response: Optional[httpx.Response] = None,
+-        litellm_debug_info: Optional[str] = None,
+-        max_retries: Optional[int] = None,
+-        num_retries: Optional[int] = None,
+-    ):
+-        # Store headers for later access (similar to FastAPI HTTPException)
+-        self.headers = headers or {}
+-        
+-        # Create a response with custom headers if provided
+-        if response is None:
+-            response_headers = headers
+-            response = httpx.Response(
+-                status_code=429,
+-                headers=response_headers,
+-                request=httpx.Request(
+-                    method=""POST"",
+-                    url=""https://litellm.ai/parallel-request-limiter"",
+-                ),
+-            )
+-        
+-        # Initialize parent with appropriate defaults for parallel request limiting
+-        super().__init__(
+-            message=message,
+-            llm_provider=llm_provider or ""litellm"",
+-            model=model or ""unknown"",
+-            response=response,
+-            litellm_debug_info=litellm_debug_info,
+-            max_retries=max_retries,
+-            num_retries=num_retries,
+-        )
+-        
+-        # Update the message prefix to be more specific
+-        self.message = ""litellm.ParallelRequestLimitError: {}"".format(message)
+-        self.detail = message  # Store original detail for FastAPI compatibility
+-
+-
+--- litellm/exceptions.py
+@@ -794,1 +750,0 @@
+-    ParallelRequestLimitError,
+--- litellm/proxy/hooks/parallel_request_limiter_v3.py
+@@ -25,1 +24,0 @@
+-from litellm.exceptions import ParallelRequestLimitError
+--- litellm/proxy/hooks/parallel_request_limiter_v3.py
+@@ -704,2 +703,3 @@
+-                        raise ParallelRequestLimitError(
+-                            message=detail,
++                        raise HTTPException(
++                            status_code=429,
++                            detail=detail,",,,
+polarsource/polar#8307,https://github.com/polarsource/polar/pull/8307,fix: metric for cumulative sum,,"--- server/polar/metrics/metrics.py
+@@ -39,1 +39,1 @@
+-    return sum(getattr(p, slug) for p in periods)
++    return sum(getattr(p, slug) or 0 for p in periods)
+--- server/polar/metrics/metrics.py
+@@ -44,1 +44,2 @@
+-    return dd.pop()
++    value = dd.pop()
++    return value if value is not None else 0
+--- server/polar/metrics/metrics.py
+@@ -169,2 +170,2 @@
+-        total_orders = sum(getattr(p, ""orders"") for p in periods)
+-        revenue = sum(getattr(p, ""revenue"") for p in periods)
++        total_orders = sum(getattr(p, ""orders"") or 0 for p in periods)
++        revenue = sum(getattr(p, ""revenue"") or 0 for p in periods)
+--- server/polar/metrics/metrics.py
+@@ -188,2 +189,2 @@
+-        total_orders = sum(getattr(p, ""orders"") for p in periods)
+-        revenue = sum(getattr(p, ""net_revenue"") for p in periods)
++        total_orders = sum(getattr(p, ""orders"") or 0 for p in periods)
++        revenue = sum(getattr(p, ""net_revenue"") or 0 for p in periods)
+--- server/polar/metrics/metrics.py
+@@ -551,2 +552,2 @@
+-        total_checkouts = sum(getattr(p, ""checkouts"") for p in periods)
+-        total_succeeded = sum(getattr(p, ""succeeded_checkouts"") for p in periods)
++        total_checkouts = sum(getattr(p, ""checkouts"") or 0 for p in periods)
++        total_succeeded = sum(getattr(p, ""succeeded_checkouts"") or 0 for p in periods)",,,
+reflex-dev/reflex-web#1502,https://github.com/reflex-dev/reflex-web/pull/1502,Fix enterprise sidebar Components link to remove /index/ suffix,"* Fix enterprise sidebar Components link to remove /index/ suffix
+
+- Changed AG Grid link from /docs/enterprise/ag_grid/index/ to /docs/enterprise/ag_grid/
+- Fixes incorrect link in enterprise overview page sidebar Components section
+- Tested locally to verify link now points to correct URL
+
+Co-Authored-By: Carlos Cutillas <carlos@reflex.dev>
+
+* fix
+
+---------
+
+Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com>
+Co-authored-by: Carlos Cutillas <carlos@reflex.d","--- pcweb/components/docpage/sidebar/sidebar.py
+@@ -13,1 +13,5 @@
+-from .sidebar_items.enterprise import enterprise_items, enterprise_usage_items, enterprise_component_items
++from .sidebar_items.enterprise import (
++    enterprise_items,
++    enterprise_usage_items,
++    enterprise_component_items,
++)
+--- pcweb/components/docpage/sidebar/sidebar.py
+@@ -555,1 +559,3 @@
+-                                            rx.icon(""atom"", size=16),  # pyright: ignore [reportCallIssue]
++                                            rx.icon(
++                                                ""atom"", size=16
++                                            ),  # pyright: ignore [reportCallIssue]
+--- pcweb/components/docpage/sidebar/sidebar.py
+@@ -599,1 +605,3 @@
+-                                    enterprise.ag_grid.index.path,
++                                    enterprise_component_items[0]
++                                    .children[0]
++                                    .link.replace(""_"", ""-""),",,,
+marimo-team/marimo#3910,https://github.com/marimo-team/marimo/pull/3910,improvement: Support Format for more `Bokeh` objects,"## 📝 Summary
+
+FIX:  marimo don't render GirdPlot as it isn't subclass of Plot
+<!--
+Provide a concise summary of what this pull request is addressing.
+
+If this PR fixes any issues, list them here by number (e.g., Fixes
+#123).
+-->
+
+## 🔍 Description of Changes
+
+Relax the input type of the formatter from `bokeh.models.Plot` to
+`bokeh.models.Model|bokeh.document.Document`, according to
+`bokeh.embed.file_html(models: Model | Document | Sequence[Model])`
+<!--
+Detail the specific changes made in this pu","--- marimo/_output/formatters/bokeh_formatters.py
+@@ -57,1 +57,2 @@
+-        @formatting.formatter(bokeh.models.Plot)
++        @formatting.formatter(bokeh.models.Model)
++        @formatting.formatter(bokeh.document.Document)
+--- marimo/_output/formatters/bokeh_formatters.py
+@@ -59,1 +60,1 @@
+-            plot: bokeh.models.Plot,
++            plot: bokeh.models.Model | bokeh.document.Document,",,,
+mlflow/mlflow#19160,https://github.com/mlflow/mlflow/pull/19160,[FR] Add the tools of CrewAI to the mlflow UI,"Signed-off-by: Killian <killian.falguiere@gmail.com>
+Signed-off-by: Killian <31043822+Killian-fal@users.noreply.github.com>
+Co-authored-by: Yuki Watanabe <31463517+B-Step62@users.noreply.github.com>","--- mlflow/crewai/autolog.py
+@@ -32,8 +58,8 @@
+-            # CrewAI reports only crew-level usage totals.
+-            # This patch hooks LiteLLM's `completion` to capture each response
+-            # so per-call LLM usage can be logged.
+-            capture_context = (
+-                _capture_llm_response(self) if span_type == SpanType.LLM else nullcontext()
+-            )
+-            with capture_context:
+-                result = original(self, *args, **kwargs)
++        # CrewAI reports only crew-level usage totals.
++        # This patch hooks LiteLLM's `completion` to capture each response
++        # so per-call LLM usage can be logged.
++        capture_context = (
++            _capture_llm_response(self) if span_type == SpanType.LLM else nullcontext()
++        )
++        with capture_context:
++            result = original(self, *args, **kwargs)
+--- mlflow/crewai/autolog.py
+@@ -44,3 +70,3 @@
+-            if span_type == SpanType.LLM and (usage_dict := _parse_usage(self)):
+-                span.set_attribute(SpanAttributeKey.CHAT_USAGE, usage_dict)
+-            span.set_outputs(outputs)
++        if span_type == SpanType.LLM and (usage_dict := _parse_usage(self)):
++            span.set_attribute(SpanAttributeKey.CHAT_USAGE, usage_dict)
++        span.set_outputs(outputs)",,,
+BerriAI/litellm#16002,https://github.com/BerriAI/litellm/pull/16002,Fix deletion of original request,,"--- litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py
+@@ -419,1 +419,1 @@
+-                del tool[""type""]  # type: ignore
++                tool = {k: tool[k] for k in tool if k != ""type""}",,,
+polarsource/polar#6667,https://github.com/polarsource/polar/pull/6667,server/subscription: use a nullable datetime for scheduler lock instead of a boolean,- server/subscription: use a nullable datetime for scheduler lock instead of a boolean,"--- server/polar/subscription/service.py
+@@ -629,1 +629,1 @@
+-            subscription, update_dict={""scheduler_locked"": False}
++            subscription, update_dict={""scheduler_locked_at"": None}",,,
+marimo-team/marimo#5546,https://github.com/marimo-team/marimo/pull/5546,refactor: remove redundant path rewrite,"## 📝 Summary
+
+Leftover clean up from #5427
+
+We no longer depend on the WebSocket LSP path to differentiate between
+LSPs.
+
+## 📋 Checklist
+
+- [x] I have read the [contributor
+guidelines](https://github.com/marimo-team/marimo/blob/main/CONTRIBUTING.md).
+- [ ] For large changes, or changes that affect the public API: this
+change was discussed or approved through an issue, on
+[Discord](https://marimo.io/discord?ref=pr), or the community
+[discussions](https://github.com/marimo-team/marimo/discussions)","--- marimo/_server/main.py
+@@ -5,1 +5,1 @@
+-from typing import TYPE_CHECKING, Callable, Optional
++from typing import TYPE_CHECKING, Optional
+--- marimo/_server/main.py
+@@ -141,17 +143,6 @@
+-) -> list[Middleware]:
+-    middlewares: list[Middleware] = []
+-    for server in servers:
+-
+-        def path_rewrite(server_id: str) -> Callable[[str], str]:
+-            to_replace = (
+-                ""/copilot"" if server_id == ""copilot"" else f""/lsp/{server_id}""
+-            )
+-            return lambda _: to_replace
+-
+-        middlewares.append(
+-            Middleware(
+-                ProxyMiddleware,
+-                proxy_path=f""/lsp/{server.id}"",
+-                target_url=f""http://localhost:{server.port}"",
+-                path_rewrite=path_rewrite(server.id),
+-            )
++) -> Iterator[Middleware]:
++    return (
++        Middleware(
++            ProxyMiddleware,
++            proxy_path=f""/lsp/{server.id}"",
++            target_url=f""http://localhost:{server.port}"",",,,
+crewAIInc/crewAI#2319,https://github.com/crewAIInc/crewAI/pull/2319,fix: move agent tools for a variable instead of use format,Co-authored-by: Brandon Hancock (bhancock_ai) <109994880+bhancockio@users.noreply.github.com>,"--- src/crewai/utilities/planning_handler.py
+@@ -106,4 +110,1 @@
+-                ""agent_tools"": %s%s"""""" % (
+-                    f""[{', '.join(str(tool) for tool in task.agent.tools)}]"" if task.agent and task.agent.tools else '""agent has no tools""',
+-                    f',\n                ""agent_knowledge"": ""[\\""{knowledge_list[0]}\\""]""' if knowledge_list and str(knowledge_list) != ""None"" else """"
+-                )
++                ""agent_tools"": {"""".join(agent_tools)}""""""",,,
+reflex-dev/reflex-web#1585,https://github.com/reflex-dev/reflex-web/pull/1585,ENG-7371: bring back pricing & change demo url (includes ENG-7392),"* bring back pricing & change demo url
+
+* remove duplicate
+
+* update pricing cards
+
+* change credits -> msgs
+
+* rebase on main
+
+* Update link
+
+* refresh lemcal on mount
+
+* clean whitelist
+
+* Update to use lemcal component from reflex-ui
+
+- Replace pcweb.components.lemcal imports with reflex_ui.blocks.lemcal
+- Update pcweb.py to use get_lemcal_script() instead of hardcoded script tag
+- Update navbar.py to use lemcal_calendar from reflex-ui
+- Remove old pcweb/components/lemcal.py file
+- Maintain s","--- pcweb/components/docpage/navbar/navbar.py
+@@ -446,1 +447,1 @@
+-                        )
++                        ),
+--- pcweb/components/docpage/navbar/navbar.py
+@@ -542,3 +543,2 @@
+-                    underline=""none"",
+-                    is_external=True,
+-                    href=""/pricing"",
++                    target=""_blank"",
++                    to=LEMCAL_DEMO_URL,
+--- pcweb/pages/gallery/apps.py
+@@ -117,1 +122,1 @@
+-                src=meta['video'],
++                src=meta[""video""],
+--- pcweb/pages/pricing/faq.py
+@@ -33,1 +37,2 @@
+-        href=""#demo-form"",
++        target=""_blank"",
++        to=LEMCAL_DEMO_URL,
+--- pcweb/pages/pricing/header.py
+@@ -1,48 +0,0 @@
+-import reflex as rx
+-
+-from reflex_ui.blocks.demo_form import demo_form
+-from pcweb.components.hosting_banner import HostingBannerState
+-from pcweb.pages.framework.views.companies import pricing_page_companies
+-
+-
+-def custom_quote_form() -> rx.Component:
+-    """"""Custom quote form component with clean, maintainable structure.""""""
+-    return rx.box(
+-        rx.box(
+-            # Left column - Content
+-            rx.box(
+-                rx.el.h2(
+-                    ""Book a Demo"",
+-                    class_name=""text-slate-12 text-4xl font-bold mb-8"",
+-                ),
+-                rx.el.p(
+-                    ""Enterprise-ready solutions designed for scale, compliance, and support. Contact us for a tailored quote based on your infrastructure and team size."",
+-                    class_name=""text-slate-11 text-md leading-relaxed mb-12 max-w-lg"",
+-                ),
+-                rx.box(
+-                    pricing_page_companies(),
+-                    class_name=""flex flex-col"",
+-                ),
+-                class_name=""mb-8 lg:mb-0 text-center sm:text-left"",
+-            ),
+-            # Right column - Form
+-            demo_form(
+-                class_name=""relative bg-slate-1 p-6 sm:p-8 rounded-2xl border-2 border-violet-9 shadow-lg w-full max-w-md mx-auto lg:max-w-none lg:mx-0""
+-            ),
+-            class_name=""grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 max-w-7xl mx-auto items-start"",
+-        ),
+-        id=""demo-form"",
+-        class_name=""py-12 sm:py-20 px-4 sm:px-8 scroll-m-20"",
+-    )
+-
+-
+-def header() -> rx.Component:
+-    return rx.box(
+-        custom_quote_form(),
+-        class_name=""flex flex-col gap-2 justify-center items-center max-w-[64.19rem] 2xl:border-x border-slate-4 w-full -mb-10 ""
+-        + rx.cond(
+-            HostingBannerState.show_banner,
+-            ""pt-[8rem] lg:pt-[11rem]"",
+-            ""pt-[8rem] lg:pt-[12rem]"",
+-        ),
+-    )
+--- pcweb/pages/pricing/plan_cards.py
+@@ -179,1 +184,4 @@
+-        ""Hobby"": {""main"": """", ""sub"": None},
++        ""Free"": {
++            ""main"": ""Limited access to builder coming soon!"",
++            ""sub"": rx.text(""Filler Text"", class_name=""opacity-0 cursor-default""),
++        },
+--- pcweb/pages/pricing/plan_cards.py
+@@ -183,9 +191,1 @@
+-                ""Upgrade to Team for ",,,

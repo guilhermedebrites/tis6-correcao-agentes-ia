@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara 'loosen typings', e o diff apenas troca o tipo anotado de ExperimentalConfig para ExperimentalConfigType em assinaturas e imports, sem alterar lógica de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

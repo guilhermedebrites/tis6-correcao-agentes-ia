@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título 'Track mlflow experiment id' e o diff adicionam um novo campo 'experiment_id' ao payload de telemetria, o que é uma nova funcionalidade de rastreamento, não correção de defeito nem refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

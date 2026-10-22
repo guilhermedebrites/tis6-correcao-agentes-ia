@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente 'add tiered pricing' (nova funcionalidade de preços por faixas), e o diff substitui o campo price_per_seat por seat_tiers com nova lógica de cálculo, alterando o comportamento desejado da API.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um fix para o erro 'premature client close' em modelos de chat, e a mudança cacheia o cliente em self._client para evitar seu fechamento entre iterações do stream.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A PR declara o propósito de simplificar a regra para sinalizar todas as docstrings de linha única em testes, o que altera o comportamento desejado da regra (de heurística de similaridade para proibição geral), caracterizando mudança de requisito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

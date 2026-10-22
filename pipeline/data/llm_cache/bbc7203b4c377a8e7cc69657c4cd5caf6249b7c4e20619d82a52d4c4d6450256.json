@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "A mudança apenas quebra uma linha longa de f-string em duas, sem alterar comportamento; o título 'Qwen Catch error' sugere tratamento de erro, mas o diff mostrado não contém essa lógica, então a informação é insuficiente para classificar como correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de passar a casar eventos por customer ID ou external ID, ampliando o critério de correspondência das métricas, o que altera comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

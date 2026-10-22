@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram explicitamente a correção de um caso de borda (traces sem o campo tags), e o diff adiciona guardas que evitam KeyError/TypeError nesse cenário.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

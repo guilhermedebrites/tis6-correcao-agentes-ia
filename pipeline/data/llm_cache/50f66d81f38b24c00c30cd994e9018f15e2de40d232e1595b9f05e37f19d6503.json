@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título 'Support uri model string in optimize' declara o propósito de adicionar suporte a um novo formato de string de modelo (URI com `:/`), e o diff altera a documentação para expor esse formato adicional como comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

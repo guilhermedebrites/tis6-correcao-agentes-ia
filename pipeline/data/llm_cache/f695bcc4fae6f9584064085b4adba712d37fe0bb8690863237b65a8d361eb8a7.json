@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "O título e a descrição declaram um propósito apenas de documentação, mas o trecho altera o caminho do módulo e o nome da classe do instrumentador Google GenAI, o que não condiz com a descrição e não permite confirmar se é correção, evolução ou refatoração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram que o objetivo é permitir que o ClickHouse suporte os formatos de saída 'native', 'pandas' e 'auto', e o diff substitui a conversão fixa por um método que respeita o formato solicitado, ampliando o comportamento suportado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

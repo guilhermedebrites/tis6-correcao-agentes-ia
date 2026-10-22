@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma nova funcionalidade (botão para atualizar conexões de datasource), mas o trecho mostra apenas renomeações de engine_name para variable_name em runtime.py, que são refatoração em si.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

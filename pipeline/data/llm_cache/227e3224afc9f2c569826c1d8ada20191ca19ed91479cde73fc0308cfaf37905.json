@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma nova landing page com nova seção de outcomes (ENG-6329) e mudanças de UI, e o trecho substitui a lista de templates por novos itens de casos de uso, o que altera o comportamento visível da página.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de mostrar todos os cancelamentos no breakdown, e a mudança inclui None junto com 'other' no filtro, ampliando o conjunto de dados exibidos, o que caracteriza alteração de comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "A descrição rotula explicitamente as remoções como refactor (remoção do import não utilizado e do endpoint/fluxo de criação de thread), embora o título diga feat e a remoção do bloco de Plain altere comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a introdução de spans/eventos hierárquicos, idempotência por external_id e nested events no frontend; a mudança no diff (importação de Select do SQLAlchemy) é apenas o suporte necessário a essa nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

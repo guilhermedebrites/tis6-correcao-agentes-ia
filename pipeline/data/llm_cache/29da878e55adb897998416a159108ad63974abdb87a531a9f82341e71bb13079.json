@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix, e o diff corrige a precedência do operador condicional: antes, quando uv_needs_refresh era falso, uv_cmd virava lista vazia e perdia todos os argumentos base do comando.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

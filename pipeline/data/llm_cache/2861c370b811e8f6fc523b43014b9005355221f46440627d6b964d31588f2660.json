@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'Concurrent fix' e o diff adiciona uma guarda contra instrumentação circular e muda quando utilitários são instrumentados, mas a descrição também menciona 'feat' e 'refactor', então a intenção não é totalmente clara.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

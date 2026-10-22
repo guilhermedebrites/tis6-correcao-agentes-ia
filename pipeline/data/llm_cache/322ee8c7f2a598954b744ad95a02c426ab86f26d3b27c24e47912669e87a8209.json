@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara renomear log_prompts para link_prompt_versions_to_run, mas o trecho mostrado só reformata um import em múltiplas linhas, sem alterar comportamento; a parte de integração com Databricks não aparece no trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

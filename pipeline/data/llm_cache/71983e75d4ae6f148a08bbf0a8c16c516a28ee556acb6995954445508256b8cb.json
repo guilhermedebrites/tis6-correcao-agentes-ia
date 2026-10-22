@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram atualização do formulário de demo (mudança do payload enviado, com notas consolidadas e nova URL de agendamento), o que altera comportamento e requisitos de integração, apesar de haver também extração de constante.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

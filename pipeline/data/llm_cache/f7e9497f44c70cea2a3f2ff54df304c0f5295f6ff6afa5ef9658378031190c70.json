@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O trecho mostrado só altera a versão em `__generated_with` e um espaço em uma string de markdown de um arquivo de smoke test, não a lógica do Arrow IPC descrita no título; o propósito declarado é evolução, mas as linhas exibidas não a implementam.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

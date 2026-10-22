@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram um refactor que centraliza a lógica de retorno de DataFrame entre engines SQL, e o diff apenas extrai funções (convert_to_polars/convert_to_pandas) e delega para convert_to_output, sem mudar o comportamento pretendido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

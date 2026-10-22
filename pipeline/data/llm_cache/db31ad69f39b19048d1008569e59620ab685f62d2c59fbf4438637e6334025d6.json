@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara uma nova funcionalidade (\"allow to claim seats\"), e as linhas mostradas importam novos schemas de claim e alteram a rota de claim do portal, o que é consistente com essa adição.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

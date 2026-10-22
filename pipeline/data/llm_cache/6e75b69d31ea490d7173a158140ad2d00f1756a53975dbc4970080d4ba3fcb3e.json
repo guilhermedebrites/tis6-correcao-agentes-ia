@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "Atualização automatizada de versão do ruff via pre-commit autoupdate; o trecho alterado no cli.py é apenas uma reformatação de string feita pelo novo formatador, sem mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

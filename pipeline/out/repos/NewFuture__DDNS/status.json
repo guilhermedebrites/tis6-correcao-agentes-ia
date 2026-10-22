@@ -1,0 +1,53 @@
+{
+  "repo": "NewFuture/DDNS",
+  "familia": "python",
+  "snapshot": "9f6cee7a5e0eb4f6bd91bb8c76783ef002d72059",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-07-02T12:38:01+00:00",
+  "frac_sem_marcacao": 0.175,
+  "api_consultas": 0,
+  "fa_validas": 8,
+  "hl_validas": 7,
+  "incluido": true,
+  "atividade_linhas": {
+    "agente_principal": 360,
+    "humano": 1732
+  },
+  "n_eventos": 13,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 8
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 3
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 7
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 3
+    }
+  ],
+  "fluxos": {
+    "direto": 310,
+    "fora_periodo": 160,
+    "agente_fora": 53,
+    "bot": 32,
+    "fa_mista": 14,
+    "FA": 11,
+    "HL": 11
+  }
+}

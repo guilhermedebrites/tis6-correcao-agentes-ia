@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de registrar e exibir o custo do juiz LLM, o que adiciona comportamento novo; as renomeações e a mudança de retorno para tupla (resposta + custo) acompanham essa funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

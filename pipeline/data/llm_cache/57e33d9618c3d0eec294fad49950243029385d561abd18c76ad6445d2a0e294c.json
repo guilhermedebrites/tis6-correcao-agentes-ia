@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte ao Vertex AI Search como novo vector store; as linhas do diff são apenas reformatação de imports e argumentos, mas o contexto da PR é de evolução de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

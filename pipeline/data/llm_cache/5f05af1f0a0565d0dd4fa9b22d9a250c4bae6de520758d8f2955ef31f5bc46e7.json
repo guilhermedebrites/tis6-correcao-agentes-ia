@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de uma funcionalidade experimental (filtragem do último usuário para Bedrock), e o diff altera a chamada para usar `filtered_messages` no lugar de `mock_messages`, o que implementa esse novo comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

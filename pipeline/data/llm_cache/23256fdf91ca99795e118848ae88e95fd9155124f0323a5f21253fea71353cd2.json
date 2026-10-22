@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram um trabalho de lint (chore: fix ruff linting issues), e o diff só reordena imports, remove imports não usados, troca aspas/espaços e adiciona 'from e' e um type: ignore, sem alterar o comportamento esperado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

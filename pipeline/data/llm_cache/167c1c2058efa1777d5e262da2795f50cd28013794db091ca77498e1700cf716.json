@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma renomeação, que é refatoração, mas o prefixo 'fix:' sugere correção e o diff mostrado só reformata chamadas Field e remove um import, sem alterar comportamento aparente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

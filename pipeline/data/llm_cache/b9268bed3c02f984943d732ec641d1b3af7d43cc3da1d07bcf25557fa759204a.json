@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix de sincronização de linguagem no RTC, e o diff passa a inicializar o YCell com o texto de código e de linguagem, mas o trecho não mostra o sintoma exato do defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

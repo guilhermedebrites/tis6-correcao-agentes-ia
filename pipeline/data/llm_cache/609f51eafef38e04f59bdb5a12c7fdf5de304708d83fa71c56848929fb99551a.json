@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara uma correção de compatibilidade com Pydantic V2.12+, e o diff troca o uso de `model` e `route_type` como argumentos de classmethod pelo acesso a `self`, exigido pelo validator `mode='after'`, que deixou de funcionar nessa versão.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

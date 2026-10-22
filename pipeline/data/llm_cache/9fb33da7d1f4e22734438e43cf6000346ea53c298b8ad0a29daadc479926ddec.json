@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de uma funcionalidade configurável de dias entre eventos de irrigação, e as linhas de const.py introduzem novas constantes de configuração para ela.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

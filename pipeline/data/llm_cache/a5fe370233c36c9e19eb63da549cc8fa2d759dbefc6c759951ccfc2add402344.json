@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara ajustar o script de migração de assinaturas para incluir prorations, substituindo a exceção SubscriptionNotReadyForMigration por criação de BillingEntry de proration, o que adiciona comportamento novo ao processo de migração.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram que o objetivo é corrigir o TypeError ao exibir multiindex com níveis numéricos, e o diff substitui ',\".join(col)' por uma conversão explícita para str de cada nível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

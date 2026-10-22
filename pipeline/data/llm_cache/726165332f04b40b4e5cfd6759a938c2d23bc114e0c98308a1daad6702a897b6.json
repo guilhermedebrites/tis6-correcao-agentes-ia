@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente a correção de um problema de codificação de URL, em que o '+' do e-mail era interpretado como espaço, e o diff passa a usar urlencode para os parâmetros de query.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

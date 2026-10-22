@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de adicionar suporte a cancelamento de jobs, e o diff acrescenta a checagem de status CANCELED no loop de polling e a marcação de timeout, o que altera comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

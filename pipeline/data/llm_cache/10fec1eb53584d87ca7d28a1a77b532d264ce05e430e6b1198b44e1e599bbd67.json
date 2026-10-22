@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram tratar-se de um revert do commit c96da44, e o diff mostra apenas reversões de formatação e imports, o que é consistente com a reversão de uma feature anterior.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

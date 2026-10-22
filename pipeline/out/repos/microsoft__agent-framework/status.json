@@ -1,0 +1,55 @@
+{
+  "repo": "microsoft/agent-framework",
+  "familia": "python",
+  "snapshot": "08851e69d722b0e0961c08eecf8575db995f0172",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-09-19T05:56:49+00:00",
+  "frac_sem_marcacao": 0.002,
+  "api_consultas": 0,
+  "fa_validas": 3,
+  "hl_validas": 61,
+  "incluido": false,
+  "atividade_linhas": {},
+  "n_eventos": 0,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 3
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 5
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 61
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 28
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 4
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 211
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 2904,
+    "HL": 304,
+    "bot": 295,
+    "agente_fora": 98,
+    "direto": 12,
+    "FA": 8,
+    "fa_mista": 8
+  }
+}

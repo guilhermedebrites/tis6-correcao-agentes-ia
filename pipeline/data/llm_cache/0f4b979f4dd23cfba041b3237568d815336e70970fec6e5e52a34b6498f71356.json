@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição do parâmetro oci_endpoint_id para endpoints dedicados da OCI, e o diff passa a usar esse parâmetro em vez do nome do modelo, o que é uma nova opção de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

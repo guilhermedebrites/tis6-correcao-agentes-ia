@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de remover a importação direta de marimo para reduzir o grafo de dependências, sem alterar o comportamento, o que é uma mudança estrutural.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

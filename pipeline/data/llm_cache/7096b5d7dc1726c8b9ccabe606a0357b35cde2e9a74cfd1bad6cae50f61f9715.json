@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um fix, mas o trecho remove a verificação de None em get_cursor_metadata e atribui o resultado diretamente, o que parece contradizer o título; a classificação segue o propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

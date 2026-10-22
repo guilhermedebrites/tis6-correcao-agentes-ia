@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara uma feature (permitir chamadas às rotas /invoke e /converse via AI Gateway com modelos do config.yaml), e o diff adiciona um novo caminho de roteamento para modelos de router, com handler dedicado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

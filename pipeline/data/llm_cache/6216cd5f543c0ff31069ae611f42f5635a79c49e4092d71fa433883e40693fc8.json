@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma renomeação (TaskGuardrail para LLMGuardrail) e o diff só troca nomes de classes, módulos e eventos, apesar do prefixo 'fix:'; a mudança do valor do campo type dos eventos pode afetar consumidores, o que reduz a confiança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

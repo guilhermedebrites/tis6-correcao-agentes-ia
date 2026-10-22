@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix', mas o diff remove a escrita automática no .env e altera mensagens, o que se parece com mudança de comportamento; a descrição está vazia, então a classificação depende só do título.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

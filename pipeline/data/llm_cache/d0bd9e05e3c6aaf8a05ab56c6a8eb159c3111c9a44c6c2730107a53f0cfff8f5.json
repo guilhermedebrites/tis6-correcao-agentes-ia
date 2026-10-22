@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram que a mudança corrige a falha de conversão para polars de uma query específica, com fallback para pandas, e o diff implementa esse tratamento de exceção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

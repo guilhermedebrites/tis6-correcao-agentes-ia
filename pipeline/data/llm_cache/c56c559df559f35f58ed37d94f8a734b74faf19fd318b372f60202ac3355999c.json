@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram 'fix' para forçar temperature = 1 em modelos com extended thinking, corrigindo comportamento incorreto da chamada à API; as linhas alteradas substituem o valor fixo por get_temperature(), alinhado a essa correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

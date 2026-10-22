@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix' e troca o ID do ambiente WorkOS de desenvolvimento para o de produção, corrigindo a autenticação; as mudanças em utils.py acrescentam informação de diagnóstico às exceções de audience/issuer, o que apoia a correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

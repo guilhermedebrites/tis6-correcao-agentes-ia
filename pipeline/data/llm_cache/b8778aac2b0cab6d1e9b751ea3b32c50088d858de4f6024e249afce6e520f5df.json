@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix: table cell styles index error' e a descrição referencia a issue #5246; o diff limita 'take' ao total de linhas para evitar índice fora do intervalo, além de refatorações de estilo que acompanham a correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

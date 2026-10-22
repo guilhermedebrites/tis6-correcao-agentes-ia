@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram explicitamente um fix para um erro de eager load disparado após erro de validação de custom fields (Fix #7641), e o diff remove a lógica de validação/atribuição de preços que causava o problema.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

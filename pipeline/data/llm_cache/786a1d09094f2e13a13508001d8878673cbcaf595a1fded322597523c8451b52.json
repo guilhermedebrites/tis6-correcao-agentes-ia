@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram 'fix: resolve relative paths in uv.sources', e o diff passa o caminho de configuração (config_path) para PyProjectReader, permitindo resolver caminhos relativos que antes estavam incorretos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

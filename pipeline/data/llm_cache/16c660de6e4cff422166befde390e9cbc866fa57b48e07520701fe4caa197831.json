@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de suportar tags de células do JupyterBook (como hide-code), o que é uma nova funcionalidade; as linhas do diff são apenas adaptações estruturais de source para CodeCell necessárias para essa mudança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

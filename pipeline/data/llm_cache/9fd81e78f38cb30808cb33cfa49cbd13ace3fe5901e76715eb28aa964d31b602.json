@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara como propósito principal a atualização para a API Lasso v3 (feat), o que corresponde às trocas de endpoints v1/v2 para v3, embora a mudança do construtor ULID para ulid.new() também corrija um defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

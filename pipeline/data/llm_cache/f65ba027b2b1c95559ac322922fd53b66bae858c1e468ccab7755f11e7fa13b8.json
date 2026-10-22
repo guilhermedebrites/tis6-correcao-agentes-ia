@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram adicionar uma ação de Upgrade à UI do gerenciador de pacotes, e o diff apenas passa o novo parâmetro `upgrade` para as chamadas existentes, indicando nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

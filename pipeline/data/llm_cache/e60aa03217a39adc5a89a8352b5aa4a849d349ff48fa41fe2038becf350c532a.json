@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de estender a interpolação de strings para aceitar hífens em nomes de variáveis, o que altera o comportamento desejado da função, e o diff apenas acrescenta `\\-` à classe de caracteres da regex.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma melhoria (manter a ordem das células em --watch com heurística de similaridade), que é evolução de comportamento, embora o trecho mostrado seja apenas a remoção da classe CellManager, que parece movimentação de código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara remoção dos scorers RAG temporários e o diff exclui a função pública get_rag_scorers, o que é um ajuste de API voltado ao usuário, e não uma mudança interna sem efeito de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

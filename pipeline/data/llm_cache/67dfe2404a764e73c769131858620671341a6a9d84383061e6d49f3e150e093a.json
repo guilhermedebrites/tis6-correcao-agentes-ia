@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "A descrição declara o objetivo de suportar mais tipos de dataframe após a migração para narwhals v2, e o trecho passa a aceitar outros tipos sem convertê-los, o que altera o comportamento desejado da função.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

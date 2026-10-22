@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit dizem apenas 'Indent and import fix', e o diff mostra o mesmo bloco de código sendo reindentado para fora do bloco 'try'/'if' anterior, sem mudança de lógica perceptível nas linhas exibidas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

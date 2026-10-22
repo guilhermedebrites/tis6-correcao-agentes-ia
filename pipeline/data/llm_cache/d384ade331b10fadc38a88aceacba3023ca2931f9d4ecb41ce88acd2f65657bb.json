@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma evolução (armazenar e exibir respostas de webhooks), e a linha alterada só muda o nível e a mensagem do log, o que parece apoiar essa funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

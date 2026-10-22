@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "Os trechos mostrados só reformatam linhas (quebras de linha, remoção de espaços, ajuste de indentação) sem mudar comportamento, embora o título declare um fallback de modelos desconhecidos que não aparece nesses trechos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

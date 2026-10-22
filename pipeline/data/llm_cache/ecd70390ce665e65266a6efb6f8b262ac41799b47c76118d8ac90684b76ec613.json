@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix: remove incorrect limit check' e o diff remove uma verificação arbitrária de limite (1000 objetos) que limpava display_objects, indicando correção de comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

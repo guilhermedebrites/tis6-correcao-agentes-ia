@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "É um revert explícito de um commit anterior (que trocava license.file por license-files), e o diff apenas restaura a forma antiga de declarar a licença, sem mudança de propósito declarado além de desfazer a mudança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

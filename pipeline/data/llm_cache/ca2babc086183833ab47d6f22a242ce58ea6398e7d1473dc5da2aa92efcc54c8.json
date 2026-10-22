@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix: next page', e o diff troca o range de skip/take por row_ids e passa a tratar listas como dados indexados sequencialmente, corrigindo a paginação incorreta de linhas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'Fix' e a mudança troca o envio da chave de API como bearer token por um cabeçalho x-goog-api-key, corrigindo a autenticação com api_base customizado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

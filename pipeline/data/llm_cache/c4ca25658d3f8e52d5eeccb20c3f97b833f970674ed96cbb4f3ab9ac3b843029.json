@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar um recurso de limite de uso (max_usage_count/current_usage_count) ao BaseTool, e o diff introduz a contagem de uso e a nova parâmetro na função tool, o que é adição de funcionalidade e não correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

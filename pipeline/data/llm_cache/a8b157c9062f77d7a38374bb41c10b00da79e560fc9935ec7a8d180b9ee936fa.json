@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de suporte a execução retomada (resume) no Optuna, o que é nova funcionalidade; as linhas mostradas só removem a criação do estudo e trocam uma legenda de documentação, então o trecho isolado não confirma totalmente o propósito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

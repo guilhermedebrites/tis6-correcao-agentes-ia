@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma melhoria (tornar o toggle-line-comment configurável), e a remoção do bloqueio experimental do LSP no trecho é um ajuste secundário feito junto dela, que altera o comportamento padrão sem corrigir um defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

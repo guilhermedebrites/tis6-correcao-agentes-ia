@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "A mudança apenas troca valores de strings de exibição (role) em um marquee de depoimentos sociais, sem alterar lógica; o título 'update social marquee roles' indica atualização de conteúdo, que não se encaixa em defeito, evolução ou refatoração de código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

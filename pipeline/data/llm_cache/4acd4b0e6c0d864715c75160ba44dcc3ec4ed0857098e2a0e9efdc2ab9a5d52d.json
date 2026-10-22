@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix para o cache de nível superior com dependências adicionais, que falhava por lógica de lookup de módulo desatualizada, e as linhas alteradas tratam o caso de escopo externo para evitar esse erro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

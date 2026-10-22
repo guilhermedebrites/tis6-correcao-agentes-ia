@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara a adição do linter Regal, e o trecho mostra suporte a um novo tipo de extração ('binary') e um novo mecanismo de verificação de versão por ferramenta, ambos adições de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

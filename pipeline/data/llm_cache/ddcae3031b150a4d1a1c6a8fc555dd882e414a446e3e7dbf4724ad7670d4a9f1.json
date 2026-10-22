@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma nova funcionalidade (atualizar o método de pagamento quando uma retentativa de pagamento tem sucesso), e a linha alterada apenas adiciona a importação de Order necessária para essa nova lógica.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

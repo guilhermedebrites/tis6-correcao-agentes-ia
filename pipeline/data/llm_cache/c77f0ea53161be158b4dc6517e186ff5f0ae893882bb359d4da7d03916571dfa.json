@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram que o método save foi corrigido, e o diff troca o valor salvo de `value` por `assistant_message`, o que indica correção do conteúdo persistido, embora o trecho não mostre o contexto completo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

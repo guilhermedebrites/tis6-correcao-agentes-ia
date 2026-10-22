@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "A PR não tem descrição e a mensagem de commit só repete a troca da condição (de existência de arquivo para tipo de SO), sem indicar se ela corrige um defeito ou muda comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

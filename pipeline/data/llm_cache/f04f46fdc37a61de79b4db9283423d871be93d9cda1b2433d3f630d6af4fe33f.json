@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título diz 'Fix', e o diff acrescenta o sufixo '/precision' ao nome do scorer para que a UI diferencie a agregação em nível de span da pontuação em nível de chunk e a exiba corretamente, o que corrige a renderização incorreta de resultados.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

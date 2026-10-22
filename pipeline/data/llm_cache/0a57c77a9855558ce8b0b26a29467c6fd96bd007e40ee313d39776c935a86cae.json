@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de permitir o decorador @app.class_definition, uma nova funcionalidade; as linhas alteradas (aceitar ast.ClassDef, renomear func para obj) servem a esse objetivo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

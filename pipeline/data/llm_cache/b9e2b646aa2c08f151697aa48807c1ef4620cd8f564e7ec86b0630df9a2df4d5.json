@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O PR declara o propósito de adicionar um novo formato interno de serialização do notebook, e as linhas alteradas ajustam valores padrão (\"\" e {} no lugar de None) para se adequar ao novo schema, o que muda o formato de saída do template.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

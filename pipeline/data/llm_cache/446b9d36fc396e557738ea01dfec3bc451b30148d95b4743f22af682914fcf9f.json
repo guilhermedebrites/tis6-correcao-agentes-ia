@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e o commit declaram um revert de 'Fix response handling in log_spans (#18280)', ou seja, desfazer uma mudança anterior sem alterar o comportamento pretendido por um novo requisito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

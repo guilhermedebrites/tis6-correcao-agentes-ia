@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara explicitamente 'fix' e a mudança remove o envio do external_id na atualização de clientes, o que corrige um comportamento incorreto na chamada de atualização.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

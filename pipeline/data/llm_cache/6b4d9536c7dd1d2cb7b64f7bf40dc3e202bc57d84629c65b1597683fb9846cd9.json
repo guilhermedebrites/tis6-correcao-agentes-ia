@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma correção de lint: remove import não usado, adiciona anotação de tipo e simplifica condicionais sem mudar a intenção, mas o ramo de fallback para o campo 'content' foi removido, o que pode alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

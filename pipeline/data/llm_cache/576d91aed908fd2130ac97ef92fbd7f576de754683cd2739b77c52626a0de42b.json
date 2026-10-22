@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um 'fix' de erros de tipo (`Generic`, união `int` redundante), e o trecho corrige o tipo de retorno de `__iter__` de `Iterator[S | int]` para `Iterator[S]` e levanta erro explícito quando não há coleção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

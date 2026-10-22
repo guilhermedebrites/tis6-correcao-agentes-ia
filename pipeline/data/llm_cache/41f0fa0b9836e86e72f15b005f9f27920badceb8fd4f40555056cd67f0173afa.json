@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar limites de TPM/RPM em nível de organização, e o trecho generaliza as funções de validação de team para também validar org, o que é uma nova funcionalidade mesmo com parte do diff sendo renomeação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

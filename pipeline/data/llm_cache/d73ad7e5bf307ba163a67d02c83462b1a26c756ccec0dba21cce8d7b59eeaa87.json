@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix schema of grant previous properties' (Fix #6107), e o diff troca tipos específicos por uma união genérica PreviousProperties, corrigindo o schema incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

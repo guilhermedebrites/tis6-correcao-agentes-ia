@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara um bugfix, e as linhas alteradas trocam a checagem de exceção específica do litellm por uma verificação de módulo e passam a tratar erros genéricos com `_handle_unknown_error`, o que corrige o tratamento de exceções.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

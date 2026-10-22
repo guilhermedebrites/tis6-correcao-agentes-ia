@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma nova funcionalidade (reset de tokens no `crewai config reset`), mas o trecho mostrado contém principalmente movimentação de `TokenManager` para outro módulo e reformatação, sem a lógica de reset visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

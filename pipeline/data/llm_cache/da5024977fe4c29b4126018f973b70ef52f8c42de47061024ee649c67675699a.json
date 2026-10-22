@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma funcionalidade nova (feat: ToolGuidelines para orientar o agente sobre quando usar as ferramentas marimo), e a linha do diff apenas importa o novo tipo ToolGuidelines.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

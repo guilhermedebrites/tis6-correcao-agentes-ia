@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de suporte async aos decoradores de cache com deduplicação de tarefas, e o trecho mostra a nova classe _cache_call_async; a extração de helpers é apenas preparação para essa funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

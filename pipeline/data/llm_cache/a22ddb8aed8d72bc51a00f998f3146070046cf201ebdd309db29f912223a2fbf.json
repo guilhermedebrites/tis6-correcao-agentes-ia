@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram um fix (model_group nem sempre presente em litellm_params e localização de metadata), e o diff troca a função de leitura de metadata para a variante correta de litellm_params, corrigindo a referência.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

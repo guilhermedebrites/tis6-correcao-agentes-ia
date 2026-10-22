@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit afirmam que a troca para WeakValueDictionary quebrou a atualização de saída no iPython e que o objetivo é reverter essa mudança, o que corrige um comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

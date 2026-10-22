@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de reativar o sql-mode internamente, o que é uma mudança de comportamento desejado; o ajuste para citar a query (quoted_query) é parte dessa mudança, embora também possa indicar correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

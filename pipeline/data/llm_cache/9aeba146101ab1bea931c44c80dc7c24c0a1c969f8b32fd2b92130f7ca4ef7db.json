@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram adição de suporte OCI Cohere com tool calling e streaming, mas o trecho mostra apenas reindentação e remoção de um bloco de validação de `oci_serving_mode`, o que não deixa claro o propósito das linhas exibidas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

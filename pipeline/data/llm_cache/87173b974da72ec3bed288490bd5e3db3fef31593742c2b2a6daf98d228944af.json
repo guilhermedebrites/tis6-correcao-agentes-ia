@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram a correção da inicialização de _latitude e _elevation no SmartIrrigationCoordinator para resolver erros de geração de calendário, mas o trecho do diff mostrado contém apenas a alteração de versão em const.py.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

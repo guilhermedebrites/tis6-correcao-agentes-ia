@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A PR é um revert declarado (título e descrição dizem 'Quick revert of ordering') que apenas comenta a verificação de ordem de entrega do webhook, sem adicionar nova funcionalidade nem corrigir um defeito específico.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma melhoria (improvement) que faz mo.latex() carregar macros, e o diff troca a leitura manual do arquivo por uma chamada à nova API mo.latex(filename=...), indicando mudança de API/funcionalidade desejada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

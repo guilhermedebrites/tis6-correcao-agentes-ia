@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara adicionar suporte a extra_body para parâmetros da Responses API vindos de chat completion, e o diff apenas importa o tipo ResponsesAPIOptionalRequestParams, indicando nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

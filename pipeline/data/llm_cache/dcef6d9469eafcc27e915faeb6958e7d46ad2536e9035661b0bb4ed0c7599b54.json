@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas mostradas apenas quebram chamadas e assinaturas de funções em várias linhas (formatação) sem alterar comportamento, embora o título declare uma feat.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

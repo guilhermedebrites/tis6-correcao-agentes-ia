@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "O trecho mostra apenas a adição de `Any` a um import, sem relação visível com o comportamento de auto_instantiate; a intenção declarada (padrão false e hooks de ambiente) sugere evolução, mas o diff exibido não permite confirmar.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

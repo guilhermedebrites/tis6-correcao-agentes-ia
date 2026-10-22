@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma otimização, mas o diff passa a incluir o campo parse_result na resposta de validação e atualiza a documentação, o que altera o contrato interno do fluxo em vez de apenas reestruturar o código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

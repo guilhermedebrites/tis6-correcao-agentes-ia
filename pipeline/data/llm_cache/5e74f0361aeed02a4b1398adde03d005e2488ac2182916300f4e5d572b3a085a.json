@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix #669, fix #670', mas o trecho mostrado apenas reformata uma chamada em uma linha, sem mudança de comportamento visível, então a relação com a correção não aparece no diff.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

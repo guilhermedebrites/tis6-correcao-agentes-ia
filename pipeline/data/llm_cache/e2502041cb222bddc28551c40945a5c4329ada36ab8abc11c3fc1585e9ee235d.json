@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "baixa", "justificativa": "O título declara a entrega de trials de assinatura no servidor, mas as linhas mostradas só removem um campo de schema e reformatam a descrição de recurring_interval, o que parece uma movimentação sem relação visível com trials.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título 'Add AI commands as MCP prompts' e o diff expõem comandos de IA como prompts MCP, adicionando a função get_command_body e reestruturando a criação do servidor FastMCP, o que é nova funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

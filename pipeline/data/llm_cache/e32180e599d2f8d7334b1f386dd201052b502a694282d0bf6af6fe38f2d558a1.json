@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "O trecho só adiciona os imports Choices e ModelResponse sem mostrar uso, e o título (\"Clean Up\" de CI/CD, com a etiqueta genérica [Fix]) e a descrição vazia não definem um propósito claro para essa linha.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

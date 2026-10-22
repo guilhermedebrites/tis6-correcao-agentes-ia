@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram uma nova funcionalidade (mo.watch.file/directory), e o trecho amplia a API de SideEffect para aceitar chaves em bytes, o que é um ajuste de API, embora pareça menos ligado ao watch em si.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

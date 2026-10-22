@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma nova opção de configuração (custom_css no pyproject.toml), e o trecho passa a aceitar caminhos relativos ou absolutos para o CSS, o que é comportamento novo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "É um revert de commit anterior (\"Respect custom llm provider in header\"), desfazendo a leitura do provider nos headers; o título e a mensagem de commit declaram explicitamente a intenção de reverter.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

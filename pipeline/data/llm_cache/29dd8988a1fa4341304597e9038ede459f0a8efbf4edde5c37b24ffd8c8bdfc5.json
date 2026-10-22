@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e os commits introduzem novos status (INITIAL_REVIEW e ONGOING_REVIEW), novos e-mails, divisão do schema e novas funcionalidades de UI para revisões de conta, o que altera o comportamento desejado da API e do produto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

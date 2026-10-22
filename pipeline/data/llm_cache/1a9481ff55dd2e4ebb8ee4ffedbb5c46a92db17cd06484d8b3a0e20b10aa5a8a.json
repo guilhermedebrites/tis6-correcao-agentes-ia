@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de lógica de atualização de status, e o diff remove o TODO e o status fixo \"OK\" para derivar o status do trace a partir do span raiz, o que é novo comportamento e não correção de defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

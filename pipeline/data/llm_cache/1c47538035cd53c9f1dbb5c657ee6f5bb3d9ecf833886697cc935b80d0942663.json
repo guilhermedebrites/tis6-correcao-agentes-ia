@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram \"Fix #6751\" para garantir a ordem de entrega dos eventos de webhook, e o trecho altera a condição de filtragem de eventos anteriores, o que indica correção de comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

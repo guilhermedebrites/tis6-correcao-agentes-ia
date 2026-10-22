@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança troca `List`/`Dict` por `list`/`dict` nativos (sintaxe Python 3.10+), remove imports não usados e adiciona docstrings, sem alterar comportamento; o título declara explicitamente chore de atualização de tipagem.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

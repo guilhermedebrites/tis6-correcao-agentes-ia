@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de um novo endpoint /search com SearchProvider e roteamento, e o trecho mostrado apenas reformata imports nas linhas alteradas, sem mudar comportamento; o propósito declarado é evolução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

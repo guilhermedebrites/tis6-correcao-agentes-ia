@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição ('Fixes #6436', bug upstream do sqlalchemy) e o diff convertem explicitamente `current_database` para string, corrigindo um valor de schema/banco com tipo incorreto para engines.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "baixa", "justificativa": "O título 'fixing' indica correção, e o diff remove o redirecionamento de stdout/stderr por FilteredStream, mudando o comportamento de saída, mas a descrição e a mensagem de commit não explicam o defeito.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

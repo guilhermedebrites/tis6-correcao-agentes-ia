@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram um fix que faz a redação de credenciais AWS quando redact_user_api_key_info está ativo, mas o trecho do diff mostra apenas a reformatação de imports, sem a lógica de correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

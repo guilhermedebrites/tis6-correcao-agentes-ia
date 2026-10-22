@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram que a PR é um revert do commit 67abd88 ('fix _is_redis_cluster'), o que enquadra a mudança como reversão, categoria 'outro'.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

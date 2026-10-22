@@ -1,0 +1,36 @@
+{
+  "repo": "Ljzd-PRO/KToolBox",
+  "familia": "python",
+  "snapshot": "e17249be548e9b52e1a46ddaf82b6676c17c2c60",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-07-29T22:59:04+08:00",
+  "frac_sem_marcacao": 0.935,
+  "api_consultas": 261,
+  "fa_validas": 0,
+  "hl_validas": 1,
+  "incluido": false,
+  "atividade_linhas": {},
+  "n_eventos": 0,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 3
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "direto": 708,
+    "fora_periodo": 21,
+    "bot": 12,
+    "pr_repetida": 12,
+    "agente_fora": 5,
+    "fa_mista": 4,
+    "FA": 3,
+    "HL": 1
+  }
+}

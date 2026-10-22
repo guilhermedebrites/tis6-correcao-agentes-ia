@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'Fix' e 'Sessions not being shared', e o diff substitui limit=0 (ilimitado) por limites e parâmetros de conexão configurados, corrigindo o comportamento de compartilhamento de sessões.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

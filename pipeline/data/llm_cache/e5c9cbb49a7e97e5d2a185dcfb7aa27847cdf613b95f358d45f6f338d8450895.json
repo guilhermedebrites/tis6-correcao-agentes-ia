@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram 'fix', e o diff substitui a chamada em lote por um laço que ignora IDs sem servidor correspondente (None), o que trata um caso de borda que antes causava resultado incorreto ou erro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

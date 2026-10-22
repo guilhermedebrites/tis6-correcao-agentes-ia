@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A PR apenas remove um script de demonstração (demo_days_between_irrigation.py) com a mensagem genérica 'cleaning up some files', sem alterar comportamento de código de produção; trata-se de limpeza de arquivo sem propósito funcional, classificada como outro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

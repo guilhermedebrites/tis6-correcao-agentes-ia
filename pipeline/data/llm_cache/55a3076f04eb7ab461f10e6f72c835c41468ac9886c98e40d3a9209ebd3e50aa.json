@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara que impostos não devem ser calculados para cobranças zero, e a mudança adiciona a condição taxable_amount > 0, evitando um resultado incorreto de cobrança de imposto sobre valor zero.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

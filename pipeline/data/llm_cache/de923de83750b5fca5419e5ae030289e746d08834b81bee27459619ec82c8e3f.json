@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de introduzir tipos de embedding e migrar provedores, fábrica e módulos de armazenamento; o trecho mostra a remoção do configurator.py antigo, o que é reorganização estrutural e não mudança de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

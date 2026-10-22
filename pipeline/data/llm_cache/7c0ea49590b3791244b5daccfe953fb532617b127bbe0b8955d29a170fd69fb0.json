@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A mudança apenas adiciona anotação de tipo (Dict[str, List[str]]) à variável groups para satisfazer o mypy, sem alterar o comportamento em tempo de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

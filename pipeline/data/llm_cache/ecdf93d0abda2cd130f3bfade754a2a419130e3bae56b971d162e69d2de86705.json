@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma nova funcionalidade (decorador @track_endpoint e opção log_session_replay_url), e o diff adiciona parâmetros capture_request e capture_response, o que altera o comportamento desejado da API.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

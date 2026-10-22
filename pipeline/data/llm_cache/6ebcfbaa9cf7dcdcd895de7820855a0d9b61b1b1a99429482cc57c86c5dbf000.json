@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "baixa", "justificativa": "O título declara uma refatoração, mas o trecho mostrado só remove os modelos de visão do QwenCode, o que altera comportamento e não tem relação aparente com autenticação ou WebSocket.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

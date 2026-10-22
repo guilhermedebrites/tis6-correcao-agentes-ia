@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram remover o número de revisão dos arquivos de migração, e o diff apenas apaga linhas de cabeçalho de metadados (Revision ID/Revises) sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

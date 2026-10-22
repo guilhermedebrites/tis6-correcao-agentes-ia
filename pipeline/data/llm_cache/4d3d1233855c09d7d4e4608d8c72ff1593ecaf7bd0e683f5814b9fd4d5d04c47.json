@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram remover `from __future__ import annotations` e usar `typing_extensions.Self` nos type hints, o que são mudanças de tipagem sem alteração de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

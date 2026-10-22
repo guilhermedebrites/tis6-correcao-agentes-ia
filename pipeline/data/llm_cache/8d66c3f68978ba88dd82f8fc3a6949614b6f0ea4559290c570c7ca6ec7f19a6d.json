@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de uma ferramenta OpenSSL com funções de geração de chaves, assinatura e verificação (create_key_pair, sign, verify), ou seja, nova funcionalidade, com ajustes cosméticos de parênteses e import de tipo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

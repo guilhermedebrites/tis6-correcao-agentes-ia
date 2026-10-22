@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título declara o propósito de passar a registrar modelos Spark como artefatos de run (novo comportamento de log), e o diff adiciona um caminho para modelos Spark Connect via Model._log_v2 em vez de envolvê-los em PipelineModel.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

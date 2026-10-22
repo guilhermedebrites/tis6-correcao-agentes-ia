@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix' para o issue #4264 de serialização de datas sem fuso horário, e o diff substitui a lógica de serialização por uma chamada a um utilitário de sanitização, indicando correção de comportamento incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

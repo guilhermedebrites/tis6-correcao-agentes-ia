@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix' e a descrição fala em tratar respostas None sem erro e melhorar a confiabilidade, mas o trecho mostrado só reformata argumentos em várias linhas, sem alterar o comportamento visível.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

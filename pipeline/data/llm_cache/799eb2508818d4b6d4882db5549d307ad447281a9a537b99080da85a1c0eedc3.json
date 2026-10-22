@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título 'Serializable Scorers' indica adição de uma capacidade nova (serialização de scorers), e o trecho mostra a introdução de `SerializedScorer` e `_SERIALIZATION_VERSION`, embora a descrição esteja vazia e o diff mostre só um import.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

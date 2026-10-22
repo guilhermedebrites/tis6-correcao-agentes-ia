@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a mensagem de commit declaram uma correção de versão de schema ao parsear traces do MLflow 2.x, mas o trecho mostrado é apenas a alteração de import que traz as constantes de versão de schema.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

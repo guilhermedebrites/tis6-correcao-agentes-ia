@@ -1,0 +1,54 @@
+{
+  "repo": "NVIDIA/cuda-python",
+  "familia": "python",
+  "snapshot": "585038dfa23437c17bb60b210a3db25464e32171",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-08-20T21:45:48-04:00",
+  "frac_sem_marcacao": 0.002,
+  "api_consultas": 0,
+  "fa_validas": 3,
+  "hl_validas": 30,
+  "incluido": false,
+  "atividade_linhas": {},
+  "n_eventos": 0,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 3
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 6
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 30
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 7
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 89
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "so_formatacao",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 1200,
+    "HL": 127,
+    "bot": 62,
+    "direto": 41,
+    "fa_mista": 10,
+    "FA": 9
+  }
+}

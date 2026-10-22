@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "Atualização apenas do número de versão em version.py, sem alteração de comportamento de código; é um bump de versão de release, classificado como outro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

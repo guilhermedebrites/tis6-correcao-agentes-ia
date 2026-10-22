@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram a intenção de estender os inputs suportados para incluir `audio`, e o diff adiciona 'audio' à lista de tipos aceitos, alterando comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

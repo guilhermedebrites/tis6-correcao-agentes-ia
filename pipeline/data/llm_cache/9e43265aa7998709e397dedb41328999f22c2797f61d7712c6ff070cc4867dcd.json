@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição definem uma nova regra de precedência (preview tem prioridade sobre enhancements), o que altera o comportamento desejado da geração de notas; o trecho mostra só a remoção do ramo, então a lógica movida não aparece aqui.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

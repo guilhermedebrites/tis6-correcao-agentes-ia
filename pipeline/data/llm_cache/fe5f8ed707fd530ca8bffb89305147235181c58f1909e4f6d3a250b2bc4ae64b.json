@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma nova funcionalidade (feat: criar thread para a integração Plain), e o trecho mostra apenas a adição de HTMLResponse ao import, sinal de novo endpoint que retorna HTML, consistente com evolução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

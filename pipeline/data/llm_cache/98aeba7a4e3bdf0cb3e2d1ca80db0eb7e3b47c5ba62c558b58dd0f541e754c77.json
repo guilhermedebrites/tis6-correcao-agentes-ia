@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a implementação de um novo backend de correlações (SQL Store e NPMI), e a linha alterada apenas adiciona imports (exists, or_) necessários para novas funcionalidades, sem corrigir comportamento existente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A PR é um revert explícito do commit b9e636a3, que a descrição diz ter uma regressão no dmesg, sem introduzir comportamento novo.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

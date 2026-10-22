@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'Fix vector store create issue' e o diff adiciona um desvio para o caso em que custom_llm_provider não contém '/', evitando a chamada a get_llm_provider que falharia nesse caso, o que corrige um defeito na criação de vector store.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

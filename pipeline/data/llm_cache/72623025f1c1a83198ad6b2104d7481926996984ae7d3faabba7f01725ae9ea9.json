@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara um conserto ('Fix ... reset-memories when Embedding dimension mismatch'), mas a descrição mistura correção, feat, chore e refactor, e o diff também inclui mudança de comportamento para descobrir várias crews.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

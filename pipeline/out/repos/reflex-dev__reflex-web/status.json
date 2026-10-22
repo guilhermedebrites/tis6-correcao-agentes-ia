@@ -1,0 +1,82 @@
+{
+  "repo": "reflex-dev/reflex-web",
+  "familia": "python",
+  "snapshot": "21ef786c4454f2e4f0fa7e974b68b1279c642f37",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-04-27T19:08:55-07:00",
+  "frac_sem_marcacao": 0.0,
+  "api_consultas": 0,
+  "fa_validas": 17,
+  "hl_validas": 117,
+  "incluido": true,
+  "atividade_linhas": {
+    "humano": 10570,
+    "agente_principal": 492
+  },
+  "n_eventos": 110,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 17
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 10
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 35
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 2
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 117
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "acima_p99",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 10
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 30
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 82
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 3
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "so_formatacao",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 1094,
+    "HL": 244,
+    "FA": 64,
+    "direto": 63,
+    "fa_mista": 10,
+    "agente_fora": 3
+  }
+}

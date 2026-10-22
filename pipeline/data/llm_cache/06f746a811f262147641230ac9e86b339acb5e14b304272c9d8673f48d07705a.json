@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança apenas atualiza a string de versão em __version__ (0.95.0 para 0.98.0) para preparar um novo release, sem alterar comportamento de código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

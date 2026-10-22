@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título e a descrição declaram a correção de um link incorreto da sidebar (remoção do sufixo /index/), e o diff altera a referência do link; as mudanças de formatação, porém, não mudam o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

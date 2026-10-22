@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "A mudança renomeia o método `insert` para `merge_records` e atualiza a chamada interna e a docstring, sem alterar a lógica; porém, o título sugere uma mudança de semântica (insert vs. merge), o que deixa a classificação com confiança apenas média.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

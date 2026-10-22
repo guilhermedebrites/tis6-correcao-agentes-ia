@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de tratamento de sinônimos para scorers built-in, e o diff introduz sanitização de feedback e importa CategoricalRating, indicando novo comportamento desejado; a descrição vazia e o trecho parcial limitam a confiança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "As linhas mostradas renomeiam `reasoning` para `text` e tornam `details` opcional, o que a descrição declara como correção de partes de reasoning quebradas pela migração do AI SDK 5.0, embora o título seja de feature.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

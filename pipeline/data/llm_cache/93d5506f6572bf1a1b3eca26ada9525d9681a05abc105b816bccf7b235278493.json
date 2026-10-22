@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara que o objetivo é corrigir o timeout do teste de velocidade do OpenSSL, e as linhas alteradas aumentam o timeout de 1200 para 3600 segundos, além de ajustar a prioridade do teste.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

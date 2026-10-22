@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara o propósito de corrigir um teste intermitente (flaky), e a troca de time.sleep por _time_sleep indica um ponto de indireção para tornar o backoff controlável no teste, sem alterar o comportamento de produção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

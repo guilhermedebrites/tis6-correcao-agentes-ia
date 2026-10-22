@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara explicitamente a correção de compatibilidade com clientes antigos do MLflow, e o diff remove a tag SPANS_LOCATION que clientes antigos não esperam, restaurando o comportamento anterior.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

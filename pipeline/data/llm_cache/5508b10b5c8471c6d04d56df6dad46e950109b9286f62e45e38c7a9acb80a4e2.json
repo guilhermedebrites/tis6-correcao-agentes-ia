@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram explicitamente um [Refactor] de migração para lazy loading, e o diff apenas remove imports eager e os substitui por um comentário, sem alterar a lógica das classes.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

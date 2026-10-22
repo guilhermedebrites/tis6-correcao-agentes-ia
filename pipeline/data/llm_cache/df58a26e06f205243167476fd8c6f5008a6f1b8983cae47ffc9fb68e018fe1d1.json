@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara a adição de novas APIs para definir o status do trace e o conteúdo de exceções de spans, e o diff introduz a lógica condicional que respeita um status definido explicitamente pelo usuário, o que é uma mudança de comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

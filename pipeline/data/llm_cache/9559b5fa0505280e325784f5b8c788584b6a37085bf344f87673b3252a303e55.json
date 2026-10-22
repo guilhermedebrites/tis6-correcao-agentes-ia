@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram a adição de suporte à label `test-all` no CI, que é uma nova funcionalidade; o trecho mostrado só adiciona uma anotação de tipo, então a classificação depende do propósito declarado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

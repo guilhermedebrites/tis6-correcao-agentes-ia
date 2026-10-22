@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma mudança de integração do scorer, e o diff altera a API (tipo de retorno de list[Feedback] para Feedback, novos nomes de funções e parâmetros) e o cálculo, que passa a ser uma média em vez de uma lista de feedbacks.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

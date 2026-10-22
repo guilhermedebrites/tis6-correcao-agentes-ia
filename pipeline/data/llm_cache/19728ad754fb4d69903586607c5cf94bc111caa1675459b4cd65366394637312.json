@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de uma nova funcionalidade experimental (exclusão por pasta via folder_path_exclude_regex), e o diff introduz essa opção com novas validações de feature flags e logs de aviso.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A PR implementa o modo 'passthrough' do guardrail GrayTest, passando a substituir o conteúdo da resposta por uma mensagem de violação em vez de bloqueá-la, e altera o default de 'monitor' para 'passthrough', o que é mudança de comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e o commit declaram a adição de 'auto' como nova opção para auto_discovery, e o diff altera os tipos para aceitar Literal[\"auto\"] e muda o padrão de False para \"auto\", o que é mudança de comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

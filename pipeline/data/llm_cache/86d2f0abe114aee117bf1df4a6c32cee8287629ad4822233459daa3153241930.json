@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram 'feat: add timebound', e o diff adiciona o parâmetro opcional meters_dirtied_at à função enqueue_update_customer e o repassa ao actor, o que caracteriza ampliação de API com novo comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

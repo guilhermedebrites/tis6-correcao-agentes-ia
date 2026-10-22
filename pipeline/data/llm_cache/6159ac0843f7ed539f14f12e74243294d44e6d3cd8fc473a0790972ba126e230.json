@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a introdução de suporte assíncrono (`__aiter__`) ao `mo.status.progress_bar`, e o diff adiciona esse comportamento novo, além de alterar a API de `__init__` para aceitar `AsyncIterable`.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

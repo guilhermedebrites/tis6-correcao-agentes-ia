@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara o propósito de tratar adequadamente o caso de função não encontrada, o que corrige um comportamento de erro; o trecho mostra só a remoção da chamada `_load_function`, cujo novo local não aparece no diff.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

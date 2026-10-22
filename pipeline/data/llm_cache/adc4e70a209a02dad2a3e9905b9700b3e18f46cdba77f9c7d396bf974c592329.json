@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram 'fix', e a mudança restringe a sanitização de NaN/Inf às colunas numéricas, evitando a aplicação de is_nan/is_finite em colunas não numéricas, que causaria erro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

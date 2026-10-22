@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara 'feat' e busca mais dados do servidor de autorização Okta, com o novo campo oauth2_extra, mas as linhas mostradas são majoritariamente anotações de tipo (refatoração).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

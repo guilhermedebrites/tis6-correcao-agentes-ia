@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O trecho mostrado só atualiza a versão gerada no cabeçalho de um arquivo de smoke test (`__generated_with`), sem alterar comportamento, embora o título declare uma feature (feat).", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

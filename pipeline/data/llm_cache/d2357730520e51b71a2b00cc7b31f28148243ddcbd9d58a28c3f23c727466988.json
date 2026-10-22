@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara 'fix' e a linha alterada passa a apontar para index.cjs, provavelmente para corrigir o caminho do binário do LSP após a mudança de build para .cjs; a descrição está vazia, então a intenção é inferida.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

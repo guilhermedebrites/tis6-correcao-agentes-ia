@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram substituir flake8 e black por ruff, e o diff mostra apenas reordenação de __all__ e de imports, sem alteração de comportamento, o que caracteriza limpeza/formatação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

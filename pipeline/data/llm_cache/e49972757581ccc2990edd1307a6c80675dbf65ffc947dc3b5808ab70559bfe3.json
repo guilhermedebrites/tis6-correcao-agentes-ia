@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara uma feature (permitir prioridade/reserva dinâmica por time), e o trecho mostra apenas a renomeação de key_priority para priority, que acompanha essa mudança de API, sem alterar o comportamento isolado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

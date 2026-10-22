@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram explicitamente que se trata de um revert do commit b039374, portanto o propósito é desfazer uma mudança anterior, o que se enquadra em 'revert'.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

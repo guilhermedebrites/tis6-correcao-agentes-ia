@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O título fala em reintroduzir um fix já existente, mas o diff apenas remove o código de migração do Stripe e o import, o que indica um revert de commit anterior, não um conserto de defeito nas linhas mostradas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

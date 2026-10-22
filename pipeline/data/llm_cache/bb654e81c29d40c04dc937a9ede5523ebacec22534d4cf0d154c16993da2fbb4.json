@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram um fix, e o diff corrige o cálculo de métricas não somáveis (max, min, avg, unique) para considerar os eventos de todo o período de cobrança, em vez de faturar por preço separadamente.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

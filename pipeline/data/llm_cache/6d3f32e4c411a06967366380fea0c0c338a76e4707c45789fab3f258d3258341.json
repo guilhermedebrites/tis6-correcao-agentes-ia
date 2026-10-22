@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título 'Improve swiotlb case' é vago, mas o diff adiciona comportamento novo: escolhe o valor do parâmetro swiotlb conforme o tipo de controlador de disco (NVMe usa 524288) e transforma a ausência do GrubConfig em skip, em vez de falha.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

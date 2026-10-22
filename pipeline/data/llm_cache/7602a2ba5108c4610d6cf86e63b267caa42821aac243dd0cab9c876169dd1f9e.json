@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram 'fix' para remover o id interno de linha em `table.value` (issue #4868), e o diff acrescenta `.drop_columns([INDEX_COLUMN_NAME])` à seleção, eliminando a coluna interna do resultado exposto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

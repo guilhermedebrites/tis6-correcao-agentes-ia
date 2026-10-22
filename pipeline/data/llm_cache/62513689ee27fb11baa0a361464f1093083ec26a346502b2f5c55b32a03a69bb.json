@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte a `marimo edit --watch`, e o diff remove a restrição que bloqueava o file watcher no modo edit, o que altera o comportamento desejado para uma nova opção de funcionalidade.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

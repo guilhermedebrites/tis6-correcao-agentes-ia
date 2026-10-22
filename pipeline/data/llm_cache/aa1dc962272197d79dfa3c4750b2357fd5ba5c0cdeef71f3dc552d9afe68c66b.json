@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título é 'fix' e a descrição declara 'Fixes #4374', corrigindo a renomeação de colunas de MultiIndex do pandas; o trecho move a lógica de junção das colunas para um helper.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

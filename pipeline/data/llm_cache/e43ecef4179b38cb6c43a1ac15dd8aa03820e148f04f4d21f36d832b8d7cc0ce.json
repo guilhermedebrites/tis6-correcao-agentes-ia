@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título e o commit pedem apenas que a string seja tornada raw (r\"\"\"), o que não altera o comportamento quando não há sequências de escape; não há indicação de defeito corrigido.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

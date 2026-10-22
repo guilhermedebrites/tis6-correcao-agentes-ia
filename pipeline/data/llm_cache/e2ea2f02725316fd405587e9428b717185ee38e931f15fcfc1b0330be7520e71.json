@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição dizem que o PR faz os módulos não built-in serem passados para validação e trata os casos hyperv_fb e hyperv_drm, o que corrige um caso em que módulos eram ignorados e a validação ficava incompleta.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

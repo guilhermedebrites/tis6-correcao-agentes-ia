@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A PR introduz a regra PERF401 e reescreve loops manuais de append como list comprehensions equivalentes, sem alterar o comportamento observável do código.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

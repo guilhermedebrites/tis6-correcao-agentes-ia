@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e o commit declaram a prevenção de erros ao instrumentar agentes com MCPToolset, e o diff passa a checar hasattr antes de acessar tool.name e tool.description, evitando exceções para ferramentas que não têm esses atributos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

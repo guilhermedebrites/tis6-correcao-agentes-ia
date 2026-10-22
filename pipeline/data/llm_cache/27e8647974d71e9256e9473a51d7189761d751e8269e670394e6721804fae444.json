@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara 'feat: add customer balance' e a descrição lista principalmente novos comportamentos (pagamentos de checkout, pedidos parcialmente reembolsados, inversão do sinal do saldo), embora haja um item de correção de produto cartesiano.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

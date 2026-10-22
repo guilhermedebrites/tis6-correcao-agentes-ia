@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "As linhas alteradas adicionam a nova opção \"dynamic\" aos tipos de limite de TPM/RPM (com docs), o que é uma mudança de comportamento desejado, embora o PR seja um agregado genérico com descrição mista de correções e refatorações.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

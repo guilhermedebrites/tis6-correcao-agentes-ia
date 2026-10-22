@@ -1,0 +1,92 @@
+{
+  "repo": "mlflow/mlflow",
+  "familia": "python",
+  "snapshot": "fd71b4bb5b5888f92def27f3e03204b1e5d6e96d",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-05-23T05:27:57+00:00",
+  "frac_sem_marcacao": 0.002,
+  "api_consultas": 0,
+  "fa_validas": 33,
+  "hl_validas": 504,
+  "incluido": true,
+  "atividade_linhas": {
+    "humano": 25724,
+    "agente_principal": 3226,
+    "bot": 579,
+    "outro_agente": 489
+  },
+  "n_eventos": 318,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 33
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "pequena_demais",
+      "n": 12
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 168
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 10
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "so_formatacao",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 504
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "acima_p99",
+      "n": 5
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 30
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 54
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 407
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 10
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "so_formatacao",
+      "n": 1
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 11124,
+    "agente_fora": 1058,
+    "HL": 1011,
+    "bot": 363,
+    "FA": 224,
+    "fa_mista": 121,
+    "direto": 47,
+    "fa_provavel": 6,
+    "pr_repetida": 2
+  }
+}

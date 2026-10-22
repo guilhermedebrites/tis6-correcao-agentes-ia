@@ -1,0 +1,65 @@
+{
+  "repo": "gerlero/foamlib",
+  "familia": "python",
+  "snapshot": "d045a87714cc12ebd8fd35c3daf1dc61e7ad2293",
+  "fonte_fa": "aidev",
+  "inicio_periodo": "2025-08-27T17:08:59-03:00",
+  "frac_sem_marcacao": 0.118,
+  "api_consultas": 0,
+  "fa_validas": 4,
+  "hl_validas": 55,
+  "incluido": false,
+  "atividade_linhas": {},
+  "n_eventos": 0,
+  "funil": [
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "",
+      "n": 4
+    },
+    {
+      "fluxo": "FA",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "",
+      "n": 55
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "grande_demais",
+      "n": 1
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "pequena_demais",
+      "n": 6
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_arquivo_considerado",
+      "n": 41
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "sem_linhas_adicionadas",
+      "n": 3
+    },
+    {
+      "fluxo": "HL",
+      "motivo_exclusao": "so_formatacao",
+      "n": 2
+    }
+  ],
+  "fluxos": {
+    "fora_periodo": 565,
+    "direto": 152,
+    "HL": 108,
+    "bot": 46,
+    "agente_fora": 16,
+    "fa_mista": 11,
+    "FA": 5
+  }
+}

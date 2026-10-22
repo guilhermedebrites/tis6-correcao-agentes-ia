@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança no trecho apenas atualiza a versão do gerador (__generated_with) em um arquivo de smoke test, sem alterar comportamento; o propósito declarado é uma evolução de datatables, mas essa linha específica é apenas metadado gerado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

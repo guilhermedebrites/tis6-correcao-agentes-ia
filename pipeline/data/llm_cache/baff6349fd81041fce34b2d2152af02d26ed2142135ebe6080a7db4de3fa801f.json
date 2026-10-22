@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição indicam explicitamente um revert do commit 'feature: generic object pool (#14702)', ou seja, a remoção do módulo de object pooling, o que se enquadra em revert.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

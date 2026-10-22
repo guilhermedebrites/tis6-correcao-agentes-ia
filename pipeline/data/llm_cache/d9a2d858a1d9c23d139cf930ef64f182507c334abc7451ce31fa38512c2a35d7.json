@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "O título declara uma correção de documentação, mas a linha alterada é código (conversão de data_path para str em pl.read_csv), o que sugere um ajuste de tipo e não uma mudança só de docs; a divergência reduz a confiança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O trecho alterado apenas adiciona a importação de Callable, sinal de uma refatoração de tipagem para a fábrica make_bulk_job_delay_calculator que retorna um closure, sem mudança de comportamento visível nessas linhas.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

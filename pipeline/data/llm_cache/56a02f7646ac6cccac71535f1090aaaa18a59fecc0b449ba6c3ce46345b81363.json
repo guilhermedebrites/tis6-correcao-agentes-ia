@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título e a descrição declaram um fix: a mensagem de erro sugeria instalar polars[pyarrow], que não resolvia o problema, e o diff corrige isso passando a sugerir pandas e elevando o log para warning.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

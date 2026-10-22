@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "A descrição declara que a PR adiciona suporte a streaming ao mo.ui.chat, e o diff troca o `stream` fixo em False por `self.stream` e cria um ramo de geração em streaming, o que altera o comportamento para uma nova opção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

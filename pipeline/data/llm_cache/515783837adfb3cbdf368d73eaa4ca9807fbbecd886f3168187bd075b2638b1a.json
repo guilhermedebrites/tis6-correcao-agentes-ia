@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram a adição de suporte a External Memory como substituto do UserMemory, e o diff adiciona o tipo \"external\" e novos parâmetros de armazenamento, o que altera comportamento desejado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

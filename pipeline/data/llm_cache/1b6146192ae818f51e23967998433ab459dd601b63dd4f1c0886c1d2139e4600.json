@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O título declara uma mudança estrutural (gerar o ID automaticamente via __init_subclass__ em vez de métodos _id fixos), e as linhas removidas são apenas os métodos que retornavam IDs constantes, sem nova funcionalidade visível no trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

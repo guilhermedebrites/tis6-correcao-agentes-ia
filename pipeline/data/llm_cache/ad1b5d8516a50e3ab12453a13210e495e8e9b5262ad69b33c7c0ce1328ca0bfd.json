@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "Otimização de desempenho que muda a forma de passar o SymbolIndex (arquivo pickle em vez de objeto serializado para cada worker) sem alterar o resultado do lint.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

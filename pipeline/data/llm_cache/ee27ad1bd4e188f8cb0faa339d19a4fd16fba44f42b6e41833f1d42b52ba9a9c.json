@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram o propósito de adicionar suporte a Platform Fee/Margins, e o trecho estende a função de extração para retornar também margem total e percentual de margem, além de atualizar o módulo de configuração de custos.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

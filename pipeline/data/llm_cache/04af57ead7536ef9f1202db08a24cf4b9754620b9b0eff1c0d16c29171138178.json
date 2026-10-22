@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a mensagem de commit declaram 'fixing linting errors', e as linhas alteradas apenas reformatam código (quebras de linha, espaços finais, vírgulas finais, parênteses) sem mudar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

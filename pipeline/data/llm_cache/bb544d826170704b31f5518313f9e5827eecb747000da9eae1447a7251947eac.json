@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição declaram um revert (\"Revert ...\" revertendo o commit f6fdcf7), e o diff reverte a lógica de skip do hv_netvsc, o que caracteriza revert, categoria outro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

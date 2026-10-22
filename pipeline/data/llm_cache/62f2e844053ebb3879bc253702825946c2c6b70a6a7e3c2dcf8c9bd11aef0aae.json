@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "O PR troca o build-system de hatchling para uv_build, e as linhas mostradas só ajustam de onde se importa __version__ e _loggers, sem mudar comportamento, o que fica no escopo de mudança de ferramenta de build.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

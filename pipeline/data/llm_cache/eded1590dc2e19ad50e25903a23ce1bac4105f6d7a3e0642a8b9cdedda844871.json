@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "O título e a descrição indicam um revert de commit anterior (\"Revert 'Expand general page to support multiple calculation triggers...'\"), que desfaz a funcionalidade de múltiplos gatilhos de cálculo; reverts são classificados como outro.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

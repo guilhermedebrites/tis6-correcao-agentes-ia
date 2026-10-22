@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara explicitamente o propósito de melhorar a legibilidade, e o diff substitui a lógica de busca em cascata por uma chamada a uma função auxiliar sem alterar o comportamento esperado.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

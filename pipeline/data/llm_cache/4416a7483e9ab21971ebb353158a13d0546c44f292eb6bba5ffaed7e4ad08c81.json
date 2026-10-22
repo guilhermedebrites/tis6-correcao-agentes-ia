@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "alta", "justificativa": "O título e a descrição declaram uma nova funcionalidade (overrides de perfil por requisição, metadados e profile_name opcional), e as linhas do diff que alteram comportamento confirmam isso, apesar de parte do diff ser apenas reformatação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

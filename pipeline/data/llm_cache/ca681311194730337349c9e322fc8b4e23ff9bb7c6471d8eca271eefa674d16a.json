@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara suporte a avaliação multi-turn, e o diff adiciona a cópia de trace_metadata, um novo comportamento, além de reestruturar o bloco de tags; a ligação direta com multi-turn é inferida, pois a descrição está vazia.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

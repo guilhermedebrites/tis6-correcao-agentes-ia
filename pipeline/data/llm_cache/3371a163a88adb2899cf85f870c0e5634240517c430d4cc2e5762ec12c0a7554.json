@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram adição/atualização de anotações de tipo (typing para Python 3.10+), e o diff apenas troca `Dict[str, Any]` por `dict[str, Any]`, mudança estrutural de tipagem sem alteração de comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

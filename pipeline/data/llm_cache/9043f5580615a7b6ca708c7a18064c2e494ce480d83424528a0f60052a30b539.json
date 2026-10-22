@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "O título declara a correção do endpoint /v1/traces para retornar protobuf conforme a especificação OTLP, em vez de JSON, indicando que o comportamento anterior estava incorreto.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

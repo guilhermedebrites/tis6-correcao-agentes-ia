@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "media", "justificativa": "As linhas mostradas removem o código de autenticação E2E (get_e2e_auth_subject e a configuração correspondente), o que corresponde ao revert declarado na descrição; a mudança de OAuth2 do título não aparece no trecho.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix python3.8' e a troca de `str | None` por `Optional[str]` evita erro de execução em Python 3.8, que não suporta a sintaxe de união em anotações avaliadas em tempo de execução.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

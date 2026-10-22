@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título declara 'fix components link in enterprise section' e as linhas trocam links de strings fixas por referências de rota (`.path`), o que corrige links possivelmente quebrados ou inconsistentes na seção enterprise.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

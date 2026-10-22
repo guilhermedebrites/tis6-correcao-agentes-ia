@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título e a descrição declaram o propósito de adicionar uma funcionalidade experimental de publicação/remoção seletiva (parâmetro items_to_include), e o trecho mostrado apenas adiciona a importação de InputError, que serve a essa nova validação.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

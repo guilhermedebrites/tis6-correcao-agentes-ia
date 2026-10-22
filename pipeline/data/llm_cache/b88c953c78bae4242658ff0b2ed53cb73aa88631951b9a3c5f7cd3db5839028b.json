@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram lazy loading de imports para melhorar o tempo de importação, e o diff apenas remove imports diretos de utils.py (que passam a ser carregados sob demanda), sem alterar comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

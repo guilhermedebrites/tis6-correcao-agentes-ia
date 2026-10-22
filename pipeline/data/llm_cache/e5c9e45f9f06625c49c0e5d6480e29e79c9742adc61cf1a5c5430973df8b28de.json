@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "baixa", "justificativa": "O título e a descrição dizem apenas 'Update README.md', sugerindo documentação, mas o diff altera g4f_cli.py substituindo a chamada a g4f.cli.main() por um print, o que muda comportamento; sem propósito claro, a classificação fica incerta.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "A linha alterada apenas adiciona o tipo NoReturn ao import de typing no handlers.py, mudança de tipagem sem alteração de comportamento, embora o título da PR seja de evolução (adição do unique transform) e o trecho mostrado seja só essa linha.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

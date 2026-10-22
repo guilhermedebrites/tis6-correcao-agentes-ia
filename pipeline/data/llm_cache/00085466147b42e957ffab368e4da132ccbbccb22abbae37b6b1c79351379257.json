@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O trecho troca o parâmetro `texts` por `inputs={\"texts\": ...}` e renomeia o retorno, o que acompanha a evolução declarada de suportar múltiplos tipos de entrada e checagens de tool calls no Guardrail API, sendo um ajuste de API e não uma correção.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

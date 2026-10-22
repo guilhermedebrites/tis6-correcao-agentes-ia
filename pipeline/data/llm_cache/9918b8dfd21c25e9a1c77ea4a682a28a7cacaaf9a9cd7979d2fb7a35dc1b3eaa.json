@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "A PR introduz um campo tax_code no produto para calcular impostos sem depender do stripe_product_id, o que altera o comportamento de ajuste de API e a fonte do dado usado na chamada, mas não corrige um defeito explícito nem é mera refatoração estrutural.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "As linhas alteradas só acrescentam vírgulas finais (ajuste de formatação), e a descrição indica que essa mudança corrige erros de lint, sem alterar comportamento; o PR como um todo é feat/fix, mas este trecho não.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

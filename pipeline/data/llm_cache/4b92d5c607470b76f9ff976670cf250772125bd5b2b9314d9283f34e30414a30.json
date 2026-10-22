@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "alta", "justificativa": "O título, a descrição e a mensagem de commit declaram um 'fix' que restaura o envio do row id estável ao frontend, corrigindo a falha de verificação causada pela remoção anterior da coluna.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

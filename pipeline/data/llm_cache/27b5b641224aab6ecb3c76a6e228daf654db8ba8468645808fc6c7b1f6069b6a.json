@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título e a descrição declaram separar a API do sandbox para uso no plugin do Quarto, e o diff extrai `construct_uv_flags`, renomeia variáveis e move código sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

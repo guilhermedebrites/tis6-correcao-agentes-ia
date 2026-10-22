@@ -1,0 +1,1 @@
+{"categoria": "evolucao", "confianca": "media", "justificativa": "O título declara que a PR faz o spark_udf suportar o gerenciador de ambiente 'uv', o que é uma nova funcionalidade; o trecho mostrado só altera a mensagem de erro para citar 'uv', sem exibir a lógica da mudança.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

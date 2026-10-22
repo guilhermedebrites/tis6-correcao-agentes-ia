@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara 'fix ruff errors' (correção de lint), e o diff apenas substitui blocos Literal repetidos de call_type pelo alias CallTypesLiteral, sem alterar o comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

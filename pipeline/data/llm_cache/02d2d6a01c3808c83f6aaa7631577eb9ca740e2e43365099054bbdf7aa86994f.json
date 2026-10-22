@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "media", "justificativa": "O diff apenas reformata um import de múltiplas linhas para uma única linha, sem alterar comportamento; o título e a descrição tratam de funcionalidades de content filter para imagens, que não se relacionam com esta mudança isolada.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

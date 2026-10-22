@@ -1,0 +1,1 @@
+{"categoria": "outro", "confianca": "alta", "justificativa": "A mudança troca a dependência msgspec pelo fork msgspec_m (motivada por wheels de Python 3.14 ainda indisponíveis no PyPI), o que se enquadra como atualização/troca de dependência; a remoção do noqa é cosmética e não altera comportamento.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

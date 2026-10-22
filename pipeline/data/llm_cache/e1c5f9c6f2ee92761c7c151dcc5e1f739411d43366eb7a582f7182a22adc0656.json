@@ -1,0 +1,1 @@
+{"categoria": "corrige_defeito", "confianca": "media", "justificativa": "A mudança passa a excluir tags imutáveis ao definir tags de trace, o que parece evitar uma falha ao tentar sobrescrever tags protegidas, embora o título não deixe explícito se é correção de erro ou nova regra.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}

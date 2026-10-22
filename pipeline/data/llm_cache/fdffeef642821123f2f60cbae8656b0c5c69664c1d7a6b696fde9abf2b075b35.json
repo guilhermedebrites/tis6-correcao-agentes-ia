@@ -1,0 +1,1 @@
+{"categoria": "refatoracao", "confianca": "alta", "justificativa": "O título declara 'chore: add more CellOutput static builders' e o diff apenas substitui a construção inline de CellOutput por CellOutput.stdout(msg), sem alterar o comportamento, além de ajustar o import.", "modelo": "claude-haiku-5-5", "prompt": "classificador_v1"}
